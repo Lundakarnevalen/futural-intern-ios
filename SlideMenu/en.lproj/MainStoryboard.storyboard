@@ -53,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Go1-qK-tc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-441" y="-774"/>
+            <point key="canvasLocation" x="-450" y="-774"/>
         </scene>
         <!--Init View Controller-->
         <scene sceneID="5">
@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-400" y="8"/>
+            <point key="canvasLocation" x="-831" y="716"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="RcO-hb-cwb">
@@ -99,7 +99,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MZ7-nW-KrR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-19" y="14"/>
+            <point key="canvasLocation" x="-450" y="722"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="Vza-FM-4YX">
@@ -134,6 +134,9 @@
                                     <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="5cH-sv-D6d" kind="modal" id="rQ2-lK-AIC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjS-Sq-vLi">
                                 <rect key="frame" x="20" y="338" width="280" height="70"/>
@@ -168,7 +171,6 @@
                         </subviews>
                         <color key="backgroundColor" red="0.44842944429999998" green="1" blue="0.31173108980000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="09K-RS-gc4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6M-1s-FUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="s8f-8u-yuO">
@@ -177,7 +179,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="715" y="12"/>
+            <point key="canvasLocation" x="284" y="720"/>
         </scene>
         <!--Sektion Page2 View Controller - Sektion2-->
         <scene sceneID="JrP-QS-iEW">
@@ -206,7 +208,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1203" y="-99"/>
+            <point key="canvasLocation" x="1159" y="716"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="RF7-fk-8IR">
@@ -230,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEF-b4-RQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="339" y="12"/>
+            <point key="canvasLocation" x="-92" y="720"/>
         </scene>
         <!--View Controller - Biljetteriet-->
         <scene sceneID="TNg-yf-QcB">
@@ -455,7 +457,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IBw-02-tW1">
                                 <rect key="frame" x="20" y="353" width="280" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Det är ekonomisektionen uppgift att se till att det här organiserade vansinnet går ihop rent ekonomiskt, inte minst för att framtida(!) generationer fortsatt kan ta del av denna fantastiska galenskap! Ekonomisektionen arbetar därför bland annat som stöttande till karnevalens alla ekonomichefer. Dessutom ansvarar sektionen för all karnevalens sponsring, annonsering i karnevalsmedier, budgetering, karnevalens redovisning, kassor m.m. och inte minst de karnevalscentrala upphandlingar. Sektionen fungerar därför på många sätt som en ryggrad åt övriga sektioner, stabilt!</mutableString>
+                                <string key="text">Det är ekonomisektionen uppgift att se till att det här organiserade vansinnet går ihop rent ekonomiskt, inte minst för att framtida(!) generationer fortsatt kan ta del av denna fantastiska galenskap! Ekonomisektionen arbetar därför bland annat som stöttande till karnevalens alla ekonomichefer. Dessutom ansvarar sektionen för all karnevalens sponsring, annonsering i karnevalsmedier, budgetering, karnevalens redovisning, kassor m.m. och inte minst de karnevalscentrala upphandlingar. Sektionen fungerar därför på många sätt som en ryggrad åt övriga sektioner, stabilt!</string>
                                 <color key="textColor" red="1" green="0.92402527320000005" blue="0.94061626539999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
