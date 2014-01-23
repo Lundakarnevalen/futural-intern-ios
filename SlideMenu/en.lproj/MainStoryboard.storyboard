@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Barnevalen-->
+        <scene sceneID="Jf2-St-y9H">
+            <objects>
+                <viewController storyboardIdentifier="Barnevalen" title="Barnevalen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wq9-pA-JMw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LIE-im-ldt"/>
+                        <viewControllerLayoutGuide type="bottom" id="KqO-MA-xTR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hBE-sz-HMO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="QHr-TJ-JF9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="qBu-fN-ACL">
+                                <rect key="frame" x="40" y="152" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZKT-jr-Yj0">
+                                <rect key="frame" x="20" y="353" width="280" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Barnevalen är den delen av karnevalen som riktar sig till barn i alla åldrar! Det är det största av de stora nöjena och har, i skillnad från de flesta andra, ett helt område! Förutom en föreställning kommer det även finnas små tält och bodar där barnen får delta i aktiviteter och hyss! Man ska ha riktigt kul när man går runt på barnevalsområdet oavsett hur gammal man är och det bygger givetvis på en härlig glädje och gemenskap mellan de som är engagerade!</string>
+                                <color key="textColor" red="1" green="0.92402527315427274" blue="0.94061626536102416" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Sektionen för de barnsligaste." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LhI-4M-Nzf">
+                                <rect key="frame" x="40" y="299" width="240" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="0.40482239753875193" blue="0.18825029092623935" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="BARNEVALEN" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eMm-rp-UoO">
+                                <rect key="frame" x="40" y="76" width="240" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Go1-qK-tc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-441" y="-774"/>
+        </scene>
+        <!--Init View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="InitViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M9Z-08-Yy0"/>
+                        <viewControllerLayoutGuide type="bottom" id="jxf-S4-25J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-400" y="8"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="RcO-hb-cwb">
+            <objects>
+                <tableViewController storyboardIdentifier="Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uhA-1A-Kbh" customClass="MenuViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="YJu-Jj-ECM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4UR-iy-36s">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4UR-iy-36s" id="1eL-vs-6ft">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uhA-1A-Kbh" id="jVb-mN-ClM"/>
+                            <outlet property="delegate" destination="uhA-1A-Kbh" id="Oz3-hS-YMk"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MZ7-nW-KrR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19" y="14"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Vza-FM-4YX">
+            <objects>
+                <viewController storyboardIdentifier="Second" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U1F-Pb-p8c" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oNH-yz-2bc"/>
+                        <viewControllerLayoutGuide type="bottom" id="fam-oo-f1r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e0v-mS-fPb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZBC-E7-v6Y">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCg-Lq-gbW">
+                                <rect key="frame" x="20" y="416" width="280" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Dansen" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ua-dv-77t">
+                                <rect key="frame" x="20" y="182" width="280" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Biljetteriet" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjS-Sq-vLi">
+                                <rect key="frame" x="20" y="338" width="280" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Cirkusen" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zf0-aJ-Vo7">
+                                <rect key="frame" x="20" y="260" width="280" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Blädderiet" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFv-mK-EUM">
+                                <rect key="frame" x="20" y="104" width="280" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Barneval" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Wq9-pA-JMw" kind="modal" id="CHh-nA-SLN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44842944429999998" green="1" blue="0.31173108980000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="09K-RS-gc4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K6M-1s-FUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="s8f-8u-yuO">
+                    <connections>
+                        <segue destination="MPD-eJ-TqV" kind="modal" identifier="Right" modalTransitionStyle="crossDissolve" id="6Gm-wJ-zKx"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="715" y="12"/>
+        </scene>
+        <!--Sektion Page2 View Controller - Sektion2-->
+        <scene sceneID="JrP-QS-iEW">
+            <objects>
+                <viewController storyboardIdentifier="Sektion2" title="Sektion2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MPD-eJ-TqV" customClass="SektionPage2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FQ2-tv-vCG"/>
+                        <viewControllerLayoutGuide type="bottom" id="b1G-83-iIq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yv9-RM-kbj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="qHa-BZ-40W">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D8O-S1-FBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="LEl-cx-TxA">
+                    <connections>
+                        <segue destination="U1F-Pb-p8c" kind="modal" identifier="Right" modalTransitionStyle="flipHorizontal" id="pwB-YD-bWA"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1203" y="-99"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="RF7-fk-8IR">
+            <objects>
+                <viewController storyboardIdentifier="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9al-Vp-Iga" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wAL-iI-yYY"/>
+                        <viewControllerLayoutGuide type="bottom" id="57e-CN-u5K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ggT-of-3Cc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="NOf-Fv-3Nc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.51873306740000003" blue="0.079971757919999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEF-b4-RQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="339" y="12"/>
+        </scene>
+        <!--View Controller - Biljetteriet-->
+        <scene sceneID="TNg-yf-QcB">
+            <objects>
+                <viewController storyboardIdentifier="Biljetteriet" title="Biljetteriet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5cH-sv-D6d" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Icv-f3-t09"/>
+                        <viewControllerLayoutGuide type="bottom" id="6nc-Wt-3tW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bl1-hV-ctV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="VxA-cH-x5u">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="rQU-BA-Dkc">
+                                <rect key="frame" x="40" y="152" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LIT-mf-lkV">
+                                <rect key="frame" x="20" y="353" width="280" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Biljetteriets primära uppgift är att sälja biljetter till karnevalsområdet, dansen, tältnöjena, tombolan och inte minst till alla de 7 stora nöjena. Innan dess ska vi dessutom sälja biljetter till Karneveljen och andra liknande “förfester” samt ta hand om gynnarna (de som gynnar Lundakarnevalen genom att lämna garantier) genom att de får förköpa biljetter. Biljetterna säljs först genom internt och externt biljettsläpp och sedan på webben och i bodar runt om i Lund.</string>
+                                <color key="textColor" red="1" green="0.92402527320000005" blue="0.94061626539999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Sektionen för biljettentusiaster" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FJp-uA-NQK">
+                                <rect key="frame" x="40" y="299" width="240" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="BILJETTERIET" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="khd-Ru-V9n">
+                                <rect key="frame" x="40" y="76" width="240" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPV-6F-py6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-108" y="-774"/>
+        </scene>
+        <!--View Controller - Blädderiet-->
+        <scene sceneID="AoK-6W-Gnc">
+            <objects>
+                <viewController storyboardIdentifier="Blädderiet" title="Blädderiet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GDZ-TW-tg1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PKl-2D-7TJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ED3-PL-KL7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qvf-dC-Pec">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="mWx-Jf-gXR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rb8-uh-AvB">
+                                <rect key="frame" x="40" y="152" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nq6-sd-7o5">
+                                <rect key="frame" x="20" y="353" width="280" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Blädderiet är en sektion som jobbar mest med tryckt material. Tillsammans ska vi skapa karnevalstidningen för att marknadsföra karnevalen och vi kommer även att göra programbladet, som kommer att vara den ultimata guiden till karnevalsdagarna i maj! </string>
+                                <color key="textColor" red="1" green="0.92402527320000005" blue="0.94061626539999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Sektionen för tidningstokiga" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nIg-SY-2Yv">
+                                <rect key="frame" x="40" y="299" width="240" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="BLÄDDERIET" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ErS-Us-cIA">
+                                <rect key="frame" x="40" y="76" width="240" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7u-hY-4ae" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="-774"/>
+        </scene>
+        <!--View Controller - Cirkusen-->
+        <scene sceneID="fFl-P9-TQh">
+            <objects>
+                <viewController storyboardIdentifier="Cirkusen" title="Cirkusen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2NU-Ou-8Wp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3P9-hf-98b"/>
+                        <viewControllerLayoutGuide type="bottom" id="M4V-vM-cuM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bH8-ej-00b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="0E4-Xh-pez">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="cGW-5d-73K">
+                                <rect key="frame" x="40" y="152" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TEY-k2-YHA">
+                                <rect key="frame" x="20" y="353" width="280" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Cirkusen är ett av de stora nöjena och det är precis vad det låter som… en cirkus! Vi kommer att ha ett riktigt cirkustält med manege och hela faderullan. Men det kommer inte vara en vanlig cirkus. Det kommer istället vara en cirkus med karnevalistisk twist som kommer bestå av nummer utav varierande art och kvalité. Ofta brukar dessa driva lite med klassiska cirkusnummer och koncept. Cirkusen är också det äldsta karnevalsnöjet! Klassiskt kul!</string>
+                                <color key="textColor" red="1" green="0.92402527320000005" blue="0.94061626539999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Sektionen för cirkusapan" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wgx-r3-fq7">
+                                <rect key="frame" x="40" y="299" width="240" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="CIRKUSEN" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GPr-9U-Mcv">
+                                <rect key="frame" x="40" y="76" width="240" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RlD-Mh-yB6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568" y="-774"/>
+        </scene>
+        <!--View Controller - Dansen-->
+        <scene sceneID="HFc-8k-hZl">
+            <objects>
+                <viewController storyboardIdentifier="Dansen" title="Dansen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="45u-da-fVs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BSi-k3-ViG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ccw-hh-hKX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QNV-0e-q3a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="rjq-wR-T8p">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="9v3-nN-d6k">
+                                <rect key="frame" x="40" y="152" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fmb-fs-olA">
+                                <rect key="frame" x="20" y="353" width="280" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Danssektionen anordnar de stora festerna i AF-borgen på kvällarna under karnevalen. Varje kväll under de tre karnevalsdagarna slår AF-borgen upp sina portar för södra Sveriges största fest. Besökare kommer få se borgen som man aldrig sett den förr.</string>
+                                <color key="textColor" red="1" green="0.92402527320000005" blue="0.94061626539999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Sektionen för de dansgalna" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="58h-S4-Bdz">
+                                <rect key="frame" x="40" y="299" width="240" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="DANSEN" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ffa-rk-mf8">
+                                <rect key="frame" x="40" y="76" width="240" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDv-yI-yI0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910" y="-774"/>
+        </scene>
+        <!--View Controller - Ekonomi-->
+        <scene sceneID="Xm9-7M-jmW">
+            <objects>
+                <viewController storyboardIdentifier="Ekonomi" title="Ekonomi" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ceF-U5-SeX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="btX-Yd-dY1"/>
+                        <viewControllerLayoutGuide type="bottom" id="A3r-HM-y0n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ENZ-go-T1U">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="HFj-eO-kSd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="7yn-CC-dvn">
+                                <rect key="frame" x="40" y="152" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IBw-02-tW1">
+                                <rect key="frame" x="20" y="353" width="280" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Det är ekonomisektionen uppgift att se till att det här organiserade vansinnet går ihop rent ekonomiskt, inte minst för att framtida(!) generationer fortsatt kan ta del av denna fantastiska galenskap! Ekonomisektionen arbetar därför bland annat som stöttande till karnevalens alla ekonomichefer. Dessutom ansvarar sektionen för all karnevalens sponsring, annonsering i karnevalsmedier, budgetering, karnevalens redovisning, kassor m.m. och inte minst de karnevalscentrala upphandlingar. Sektionen fungerar därför på många sätt som en ryggrad åt övriga sektioner, stabilt!</mutableString>
+                                <color key="textColor" red="1" green="0.92402527320000005" blue="0.94061626539999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Sektionen för de ekonomiska" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vx0-Xf-Bfw">
+                                <rect key="frame" x="40" y="299" width="240" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="EKONOMI" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iZv-jg-iIv">
+                                <rect key="frame" x="40" y="76" width="240" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Roj-nb-Ra5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1250" y="-774"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SektionerButtonWhiteBackground.png" width="531" height="100"/>
+        <image name="StartBackground.png" width="640" height="1136"/>
+        <image name="happy_robot.png" width="300" height="224"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

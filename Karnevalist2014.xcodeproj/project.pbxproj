@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27D71D6316A349AD00021245 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6216A349AD00021245 /* UIKit.framework */; };
+		27D71D6516A349AD00021245 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6416A349AD00021245 /* Foundation.framework */; };
+		27D71D6716A349AD00021245 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6616A349AD00021245 /* CoreGraphics.framework */; };
+		27D71D6D16A349AD00021245 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27D71D6B16A349AD00021245 /* InfoPlist.strings */; };
+		27D71D6F16A349AD00021245 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D6E16A349AD00021245 /* main.m */; };
+		27D71D7316A349AD00021245 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D7216A349AD00021245 /* AppDelegate.m */; };
+		27D71D7516A349AD00021245 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D71D7416A349AD00021245 /* Default.png */; };
+		27D71D7716A349AD00021245 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D71D7616A349AD00021245 /* Default@2x.png */; };
+		27D71D7916A349AD00021245 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D71D7816A349AD00021245 /* Default-568h@2x.png */; };
+		27D71D7C16A349AD00021245 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D71D7A16A349AD00021245 /* MainStoryboard.storyboard */; };
+		27D71D8A16A349D500021245 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8716A349D500021245 /* ECSlidingViewController.m */; };
+		27D71D8B16A349D500021245 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8916A349D500021245 /* UIImage+ImageWithUIView.m */; };
+		27D71D8E16A349F000021245 /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8D16A349F000021245 /* InitViewController.m */; };
+		27D71D9116A34A0200021245 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D9016A34A0200021245 /* MenuViewController.m */; };
+		27D71D9416A34A2200021245 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D9316A34A2200021245 /* MainViewController.m */; };
+		27D71D9716A34A2C00021245 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D9616A34A2C00021245 /* SecondViewController.m */; };
+		27D71D9916A3525F00021245 /* menuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D71D9816A3525F00021245 /* menuButton@2x.png */; };
+		77572799189005AF00A0CA89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77572798189005AF00A0CA89 /* Images.xcassets */; };
+		7757279B1890088400A0CA89 /* StartBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7757279A1890088400A0CA89 /* StartBackground.png */; };
+		7757279D189019A900A0CA89 /* happy_robot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7757279C189019A900A0CA89 /* happy_robot.png */; };
+		775727A31891222800A0CA89 /* SektionerButtonSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 775727A21891222800A0CA89 /* SektionerButtonSmall.png */; };
+		775727A51891243500A0CA89 /* SektionerButtonWhiteBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 775727A41891243500A0CA89 /* SektionerButtonWhiteBackground.png */; };
+		775727A8189131EB00A0CA89 /* SektionPage2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775727A7189131EB00A0CA89 /* SektionPage2ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27D71D5E16A349AD00021245 /* Karnevalist2014.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karnevalist2014.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D71D6216A349AD00021245 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		27D71D6416A349AD00021245 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		27D71D6616A349AD00021245 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		27D71D6A16A349AD00021245 /* Karnevalist2014-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Karnevalist2014-Info.plist"; sourceTree = "<group>"; };
+		27D71D6C16A349AD00021245 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27D71D6E16A349AD00021245 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27D71D7016A349AD00021245 /* Karnevalist2014-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Karnevalist2014-Prefix.pch"; sourceTree = "<group>"; };
+		27D71D7116A349AD00021245 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		27D71D7216A349AD00021245 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		27D71D7416A349AD00021245 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		27D71D7616A349AD00021245 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		27D71D7816A349AD00021245 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		27D71D7B16A349AD00021245 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		27D71D8616A349D500021245 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
+		27D71D8716A349D500021245 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
+		27D71D8816A349D500021245 /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
+		27D71D8916A349D500021245 /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
+		27D71D8C16A349F000021245 /* InitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitViewController.h; sourceTree = "<group>"; };
+		27D71D8D16A349F000021245 /* InitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitViewController.m; sourceTree = "<group>"; };
+		27D71D8F16A34A0200021245 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		27D71D9016A34A0200021245 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		27D71D9216A34A2200021245 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		27D71D9316A34A2200021245 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		27D71D9516A34A2C00021245 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		27D71D9616A34A2C00021245 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		27D71D9816A3525F00021245 /* menuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuButton@2x.png"; sourceTree = "<group>"; };
+		77572798189005AF00A0CA89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7757279A1890088400A0CA89 /* StartBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartBackground.png; sourceTree = "<group>"; };
+		7757279C189019A900A0CA89 /* happy_robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy_robot.png; sourceTree = "<group>"; };
+		775727A21891222800A0CA89 /* SektionerButtonSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SektionerButtonSmall.png; sourceTree = "<group>"; };
+		775727A41891243500A0CA89 /* SektionerButtonWhiteBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SektionerButtonWhiteBackground.png; sourceTree = "<group>"; };
+		775727A6189131EB00A0CA89 /* SektionPage2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SektionPage2ViewController.h; sourceTree = "<group>"; };
+		775727A7189131EB00A0CA89 /* SektionPage2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SektionPage2ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27D71D5B16A349AD00021245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D71D6316A349AD00021245 /* UIKit.framework in Frameworks */,
+				27D71D6516A349AD00021245 /* Foundation.framework in Frameworks */,
+				27D71D6716A349AD00021245 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27D71D5316A349AD00021245 = {
+			isa = PBXGroup;
+			children = (
+				7757279A1890088400A0CA89 /* StartBackground.png */,
+				27D71D6816A349AD00021245 /* SlideMenu */,
+				27D71D6116A349AD00021245 /* Frameworks */,
+				27D71D5F16A349AD00021245 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27D71D5F16A349AD00021245 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27D71D5E16A349AD00021245 /* Karnevalist2014.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27D71D6116A349AD00021245 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27D71D6216A349AD00021245 /* UIKit.framework */,
+				27D71D6416A349AD00021245 /* Foundation.framework */,
+				27D71D6616A349AD00021245 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27D71D6816A349AD00021245 /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				27D71D9816A3525F00021245 /* menuButton@2x.png */,
+				27D71D8516A349D500021245 /* ECSlidingViewController */,
+				27D71D7116A349AD00021245 /* AppDelegate.h */,
+				27D71D7216A349AD00021245 /* AppDelegate.m */,
+				27D71D7A16A349AD00021245 /* MainStoryboard.storyboard */,
+				7757279C189019A900A0CA89 /* happy_robot.png */,
+				27D71D6916A349AD00021245 /* Supporting Files */,
+				27D71D8C16A349F000021245 /* InitViewController.h */,
+				27D71D8D16A349F000021245 /* InitViewController.m */,
+				27D71D8F16A34A0200021245 /* MenuViewController.h */,
+				27D71D9016A34A0200021245 /* MenuViewController.m */,
+				27D71D9216A34A2200021245 /* MainViewController.h */,
+				27D71D9316A34A2200021245 /* MainViewController.m */,
+				27D71D9516A34A2C00021245 /* SecondViewController.h */,
+				27D71D9616A34A2C00021245 /* SecondViewController.m */,
+				77572798189005AF00A0CA89 /* Images.xcassets */,
+				775727A6189131EB00A0CA89 /* SektionPage2ViewController.h */,
+				775727A7189131EB00A0CA89 /* SektionPage2ViewController.m */,
+			);
+			path = SlideMenu;
+			sourceTree = "<group>";
+		};
+		27D71D6916A349AD00021245 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				775727A41891243500A0CA89 /* SektionerButtonWhiteBackground.png */,
+				775727A21891222800A0CA89 /* SektionerButtonSmall.png */,
+				27D71D6A16A349AD00021245 /* Karnevalist2014-Info.plist */,
+				27D71D6B16A349AD00021245 /* InfoPlist.strings */,
+				27D71D6E16A349AD00021245 /* main.m */,
+				27D71D7016A349AD00021245 /* Karnevalist2014-Prefix.pch */,
+				27D71D7416A349AD00021245 /* Default.png */,
+				27D71D7616A349AD00021245 /* Default@2x.png */,
+				27D71D7816A349AD00021245 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27D71D8516A349D500021245 /* ECSlidingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				27D71D8616A349D500021245 /* ECSlidingViewController.h */,
+				27D71D8716A349D500021245 /* ECSlidingViewController.m */,
+				27D71D8816A349D500021245 /* UIImage+ImageWithUIView.h */,
+				27D71D8916A349D500021245 /* UIImage+ImageWithUIView.m */,
+			);
+			path = ECSlidingViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27D71D5D16A349AD00021245 /* Karnevalist2014 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27D71D8216A349AD00021245 /* Build configuration list for PBXNativeTarget "Karnevalist2014" */;
+			buildPhases = (
+				27D71D5A16A349AD00021245 /* Sources */,
+				27D71D5B16A349AD00021245 /* Frameworks */,
+				27D71D5C16A349AD00021245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Karnevalist2014;
+			productName = SlideMenu;
+			productReference = 27D71D5E16A349AD00021245 /* Karnevalist2014.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27D71D5516A349AD00021245 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Indee Box LLC";
+				TargetAttributes = {
+					27D71D5D16A349AD00021245 = {
+						DevelopmentTeam = YSKSAFCAGC;
+					};
+				};
+			};
+			buildConfigurationList = 27D71D5816A349AD00021245 /* Build configuration list for PBXProject "Karnevalist2014" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 27D71D5316A349AD00021245;
+			productRefGroup = 27D71D5F16A349AD00021245 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27D71D5D16A349AD00021245 /* Karnevalist2014 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27D71D5C16A349AD00021245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7757279D189019A900A0CA89 /* happy_robot.png in Resources */,
+				27D71D6D16A349AD00021245 /* InfoPlist.strings in Resources */,
+				775727A51891243500A0CA89 /* SektionerButtonWhiteBackground.png in Resources */,
+				27D71D7516A349AD00021245 /* Default.png in Resources */,
+				77572799189005AF00A0CA89 /* Images.xcassets in Resources */,
+				27D71D7716A349AD00021245 /* Default@2x.png in Resources */,
+				7757279B1890088400A0CA89 /* StartBackground.png in Resources */,
+				775727A31891222800A0CA89 /* SektionerButtonSmall.png in Resources */,
+				27D71D7916A349AD00021245 /* Default-568h@2x.png in Resources */,
+				27D71D7C16A349AD00021245 /* MainStoryboard.storyboard in Resources */,
+				27D71D9916A3525F00021245 /* menuButton@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27D71D5A16A349AD00021245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D71D6F16A349AD00021245 /* main.m in Sources */,
+				27D71D7316A349AD00021245 /* AppDelegate.m in Sources */,
+				27D71D8A16A349D500021245 /* ECSlidingViewController.m in Sources */,
+				27D71D8B16A349D500021245 /* UIImage+ImageWithUIView.m in Sources */,
+				775727A8189131EB00A0CA89 /* SektionPage2ViewController.m in Sources */,
+				27D71D8E16A349F000021245 /* InitViewController.m in Sources */,
+				27D71D9116A34A0200021245 /* MenuViewController.m in Sources */,
+				27D71D9416A34A2200021245 /* MainViewController.m in Sources */,
+				27D71D9716A34A2C00021245 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		27D71D6B16A349AD00021245 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27D71D6C16A349AD00021245 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		27D71D7A16A349AD00021245 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27D71D7B16A349AD00021245 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27D71D8016A349AD00021245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		27D71D8116A349AD00021245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27D71D8316A349AD00021245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlideMenu/Karnevalist2014-Prefix.pch";
+				INFOPLIST_FILE = "SlideMenu/Karnevalist2014-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = Karnevalist2014;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		27D71D8416A349AD00021245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlideMenu/Karnevalist2014-Prefix.pch";
+				INFOPLIST_FILE = "SlideMenu/Karnevalist2014-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = Karnevalist2014;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27D71D5816A349AD00021245 /* Build configuration list for PBXProject "Karnevalist2014" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D71D8016A349AD00021245 /* Debug */,
+				27D71D8116A349AD00021245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27D71D8216A349AD00021245 /* Build configuration list for PBXNativeTarget "Karnevalist2014" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D71D8316A349AD00021245 /* Debug */,
+				27D71D8416A349AD00021245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27D71D5516A349AD00021245 /* Project object */;
+}

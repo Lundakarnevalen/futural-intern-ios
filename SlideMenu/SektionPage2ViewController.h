@@ -1,0 +1,14 @@
+//
+//  SektionPage2ViewController.h
+//  Karnevalist2014
+//
+//  Created by contributeshopping on 2014-01-23.
+//  Copyright (c) 2014 Indee Box LLC. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SektionPage2ViewController : UIViewController
+@property (strong, nonatomic) UIButton *menuBtn;
+
+@end
