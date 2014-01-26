@@ -15,6 +15,10 @@
 @end
 
 @implementation SecondViewController
+- (IBAction)unwindSecondView:(UIStoryboardSegue *)segue
+{
+    
+}
 @synthesize menuBtn;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

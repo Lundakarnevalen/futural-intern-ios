@@ -30,6 +30,7 @@
 		775727A31891222800A0CA89 /* SektionerButtonSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 775727A21891222800A0CA89 /* SektionerButtonSmall.png */; };
 		775727A51891243500A0CA89 /* SektionerButtonWhiteBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 775727A41891243500A0CA89 /* SektionerButtonWhiteBackground.png */; };
 		775727A8189131EB00A0CA89 /* SektionPage2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775727A7189131EB00A0CA89 /* SektionPage2ViewController.m */; };
+		FD20EE721894A05700C3CD3A /* Sektioner3NavigationBack1.png in Resources */ = {isa = PBXBuildFile; fileRef = FD20EE711894A05700C3CD3A /* Sektioner3NavigationBack1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		775727A41891243500A0CA89 /* SektionerButtonWhiteBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SektionerButtonWhiteBackground.png; sourceTree = "<group>"; };
 		775727A6189131EB00A0CA89 /* SektionPage2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SektionPage2ViewController.h; sourceTree = "<group>"; };
 		775727A7189131EB00A0CA89 /* SektionPage2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SektionPage2ViewController.m; sourceTree = "<group>"; };
+		FD20EE711894A05700C3CD3A /* Sektioner3NavigationBack1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sektioner3NavigationBack1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				27D71D9816A3525F00021245 /* menuButton@2x.png */,
+				FD20EE711894A05700C3CD3A /* Sektioner3NavigationBack1.png */,
 				27D71D8516A349D500021245 /* ECSlidingViewController */,
 				27D71D7116A349AD00021245 /* AppDelegate.h */,
 				27D71D7216A349AD00021245 /* AppDelegate.m */,
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7757279D189019A900A0CA89 /* happy_robot.png in Resources */,
+				FD20EE721894A05700C3CD3A /* Sektioner3NavigationBack1.png in Resources */,
 				27D71D6D16A349AD00021245 /* InfoPlist.strings in Resources */,
 				775727A51891243500A0CA89 /* SektionerButtonWhiteBackground.png in Resources */,
 				27D71D7516A349AD00021245 /* Default.png in Resources */,
