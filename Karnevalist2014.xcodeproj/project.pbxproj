@@ -29,8 +29,13 @@
 		7757279D189019A900A0CA89 /* happy_robot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7757279C189019A900A0CA89 /* happy_robot.png */; };
 		775727A31891222800A0CA89 /* SektionerButtonSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 775727A21891222800A0CA89 /* SektionerButtonSmall.png */; };
 		775727A51891243500A0CA89 /* SektionerButtonWhiteBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 775727A41891243500A0CA89 /* SektionerButtonWhiteBackground.png */; };
-		775727A8189131EB00A0CA89 /* SektionPage2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775727A7189131EB00A0CA89 /* SektionPage2ViewController.m */; };
 		FD20EE721894A05700C3CD3A /* Sektioner3NavigationBack1.png in Resources */ = {isa = PBXBuildFile; fileRef = FD20EE711894A05700C3CD3A /* Sektioner3NavigationBack1.png */; };
+		FD6ECB7218959A81001C7A5B /* SektionerPage2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6ECB7018959A81001C7A5B /* SektionerPage2ViewController.m */; };
+		FD6ECB7318959A81001C7A5B /* SektionerPage2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD6ECB7118959A81001C7A5B /* SektionerPage2ViewController.xib */; };
+		FD6ECB771895AA30001C7A5B /* SektionerPage3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6ECB751895AA30001C7A5B /* SektionerPage3ViewController.m */; };
+		FD6ECB781895AA30001C7A5B /* SektionerPage3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD6ECB761895AA30001C7A5B /* SektionerPage3ViewController.xib */; };
+		FD6ECB7C1895AFF4001C7A5B /* SektionerPage4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6ECB7A1895AFF4001C7A5B /* SektionerPage4ViewController.m */; };
+		FD6ECB7D1895AFF4001C7A5B /* SektionerPage4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD6ECB7B1895AFF4001C7A5B /* SektionerPage4ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,9 +71,16 @@
 		7757279C189019A900A0CA89 /* happy_robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy_robot.png; sourceTree = "<group>"; };
 		775727A21891222800A0CA89 /* SektionerButtonSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SektionerButtonSmall.png; sourceTree = "<group>"; };
 		775727A41891243500A0CA89 /* SektionerButtonWhiteBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SektionerButtonWhiteBackground.png; sourceTree = "<group>"; };
-		775727A6189131EB00A0CA89 /* SektionPage2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SektionPage2ViewController.h; sourceTree = "<group>"; };
-		775727A7189131EB00A0CA89 /* SektionPage2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SektionPage2ViewController.m; sourceTree = "<group>"; };
 		FD20EE711894A05700C3CD3A /* Sektioner3NavigationBack1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sektioner3NavigationBack1.png; sourceTree = "<group>"; };
+		FD6ECB6F18959A81001C7A5B /* SektionerPage2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SektionerPage2ViewController.h; path = ../SektionerPage2ViewController.h; sourceTree = "<group>"; };
+		FD6ECB7018959A81001C7A5B /* SektionerPage2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SektionerPage2ViewController.m; path = ../SektionerPage2ViewController.m; sourceTree = "<group>"; };
+		FD6ECB7118959A81001C7A5B /* SektionerPage2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SektionerPage2ViewController.xib; path = ../SektionerPage2ViewController.xib; sourceTree = "<group>"; };
+		FD6ECB741895AA30001C7A5B /* SektionerPage3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SektionerPage3ViewController.h; sourceTree = "<group>"; };
+		FD6ECB751895AA30001C7A5B /* SektionerPage3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SektionerPage3ViewController.m; sourceTree = "<group>"; };
+		FD6ECB761895AA30001C7A5B /* SektionerPage3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SektionerPage3ViewController.xib; sourceTree = "<group>"; };
+		FD6ECB791895AFF4001C7A5B /* SektionerPage4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SektionerPage4ViewController.h; sourceTree = "<group>"; };
+		FD6ECB7A1895AFF4001C7A5B /* SektionerPage4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SektionerPage4ViewController.m; sourceTree = "<group>"; };
+		FD6ECB7B1895AFF4001C7A5B /* SektionerPage4ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SektionerPage4ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +144,16 @@
 				27D71D9316A34A2200021245 /* MainViewController.m */,
 				27D71D9516A34A2C00021245 /* SecondViewController.h */,
 				27D71D9616A34A2C00021245 /* SecondViewController.m */,
+				FD6ECB6F18959A81001C7A5B /* SektionerPage2ViewController.h */,
+				FD6ECB7018959A81001C7A5B /* SektionerPage2ViewController.m */,
+				FD6ECB7118959A81001C7A5B /* SektionerPage2ViewController.xib */,
+				FD6ECB741895AA30001C7A5B /* SektionerPage3ViewController.h */,
+				FD6ECB751895AA30001C7A5B /* SektionerPage3ViewController.m */,
+				FD6ECB761895AA30001C7A5B /* SektionerPage3ViewController.xib */,
+				FD6ECB791895AFF4001C7A5B /* SektionerPage4ViewController.h */,
+				FD6ECB7A1895AFF4001C7A5B /* SektionerPage4ViewController.m */,
+				FD6ECB7B1895AFF4001C7A5B /* SektionerPage4ViewController.xib */,
 				77572798189005AF00A0CA89 /* Images.xcassets */,
-				775727A6189131EB00A0CA89 /* SektionPage2ViewController.h */,
-				775727A7189131EB00A0CA89 /* SektionPage2ViewController.m */,
 			);
 			path = SlideMenu;
 			sourceTree = "<group>";
@@ -227,8 +246,11 @@
 				27D71D6D16A349AD00021245 /* InfoPlist.strings in Resources */,
 				775727A51891243500A0CA89 /* SektionerButtonWhiteBackground.png in Resources */,
 				27D71D7516A349AD00021245 /* Default.png in Resources */,
+				FD6ECB7D1895AFF4001C7A5B /* SektionerPage4ViewController.xib in Resources */,
 				77572799189005AF00A0CA89 /* Images.xcassets in Resources */,
+				FD6ECB781895AA30001C7A5B /* SektionerPage3ViewController.xib in Resources */,
 				27D71D7716A349AD00021245 /* Default@2x.png in Resources */,
+				FD6ECB7318959A81001C7A5B /* SektionerPage2ViewController.xib in Resources */,
 				7757279B1890088400A0CA89 /* StartBackground.png in Resources */,
 				775727A31891222800A0CA89 /* SektionerButtonSmall.png in Resources */,
 				27D71D7916A349AD00021245 /* Default-568h@2x.png in Resources */,
@@ -244,13 +266,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6ECB771895AA30001C7A5B /* SektionerPage3ViewController.m in Sources */,
 				27D71D6F16A349AD00021245 /* main.m in Sources */,
 				27D71D7316A349AD00021245 /* AppDelegate.m in Sources */,
 				27D71D8A16A349D500021245 /* ECSlidingViewController.m in Sources */,
+				FD6ECB7C1895AFF4001C7A5B /* SektionerPage4ViewController.m in Sources */,
 				27D71D8B16A349D500021245 /* UIImage+ImageWithUIView.m in Sources */,
-				775727A8189131EB00A0CA89 /* SektionPage2ViewController.m in Sources */,
 				27D71D8E16A349F000021245 /* InitViewController.m in Sources */,
 				27D71D9116A34A0200021245 /* MenuViewController.m in Sources */,
+				FD6ECB7218959A81001C7A5B /* SektionerPage2ViewController.m in Sources */,
 				27D71D9416A34A2200021245 /* MainViewController.m in Sources */,
 				27D71D9716A34A2C00021245 /* SecondViewController.m in Sources */,
 			);

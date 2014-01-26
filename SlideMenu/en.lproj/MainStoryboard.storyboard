@@ -124,102 +124,133 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZBC-E7-v6Y">
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZBC-E7-v6Y">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7UG-81-bJj">
-                                <rect key="frame" x="0.0" y="84" width="320" height="491"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCg-Lq-gbW">
+                                <rect key="frame" x="20" y="249" width="280" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCg-Lq-gbW">
-                                        <rect key="frame" x="20" y="332" width="280" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="Dansen" backgroundImage="SektionerButtonWhiteBackground.png">
-                                            <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="45u-da-fVs" kind="modal" id="Ign-fz-Kal"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8a-vK-Fxa">
-                                        <rect key="frame" x="20" y="410" width="280" height="61"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="Ekonomi" backgroundImage="SektionerButtonWhiteBackground.png">
-                                            <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ua-dv-77t">
-                                        <rect key="frame" x="20" y="98" width="280" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="Biljetteriet" backgroundImage="SektionerButtonWhiteBackground.png">
-                                            <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="5cH-sv-D6d" kind="modal" id="yeZ-ou-8Xa"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjS-Sq-vLi">
-                                        <rect key="frame" x="20" y="254" width="280" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="Cirkusen" backgroundImage="SektionerButtonWhiteBackground.png">
-                                            <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="2NU-Ou-8Wp" kind="modal" id="vMF-7j-gR6"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zf0-aJ-Vo7">
-                                        <rect key="frame" x="20" y="176" width="280" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="Blädderiet" backgroundImage="SektionerButtonWhiteBackground.png">
-                                            <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="GDZ-TW-tg1" kind="modal" id="w1g-j1-UFX"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFv-mK-EUM">
-                                        <rect key="frame" x="20" y="20" width="280" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="Barneval" backgroundImage="SektionerButtonWhiteBackground.png">
-                                            <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Wq9-pA-JMw" kind="modal" id="CHh-nA-SLN"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </scrollView>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Dansen" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="45u-da-fVs" kind="modal" modalTransitionStyle="flipHorizontal" id="Ign-fz-Kal"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8a-vK-Fxa">
+                                <rect key="frame" x="20" y="365" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Ekonomi" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ceF-U5-SeX" kind="modal" modalTransitionStyle="flipHorizontal" id="EZG-Lq-Q7c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDh-qL-1kQ">
+                                <rect key="frame" x="20" y="423" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Fabriken" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OHO-Yp-AnL" kind="modal" modalTransitionStyle="flipHorizontal" id="Rqq-k4-UAI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ua-dv-77t">
+                                <rect key="frame" x="20" y="133" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Biljetteriet" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5cH-sv-D6d" kind="modal" modalTransitionStyle="flipHorizontal" id="yeZ-ou-8Xa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjS-Sq-vLi">
+                                <rect key="frame" x="20" y="307" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Cirkusen" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2NU-Ou-8Wp" kind="modal" modalTransitionStyle="flipHorizontal" id="vMF-7j-gR6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zf0-aJ-Vo7">
+                                <rect key="frame" x="20" y="191" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Blädderiet" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GDZ-TW-tg1" kind="modal" modalTransitionStyle="flipHorizontal" id="w1g-j1-UFX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFv-mK-EUM">
+                                <rect key="frame" x="20" y="75" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Barneval" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Wq9-pA-JMw" kind="modal" modalTransitionStyle="flipHorizontal" id="CHh-nA-SLN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loA-i5-GIi">
+                                <rect key="frame" x="137" y="543" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fler">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MPD-eJ-TqV" kind="modal" id="On4-DZ-eus"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eq4-dT-U9A">
+                                <rect key="frame" x="20" y="481" width="280" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Festmästeriet" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="l3L-b4-XhE" kind="modal" modalTransitionStyle="flipHorizontal" id="L40-HL-zJA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.44842944429999998" green="1" blue="0.31173108980000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="y6k-HF-Fb9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6M-1s-FUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="s8f-8u-yuO">
-                    <connections>
-                        <segue destination="MPD-eJ-TqV" kind="modal" identifier="Right" modalTransitionStyle="crossDissolve" id="6Gm-wJ-zKx"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="715" y="12"/>
+            <point key="canvasLocation" x="711" y="14"/>
         </scene>
-        <!--Sektion Page2 View Controller - Sektion2-->
+        <!--Sektioner Page2 View Controller - Sektion2-->
         <scene sceneID="JrP-QS-iEW">
             <objects>
-                <viewController storyboardIdentifier="Sektion2" title="Sektion2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MPD-eJ-TqV" customClass="SektionPage2ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sektion2" title="Sektion2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MPD-eJ-TqV" customClass="SektionerPage2ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FQ2-tv-vCG"/>
                         <viewControllerLayoutGuide type="bottom" id="b1G-83-iIq"/>
@@ -231,19 +262,431 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="qHa-BZ-40W">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PxR-M6-y2r">
+                                <rect key="frame" x="137" y="543" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fler">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JEq-DA-rj1" kind="modal" id="g01-JJ-LzL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOS-LP-l8B">
+                                <rect key="frame" x="20" y="14" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nUq-Oz-hWO" kind="unwind" unwindAction="unwindSecondView:" id="zSZ-b0-11e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yv-bE-scu">
+                                <rect key="frame" x="20" y="367" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Krog Anna" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WjE-i6-PNc" kind="modal" modalTransitionStyle="flipHorizontal" id="C9r-4z-tS6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ax7-VZ-xk9">
+                                <rect key="frame" x="20" y="309" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Krog Alexander" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cpa-IE-Z1c" kind="modal" modalTransitionStyle="flipHorizontal" id="82F-3v-OUU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2c5-xM-sER">
+                                <rect key="frame" x="20" y="251" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Kommunikation" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jxZ-ts-Obx" kind="modal" modalTransitionStyle="flipHorizontal" id="PEn-l7-8M8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YV1-zE-7ze">
+                                <rect key="frame" x="20" y="193" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Klipperiet" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HWK-rm-7i1" kind="modal" modalTransitionStyle="flipHorizontal" id="BHx-6y-wYa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHk-gJ-T48">
+                                <rect key="frame" x="20" y="135" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Kabarén" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IqN-wZ-fU2" kind="modal" modalTransitionStyle="flipHorizontal" id="9dZ-2X-jtQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXv-l1-jMJ">
+                                <rect key="frame" x="20" y="77" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Filmen" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YRh-E2-p8S" kind="modal" modalTransitionStyle="flipHorizontal" id="Tdg-L9-cvb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4x-cs-57H">
+                                <rect key="frame" x="20" y="425" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Krog Kågell" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dxt-IX-9t6" kind="modal" id="1xx-cL-bvK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fX0-Bi-1ah">
+                                <rect key="frame" x="20" y="483" width="280" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Krog Mattias" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rJt-xR-ts5" kind="modal" id="eFz-fx-EaQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9QV-J7-8rB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D8O-S1-FBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nUq-Oz-hWO" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="12"/>
+        </scene>
+        <!--Sektioner Page3 View Controller-->
+        <scene sceneID="8yl-aA-NfA">
+            <objects>
+                <viewController storyboardIdentifier="Sektion3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JEq-DA-rj1" customClass="SektionerPage3ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yJo-KU-Srq"/>
+                        <viewControllerLayoutGuide type="bottom" id="UXv-vl-rfq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zpx-f5-Uf0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="vxF-hr-GsG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqZ-7E-83S">
+                                <rect key="frame" x="20" y="423" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Säkerhet" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vmd-Nb-Nyd" kind="modal" id="TzM-ib-JXC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ph-V7-3wL">
+                                <rect key="frame" x="20" y="481" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Shoppen" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="W6s-Q7-Bmc" kind="modal" id="PoM-E7-2MF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVO-f6-xlz">
+                                <rect key="frame" x="20" y="365" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Revy" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="TwF-Yd-afN" kind="modal" id="6SG-He-hDc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uuf-xH-mnP">
+                                <rect key="frame" x="137" y="536" width="46" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fler">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xxr-Ko-K6w" kind="modal" id="gfY-p5-OhR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDH-RG-hBC">
+                                <rect key="frame" x="20" y="13" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2JV-R5-p5z" kind="unwind" unwindAction="unwindSektionerPage2:" id="J6Q-7x-dgy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiW-HL-wDJ">
+                                <rect key="frame" x="20" y="307" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Radio" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RyQ-JA-fBk" kind="modal" id="X9J-Wo-l6L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAJ-Pv-45f">
+                                <rect key="frame" x="20" y="249" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Område" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QGb-1f-MWy" kind="modal" id="x5O-EW-jhm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUx-sp-Qg9">
+                                <rect key="frame" x="20" y="191" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Nöjen" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HhV-Lp-xh1" kind="modal" id="960-Od-lYi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sh0-Z3-2vW">
+                                <rect key="frame" x="20" y="133" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Musik" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lwH-ge-OAD" kind="modal" id="q0S-un-Hek"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Iv-xg-HjI">
+                                <rect key="frame" x="20" y="75" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Krog Sara" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Mt1-fY-10s" kind="modal" id="JRB-xR-e2p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D8O-S1-FBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="LEl-cx-TxA">
-                    <connections>
-                        <segue destination="U1F-Pb-p8c" kind="modal" identifier="Right" modalTransitionStyle="flipHorizontal" id="pwB-YD-bWA"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q51-cc-UXE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2JV-R5-p5z" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1203" y="-99"/>
+            <point key="canvasLocation" x="1451" y="14"/>
+        </scene>
+        <!--Sektioner Page4 View Controller-->
+        <scene sceneID="OmW-r3-ocf">
+            <objects>
+                <viewController id="xxr-Ko-K6w" customClass="SektionerPage4ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qoa-z4-mKr"/>
+                        <viewControllerLayoutGuide type="bottom" id="amR-k8-WbX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LgM-Mp-gD6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="FOB-L8-GT5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjP-sh-Giz">
+                                <rect key="frame" x="20" y="481" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Vieriet" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eDJ-9F-FgR" kind="modal" id="5sw-E9-9uB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oe1-36-7g0">
+                                <rect key="frame" x="20" y="423" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Tombolan" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rB1-Pd-xa2" kind="modal" id="umU-4M-cKU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ym9-4h-xHM">
+                                <rect key="frame" x="20" y="365" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Tältnöje" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9Pj-zG-UOs" kind="modal" id="eOP-lb-R6b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLf-PP-0H8">
+                                <rect key="frame" x="20" y="307" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Tåget" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ji5-fj-9Dt" kind="modal" id="168-DW-OHF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rre-jx-ro8">
+                                <rect key="frame" x="20" y="249" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Spexet" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="84H-yR-ty6" kind="modal" id="okO-Ir-fAq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="np5-xM-Snm">
+                                <rect key="frame" x="20" y="191" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Snaxeriet" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ggw-Q5-Dxh" kind="modal" id="ck9-Ge-CED"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCk-EX-CkE">
+                                <rect key="frame" x="20" y="133" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Smånöjen" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5Uk-8X-u5g" kind="modal" id="CFS-ec-MwU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnp-mR-t6m">
+                                <rect key="frame" x="20" y="75" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Show" backgroundImage="SektionerButtonWhiteBackground.png">
+                                    <color key="titleColor" red="1" green="0.40482239749999999" blue="0.18825029090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2Ti-k9-wZ6" kind="modal" id="TwQ-uR-CQi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZA9-BK-Lr0">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Pme-Yp-x3x" kind="unwind" unwindAction="unwindSektionerPage3:" id="mdE-gS-0mf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZZH-YZ-W1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Pme-Yp-x3x" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1817" y="11"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="RF7-fk-8IR">
@@ -291,6 +734,9 @@
                                 <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="9u5-A2-PdU" kind="unwind" unwindAction="unwindSecondView:" id="dD4-b5-bdS"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="rQU-BA-Dkc">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
@@ -323,6 +769,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JPV-6F-py6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="9u5-A2-PdU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-108" y="-774"/>
         </scene>
@@ -612,11 +1059,22 @@
                                 <rect key="frame" x="40" y="153" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpY-6S-bb4">
+                                <rect key="frame" x="20" y="15" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sRD-a4-lwz" kind="unwind" unwindAction="unwindSecondView:" id="tv6-Vi-1se"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VSG-LM-91e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="sRD-a4-lwz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1602" y="-774"/>
         </scene>
@@ -636,6 +1094,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mz-Qx-zSa">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="e2L-8h-zKY" kind="unwind" unwindAction="unwindSecondView:" id="wdI-jP-wlf"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="gng-If-PGr">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -670,6 +1138,7 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LfA-g1-XsC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="e2L-8h-zKY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1950" y="-774"/>
         </scene>
@@ -689,6 +1158,16 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3n-By-Vtg">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="K6B-Wk-tea" kind="unwind" unwindAction="unwindSektionerPage2:" id="zyr-6V-dSU"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="fR9-Ny-CSZ">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -720,6 +1199,7 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3UG-uw-yDU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="K6B-Wk-tea" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2294" y="-774"/>
         </scene>
@@ -739,6 +1219,16 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PF4-H9-HYL">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jTe-fi-Fkw" kind="unwind" unwindAction="unwindSektionerPage2:" id="nOU-zx-EXM"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="cK9-v7-hKD">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -770,6 +1260,7 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VUl-MK-FLD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="jTe-fi-Fkw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-441" y="-1454"/>
         </scene>
@@ -789,6 +1280,16 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmv-IN-rcl">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9N8-dl-ooV" kind="unwind" unwindAction="unwindSektionerPage2:" id="f9C-zl-jg2"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="TR7-Pj-hYQ">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -820,6 +1321,7 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQd-fa-faO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="9N8-dl-ooV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-89" y="-1454"/>
         </scene>
@@ -839,6 +1341,16 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btd-uq-XZK">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tz6-n2-MCL" kind="unwind" unwindAction="unwindSektionerPage2:" id="6Kg-tp-1bN"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="j9A-sa-JqE">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -870,6 +1382,7 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sd2-FK-csU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tz6-n2-MCL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="251" y="-1454"/>
         </scene>
@@ -889,6 +1402,16 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Miy-cl-Zmj">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="v0j-yy-Xdv" kind="unwind" unwindAction="unwindSektionerPage2:" id="PQE-dD-p8x"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="us5-xG-VrG">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -920,6 +1443,7 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Z8-ra-VJA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="v0j-yy-Xdv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="585" y="-1454"/>
         </scene>
@@ -939,6 +1463,16 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXW-FL-1O6">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GAK-B4-HPr" kind="unwind" unwindAction="unwindSektionerPage2:" id="xPX-05-nZW"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="GYm-dj-15Y">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -970,6 +1504,7 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eL-hO-nyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GAK-B4-HPr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="923" y="-1454"/>
         </scene>
@@ -989,6 +1524,16 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSN-6l-bE3">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="B7i-jj-JCS" kind="unwind" unwindAction="unwindSektionerPage2:" id="gxG-JE-PER"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="zo4-dK-CG1">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1020,6 +1565,7 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JZ6-TQ-0cY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="B7i-jj-JCS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1265" y="-1454"/>
         </scene>
@@ -1039,6 +1585,16 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eax-Z0-g65">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XpD-vY-FoB" kind="unwind" unwindAction="unwindSektionerPage2:" id="mmG-6H-VOQ"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xi0-ZP-dZZ">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1070,6 +1626,7 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEc-Xg-t7H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XpD-vY-FoB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1608" y="-1454"/>
         </scene>
@@ -1089,6 +1646,16 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3C-LJ-PDQ">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cyN-Y8-HFE" kind="unwind" unwindAction="unwindSektionerPage3:" id="fSv-sE-sXs"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="r5g-Cd-pU8">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1120,6 +1687,7 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ah2-ow-Vag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="cyN-Y8-HFE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1950" y="-1454"/>
         </scene>
@@ -1139,6 +1707,16 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjD-By-5Jh">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fPg-Cd-Ddo" kind="unwind" unwindAction="unwindSektionerPage3:" id="dXM-dj-zLd"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jlo-MJ-BEo">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1170,6 +1748,7 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zDF-df-xMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fPg-Cd-Ddo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2294" y="-1454"/>
         </scene>
@@ -1189,6 +1768,16 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zK0-LO-ITw">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hRD-Ta-Q52" kind="unwind" unwindAction="unwindSektionerPage3:" id="fys-ta-QD6"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="eS0-kj-8rZ">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1220,6 +1809,7 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJY-V8-ARI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hRD-Ta-Q52" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-435" y="-2112"/>
         </scene>
@@ -1239,6 +1829,16 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTt-AI-sc2">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1JM-b3-0Dk" kind="unwind" unwindAction="unwindSektionerPage3:" id="FfZ-CV-4oW"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="8n8-Jb-DH8">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1270,6 +1870,7 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnU-03-skC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="1JM-b3-0Dk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-89" y="-2112"/>
         </scene>
@@ -1289,6 +1890,16 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmp-0h-v5B">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zlM-7K-kYu" kind="unwind" unwindAction="unwindSektionerPage3:" id="3em-nD-0wr"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cd2-ZJ-DQA">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1320,6 +1931,7 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JHp-QI-5ky" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zlM-7K-kYu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="251" y="-2112"/>
         </scene>
@@ -1339,6 +1951,16 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYr-Jv-kby">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HJn-ZL-KBJ" kind="unwind" unwindAction="unwindSektionerPage3:" id="Jgo-J5-USd"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="WKu-xZ-dok">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1370,6 +1992,7 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RbR-FW-hma" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="HJn-ZL-KBJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="593" y="-2112"/>
         </scene>
@@ -1389,6 +2012,16 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFk-21-6rJ">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Jo5-wc-qEI" kind="unwind" unwindAction="unwindSektionerPage3:" id="jGp-Gi-52v"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="SnT-LD-thn">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1421,6 +2054,7 @@ Utöver det sköter vi kontakten med Räddningstjänsten, Polis, Lunds kommun oc
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OC3-Xf-sSM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Jo5-wc-qEI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="929" y="-2112"/>
         </scene>
@@ -1440,6 +2074,16 @@ Utöver det sköter vi kontakten med Räddningstjänsten, Polis, Lunds kommun oc
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtd-Mt-igF">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dKD-H5-CZg" kind="unwind" unwindAction="unwindSektionerPage3:" id="EK4-rY-ZWY"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yg1-5A-WMw">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1471,6 +2115,7 @@ Utöver det sköter vi kontakten med Räddningstjänsten, Polis, Lunds kommun oc
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aac-GT-C70" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="dKD-H5-CZg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1265" y="-2112"/>
         </scene>
@@ -1490,6 +2135,16 @@ Utöver det sköter vi kontakten med Räddningstjänsten, Polis, Lunds kommun oc
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUA-hm-aXz">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YPJ-f1-Jpn" kind="unwind" unwindAction="unwindSektionerPage4:" id="UbK-de-mJQ"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Gf-fZ-Wty">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1521,6 +2176,7 @@ Utöver det sköter vi kontakten med Räddningstjänsten, Polis, Lunds kommun oc
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H5F-gn-96k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="YPJ-f1-Jpn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1602" y="-2112"/>
         </scene>
@@ -1540,6 +2196,16 @@ Utöver det sköter vi kontakten med Räddningstjänsten, Polis, Lunds kommun oc
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGR-D6-m5p">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zC9-0Q-k9e" kind="unwind" unwindAction="unwindSektionerPage4:" id="fEe-0L-97Z"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="XJO-11-ir9">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1571,6 +2237,7 @@ Utöver det sköter vi kontakten med Räddningstjänsten, Polis, Lunds kommun oc
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQh-lj-6SO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zC9-0Q-k9e" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1950" y="-2112"/>
         </scene>
@@ -1590,6 +2257,16 @@ Utöver det sköter vi kontakten med Räddningstjänsten, Polis, Lunds kommun oc
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5q-8P-jaE">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UHj-fH-9iP" kind="unwind" unwindAction="unwindSektionerPage4:" id="dF0-FK-JD2"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="Aho-kg-RXp">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1621,6 +2298,7 @@ Utöver det sköter vi kontakten med Räddningstjänsten, Polis, Lunds kommun oc
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JiO-YL-Ud7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="UHj-fH-9iP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2294" y="-2112"/>
         </scene>
@@ -1640,6 +2318,16 @@ Utöver det sköter vi kontakten med Räddningstjänsten, Polis, Lunds kommun oc
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40l-fd-sNM">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8wI-oW-568" kind="unwind" unwindAction="unwindSektionerPage4:" id="a08-vu-7OS"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="T36-BD-JAc">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1671,6 +2359,7 @@ Utöver det sköter vi kontakten med Räddningstjänsten, Polis, Lunds kommun oc
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2b-ff-Hiv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8wI-oW-568" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-435" y="-2776"/>
         </scene>
@@ -1690,6 +2379,16 @@ Utöver det sköter vi kontakten med Räddningstjänsten, Polis, Lunds kommun oc
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNc-4b-x42">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5DC-yO-uak" kind="unwind" unwindAction="unwindSektionerPage4:" id="KHj-1j-gGb"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="sQX-QA-FLk">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1723,6 +2422,7 @@ Lite mindre kort sagt: Tåget kulminerar med två avgångar under lördagen och 
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MsZ-gS-IvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5DC-yO-uak" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-89" y="-2776"/>
         </scene>
@@ -1742,6 +2442,16 @@ Lite mindre kort sagt: Tåget kulminerar med två avgångar under lördagen och 
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAi-Jb-jgt">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Mb7-dG-M3U" kind="unwind" unwindAction="unwindSektionerPage4:" id="DyL-yT-TIf"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="f3l-Rk-Fv1">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1773,6 +2483,7 @@ Lite mindre kort sagt: Tåget kulminerar med två avgångar under lördagen och 
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yV-dU-cZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Mb7-dG-M3U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="251" y="-2776"/>
         </scene>
@@ -1792,6 +2503,16 @@ Lite mindre kort sagt: Tåget kulminerar med två avgångar under lördagen och 
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7G-oP-Ecy">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Fhf-Dc-QIG" kind="unwind" unwindAction="unwindSektionerPage4:" id="Dj2-W5-v1l"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="IUW-Vq-S3i">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1823,13 +2544,14 @@ Lite mindre kort sagt: Tåget kulminerar med två avgångar under lördagen och 
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhh-Gp-P0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Fhf-Dc-QIG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="593" y="-2776"/>
         </scene>
-        <!--View Controller - Tombolan-->
+        <!--View Controller - Vieriet-->
         <scene sceneID="Suw-oD-LCJ">
             <objects>
-                <viewController storyboardIdentifier="Vieriet" title="Tombolan" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eDJ-9F-FgR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Vieriet" title="Vieriet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eDJ-9F-FgR" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xoz-G0-b7x"/>
                         <viewControllerLayoutGuide type="bottom" id="5jH-MU-qgt"/>
@@ -1842,6 +2564,16 @@ Lite mindre kort sagt: Tåget kulminerar med två avgångar under lördagen och 
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cM-t6-WiJ">
+                                <rect key="frame" x="10" y="10" width="52" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Sektioner3NavigationBack1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="y38-d5-11h" kind="unwind" unwindAction="unwindSektionerPage4:" id="2eg-Da-Oj3"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="zeP-FR-GXL">
                                 <rect key="frame" x="40" y="152" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1873,6 +2605,7 @@ Lite mindre kort sagt: Tåget kulminerar med två avgångar under lördagen och 
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zbz-qu-zrH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="y38-d5-11h" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="929" y="-2776"/>
         </scene>
