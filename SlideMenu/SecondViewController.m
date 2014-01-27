@@ -9,6 +9,7 @@
 #import "SecondViewController.h"
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
+#import "SektionerPage2ViewController.h"
 
 @interface SecondViewController ()
 
@@ -33,7 +34,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+    
+    //Swipe höger
+	UISwipeGestureRecognizer  *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handlerightSwipe:)];
+    swipeRight.numberOfTouchesRequired = 1;//give required num of touches here ..
+    swipeRight.delegate = (id)self;
+    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeRight];
     
     // Do any additional setup after loading the view.
     
@@ -70,5 +77,8 @@
 {
     [self.slidingViewController anchorTopViewTo:ECRight];
 }
+
+
+
 
 @end
