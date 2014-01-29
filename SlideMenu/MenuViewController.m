@@ -31,6 +31,9 @@
 
 - (void)viewDidLoad
 {
+    
+    
+    
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.
@@ -39,13 +42,20 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    
+
+    
     self.menu = [NSArray arrayWithObjects:@"Start", @"Sektioner", nil];
     
     
     [self.slidingViewController setAnchorRightRevealAmount:200.0f];
     self.slidingViewController.underLeftWidthLayout = ECFullWidth;
     
-    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"MenuBackground.png"]];
+    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"MenuBackground1.png"]];
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -80,6 +90,12 @@
     
     cell.textLabel.text = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row]];
     cell.imageView.image = [UIImage imageNamed:@"MenuRowIcon.jpg"];
+    cell.textLabel.textColor = [UIColor whiteColor];
+    
+    
+    [cell setBackgroundColor:[UIColor clearColor]];
+    
+     
 
     
     return cell;
