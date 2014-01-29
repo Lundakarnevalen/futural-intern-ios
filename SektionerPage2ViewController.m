@@ -1,19 +1,22 @@
 //
-//  InitViewController.m
-//  SlideMenu
+//  SektionerPage2ViewController.m
+//  Karnevalist2014
 //
-//  Created by Kyle Begeman on 1/13/13.
-//  Copyright (c) 2013 Indee Box LLC. All rights reserved.
+//  Created by Lisa Ellerstedt on 2014-01-26.
+//  Copyright (c) 2014 Indee Box LLC. All rights reserved.
 //
 
-#import "InitViewController.h"
+#import "SektionerPage2ViewController.h"
 
-@interface InitViewController ()
+@interface SektionerPage2ViewController ()
 
 @end
 
-@implementation InitViewController
+@implementation SektionerPage2ViewController
 
+- (IBAction)unwindSektionerPage2:(UIStoryboardSegue *)segue
+{
+}
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -26,10 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    
-    self.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Start"];
-    
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning

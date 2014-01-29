@@ -9,12 +9,17 @@
 #import "SecondViewController.h"
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
+#import "SektionerPage2ViewController.h"
 
 @interface SecondViewController ()
 
 @end
 
 @implementation SecondViewController
+- (IBAction)unwindSecondView:(UIStoryboardSegue *)segue
+{
+    
+}
 @synthesize menuBtn;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -29,7 +34,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    //Swipe höger
+	UISwipeGestureRecognizer  *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handlerightSwipe:)];
+    swipeRight.numberOfTouchesRequired = 1;//give required num of touches here ..
+    swipeRight.delegate = (id)self;
+    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeRight];
+    
+    // Do any additional setup after loading the view.
     
     self.view.layer.shadowOpacity = 0.75f;
     self.view.layer.shadowRadius = 10.0f;
@@ -64,5 +77,8 @@
 {
     [self.slidingViewController anchorTopViewTo:ECRight];
 }
+
+
+
 
 @end

@@ -1,18 +1,18 @@
 //
-//  InitViewController.m
-//  SlideMenu
+//  ViewControllerWebView.m
+//  Karnevalist2014
 //
-//  Created by Kyle Begeman on 1/13/13.
-//  Copyright (c) 2013 Indee Box LLC. All rights reserved.
+//  Created by contributeshopping on 2014-01-29.
+//  Copyright (c) 2014 Indee Box LLC. All rights reserved.
 //
 
-#import "InitViewController.h"
+#import "ViewControllerWebView.h"
 
-@interface InitViewController ()
+@interface ViewControllerWebView ()
 
 @end
 
-@implementation InitViewController
+@implementation ViewControllerWebView
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,7 +28,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    self.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Start"];
+    NSURL *myWeview = [NSURL URLWithString:@"http://www.google.se"];
+    
+    NSURLRequest *myrequest = [NSURLRequest requestWithURL:myWeview];
+    
+    [myWebView loadRequest:myrequest];
+
     
 }
 

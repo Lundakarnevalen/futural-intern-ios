@@ -10,6 +10,12 @@
 
 @interface MainViewController : UIViewController
 
+{
+    
+    IBOutlet UIWebView *myurl;
+}
+
+
 @property (strong, nonatomic) UIButton *menuBtn;
 
 @end
