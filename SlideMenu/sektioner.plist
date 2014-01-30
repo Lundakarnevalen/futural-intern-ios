@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>Richard</string>
+	<key>sektioner</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Barnevalen</string>
+			<key>answer1</key>
+			<string>Barnevalen är den delen av karnevalen som riktar sig till barn i alla åldrar! Det är det största av de stora nöjena och har, i skillnad från de flesta andra, ett helt område! Förutom en föreställning kommer det även finnas små tält och bodar där barnen får delta i aktiviteter och hyss! Man ska ha riktigt kul när man går runt på barnevalsområdet oavsett hur gammal man är och det bygger givetvis på en härlig glädje och gemenskap mellan de som är engagerade!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Biljetteriet</string>
+			<key>answer1</key>
+			<string>Biljetteriets primära uppgift är att sälja biljetter till karnevalsområdet, dansen, tältnöjena, tombolan och inte minst till alla de 7 stora nöjena. Innan dess ska vi dessutom sälja biljetter till Karneveljen och andra liknande “förfester” samt ta hand om gynnarna (de som gynnar Lundakarnevalen genom att lämna garantier) genom att de får förköpa biljetter. Biljetterna säljs först genom internt och externt biljettsläpp och sedan på webben och i bodar runt om i Lund.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Blädderiet</string>
+			<key>answer1</key>
+			<string>Blädderiet är en sektion som jobbar mest med tryckt material. Tillsammans ska vi skapa karnevalstidningen för att marknadsföra karnevalen och vi kommer även att göra programbladet, som kommer att vara den ultimata guiden till karnevalsdagarna i maj! </string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Cirkusen</string>
+			<key>answer1</key>
+			<string>Cirkusen är ett av de stora nöjena och det är precis vad det låter som… en cirkus! Vi kommer att ha ett riktigt cirkustält med manege och hela faderullan. Men det kommer inte vara en vanlig cirkus. Det kommer istället vara en cirkus med karnevalistisk twist som kommer bestå av nummer utav varierande art och kvalité. Ofta brukar dessa driva lite med klassiska cirkusnummer och koncept. Cirkusen är också det äldsta karnevalsnöjet! Klassiskt kul!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Dansen</string>
+			<key>answer1</key>
+			<string>Danssektionen anordnar de stora festerna i AF-borgen på kvällarna under karnevalen. Varje kväll under de tre karnevalsdagarna slår AF-borgen upp sina portar för södra Sveriges största fest. Besökare kommer få se borgen som man aldrig sett den förr.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ekonomi</string>
+			<key>answer1</key>
+			<string>Det är ekonomisektionen uppgift att se till att det här organiserade vansinnet går ihop rent ekonomiskt, inte minst för att framtida(!) generationer fortsatt kan ta del av denna fantastiska galenskap! Ekonomisektionen arbetar därför bland annat som stöttande till karnevalens alla ekonomichefer. Dessutom ansvarar sektionen för all karnevalens sponsring, annonsering i karnevalsmedier, budgetering, karnevalens redovisning, kassor m.m. och inte minst de karnevalscentrala upphandlingar. Sektionen fungerar därför på många sätt som en ryggrad åt övriga sektioner, stabilt!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Fabriken</string>
+			<key>answer1</key>
+			<string>Fabriken har tre huvudsakliga uppgifter, dels att bygga och sy åt andra sektioner och dels agera centralt materiallager för Karnevalen. Andra sektioner i Karnevalen kan antingen lägga beställningar på saker som de vill ha som sedan tillverkas i Fabriken eller lägga en beställning på material de behöver och sedan hämta det från Fabriken.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Festmästeriet</string>
+			<key>answer1</key>
+			<string>Festmästeriet är en mångfacetterad sektion då vi kommer syssla med flera olika delar men gemensamt är att centralt, både organisatoriskt och fysiskt, ansvara för mat och dryck till hela Lundakarnevalen 2014. Mer specifikt är vår sektion uppdelad på tre olika delar vilka är; Karnevalslagret, Vippen och Bamban.
+Lagret huserar i källaren på AF-borgen och kommer pyssla med kontakt med leverantörer, beställningar, logistik och lagerhållning av karnevalens 2000000 burkar Karnevöl, 12 ton mat och otaliga mängder förbrukningsmaterial.
+Vippen är ett mysigt gryt för gamla karnevalsrävar, sponsorer och samarbetspartners. I Festvåningen på AF kommer mat och dryck av hög kvalitét serveras på vita linnedukar med kandelabrar för att visa uppskattning till några av de personerna som gör karnevalen möjlig. Till sin hjälp finns Tegnérs kök och cirka 100 eldsjälar som i dagligt tal kallas karnevalister.
+Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolmatsal i karnevalistisk tappning kommer Källarsalen med tillhörande kök att vara Bambans hemvist där runt 800 portioner per dag ska mätta vakter, poliser och ett gäng sektioners karnevalister.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Filmen</string>
+			<key>answer1</key>
+			<string>Vi ska göra Karnevalsfilmen! En lundensisk långfilm med karnevalistisk snits.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Kabarén</string>
+			<key>answer1</key>
+			<string>Kabarén är ett av Lundakarnevalens stora nöjen och vi ska skapa en fantastisk föreställning som karnevalens besökare kan uppleva under karnevalsdagarna. Detta spektakel med sketcher, sång, dans och gränslös humor kommer att sättas upp i ett stort tält i Lundagård, vilket gör Kabarén till ett nöje som befinner sig mitt i karnevalens hetluft!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Klipperiet</string>
+			<key>answer1</key>
+			<string>Klipperiet är en ny sektion som skall dokumentera och marknadsföra karnevalen i rörlig bild. Det kommer innebära ett kontinuerligt jobb med filmklipp inför, under och efter karnevalistiska händelser samt stort utrymme för kreativa idéer, fantastiska produktioner och härligt häng under våren!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Kommunikation</string>
+			<key>answer1</key>
+			<string>Kommunikationssektionen ansvarar för den interna och externa kommunikationen i Lundakarnevalen. Det innebär att vi ska se till att alla karnevalister får den information de behöver, och att alla besökare vet att de ska komma till Lundakarnevalen! Vi har även hand om mycket av karnevalens administration. Vi kommer bland annat att driva en karnevalsexp, ha hand om en bilpool, skapa appar, sköta hemsida och sociala medier och komma på massa roliga och kreativa marknadsföringsidéer. Men framförallt ska vi ha riktigt skoj!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Krog Fine dine</string>
+			<key>answer1</key>
+			<string>Krog Fine dine kommer att liksom de andra krogarna att förse alla på karnevalen med mat och dryck. Speciellt för Krog Fine dine är att vi kommer hålla till i AF-borgen och se till att behovet av fine dining på karnevalen mättas.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>
