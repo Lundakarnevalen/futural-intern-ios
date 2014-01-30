@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="544" y="-725"/>
         </scene>
-        <!--View Controller Web View-->
+        <!--Web Controller - Registrering-->
         <scene sceneID="uCz-3V-6KP">
             <objects>
-                <viewController storyboardIdentifier="web" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8JJ-2e-rdq" customClass="ViewControllerWebView" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="8JJ-2e-rdq" customClass="webController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gmJ-kb-EKT"/>
                         <viewControllerLayoutGuide type="bottom" id="k8y-zR-Shx"/>
@@ -36,34 +36,28 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyg-7W-O4D">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="573"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="574"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMp-YV-Faa">
-                                <rect key="frame" x="270" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="x">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="kL9-hE-cyL" kind="unwind" unwindAction="unwindMainSecondView:" id="W9y-H7-jNH"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Registrering" id="42O-Kc-xDg">
+                        <barButtonItem key="leftBarButtonItem" image="menuButton.png" id="osK-Rn-hQ5">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="revealMenu:" destination="8JJ-2e-rdq" id="G1I-Da-Yyh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="myWebView" destination="hyg-7W-O4D" id="dc2-xV-9uK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15E-OZ-7eU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="kL9-hE-cyL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1560" y="12"/>
+            <point key="canvasLocation" x="2060" y="12"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="RcO-hb-cwb">
@@ -132,7 +126,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8JJ-2e-rdq" kind="modal" id="oPB-qX-Bcj"/>
+                                    <segue destination="Bl2-Ni-9Hv" kind="modal" id="oPB-qX-Bcj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -272,6 +266,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8l-H6-SWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="659" y="12"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dbY-aY-ihu">
+            <objects>
+                <navigationController storyboardIdentifier="Registrering" automaticallyAdjustsScrollViewInsets="NO" id="Bl2-Ni-9Hv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ghv-jR-G0a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.83921568629999999" green="0.2470588235" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8JJ-2e-rdq" kind="relationship" relationship="rootViewController" id="XUw-bN-gwf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65u-j0-e4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1534" y="12"/>
         </scene>
     </scenes>
     <resources>

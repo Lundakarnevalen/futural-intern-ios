@@ -40,7 +40,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.menu = [NSArray arrayWithObjects:@"Start", @"Sektioner", nil];
+    self.menu = [NSArray arrayWithObjects:@"Start", @"Sektioner",@"Registrering", nil];
     
     [self.slidingViewController setAnchorRightRevealAmount:200.0f];
     self.slidingViewController.underLeftWidthLayout = ECFullWidth;
@@ -71,7 +71,7 @@
 {
     // Return the number of rows in the section.
     //return [self.menu count];
-    return 3;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

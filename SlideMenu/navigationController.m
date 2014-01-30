@@ -11,11 +11,14 @@
 @implementation navigationController
 
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
     
     
     
