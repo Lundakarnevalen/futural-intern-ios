@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-400" y="8"/>
+            <point key="canvasLocation" x="544" y="-725"/>
         </scene>
         <!--View Controller Web View-->
         <scene sceneID="uCz-3V-6KP">
@@ -65,7 +65,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15E-OZ-7eU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="kL9-hE-cyL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-400" y="677"/>
+            <point key="canvasLocation" x="1560" y="12"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="RcO-hb-cwb">
@@ -92,75 +92,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MZ7-nW-KrR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-19" y="14"/>
+            <point key="canvasLocation" x="-519" y="-210"/>
         </scene>
-        <!--Second View Controller-->
-        <scene sceneID="Vza-FM-4YX">
-            <objects>
-                <viewController storyboardIdentifier="Sektioner" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U1F-Pb-p8c" customClass="SecondViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oNH-yz-2bc"/>
-                        <viewControllerLayoutGuide type="bottom" id="fam-oo-f1r"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="e0v-mS-fPb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZBC-E7-v6Y">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="T2x-iW-MPr" appends="YES" id="rJ5-0T-csj"/>
-                                </connections>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sektioner" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Be9-Rh-qxs">
-                                <rect key="frame" x="103" y="20" width="114" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Övergripande information om Sektioner" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="60n-Ur-3WB">
-                                <rect key="frame" x="40" y="149" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" staticText="YES"/>
-                                </accessibility>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UX9-6w-LfA">
-                                <rect key="frame" x="20" y="433" width="280" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                <state key="normal" title="Till Sektioner" backgroundImage="SektionerButtonSmall.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="vSg-et-99l" kind="modal" id="9Jv-Nh-FYM"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.44842944429999998" green="1" blue="0.31173108980000003" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="y6k-HF-Fb9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K6M-1s-FUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="T2x-iW-MPr">
-                    <connections>
-                        <action selector="handlerightSwipe:" destination="U1F-Pb-p8c" id="LOp-HX-aGs"/>
-                    </connections>
-                </swipeGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="711" y="14"/>
-        </scene>
-        <!--Main View Controller-->
+        <!--Main View Controller - Lundakarnevalen-->
         <scene sceneID="RF7-fk-8IR">
             <objects>
-                <viewController storyboardIdentifier="Start" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9al-Vp-Iga" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController id="9al-Vp-Iga" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wAL-iI-yYY"/>
                         <viewControllerLayoutGuide type="bottom" id="57e-CN-u5K"/>
@@ -210,10 +147,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.51873306740000003" blue="0.079971757919999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Lundakarnevalen" id="Iny-is-3al">
+                        <barButtonItem key="leftBarButtonItem" systemItem="play" id="h9n-8B-x0I">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="revealMenu:" destination="9al-Vp-Iga" id="DZn-GU-dj4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEF-b4-RQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="339" y="12"/>
+            <point key="canvasLocation" x="1057" y="12"/>
         </scene>
         <!--Sektioner View Controller - Sektioner-->
         <scene sceneID="eHG-ne-gNw">
@@ -246,22 +191,17 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Sektioner" id="1VO-tf-nFJ">
-                        <barButtonItem key="backBarButtonItem" title="TIllbaka" id="Php-co-77n">
+                        <barButtonItem key="backBarButtonItem" title="TIllbaka" id="Php-co-77n"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="play" id="1hD-iw-9qw">
                             <connections>
-                                <segue destination="5t6-Z0-EbI" kind="unwind" unwindAction="unwindSecondView:" id="MYZ-6p-cCj"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="leftBarButtonItem" title="Tillbaka" id="1hD-iw-9qw">
-                            <connections>
-                                <segue destination="5t6-Z0-EbI" kind="unwind" unwindAction="unwindSecondView:" id="A6Q-cR-h1f"/>
+                                <action selector="revealMenu:" destination="tt1-zn-PIa" id="0hc-iW-LeZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAS-Kl-xou" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="5t6-Z0-EbI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="539" y="677"/>
+            <point key="canvasLocation" x="633" y="677"/>
         </scene>
         <!--Sektioner Detailed View Controller-->
         <scene sceneID="oqx-7s-1RL">
@@ -310,7 +250,7 @@
         <!--Navigation Controller-->
         <scene sceneID="tXw-Ll-nP2">
             <objects>
-                <navigationController storyboardIdentifier="sektioner2" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vSg-et-99l" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Sektioner" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vSg-et-99l" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r4l-LG-wL6">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.90980392156862744" green="0.31372549019607843" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
@@ -321,7 +261,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kas-St-EqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3" y="677"/>
+            <point key="canvasLocation" x="211" y="685"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1id-rQ-Zrg">
+            <objects>
+                <navigationController storyboardIdentifier="Start" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="s4D-UZ-3qI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LuE-xW-kqF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9al-Vp-Iga" kind="relationship" relationship="rootViewController" id="f7D-dT-TCF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8l-H6-SWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="12"/>
         </scene>
     </scenes>
     <resources>

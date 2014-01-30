@@ -95,9 +95,6 @@
     
     [cell setBackgroundColor:[UIColor clearColor]];
     
-     
-
-    
     return cell;
 }
 
