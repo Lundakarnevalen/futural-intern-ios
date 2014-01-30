@@ -89,7 +89,120 @@ Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolma
 		</dict>
 		<dict>
 			<key>name</key>
-			<string></string>
+			<string>Krog l[a]unchingpad</string>
+			<key>answer1</key>
+			<string>Krogens absoluta centrum kommer att ligga kring servering av mat och dryck till karnevalens alla besökare! Till detta kommer en del kringuppgifter såsom ekonomi, säkerhet och vieri. </string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Krog Molnet</string>
+			<key>answer1</key>
+			<string>Krogarna har som sitt största ansvar att se till att ingen besökare behöver gå runt med tom mage och torr strupe, vilket vi gör genom att servera litervis med dryck och en massa god mat. Vi ser även till att erbjuda det bästa hänget på hela området då vi kommer att ha en stor och göttig uteservering bara några steg från fontänen och Stora scenen!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Krog Nangilima</string>
+			<key>answer1</key>
+			<string>Det min krog har i huvudsaklig uppgift är att leverera dryck, mat och en grym feststämning! Kommer bli ett jäkla hålligång.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Krog Undervatten</string>
+			<key>answer1</key>
+			<string>Sektionen är ansvarig för ett av karnevalens stora öl- och mattält. I det ska vi servera en massa härlig mat och dryck och se till att våra gäster får en fantastiskt härligt karnevalistisk upplevelse när magen börjar kurra eller benen känns lite trötta!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Musik</string>
+			<key>answer1</key>
+			<string>Musiksektionen ser till att det alltid strömmar ljuv musik ifrån olika platser på Karnevalsområdet och framförallt ifrån Stora Scenen framför universitetshuset. Vi har hand om alla artister som kommer för att uppträda under dagarna men även scenerna dem uppträder ifrån.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Nöjen</string>
+			<key>answer1</key>
+			<string>Nöjessektionen samordnar karnevalens större scenproduktioner. Det innebär att vi jobbar med alla karnevalens stora Nöjen: Kabarén, Spexet, Showen, Barnevalen, Cirkusen, Filmen och Revyn. Vi kommer också att jobba med de mindre nöjena som kallas Smånöjen!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Område</string>
+			<key>answer1</key>
+			<string>Områdets uppgift är att planera och bygga upp karnevalsområdet med tält, entréer,el, vatten, toaletter, internet och allt annat som krävs för att karnevalen ska fungera. Sektionen är även ansvarig för att dekorera området och med utgång från temat få det att andas karneval.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Radio</string>
+			<key>answer1</key>
+			<string>Karnevalsradion kommer att sända live, via FM och webb och videostream, dygnet runt under karnevalsdagarna. Denna maratonsändning kommer att ske från en glasbur på karnevalsområdet och därifrån fyller vi timmarna med prat, musik, intervjuer och allt vad vi vill! Under våren kommer vi även att sända ett program i veckan på Radio AF där vi taggar inför karneval!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Revy</string>
+			<key>answer1</key>
+			<string>Vi i Revyn ska sätta upp en humoristiskt, sketch-baserad 45-minuters föreställning som ska visas löpande i Universitetsaulan under karnevalsdagarna. Detta spektakel ska förberedas under cirka fyra veckor.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Säkerhet</string>
+			<key>answer1</key>
+			<string>Vi i Säkerhetssektionen kommer att jobba främst förebyggande med branddokumentation, sjukvård, folkflöden, jourgrupper som hjälper till att släcka bränder i mer bildlig bemärkelse och radiosamband för hela karnevalen.
+Utöver det sköter vi kontakten med Räddningstjänsten, Polis, Lunds kommun och Universitet och andra företag i samtliga säkerhetsfrågor som berör Lundakarnevalens arbete.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Shoppen</string>
+			<key>answer1</key>
+			<string>Vi ska för det första ha kul, lära känna varandra och leka massor, det är för oss det viktigaste. För det andra så är det vår uppgift att ta fram, producera och sälja en mängd fantastiska ting att ta med sig hem från karnevalen 2014. Allt från onödiga manicker till praktiska manicker, till fina Karnevalskläder. Allt med sin egen prägel från Futuralkarnevalen 2014, för att både karnevalister och besökare ska kunna få med sig ett värdefullt minne hem. Vi har även hand om årets karnevalsspel.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Show</string>
+			<key>answer1</key>
+			<string>Vi ska göra världens bästa karnevalsshow! Showen är en av 6 stora nöjesföreställningar i karnevalen, och kommer att spelas i Tegnérs Matsalar. Med charm, god mat och musikalisk finess ska vi bjuda publiken på en föreställning utöver det vanliga – och ha en underbar vår tillsammans på vägen! Oförglömligt för alla!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Smånöjen</string>
+			<key>answer1</key>
+			<string>På karnevalsområdet kommer det att finnas tre stycken Smånöjen som ligger under Nöjessektionen. Smånöjenas uppgift är att skapa knasiga, härliga, tankeväckande och underhållande föreställningar på 30 minuter i tält som rymmer en publik på cirka 100 personer.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Snaxeriet</string>
+			<key>answer1</key>
+			<string>Snaxeriet är en av Lundakarnevalens yngsta (och roligaste) sektioner! Syftet är att tillfredsställa karnevalsbesökarnas sug genom att sälja snacks, dryck och annan lättare förtäring. Visionen är inte bara att tillgodose tilltugg till besökarna, utan även att ses som ett karnevalistiskt inslag med humoristiska produkter, förpackningar och försäljningsmetoder. Snaxeriet kommer att inte bara att finnas tillgängliga i försäljningsbodar på området, utan även genom kringgående försäljning och som tågvagn i tåget. Under våren kommer även en del karnevalssnacks att börja säljas runt om i Lund.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Spexet</string>
+			<key>answer1</key>
+			<string>Vår sektion ska producera ett av de sju stora nöjena, närmare bestämt det anrika Karnevalsspexet. Under några intensiva veckor i april-maj ska vi tillsammans skapa ett spex i AF-borgens Stora Sal samtidigt som vi ska få många nya vänner och minnen för livet. Under karnevalshelgen i maj ska vi sammanlagt ge ca 20 föreställningar á 45 minuter under tre dagar. Nyhet för i år är att det är blandad ensemble på scen.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tåget</string>
+			<key>answer1</key>
+			<string>Kort sagt: Tåget har som huvuduppgift att under två tillfällen sprida glädje och karnevalsanda genom Lunds gator och torg. 
+
+Lite mindre kort sagt: Tåget kulminerar med två avgångar under lördagen och söndagen under karnevalsdagarna. Turen som går genom centrala Lund består av cirka 1000 karnevalister som bjuder de hundratusentals åskådarna på humoristiska och galna upptåg de har i de olika vagnarna, mellanekipagen och orkestrarna.  Men vägen till avfärd består av en vår av planering och fix. Det är främst månaden innan avfärd då tågområdet invigs som verksamheten drar igång när alla samlas för att bygga och sy upp sina ekipage.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tältnöje</string>
+			<key>answer1</key>
+			<string>Tältnöjessektionen har som uppgift att planera, samordna och genomföra de 20-tal tält av olika typer och storlekar som fyller Karnevalsområdet. I tälten kommer det att finnas små shower, suspekta upplevelser, sång, skratt och slövitsande.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tombolan</string>
+			<key>answer1</key>
+			<string>Tombolan sprider karnevalsglädje genom de spel och tävlingar som kommer att finnas på området. Vi skapar de mest fantastiska och knäppa spelbodar som Liseberg aldrig sett genom musik, lampor, satir och futurism.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Vieriet</string>
+			<key>New item</key>
+			<string>Vieriet är karnevalens sprakande komet av gemenskap, pepp och vi-känsla, som kommer att lysa klart under hela våren! Vi är de som får varenda karnevalist i varenda sektion att gå och lägga sig med ett leende på läpparna. Vi är de som ser till att du står med femtusen nya vänner i slutet av maj. Vi är de som ser till att det blir Upprop, Karnevelj, Karnebal, Strandfest och mycket annat, där alla karnevalister kan förenas och smitta varandra med sin glädje och sitt engagemang. Om Karnevalshelgen är målet ser vi till att hela upploppet kantas av guld och gröna skogar.</string>
 		</dict>
 	</array>
 </dict>
