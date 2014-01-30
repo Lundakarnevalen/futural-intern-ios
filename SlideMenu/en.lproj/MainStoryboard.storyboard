@@ -189,8 +189,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Sektioner" id="1VO-tf-nFJ">
-                        <barButtonItem key="backBarButtonItem" title="TIllbaka" id="Php-co-77n"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="play" id="1hD-iw-9qw">
+                        <barButtonItem key="leftBarButtonItem" title="Tillbaka" id="1hD-iw-9qw">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="revealMenu:" destination="tt1-zn-PIa" id="0hc-iW-LeZ"/>
                             </connections>
