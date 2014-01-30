@@ -1,18 +1,18 @@
 //
-//  ViewControllerWebView.m
+//  ViewControllerEasterEgg.m
 //  Karnevalist2014
 //
-//  Created by contributeshopping on 2014-01-29.
+//  Created by Richard Luong on 2014-01-30.
 //  Copyright (c) 2014 Indee Box LLC. All rights reserved.
 //
 
-#import "ViewControllerWebView.h"
+#import "ViewControllerEasterEgg.h"
 
-@interface ViewControllerWebView ()
+@interface ViewControllerEasterEgg ()
 
 @end
 
-@implementation ViewControllerWebView
+@implementation ViewControllerEasterEgg
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,13 +28,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    NSURL *myWeview = [NSURL URLWithString:@"http://www.karnevalist.se/karnevalister/step1"];
+    NSURL *myWeview = [NSURL URLWithString:@"http://www.youtube.com/embed/oHg5SJYRHA0"];
     
     NSURLRequest *myrequest = [NSURLRequest requestWithURL:myWeview];
     
     [myWebView loadRequest:myrequest];
-
-    
 }
 
 - (void)didReceiveMemoryWarning
