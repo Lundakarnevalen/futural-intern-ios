@@ -31,7 +31,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    NSURL *myWeview = [NSURL URLWithString:@"http://www.google.se"];
+    NSURL *myWeview = [NSURL URLWithString:@"http://www.karnevalist.se/karnevalister/step1"];
     
     NSURLRequest *myrequest = [NSURLRequest requestWithURL:myWeview];
     
