@@ -10,6 +10,9 @@
 #import "RLSektioner.h"
 #import "RLSektionerDetailedViewController.h"
 
+#import "ECSlidingViewController.h"
+#import "MenuViewController.h"
+
 @interface RLSektionerViewController ()
 
 @property NSMutableArray *sektioner;
@@ -17,6 +20,8 @@
 @end
 
 @implementation RLSektionerViewController
+
+- (IBAction)unwindSecondView:(UIStoryboardSegue *)segue { }
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -100,6 +105,11 @@
         controller.sektion = [self.sektioner objectAtIndex:indexPath.row];
         NSLog(@"%@", [self.sektioner objectAtIndex:indexPath.row]);
     }
+}
+
+- (IBAction)revealMenu:(id)sender
+{
+    [self.slidingViewController anchorTopViewTo:ECRight];
 }
 
 /*

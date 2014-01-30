@@ -267,7 +267,7 @@
 				ORGANIZATIONNAME = "Indee Box LLC";
 				TargetAttributes = {
 					27D71D5D16A349AD00021245 = {
-						DevelopmentTeam = YSKSAFCAGC;
+						DevelopmentTeam = QJ6A8ZCM48;
 					};
 				};
 			};
