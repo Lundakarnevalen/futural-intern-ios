@@ -51,7 +51,12 @@
     [self.slidingViewController setAnchorRightRevealAmount:200.0f];
     self.slidingViewController.underLeftWidthLayout = ECFullWidth;
     
-    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"MenuBackground1.png"]];
+    CGFloat nRed=43.0/255.0;
+    CGFloat nBlue=40.0/255.0;
+    CGFloat nGreen=42.0/255.0;
+    
+    self.tableView.backgroundColor = [[UIColor alloc]initWithRed:nRed green:nGreen blue:nBlue alpha:1];
+    
     
     
     
