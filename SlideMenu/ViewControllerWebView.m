@@ -7,12 +7,18 @@
 //
 
 #import "ViewControllerWebView.h"
+#import "ECSlidingViewController.h"
 
 @interface ViewControllerWebView ()
 
 @end
 
 @implementation ViewControllerWebView
+
+- (IBAction)revealMenu:(id)sender
+{
+    [self.slidingViewController anchorTopViewTo:ECRight];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,5 +48,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end
