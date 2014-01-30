@@ -104,16 +104,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="NOf-Fv-3Nc">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="582"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="DlM-AX-Sru">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="DlM-AX-Sru">
                                 <rect key="frame" x="83" y="150" width="159" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartNavigationText.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pnr-II-lrR">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dags att registrera sig" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVf-rX-JLk">
@@ -133,8 +125,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjz-Ae-RkT">
                                 <rect key="frame" x="20" y="433" width="280" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cyan="0.0" magenta="0.75" yellow="0.75" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                <state key="normal" title="Registera mig!" backgroundImage="SektionerButtonSmall.png">
+                                <state key="normal" title="Registera mig!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -143,11 +136,11 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.51873306740000003" blue="0.079971757919999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" cyan="0.0" magenta="0.45000000000000001" yellow="0.32000000000000001" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="Lundakarnevalen" id="Iny-is-3al">
-                        <barButtonItem key="leftBarButtonItem" systemItem="play" id="h9n-8B-x0I">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="leftBarButtonItem" image="menuButton.png" id="h9n-8B-x0I">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="revealMenu:" destination="9al-Vp-Iga" id="DZn-GU-dj4"/>
                             </connections>
@@ -189,7 +182,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Sektioner" id="1VO-tf-nFJ">
-                        <barButtonItem key="leftBarButtonItem" title="Tillbaka" id="1hD-iw-9qw">
+                        <barButtonItem key="leftBarButtonItem" image="menuButton.png" id="1hD-iw-9qw">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="revealMenu:" destination="tt1-zn-PIa" id="0hc-iW-LeZ"/>
@@ -214,7 +207,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqx-EH-Tnf">
-                                <rect key="frame" x="20" y="75" width="280" height="38"/>
+                                <rect key="frame" x="20" y="85" width="280" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -228,8 +221,8 @@
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ezj-44-3rs">
-                                <rect key="frame" x="67" y="130" width="187" height="114"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy_robot.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ezj-44-3rs">
+                                <rect key="frame" x="67" y="135" width="187" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -251,7 +244,7 @@
                 <navigationController storyboardIdentifier="Sektioner" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vSg-et-99l" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r4l-LG-wL6">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.90980392156862744" green="0.31372549019607843" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" cyan="0.0" magenta="0.75" yellow="0.75" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="tt1-zn-PIa" kind="relationship" relationship="rootViewController" id="6XL-Jv-Hsb"/>
@@ -282,10 +275,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SektionerButtonSmall.png" width="531" height="100"/>
-        <image name="StartBackground.png" width="640" height="1136"/>
-        <image name="StartNavigationText.png" width="640" height="1136"/>
         <image name="happy_robot.png" width="300" height="224"/>
+        <image name="menuButton.png" width="34" height="24"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

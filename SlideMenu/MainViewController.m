@@ -44,20 +44,13 @@
     self.view.layer.shadowRadius = 10.0f;
     self.view.layer.shadowColor = [UIColor blackColor].CGColor;
     
-
-    
-    
-    
-    
-    
     if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
         self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
     }
     
-    
     [self.view addGestureRecognizer:self.slidingViewController.panGesture];
     
-//    
+//
 //    self.menuBtn = [UIButton buttonWithType:UIButtonTypeCustom];
 //    menuBtn.frame = CGRectMake(8, 10, 34, 24);
 //    [menuBtn setBackgroundImage:[UIImage imageNamed:@"menuButton.png"] forState:UIControlStateNormal];
