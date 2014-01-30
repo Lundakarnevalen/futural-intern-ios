@@ -73,12 +73,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Registrering" id="42O-Kc-xDg">
+                        <barButtonItem key="leftBarButtonItem" image="menuButton.png" id="osK-Rn-hQ5">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="revealMenu:" destination="8JJ-2e-rdq" id="G1I-Da-Yyh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="myWebView" destination="hyg-7W-O4D" id="dc2-xV-9uK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15E-OZ-7eU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="kL9-hE-cyL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1460" y="12"/>
         </scene>
@@ -293,6 +300,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8l-H6-SWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="659" y="12"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dbY-aY-ihu">
+            <objects>
+                <navigationController storyboardIdentifier="Registrering" automaticallyAdjustsScrollViewInsets="NO" id="Bl2-Ni-9Hv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ghv-jR-G0a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.83921568629999999" green="0.2470588235" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8JJ-2e-rdq" kind="relationship" relationship="rootViewController" id="XUw-bN-gwf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65u-j0-e4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1534" y="12"/>
         </scene>
     </scenes>
     <resources>

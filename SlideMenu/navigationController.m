@@ -11,6 +11,8 @@
 @implementation navigationController
 
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -19,6 +21,7 @@
     
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"Nav_bar.png"] forBarMetrics:UIBarMetricsDefault];
 
+    
     
 }
 
