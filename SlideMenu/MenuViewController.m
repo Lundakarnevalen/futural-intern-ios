@@ -31,9 +31,7 @@
 
 - (void)viewDidLoad
 {
-    
-    
-    
+
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.
@@ -42,11 +40,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    
-
-    
     self.menu = [NSArray arrayWithObjects:@"Start", @"Sektioner", nil];
-    
     
     [self.slidingViewController setAnchorRightRevealAmount:200.0f];
     self.slidingViewController.underLeftWidthLayout = ECFullWidth;
@@ -56,10 +50,6 @@
     CGFloat nGreen=42.0/255.0;
     
     self.tableView.backgroundColor = [[UIColor alloc]initWithRed:nRed green:nGreen blue:nBlue alpha:1];
-    
-    
-    
-    
     
 }
 
@@ -80,7 +70,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.menu count];
+    //return [self.menu count];
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -93,11 +84,13 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
     
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row]];
-    cell.imageView.image = [UIImage imageNamed:@"MenuRowIcon.jpg"];
-    cell.textLabel.textColor = [UIColor whiteColor];
-    
+    if (indexPath.row == 0) {
+        
+    } else {
+        cell.textLabel.text = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row-1]];
+        cell.imageView.image = [UIImage imageNamed:@"MenuRowIcon.jpg"];
+        cell.textLabel.textColor = [UIColor whiteColor];
+    }
     
     [cell setBackgroundColor:[UIColor clearColor]];
     
@@ -155,7 +148,7 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
     
-    NSString *identifier = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row]];
+    NSString *identifier = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row-1]];
     
     UIViewController *newTopViewController = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
     
