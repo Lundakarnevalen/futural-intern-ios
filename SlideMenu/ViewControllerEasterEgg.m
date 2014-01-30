@@ -28,7 +28,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    NSURL *myWeview = [NSURL URLWithString:@"http://www.youtube.com/embed/oHg5SJYRHA0"];
+    NSURL *myWeview = [NSURL URLWithString:@"http://www.youtube.com/embed/oHg5SJYRHA0?autoplay=1"];
     
     NSURLRequest *myrequest = [NSURLRequest requestWithURL:myWeview];
     

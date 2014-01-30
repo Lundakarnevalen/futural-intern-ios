@@ -42,12 +42,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4a-Aw-lXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1460" y="-678"/>
+            <point key="canvasLocation" x="1460" y="12"/>
         </scene>
         <!--View Controller Web View - Registrering-->
         <scene sceneID="uCz-3V-6KP">
             <objects>
-                <viewController storyboardIdentifier="web" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8JJ-2e-rdq" customClass="ViewControllerWebView" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="8JJ-2e-rdq" customClass="ViewControllerWebView" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2s9-p5-kJj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -57,16 +57,6 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XMp-YV-Faa">
-                                <rect key="frame" x="270" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="x">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -84,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15E-OZ-7eU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1558" y="677"/>
+            <point key="canvasLocation" x="1149" y="1383"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="RcO-hb-cwb">
@@ -301,7 +291,7 @@
         <!--Navigation Controller-->
         <scene sceneID="dbY-aY-ihu">
             <objects>
-                <navigationController storyboardIdentifier="Registrering" automaticallyAdjustsScrollViewInsets="NO" id="Bl2-Ni-9Hv" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Meddelanden" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bl2-Ni-9Hv" customClass="navigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ghv-jR-G0a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -310,12 +300,63 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="8JJ-2e-rdq" kind="relationship" relationship="rootViewController" id="XUw-bN-gwf"/>
+                        <segue destination="nel-PX-QRZ" kind="relationship" relationship="rootViewController" id="pYT-A7-Ln1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="65u-j0-e4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1534" y="12"/>
+            <point key="canvasLocation" x="656" y="2112"/>
+        </scene>
+        <!--View Controller Meddelanden - Meddelanden-->
+        <scene sceneID="Vqs-CB-iB6">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="nel-PX-QRZ" customClass="ViewControllerMeddelanden" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LZ5-qj-xS8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="htb-OH-mn6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Meddelanden" id="Km3-Sf-sGB">
+                        <barButtonItem key="leftBarButtonItem" image="menuButton.png" id="vZ8-u9-ynw">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="revealMenu:" destination="nel-PX-QRZ" id="1Oh-OX-WYx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myWebView" destination="htb-OH-mn6" id="owW-uv-sEz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="45D-lQ-yn5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="2112"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bzs-6K-VhN">
+            <objects>
+                <navigationController storyboardIdentifier="Registrering" automaticallyAdjustsScrollViewInsets="NO" id="YkJ-cb-UlX" customClass="navigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aLG-rz-JCc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.83921568629999999" green="0.2470588235" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8JJ-2e-rdq" kind="relationship" relationship="rootViewController" id="2mt-lj-BJB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTB-Gu-EJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="656" y="1392"/>
         </scene>
     </scenes>
     <resources>
@@ -331,6 +372,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="oPB-qX-Bcj"/>
+        <segue reference="2mt-lj-BJB"/>
     </inferredMetricsTieBreakers>
 </document>

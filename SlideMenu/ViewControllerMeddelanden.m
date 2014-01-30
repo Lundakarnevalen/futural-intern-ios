@@ -1,22 +1,20 @@
 //
-//  MainViewController.m
-//  SlideMenu
+//  ViewControllerMeddelanden.m
+//  Karnevalist2014
 //
-//  Created by Kyle Begeman on 1/13/13.
-//  Copyright (c) 2013 Indee Box LLC. All rights reserved.
+//  Created by Richard Luong on 2014-01-31.
+//  Copyright (c) 2014 Indee Box LLC. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "ViewControllerMeddelanden.h"
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
 
-
-@interface MainViewController ()
-
+@interface ViewControllerMeddelanden ()
 
 @end
 
-@implementation MainViewController
+@implementation ViewControllerMeddelanden
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,28 +29,32 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+
+    NSURL *myWeview = [NSURL URLWithString:@"http://www.karnevalist.se/notifications"];
+    
+    NSURLRequest *myrequest = [NSURLRequest requestWithURL:myWeview];
+    
+    [myWebView loadRequest:myrequest];
+    
+    //Swipe höger
+	UISwipeGestureRecognizer  *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handlerightSwipe:)];
+    swipeRight.numberOfTouchesRequired = 1;//give required num of touches here ..
+    swipeRight.delegate = (id)self;
+    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeRight];
+    
+    // Do any additional setup after loading the view.
     
     self.view.layer.shadowOpacity = 0.75f;
     self.view.layer.shadowRadius = 10.0f;
     self.view.layer.shadowColor = [UIColor blackColor].CGColor;
+    
     
     if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
         self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
     }
     
     [self.view addGestureRecognizer:self.slidingViewController.panGesture];
-    
-//
-//    self.menuBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    menuBtn.frame = CGRectMake(8, 10, 34, 24);
-//    [menuBtn setBackgroundImage:[UIImage imageNamed:@"menuButton.png"] forState:UIControlStateNormal];
-//    [menuBtn addTarget:self action:@selector(revealMenu:) forControlEvents:UIControlEventTouchUpInside];
-//    
-//    
-//    [self.view addSubview:self.menuBtn];
-    
-        
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,12 +63,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 - (IBAction)revealMenu:(id)sender
 {
     [self.slidingViewController anchorTopViewTo:ECRight];
 }
-
-
 
 @end

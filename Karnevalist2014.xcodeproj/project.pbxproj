@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A362BE1189B151F002EE320 /* ViewControllerMeddelanden.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE0189B151F002EE320 /* ViewControllerMeddelanden.m */; };
+		1A362BE3189B1ACA002EE320 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE2189B1ACA002EE320 /* MainViewController.m */; };
 		1A8D7B0C189AF346002070D6 /* menuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B0B189AF346002070D6 /* menuButton@2x.png */; };
 		1A8D7B13189B03E4002070D6 /* Nav_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B11189B03E4002070D6 /* Nav_bar.png */; };
 		1A8D7B14189B03E4002070D6 /* Nav_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B12189B03E4002070D6 /* Nav_bar@2x.png */; };
@@ -30,7 +32,6 @@
 		27D71D8B16A349D500021245 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8916A349D500021245 /* UIImage+ImageWithUIView.m */; };
 		27D71D8E16A349F000021245 /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8D16A349F000021245 /* InitViewController.m */; };
 		27D71D9116A34A0200021245 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D9016A34A0200021245 /* MenuViewController.m */; };
-		27D71D9416A34A2200021245 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D9316A34A2200021245 /* MainViewController.m */; };
 		27D71D9716A34A2C00021245 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D9616A34A2C00021245 /* SecondViewController.m */; };
 		77572799189005AF00A0CA89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77572798189005AF00A0CA89 /* Images.xcassets */; };
 		7757279D189019A900A0CA89 /* happy_robot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7757279C189019A900A0CA89 /* happy_robot.png */; };
@@ -57,6 +58,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A362BDF189B151F002EE320 /* ViewControllerMeddelanden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerMeddelanden.h; sourceTree = "<group>"; };
+		1A362BE0189B151F002EE320 /* ViewControllerMeddelanden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMeddelanden.m; sourceTree = "<group>"; };
+		1A362BE2189B1ACA002EE320 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		1A8D7B0B189AF346002070D6 /* menuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuButton@2x.png"; sourceTree = "<group>"; };
 		1A8D7B11189B03E4002070D6 /* Nav_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nav_bar.png; sourceTree = "<group>"; };
 		1A8D7B12189B03E4002070D6 /* Nav_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nav_bar@2x.png"; sourceTree = "<group>"; };
@@ -90,7 +94,6 @@
 		27D71D8F16A34A0200021245 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		27D71D9016A34A0200021245 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		27D71D9216A34A2200021245 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		27D71D9316A34A2200021245 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		27D71D9516A34A2C00021245 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		27D71D9616A34A2C00021245 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		77572798189005AF00A0CA89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -180,7 +183,7 @@
 				27D71D8F16A34A0200021245 /* MenuViewController.h */,
 				27D71D9016A34A0200021245 /* MenuViewController.m */,
 				27D71D9216A34A2200021245 /* MainViewController.h */,
-				27D71D9316A34A2200021245 /* MainViewController.m */,
+				1A362BE2189B1ACA002EE320 /* MainViewController.m */,
 				27D71D9516A34A2C00021245 /* SecondViewController.h */,
 				27D71D9616A34A2C00021245 /* SecondViewController.m */,
 				77B3AB49189A7A3F0059A6ED /* RLSektioner.h */,
@@ -196,6 +199,8 @@
 				77F72712189AEF0400886E2F /* navigationController.m */,
 				1A8D7B1F189B0BE0002070D6 /* ViewControllerEasterEgg.h */,
 				1A8D7B20189B0BE0002070D6 /* ViewControllerEasterEgg.m */,
+				1A362BDF189B151F002EE320 /* ViewControllerMeddelanden.h */,
+				1A362BE0189B151F002EE320 /* ViewControllerMeddelanden.m */,
 			);
 			path = SlideMenu;
 			sourceTree = "<group>";
@@ -345,18 +350,18 @@
 				1A8D7B21189B0BE0002070D6 /* ViewControllerEasterEgg.m in Sources */,
 				27D71D6F16A349AD00021245 /* main.m in Sources */,
 				27D71D7316A349AD00021245 /* AppDelegate.m in Sources */,
+				1A362BE3189B1ACA002EE320 /* MainViewController.m in Sources */,
 				77B3AB4E189A7A510059A6ED /* RLSektionerDetailedViewController.m in Sources */,
 				77F72713189AEF0400886E2F /* navigationController.m in Sources */,
 				27D71D8A16A349D500021245 /* ECSlidingViewController.m in Sources */,
+				1A362BE1189B151F002EE320 /* ViewControllerMeddelanden.m in Sources */,
 				27D71D8B16A349D500021245 /* UIImage+ImageWithUIView.m in Sources */,
 				77B3AB48189A7A220059A6ED /* RLSektionerViewController.m in Sources */,
 				77B3AB3A18995C2D0059A6ED /* ViewControllerWebView.m in Sources */,
 				77B3AB4B189A7A440059A6ED /* RLSektioner.m in Sources */,
-				77CADF86189B087D008144C0 /* webController.m in Sources */,
 				27D71D8E16A349F000021245 /* InitViewController.m in Sources */,
 				27D71D9116A34A0200021245 /* MenuViewController.m in Sources */,
 				77B3AB53189A7A680059A6ED /* RLDetailedSektioner.m in Sources */,
-				27D71D9416A34A2200021245 /* MainViewController.m in Sources */,
 				27D71D9716A34A2C00021245 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
