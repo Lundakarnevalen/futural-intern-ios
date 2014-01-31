@@ -88,7 +88,6 @@
         
     } else {
         cell.textLabel.text = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row-1]];
-        cell.imageView.image = [UIImage imageNamed:@"MenuRowIcon.jpg"];
         cell.textLabel.textColor = [UIColor whiteColor];
     }
     

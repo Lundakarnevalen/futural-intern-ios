@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A362BE1189B151F002EE320 /* ViewControllerMeddelanden.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE0189B151F002EE320 /* ViewControllerMeddelanden.m */; };
 		1A362BE3189B1ACA002EE320 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE2189B1ACA002EE320 /* MainViewController.m */; };
+		1A362BE6189B1F35002EE320 /* SektionerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE5189B1F35002EE320 /* SektionerTableViewController.m */; };
 		1A8D7B0C189AF346002070D6 /* menuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B0B189AF346002070D6 /* menuButton@2x.png */; };
 		1A8D7B13189B03E4002070D6 /* Nav_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B11189B03E4002070D6 /* Nav_bar.png */; };
 		1A8D7B14189B03E4002070D6 /* Nav_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B12189B03E4002070D6 /* Nav_bar@2x.png */; };
@@ -54,6 +55,8 @@
 		1A362BDF189B151F002EE320 /* ViewControllerMeddelanden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerMeddelanden.h; sourceTree = "<group>"; };
 		1A362BE0189B151F002EE320 /* ViewControllerMeddelanden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMeddelanden.m; sourceTree = "<group>"; };
 		1A362BE2189B1ACA002EE320 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1A362BE4189B1F35002EE320 /* SektionerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SektionerTableViewController.h; sourceTree = "<group>"; };
+		1A362BE5189B1F35002EE320 /* SektionerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SektionerTableViewController.m; sourceTree = "<group>"; };
 		1A8D7B0B189AF346002070D6 /* menuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuButton@2x.png"; sourceTree = "<group>"; };
 		1A8D7B11189B03E4002070D6 /* Nav_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nav_bar.png; sourceTree = "<group>"; };
 		1A8D7B12189B03E4002070D6 /* Nav_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nav_bar@2x.png"; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 				1A8D7B20189B0BE0002070D6 /* ViewControllerEasterEgg.m */,
 				1A362BDF189B151F002EE320 /* ViewControllerMeddelanden.h */,
 				1A362BE0189B151F002EE320 /* ViewControllerMeddelanden.m */,
+				1A362BE4189B1F35002EE320 /* SektionerTableViewController.h */,
+				1A362BE5189B1F35002EE320 /* SektionerTableViewController.m */,
 			);
 			path = SlideMenu;
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 				27D71D6F16A349AD00021245 /* main.m in Sources */,
 				27D71D7316A349AD00021245 /* AppDelegate.m in Sources */,
 				1A362BE3189B1ACA002EE320 /* MainViewController.m in Sources */,
+				1A362BE6189B1F35002EE320 /* SektionerTableViewController.m in Sources */,
 				77B3AB4E189A7A510059A6ED /* RLSektionerDetailedViewController.m in Sources */,
 				77F72713189AEF0400886E2F /* navigationController.m in Sources */,
 				27D71D8A16A349D500021245 /* ECSlidingViewController.m in Sources */,

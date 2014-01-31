@@ -19,8 +19,6 @@
 
 @end
 
-
-
 @implementation RLSektionerDetailedViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -37,20 +35,14 @@
     [_scroller setScrollEnabled:YES];
     _scroller.backgroundColor = [UIColor clearColor];
     
-    
-        
-    
-    
-    
     [_scroller setContentSize:CGSizeMake(320, 920)];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
     _Title.text = self.sektion.name;
-    
     _textInfo.text = self.sektion.answer1;
 
-    
+    self.navigationItem.title = self.sektion.name;
     
 }
 
