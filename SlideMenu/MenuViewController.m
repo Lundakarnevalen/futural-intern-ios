@@ -88,6 +88,7 @@
         
     } else {
         cell.textLabel.text = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row-1]];
+        [cell.textLabel setFont:[UIFont systemFontOfSize:20]];
         cell.textLabel.textColor = [UIColor whiteColor];
     }
     

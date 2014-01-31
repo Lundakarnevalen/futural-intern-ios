@@ -18,7 +18,8 @@
 		1A8D7B1A189B0829002070D6 /* Raket.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B19189B0829002070D6 /* Raket.png */; };
 		1A8D7B1D189B094C002070D6 /* Moln.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B1B189B094C002070D6 /* Moln.png */; };
 		1A8D7B1E189B094C002070D6 /* Moln@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B1C189B094C002070D6 /* Moln@2x.png */; };
-		1A8D7B21189B0BE0002070D6 /* ViewControllerEasterEgg.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D7B20189B0BE0002070D6 /* ViewControllerEasterEgg.m */; };
+		1A8D7B21189B0BE0002070D6 /* ViewControllerCloudVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D7B20189B0BE0002070D6 /* ViewControllerCloudVideo.m */; };
+		1AD5EC4B189BD47E00E5579E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5EC4A189BD47E00E5579E /* Settings.bundle */; };
 		27D71D6316A349AD00021245 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6216A349AD00021245 /* UIKit.framework */; };
 		27D71D6516A349AD00021245 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6416A349AD00021245 /* Foundation.framework */; };
 		27D71D6716A349AD00021245 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6616A349AD00021245 /* CoreGraphics.framework */; };
@@ -38,11 +39,9 @@
 		7757279D189019A900A0CA89 /* happy_robot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7757279C189019A900A0CA89 /* happy_robot.png */; };
 		77B3AB3A18995C2D0059A6ED /* ViewControllerWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3AB3918995C2D0059A6ED /* ViewControllerWebView.m */; };
 		77B3AB3E189A79830059A6ED /* sektioner.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77B3AB3D189A79830059A6ED /* sektioner.plist */; };
-		77B3AB43189A79C10059A6ED /* Lundakarnevalens internapp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77B3AB42189A79C10059A6ED /* Lundakarnevalens internapp-Info.plist */; };
 		77B3AB45189A79C80059A6ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77B3AB44189A79C80059A6ED /* InfoPlist.strings */; };
 		77B3AB48189A7A220059A6ED /* RLSektionerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3AB47189A7A220059A6ED /* RLSektionerViewController.m */; };
 		77B3AB4B189A7A440059A6ED /* RLSektioner.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3AB4A189A7A440059A6ED /* RLSektioner.m */; };
-		77B3AB4E189A7A510059A6ED /* RLSektionerDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3AB4D189A7A510059A6ED /* RLSektionerDetailedViewController.m */; };
 		77F72713189AEF0400886E2F /* navigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F72712189AEF0400886E2F /* navigationController.m */; };
 		FD0B4D6A1896FE7D00DD6672 /* app_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD0B4D691896FE7D00DD6672 /* app_icon.png */; };
 		FD0B4D76189702DC00DD6672 /* StartNavigationText.png in Resources */ = {isa = PBXBuildFile; fileRef = FD0B4D75189702DC00DD6672 /* StartNavigationText.png */; };
@@ -65,8 +64,9 @@
 		1A8D7B19189B0829002070D6 /* Raket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raket.png; sourceTree = "<group>"; };
 		1A8D7B1B189B094C002070D6 /* Moln.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Moln.png; sourceTree = "<group>"; };
 		1A8D7B1C189B094C002070D6 /* Moln@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Moln@2x.png"; sourceTree = "<group>"; };
-		1A8D7B1F189B0BE0002070D6 /* ViewControllerEasterEgg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerEasterEgg.h; sourceTree = "<group>"; };
-		1A8D7B20189B0BE0002070D6 /* ViewControllerEasterEgg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerEasterEgg.m; sourceTree = "<group>"; };
+		1A8D7B1F189B0BE0002070D6 /* ViewControllerCloudVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerCloudVideo.h; sourceTree = "<group>"; };
+		1A8D7B20189B0BE0002070D6 /* ViewControllerCloudVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerCloudVideo.m; sourceTree = "<group>"; };
+		1AD5EC4A189BD47E00E5579E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		27D71D5E16A349AD00021245 /* Karnevalist2014.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karnevalist2014.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D71D6216A349AD00021245 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		27D71D6416A349AD00021245 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,14 +97,11 @@
 		77B3AB3818995C2D0059A6ED /* ViewControllerWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerWebView.h; sourceTree = "<group>"; };
 		77B3AB3918995C2D0059A6ED /* ViewControllerWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerWebView.m; sourceTree = "<group>"; };
 		77B3AB3D189A79830059A6ED /* sektioner.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sektioner.plist; sourceTree = "<group>"; };
-		77B3AB42189A79C10059A6ED /* Lundakarnevalens internapp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Lundakarnevalens internapp-Info.plist"; sourceTree = "<group>"; };
 		77B3AB44189A79C80059A6ED /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		77B3AB46189A7A1C0059A6ED /* RLSektionerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLSektionerViewController.h; sourceTree = "<group>"; };
 		77B3AB47189A7A220059A6ED /* RLSektionerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLSektionerViewController.m; sourceTree = "<group>"; };
 		77B3AB49189A7A3F0059A6ED /* RLSektioner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLSektioner.h; sourceTree = "<group>"; };
 		77B3AB4A189A7A440059A6ED /* RLSektioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLSektioner.m; sourceTree = "<group>"; };
-		77B3AB4C189A7A4B0059A6ED /* RLSektionerDetailedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLSektionerDetailedViewController.h; sourceTree = "<group>"; };
-		77B3AB4D189A7A510059A6ED /* RLSektionerDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLSektionerDetailedViewController.m; sourceTree = "<group>"; };
 		77F72711189AEF0400886E2F /* navigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navigationController.h; sourceTree = "<group>"; };
 		77F72712189AEF0400886E2F /* navigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = navigationController.m; sourceTree = "<group>"; };
 		FD0B4D691896FE7D00DD6672 /* app_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon.png; sourceTree = "<group>"; };
@@ -131,6 +128,7 @@
 		27D71D5316A349AD00021245 = {
 			isa = PBXGroup;
 			children = (
+				1AD5EC4A189BD47E00E5579E /* Settings.bundle */,
 				27D71D6816A349AD00021245 /* SlideMenu */,
 				27D71D6116A349AD00021245 /* Frameworks */,
 				27D71D5F16A349AD00021245 /* Products */,
@@ -178,13 +176,11 @@
 				77B3AB4A189A7A440059A6ED /* RLSektioner.m */,
 				77B3AB46189A7A1C0059A6ED /* RLSektionerViewController.h */,
 				77B3AB47189A7A220059A6ED /* RLSektionerViewController.m */,
-				77B3AB4C189A7A4B0059A6ED /* RLSektionerDetailedViewController.h */,
-				77B3AB4D189A7A510059A6ED /* RLSektionerDetailedViewController.m */,
 				77572798189005AF00A0CA89 /* Images.xcassets */,
 				77F72711189AEF0400886E2F /* navigationController.h */,
 				77F72712189AEF0400886E2F /* navigationController.m */,
-				1A8D7B1F189B0BE0002070D6 /* ViewControllerEasterEgg.h */,
-				1A8D7B20189B0BE0002070D6 /* ViewControllerEasterEgg.m */,
+				1A8D7B1F189B0BE0002070D6 /* ViewControllerCloudVideo.h */,
+				1A8D7B20189B0BE0002070D6 /* ViewControllerCloudVideo.m */,
 				1A362BDF189B151F002EE320 /* ViewControllerMeddelanden.h */,
 				1A362BE0189B151F002EE320 /* ViewControllerMeddelanden.m */,
 				1A362BE4189B1F35002EE320 /* SektionerTableViewController.h */,
@@ -211,7 +207,6 @@
 				7757279C189019A900A0CA89 /* happy_robot.png */,
 				FD0B4D75189702DC00DD6672 /* StartNavigationText.png */,
 				77B3AB44189A79C80059A6ED /* InfoPlist.strings */,
-				77B3AB42189A79C10059A6ED /* Lundakarnevalens internapp-Info.plist */,
 				27D71D6A16A349AD00021245 /* Karnevalist2014-Info.plist */,
 				27D71D6B16A349AD00021245 /* InfoPlist.strings */,
 				27D71D6E16A349AD00021245 /* main.m */,
@@ -292,8 +287,8 @@
 			files = (
 				7757279D189019A900A0CA89 /* happy_robot.png in Resources */,
 				27D71D6D16A349AD00021245 /* InfoPlist.strings in Resources */,
-				77B3AB43189A79C10059A6ED /* Lundakarnevalens internapp-Info.plist in Resources */,
 				FD0B4D7E18970BA600DD6672 /* app_icon3.png in Resources */,
+				1AD5EC4B189BD47E00E5579E /* Settings.bundle in Resources */,
 				77B3AB3E189A79830059A6ED /* sektioner.plist in Resources */,
 				FD0B4D7C18970BA600DD6672 /* app_icon1.png in Resources */,
 				27D71D7516A349AD00021245 /* Default.png in Resources */,
@@ -323,12 +318,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A8D7B21189B0BE0002070D6 /* ViewControllerEasterEgg.m in Sources */,
+				1A8D7B21189B0BE0002070D6 /* ViewControllerCloudVideo.m in Sources */,
 				27D71D6F16A349AD00021245 /* main.m in Sources */,
 				27D71D7316A349AD00021245 /* AppDelegate.m in Sources */,
 				1A362BE3189B1ACA002EE320 /* MainViewController.m in Sources */,
 				1A362BE6189B1F35002EE320 /* SektionerTableViewController.m in Sources */,
-				77B3AB4E189A7A510059A6ED /* RLSektionerDetailedViewController.m in Sources */,
 				77F72713189AEF0400886E2F /* navigationController.m in Sources */,
 				27D71D8A16A349D500021245 /* ECSlidingViewController.m in Sources */,
 				1A362BE1189B151F002EE320 /* ViewControllerMeddelanden.m in Sources */,

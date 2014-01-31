@@ -1,18 +1,18 @@
 //
-//  ViewControllerEasterEgg.m
+//  ViewControllerCloudVideo.m
 //  Karnevalist2014
 //
 //  Created by Richard Luong on 2014-01-30.
 //  Copyright (c) 2014 Indee Box LLC. All rights reserved.
 //
 
-#import "ViewControllerEasterEgg.h"
+#import "ViewControllerCloudVideo.h"
 
-@interface ViewControllerEasterEgg ()
+@interface ViewControllerCloudVideo ()
 
 @end
 
-@implementation ViewControllerEasterEgg
+@implementation ViewControllerCloudVideo
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

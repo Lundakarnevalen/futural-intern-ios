@@ -1,5 +1,5 @@
 //
-//  ViewControllerEasterEgg.h
+//  ViewControllerCloudVideo.h
 //  Karnevalist2014
 //
 //  Created by Richard Luong on 2014-01-30.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewControllerEasterEgg : UIViewController
+@interface ViewControllerCloudVideo : UIViewController
 {
     IBOutlet UIWebView *myWebView;
 }

@@ -90,6 +90,22 @@
     RLSektioner *sektion = [self.sektioner objectAtIndex:indexPath.row];
     cell.textLabel.text = sektion.name;
     cell.textLabel.textColor = [UIColor whiteColor];
+    if (cell.textLabel.text.length > 14) {
+        [cell.textLabel setFont:[UIFont fontWithName:@"Futura-Medium" size:25]];
+    } else {
+        [cell.textLabel setFont:[UIFont fontWithName:@"Futura-Medium" size:30]];
+    }
+    
+    
+//    // Do some stuff
+//    [cell addSubview:textLabel];
+//    textLabel.text = [NSString stringWithFormat:@"%@", [self.answers objectAtIndex:indexPath.row-1]];
+//    textLabel.lineBreakMode = NSLineBreakByWordWrapping;
+//    textLabel.numberOfLines = 0;
+//    textLabel.textColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:0.8];
+//    [textLabel setFont:[UIFont systemFontOfSize:14]];
+//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//    return cell;
     
     return cell;
 }

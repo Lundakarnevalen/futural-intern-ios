@@ -19,10 +19,10 @@
             </objects>
             <point key="canvasLocation" x="544" y="-725"/>
         </scene>
-        <!--View Controller Easter Egg - Moln-->
+        <!--View Controller Cloud Video - Moln-->
         <scene sceneID="VfK-rL-55W">
             <objects>
-                <viewController id="MSW-0L-6op" customClass="ViewControllerEasterEgg" sceneMemberID="viewController">
+                <viewController id="MSW-0L-6op" customClass="ViewControllerCloudVideo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5H9-Iu-w1h">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -51,13 +51,22 @@
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="347" sectionHeaderHeight="22" sectionFooterHeight="22" id="bIC-Gi-3yr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cyan="0.0" magenta="0.45000000000000001" yellow="0.32000000000000001" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <color key="sectionIndexTrackingBackgroundColor" cyan="0.0" magenta="0.45000000000000001" yellow="0.32000000000000001" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PrototypeCell" rowHeight="347" id="PPy-uR-3JQ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PrototypeCellID1" rowHeight="347" id="PPy-uR-3JQ">
                                 <rect key="frame" x="0.0" y="86" width="320" height="347"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PPy-uR-3JQ" id="bo1-D5-1bl">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="346"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" cyan="0.0" magenta="0.45000000000000001" yellow="0.32000000000000001" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PrototypeCellID2" rowHeight="347" id="bUd-FC-gHy">
+                                <rect key="frame" x="0.0" y="433" width="320" height="347"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bUd-FC-gHy" id="Lmb-7e-1Ep">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="346"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
@@ -73,7 +82,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZB8-we-07s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1469" y="677"/>
+            <point key="canvasLocation" x="1057" y="685"/>
         </scene>
         <!--View Controller Web View - Registrering-->
         <scene sceneID="uCz-3V-6KP">
@@ -244,46 +253,6 @@
             </objects>
             <point key="canvasLocation" x="633" y="677"/>
         </scene>
-        <!--Sektioner Detailed View Controller-->
-        <scene sceneID="oqx-7s-1RL">
-            <objects>
-                <viewController storyboardIdentifier="RLSektionDetaild" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ksN-wg-klz" customClass="RLSektionerDetailedViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="phs-yk-kXw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fqx-EH-Tnf">
-                                <rect key="frame" x="20" y="85" width="280" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" id="8fa-hS-G5E">
-                                <rect key="frame" x="40" y="271" width="240" height="254"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy_robot.png" id="Ezj-44-3rs">
-                                <rect key="frame" x="67" y="135" width="187" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.90196078431372551" green="0.52941176470588236" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="jfy-Ot-Gof"/>
-                    <connections>
-                        <outlet property="Title" destination="fqx-EH-Tnf" id="3ab-vQ-s3o"/>
-                        <outlet property="textInfo" destination="8fa-hS-G5E" id="Hqc-Dh-5jB"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EBM-Ao-f4l" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1034" y="677"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="tXw-Ll-nP2">
             <objects>
@@ -305,7 +274,6 @@
             <objects>
                 <navigationController storyboardIdentifier="Start" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="s4D-UZ-3qI" customClass="navigationController" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LuE-xW-kqF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -394,7 +362,6 @@
     <resources>
         <image name="Moln.png" width="149" height="66"/>
         <image name="Raket.png" width="787" height="438"/>
-        <image name="happy_robot.png" width="300" height="224"/>
         <image name="menuButton.png" width="34" height="24"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -404,6 +371,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="2mt-lj-BJB"/>
+        <segue reference="oPB-qX-Bcj"/>
     </inferredMetricsTieBreakers>
 </document>
