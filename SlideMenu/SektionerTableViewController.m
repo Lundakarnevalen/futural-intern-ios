@@ -35,8 +35,9 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.answers = [[NSArray arrayWithObjects:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare quam nisi, a convallis lacus egestas a. Duis id accumsan neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc dapibus neque tortor, a congue turpis congue ac. Integer condimentum, dui viverra consequat faucibus, justo nulla aliquet dui, hendrerit scelerisque enim sem quis leo. Fusce porta eu metus in porttitor. Aliquam eget tincidunt diam. Aenean volutpat enim at volutpat venenatis. Etiam eleifend ut sapien sit amet vestibulum. In adipiscing velit ac felis ultricies consequat.", @"Nulla nisi odio, viverra sed auctor nec, dignissim nec nibh. Integer blandit risus sit amet mi suscipit condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In ullamcorper dignissim eros in dictum. Suspendisse erat libero, laoreet at lacus dictum, tempus lobortis urna. Praesent vel diam ac sapien facilisis consectetur. Morbi blandit bibendum mi, in feugiat leo viverra nec. Maecenas odio purus, varius ac diam et, pharetra sollicitudin enim.",@"Aliquam dolor lacus, scelerisque id semper id, sagittis sed metus. Nam eu ipsum at justo blandit blandit. Fusce sollicitudin orci nibh, at malesuada erat posuere sit amet. Cras eget justo tincidunt, sollicitudin elit at, volutpat nulla. Etiam in risus non ipsum tincidunt accumsan. Nullam id libero sit amet metus tempus cursus non sit amet ligula. Vivamus luctus fringilla nulla ut adipiscing. Duis porttitor nunc et fermentum interdum. Morbi tortor elit, interdum elementum ipsum ac, auctor laoreet orci. Sed vehicula egestas pretium. Mauris tincidunt dolor vitae tellus venenatis facilisis.",@"Pellentesque et tristique dui. Proin vel dapibus nisl, eget lacinia sapien. Nullam a nisi eget lectus tempor consectetur euismod sed tellus. Cras imperdiet turpis ante, vitae sodales erat porttitor vel. Nam vel dapibus arcu. Aenean sed justo vulputate, viverra nisi eu, porttitor sem. Nulla iaculis, tellus vel rutrum euismod, diam diam ornare nisi, ac laoreet metus turpis eget massa.", nil] init];
-
+    //self.answers = [[NSArray arrayWithObjects:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare quam nisi, a convallis lacus egestas a. Duis id accumsan neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc dapibus neque tortor, a congue turpis congue ac. Integer condimentum, dui viverra consequat faucibus, justo nulla aliquet dui, hendrerit scelerisque enim sem quis leo. Fusce porta eu metus in porttitor. Aliquam eget tincidunt diam. Aenean volutpat enim at volutpat venenatis. Etiam eleifend ut sapien sit amet vestibulum. In adipiscing velit ac felis ultricies consequat.", @"Nulla nisi odio, viverra sed auctor nec, dignissim nec nibh. Integer blandit risus sit amet mi suscipit condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In ullamcorper dignissim eros in dictum. Suspendisse erat libero, laoreet at lacus dictum, tempus lobortis urna. Praesent vel diam ac sapien facilisis consectetur. Morbi blandit bibendum mi, in feugiat leo viverra nec. Maecenas odio purus, varius ac diam et, pharetra sollicitudin enim.",@"Aliquam dolor lacus, scelerisque id semper id, sagittis sed metus. Nam eu ipsum at justo blandit blandit. Fusce sollicitudin orci nibh, at malesuada erat posuere sit amet. Cras eget justo tincidunt, sollicitudin elit at, volutpat nulla. Etiam in risus non ipsum tincidunt accumsan. Nullam id libero sit amet metus tempus cursus non sit amet ligula. Vivamus luctus fringilla nulla ut adipiscing. Duis porttitor nunc et fermentum interdum. Morbi tortor elit, interdum elementum ipsum ac, auctor laoreet orci. Sed vehicula egestas pretium. Mauris tincidunt dolor vitae tellus venenatis facilisis.",@"Pellentesque et tristique dui. Proin vel dapibus nisl, eget lacinia sapien. Nullam a nisi eget lectus tempor consectetur euismod sed tellus. Cras imperdiet turpis ante, vitae sodales erat porttitor vel. Nam vel dapibus arcu. Aenean sed justo vulputate, viverra nisi eu, porttitor sem. Nulla iaculis, tellus vel rutrum euismod, diam diam ornare nisi, ac laoreet metus turpis eget massa.", nil] init];
+    
+    self.answers = [[NSArray arrayWithObjects: self.sektion.answer1, self.sektion.answer2, self.sektion.answer3, self.sektion.answer4, nil] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,16 +50,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [self.answers count];
+    return [self.answers count]+1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,12 +66,29 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", [self.answers objectAtIndex:indexPath.row]];
+    if (indexPath.row == 0) {
+        UILabel *label = [[[UILabel alloc] initWithFrame:CGRectMake(10, 30, 300, 40)] init];
+        // Do some stuff
+        [cell addSubview:label];
+        label.text = self.sektion.name;
+        [label setFont:[UIFont fontWithName:@"Futura-Medium" size:35]];
+        label.textColor = [UIColor whiteColor];
+        label.textAlignment = NSTextAlignmentCenter;
+        
+        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10,90,300,134)];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [cell.contentView addSubview:imageView];
+        imageView.layer.masksToBounds = YES;
+        imageView.image = [UIImage imageNamed:@"happy_robot.png"];
+    } else {
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", [self.answers objectAtIndex:indexPath.row-1]];
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
     cell.textLabel.numberOfLines = 0;
-    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.textColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:0.8];
+    [cell.textLabel setFont:[UIFont systemFontOfSize:16]];
+    }
     
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
@@ -82,7 +98,10 @@
 //}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *theText=[self.answers objectAtIndex:indexPath.row];
+    if (indexPath.row == 0) {
+        return 250;
+    }
+    NSString *theText=[self.answers objectAtIndex:indexPath.row-1];
     NSInteger length = [theText length];
     return length-110;
 }

@@ -12,6 +12,8 @@
 
 @property NSString *name;
 @property NSString *answer1;
-
+@property NSString *answer2;
+@property NSString *answer3;
+@property NSString *answer4;
 
 @end

@@ -8,7 +8,7 @@
 
 #import "RLSektionerViewController.h"
 #import "RLSektioner.h"
-#import "RLSektionerDetailedViewController.h"
+#import "SektionerTableViewController.h"
 
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
@@ -48,6 +48,9 @@
         RLSektioner *sektion = [[RLSektioner alloc] init];
         sektion.name = [obj objectForKey:@"name"];
         sektion.answer1 = [obj objectForKey:@"answer1"];
+        sektion.answer2 = [obj objectForKey:@"answer2"];
+        sektion.answer3 = [obj objectForKey:@"answer3"];
+        sektion.answer4 = [obj objectForKey:@"answer4"];
 
         [self.sektioner addObject:sektion];
     }
@@ -95,12 +98,12 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     //RLSektioner *sektion = [self.sektioner objectAtIndex:indexPath.row];
-    
+    NSLog(@"%d", indexPath.row);
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"showDetailedSegue"]){
-        RLSektionerDetailedViewController *controller = (RLSektionerDetailedViewController *)segue.destinationViewController;
+        SektionerTableViewController *controller = (SektionerTableViewController *)segue.destinationViewController;
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         controller.sektion = [self.sektioner objectAtIndex:indexPath.row];
         NSLog(@"%@", [self.sektioner objectAtIndex:indexPath.row]);
