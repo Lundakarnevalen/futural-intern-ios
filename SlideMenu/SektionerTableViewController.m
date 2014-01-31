@@ -85,9 +85,8 @@
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
     cell.textLabel.numberOfLines = 0;
     cell.textLabel.textColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:0.8];
-    [cell.textLabel setFont:[UIFont systemFontOfSize:16]];
+    [cell.textLabel setFont:[UIFont systemFontOfSize:14]];
     }
-    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
@@ -103,7 +102,7 @@
     }
     NSString *theText=[self.answers objectAtIndex:indexPath.row-1];
     NSInteger length = [theText length];
-    return length-110;
+    return length/1.7;
 }
 
 
