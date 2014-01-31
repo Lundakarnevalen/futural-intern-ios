@@ -91,6 +91,7 @@
         }
         label.textColor = [UIColor whiteColor];
         label.textAlignment = NSTextAlignmentCenter;
+        [label setBackgroundColor:[UIColor clearColor]];
         
         UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10,100,300,134)];
         imageView.contentMode = UIViewContentModeScaleAspectFit;
@@ -113,6 +114,7 @@
         [label setFont:[UIFont boldSystemFontOfSize:17]];
         label.textColor = [UIColor whiteColor];
         label.textAlignment = NSTextAlignmentCenter;
+        [label setBackgroundColor:[UIColor clearColor]];
         
         NSString *ans = [NSString stringWithFormat:@"%@", [self.answers objectAtIndex:indexPath.row-1]];
         UILabel *textLabel = [[[UILabel alloc] initWithFrame:CGRectMake(20, 80, 280, [self heightForTextLabel:ans])] init];
@@ -126,6 +128,7 @@
         textLabel.textColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:0.8];
         [textLabel setFont:[UIFont systemFontOfSize:14]];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        [textLabel setBackgroundColor:[UIColor clearColor]];
         return cell;
         
     }

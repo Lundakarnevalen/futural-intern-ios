@@ -8,6 +8,7 @@
 
 #import "navigationController.h"
 
+
 @implementation navigationController
 
 
@@ -18,11 +19,10 @@
     [super viewDidLoad];
     
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-    
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"Nav_bar.png"] forBarMetrics:UIBarMetricsDefault];
-
-
-    
+       
+    if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
+        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"Nav_bar.png"] forBarMetrics:UIBarMetricsDefault];
+    }
 }
 
 @end

@@ -10,6 +10,7 @@
 		1A362BE1189B151F002EE320 /* ViewControllerMeddelanden.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE0189B151F002EE320 /* ViewControllerMeddelanden.m */; };
 		1A362BE3189B1ACA002EE320 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE2189B1ACA002EE320 /* MainViewController.m */; };
 		1A362BE6189B1F35002EE320 /* SektionerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE5189B1F35002EE320 /* SektionerTableViewController.m */; };
+		1A63BB05189BE25000F43465 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A63BB04189BE25000F43465 /* Settings.bundle */; };
 		1A8D7B0C189AF346002070D6 /* menuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B0B189AF346002070D6 /* menuButton@2x.png */; };
 		1A8D7B13189B03E4002070D6 /* Nav_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B11189B03E4002070D6 /* Nav_bar.png */; };
 		1A8D7B14189B03E4002070D6 /* Nav_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B12189B03E4002070D6 /* Nav_bar@2x.png */; };
@@ -19,7 +20,6 @@
 		1A8D7B1D189B094C002070D6 /* Moln.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B1B189B094C002070D6 /* Moln.png */; };
 		1A8D7B1E189B094C002070D6 /* Moln@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B1C189B094C002070D6 /* Moln@2x.png */; };
 		1A8D7B21189B0BE0002070D6 /* ViewControllerCloudVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D7B20189B0BE0002070D6 /* ViewControllerCloudVideo.m */; };
-		1AD5EC4B189BD47E00E5579E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5EC4A189BD47E00E5579E /* Settings.bundle */; };
 		27D71D6316A349AD00021245 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6216A349AD00021245 /* UIKit.framework */; };
 		27D71D6516A349AD00021245 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6416A349AD00021245 /* Foundation.framework */; };
 		27D71D6716A349AD00021245 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6616A349AD00021245 /* CoreGraphics.framework */; };
@@ -56,6 +56,7 @@
 		1A362BE2189B1ACA002EE320 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		1A362BE4189B1F35002EE320 /* SektionerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SektionerTableViewController.h; sourceTree = "<group>"; };
 		1A362BE5189B1F35002EE320 /* SektionerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SektionerTableViewController.m; sourceTree = "<group>"; };
+		1A63BB04189BE25000F43465 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1A8D7B0B189AF346002070D6 /* menuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuButton@2x.png"; sourceTree = "<group>"; };
 		1A8D7B11189B03E4002070D6 /* Nav_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nav_bar.png; sourceTree = "<group>"; };
 		1A8D7B12189B03E4002070D6 /* Nav_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nav_bar@2x.png"; sourceTree = "<group>"; };
@@ -66,15 +67,14 @@
 		1A8D7B1C189B094C002070D6 /* Moln@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Moln@2x.png"; sourceTree = "<group>"; };
 		1A8D7B1F189B0BE0002070D6 /* ViewControllerCloudVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerCloudVideo.h; sourceTree = "<group>"; };
 		1A8D7B20189B0BE0002070D6 /* ViewControllerCloudVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerCloudVideo.m; sourceTree = "<group>"; };
-		1AD5EC4A189BD47E00E5579E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		27D71D5E16A349AD00021245 /* Karnevalist2014.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karnevalist2014.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D71D5E16A349AD00021245 /* Karnevalisten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karnevalisten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D71D6216A349AD00021245 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		27D71D6416A349AD00021245 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27D71D6616A349AD00021245 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		27D71D6A16A349AD00021245 /* Karnevalist2014-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Karnevalist2014-Info.plist"; sourceTree = "<group>"; };
+		27D71D6A16A349AD00021245 /* Karnevalisten-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Karnevalisten-Info.plist"; sourceTree = "<group>"; };
 		27D71D6C16A349AD00021245 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27D71D6E16A349AD00021245 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		27D71D7016A349AD00021245 /* Karnevalist2014-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Karnevalist2014-Prefix.pch"; sourceTree = "<group>"; };
+		27D71D7016A349AD00021245 /* Karnevalisten-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Karnevalisten-Prefix.pch"; sourceTree = "<group>"; };
 		27D71D7116A349AD00021245 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27D71D7216A349AD00021245 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		27D71D7416A349AD00021245 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		27D71D5316A349AD00021245 = {
 			isa = PBXGroup;
 			children = (
-				1AD5EC4A189BD47E00E5579E /* Settings.bundle */,
+				1A63BB04189BE25000F43465 /* Settings.bundle */,
 				27D71D6816A349AD00021245 /* SlideMenu */,
 				27D71D6116A349AD00021245 /* Frameworks */,
 				27D71D5F16A349AD00021245 /* Products */,
@@ -138,7 +138,7 @@
 		27D71D5F16A349AD00021245 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27D71D5E16A349AD00021245 /* Karnevalist2014.app */,
+				27D71D5E16A349AD00021245 /* Karnevalisten.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,10 +207,10 @@
 				7757279C189019A900A0CA89 /* happy_robot.png */,
 				FD0B4D75189702DC00DD6672 /* StartNavigationText.png */,
 				77B3AB44189A79C80059A6ED /* InfoPlist.strings */,
-				27D71D6A16A349AD00021245 /* Karnevalist2014-Info.plist */,
+				27D71D6A16A349AD00021245 /* Karnevalisten-Info.plist */,
 				27D71D6B16A349AD00021245 /* InfoPlist.strings */,
 				27D71D6E16A349AD00021245 /* main.m */,
-				27D71D7016A349AD00021245 /* Karnevalist2014-Prefix.pch */,
+				27D71D7016A349AD00021245 /* Karnevalisten-Prefix.pch */,
 				27D71D7416A349AD00021245 /* Default.png */,
 				27D71D7616A349AD00021245 /* Default@2x.png */,
 				27D71D7816A349AD00021245 /* Default-568h@2x.png */,
@@ -232,9 +232,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		27D71D5D16A349AD00021245 /* Karnevalist2014 */ = {
+		27D71D5D16A349AD00021245 /* Karnevalisten */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27D71D8216A349AD00021245 /* Build configuration list for PBXNativeTarget "Karnevalist2014" */;
+			buildConfigurationList = 27D71D8216A349AD00021245 /* Build configuration list for PBXNativeTarget "Karnevalisten" */;
 			buildPhases = (
 				27D71D5A16A349AD00021245 /* Sources */,
 				27D71D5B16A349AD00021245 /* Frameworks */,
@@ -244,9 +244,9 @@
 			);
 			dependencies = (
 			);
-			name = Karnevalist2014;
+			name = Karnevalisten;
 			productName = SlideMenu;
-			productReference = 27D71D5E16A349AD00021245 /* Karnevalist2014.app */;
+			productReference = 27D71D5E16A349AD00021245 /* Karnevalisten.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -255,15 +255,16 @@
 		27D71D5516A349AD00021245 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "Indee Box LLC";
+				ORGANIZATIONNAME = Lundakarnevalen;
 				TargetAttributes = {
 					27D71D5D16A349AD00021245 = {
-						DevelopmentTeam = QJ6A8ZCM48;
+						DevelopmentTeam = YSKSAFCAGC;
 					};
 				};
 			};
-			buildConfigurationList = 27D71D5816A349AD00021245 /* Build configuration list for PBXProject "Karnevalist2014" */;
+			buildConfigurationList = 27D71D5816A349AD00021245 /* Build configuration list for PBXProject "Karnevalisten" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -275,7 +276,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27D71D5D16A349AD00021245 /* Karnevalist2014 */,
+				27D71D5D16A349AD00021245 /* Karnevalisten */,
 			);
 		};
 /* End PBXProject section */
@@ -288,7 +289,7 @@
 				7757279D189019A900A0CA89 /* happy_robot.png in Resources */,
 				27D71D6D16A349AD00021245 /* InfoPlist.strings in Resources */,
 				FD0B4D7E18970BA600DD6672 /* app_icon3.png in Resources */,
-				1AD5EC4B189BD47E00E5579E /* Settings.bundle in Resources */,
+				1A63BB05189BE25000F43465 /* Settings.bundle in Resources */,
 				77B3AB3E189A79830059A6ED /* sektioner.plist in Resources */,
 				FD0B4D7C18970BA600DD6672 /* app_icon1.png in Resources */,
 				27D71D7516A349AD00021245 /* Default.png in Resources */,
@@ -416,10 +417,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SlideMenu/Karnevalist2014-Prefix.pch";
-				INFOPLIST_FILE = "SlideMenu/Karnevalist2014-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = Karnevalist2014;
+				GCC_PREFIX_HEADER = "SlideMenu/Karnevalisten-Prefix.pch";
+				INFOPLIST_FILE = "SlideMenu/Karnevalisten-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Karnevalisten;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -433,10 +434,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SlideMenu/Karnevalist2014-Prefix.pch";
-				INFOPLIST_FILE = "SlideMenu/Karnevalist2014-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = Karnevalist2014;
+				GCC_PREFIX_HEADER = "SlideMenu/Karnevalisten-Prefix.pch";
+				INFOPLIST_FILE = "SlideMenu/Karnevalisten-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Karnevalisten;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -445,7 +446,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27D71D5816A349AD00021245 /* Build configuration list for PBXProject "Karnevalist2014" */ = {
+		27D71D5816A349AD00021245 /* Build configuration list for PBXProject "Karnevalisten" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27D71D8016A349AD00021245 /* Debug */,
@@ -454,7 +455,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27D71D8216A349AD00021245 /* Build configuration list for PBXNativeTarget "Karnevalist2014" */ = {
+		27D71D8216A349AD00021245 /* Build configuration list for PBXNativeTarget "Karnevalisten" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27D71D8316A349AD00021245 /* Debug */,
