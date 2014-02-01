@@ -96,6 +96,7 @@
         UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10,100,300,134)];
         imageView.contentMode = UIViewContentModeScaleAspectFit;
         [cell.contentView addSubview:imageView];
+        
         imageView.layer.masksToBounds = YES;
         imageView.image = [UIImage imageNamed:@"happy_robot.png"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -104,10 +105,12 @@
     } else {
         static NSString *CellIdentifier = @"PrototypeCellID2";
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+        [[cell.contentView subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
         
         UILabel *label = [[[UILabel alloc] initWithFrame:CGRectMake(20, 20, 280, 50)] init];
         // Do some stuff
-        [cell addSubview:label];
+        [cell.contentView addSubview:label];
         label.text = [self.questions objectAtIndex:indexPath.row-1];
         label.lineBreakMode = NSLineBreakByWordWrapping;
         label.numberOfLines = 0;
@@ -121,7 +124,8 @@
         NSLog(@"Height label at %d: %d, cell %d", indexPath.row, (NSInteger)[self heightForTextLabel:ans], (NSInteger)[self heightForTextLabel:ans]+60);
         
         // Do some stuff
-        [cell addSubview:textLabel];
+        
+        [cell.contentView addSubview:textLabel];
         textLabel.text = [NSString stringWithFormat:@"%@", [self.answers objectAtIndex:indexPath.row-1]];
         textLabel.lineBreakMode = NSLineBreakByWordWrapping;
         textLabel.numberOfLines = 0;
@@ -149,7 +153,17 @@
     if (indexPath.row == 0) {
         return 250;
     }
-    NSString *theText=[self.answers objectAtIndex:indexPath.row-1];
+    
+    NSString *theText = [self.answers objectAtIndex:indexPath.row-1];
+    
+//    if ([theText respondsToSelector:@selector(boundingRectWithSize:options:attributes:context:)]) {
+//        CGRect rect = [theText boundingRectWithSize:CGSizeMake(self.view.bounds.size.width, CGFLOAT_MAX) options:0 attributes:nil context:nil];
+//        return rect.size.height;
+//    } else {
+//        CGSize size = [theText sizeWithFont:[UIFont systemFontOfSize:14.0] constrainedToSize:CGSizeMake(self.view.bounds.size.width, CGFLOAT_MAX) lineBreakMode:NSLineBreakByWordWrapping];
+//        return size.height;
+//    }
+    
     NSInteger length = [theText length];
     NSInteger padding = 60;
     return length / 40 * 14 + padding + 60;

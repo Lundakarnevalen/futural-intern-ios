@@ -30,7 +30,13 @@
     
     self.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Start"];
     
-    
+    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)])
+        [self setNeedsStatusBarAppearanceUpdate];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)didReceiveMemoryWarning
