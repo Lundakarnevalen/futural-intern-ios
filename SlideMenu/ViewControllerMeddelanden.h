@@ -14,5 +14,6 @@
     IBOutlet UIWebView *myWebView;
 }
 
+@property (nonatomic, retain) UIImageView *loadingImageView;
 
 @end

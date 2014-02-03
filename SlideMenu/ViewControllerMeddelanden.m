@@ -43,18 +43,23 @@
     swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeRight];
     
-    // Do any additional setup after loading the view.
-    
     self.view.layer.shadowOpacity = 0.75f;
     self.view.layer.shadowRadius = 10.0f;
     self.view.layer.shadowColor = [UIColor blackColor].CGColor;
-    
     
     if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
         self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
     }
     
     [self.view addGestureRecognizer:self.slidingViewController.panGesture];
+    
+    // add loading image
+    
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10,100,300,134)];
+    imageView.image = [UIImage imageNamed:@"ajax-loader.gif"];
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    [self.view addSubview:imageView];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,5 +72,17 @@
 {
     [self.slidingViewController anchorTopViewTo:ECRight];
 }
+
+//- (void) webViewDidStartLoad:(UIWebView *)webView
+//{
+//    [self.view addSubview:self.loadingImageView];
+//}
+//
+//- (void) webViewDidFinishLoad:(UIWebView *)webView
+//{
+//    [self.loadingImageView removeFromSuperview];
+//}
+
+
 
 @end

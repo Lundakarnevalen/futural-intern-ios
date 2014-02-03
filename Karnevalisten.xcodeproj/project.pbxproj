@@ -10,6 +10,7 @@
 		1A362BE1189B151F002EE320 /* ViewControllerMeddelanden.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE0189B151F002EE320 /* ViewControllerMeddelanden.m */; };
 		1A362BE3189B1ACA002EE320 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE2189B1ACA002EE320 /* MainViewController.m */; };
 		1A362BE6189B1F35002EE320 /* SektionerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE5189B1F35002EE320 /* SektionerTableViewController.m */; };
+		1A56F685189F87DC00E9F1AF /* ajax-loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1A56F684189F87DC00E9F1AF /* ajax-loader.gif */; };
 		1A8D7B0C189AF346002070D6 /* menuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B0B189AF346002070D6 /* menuButton@2x.png */; };
 		1A8D7B13189B03E4002070D6 /* Nav_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B11189B03E4002070D6 /* Nav_bar.png */; };
 		1A8D7B14189B03E4002070D6 /* Nav_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D7B12189B03E4002070D6 /* Nav_bar@2x.png */; };
@@ -51,6 +52,7 @@
 		1A362BE2189B1ACA002EE320 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		1A362BE4189B1F35002EE320 /* SektionerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SektionerTableViewController.h; sourceTree = "<group>"; };
 		1A362BE5189B1F35002EE320 /* SektionerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SektionerTableViewController.m; sourceTree = "<group>"; };
+		1A56F684189F87DC00E9F1AF /* ajax-loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ajax-loader.gif"; sourceTree = "<group>"; };
 		1A63BB04189BE25000F43465 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1A8D7B0B189AF346002070D6 /* menuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuButton@2x.png"; sourceTree = "<group>"; };
 		1A8D7B11189B03E4002070D6 /* Nav_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nav_bar.png; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		27D71D6916A349AD00021245 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1A56F684189F87DC00E9F1AF /* ajax-loader.gif */,
 				1AD1A822189C92F50086DF0F /* blank.png */,
 				1A8D7B1B189B094C002070D6 /* Moln.png */,
 				1A8D7B1C189B094C002070D6 /* Moln@2x.png */,
@@ -289,6 +292,7 @@
 				27D71D7916A349AD00021245 /* Default-568h@2x.png in Resources */,
 				FD0B4D76189702DC00DD6672 /* StartNavigationText.png in Resources */,
 				27D71D7C16A349AD00021245 /* MainStoryboard.storyboard in Resources */,
+				1A56F685189F87DC00E9F1AF /* ajax-loader.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,8 +415,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Lundakarnevalen (YSKSAFCAGC)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lundakarnevalen (YSKSAFCAGC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideMenu/Karnevalisten-Prefix.pch";
 				INFOPLIST_FILE = "SlideMenu/Karnevalisten-Info.plist";

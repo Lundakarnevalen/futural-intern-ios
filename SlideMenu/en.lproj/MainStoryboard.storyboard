@@ -256,7 +256,7 @@
         <!--Navigation Controller-->
         <scene sceneID="tXw-Ll-nP2">
             <objects>
-                <navigationController storyboardIdentifier="Sektioner" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vSg-et-99l" customClass="navigationController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Sektioner" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vSg-et-99l" customClass="NavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r4l-LG-wL6">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" cyan="0.0" magenta="0.75" yellow="0.75" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -273,7 +273,7 @@
         <!--Navigation Controller-->
         <scene sceneID="1id-rQ-Zrg">
             <objects>
-                <navigationController storyboardIdentifier="Start" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="s4D-UZ-3qI" customClass="navigationController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Start" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="s4D-UZ-3qI" customClass="NavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LuE-xW-kqF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -293,7 +293,7 @@
         <!--Navigation Controller-->
         <scene sceneID="dbY-aY-ihu">
             <objects>
-                <navigationController storyboardIdentifier="Meddelanden" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bl2-Ni-9Hv" customClass="navigationController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Meddelanden" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bl2-Ni-9Hv" customClass="NavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ghv-jR-G0a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -345,7 +345,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Bzs-6K-VhN">
             <objects>
-                <navigationController storyboardIdentifier="Registrering" automaticallyAdjustsScrollViewInsets="NO" id="YkJ-cb-UlX" customClass="navigationController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Registrering" automaticallyAdjustsScrollViewInsets="NO" id="YkJ-cb-UlX" customClass="NavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aLG-rz-JCc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

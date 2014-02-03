@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Indee Box LLC. All rights reserved.
 //
 
-#import "navigationController.h"
+#import "NavigationController.h"
 
 
-@implementation navigationController
+@implementation NavigationController
 
 
 
