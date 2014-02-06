@@ -7,11 +7,22 @@
 //
 
 #import "NavigationController.h"
+#import "ECSlidingViewController.h"
+#import "MenuViewController.h"
 
 
 @implementation NavigationController
 
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
+        self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
+    }
+    
+    [self.view addGestureRecognizer:self.slidingViewController.panGesture];
+}
 
 
 - (void)viewDidLoad

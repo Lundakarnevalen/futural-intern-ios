@@ -179,7 +179,7 @@ NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidRese
 {
   [super viewDidLoad];
   self.shouldAllowUserInteractionsWhenAnchored = NO;
-  self.shouldAddPanGestureRecognizerToTopViewSnapshot = NO;
+  self.shouldAddPanGestureRecognizerToTopViewSnapshot = YES;
   self.resetTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resetTopView)];
   _panGesture          = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(updateTopViewHorizontalCenterWithRecognizer:)];
   self.resetTapGesture.enabled = NO;

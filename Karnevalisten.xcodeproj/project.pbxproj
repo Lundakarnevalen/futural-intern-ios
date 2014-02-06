@@ -70,7 +70,7 @@
 /* Begin PBXFileReference section */
 		1A362BDF189B151F002EE320 /* ViewControllerMeddelanden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerMeddelanden.h; path = SlideMenu/ViewControllerMeddelanden.h; sourceTree = "<group>"; };
 		1A362BE0189B151F002EE320 /* ViewControllerMeddelanden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerMeddelanden.m; path = SlideMenu/ViewControllerMeddelanden.m; sourceTree = "<group>"; };
-		1A362BE2189B1ACA002EE320 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1A362BE2189B1ACA002EE320 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = SlideMenu/MainViewController.m; sourceTree = "<group>"; };
 		1A362BE4189B1F35002EE320 /* SektionerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SektionerTableViewController.h; path = SlideMenu/SektionerTableViewController.h; sourceTree = "<group>"; };
 		1A362BE5189B1F35002EE320 /* SektionerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SektionerTableViewController.m; path = SlideMenu/SektionerTableViewController.m; sourceTree = "<group>"; };
 		1A3CA14B18A3ADED003AEB97 /* barnevalen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barnevalen.png; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		27D71D8D16A349F000021245 /* InitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitViewController.m; sourceTree = "<group>"; };
 		27D71D8F16A34A0200021245 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		27D71D9016A34A0200021245 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		27D71D9216A34A2200021245 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		27D71D9216A34A2200021245 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = SlideMenu/MainViewController.h; sourceTree = "<group>"; };
 		77572798189005AF00A0CA89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SlideMenu/Images.xcassets; sourceTree = "<group>"; };
 		77B3AB3D189A79830059A6ED /* sektioner.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sektioner.plist; path = SlideMenu/sektioner.plist; sourceTree = "<group>"; };
 		77B3AB44189A79C80059A6ED /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
@@ -199,8 +199,6 @@
 				27D71D8D16A349F000021245 /* InitViewController.m */,
 				27D71D8F16A34A0200021245 /* MenuViewController.h */,
 				27D71D9016A34A0200021245 /* MenuViewController.m */,
-				27D71D9216A34A2200021245 /* MainViewController.h */,
-				1A362BE2189B1ACA002EE320 /* MainViewController.m */,
 			);
 			name = MenuControllers;
 			path = SlideMenu;
@@ -215,6 +213,8 @@
 				27D71D6116A349AD00021245 /* Frameworks */,
 				77572798189005AF00A0CA89 /* Images.xcassets */,
 				27D71D7A16A349AD00021245 /* MainStoryboard.storyboard */,
+				27D71D9216A34A2200021245 /* MainViewController.h */,
+				1A362BE2189B1ACA002EE320 /* MainViewController.m */,
 				1AAB5AB518A0652100BFF205 /* MenuControllers */,
 				77F72711189AEF0400886E2F /* navigationController.h */,
 				77F72712189AEF0400886E2F /* navigationController.m */,

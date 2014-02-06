@@ -48,22 +48,6 @@
     NSURLRequest *myrequest = [NSURLRequest requestWithURL:webURL];
     [myWebView loadRequest:myrequest];
     myWebView.delegate = self;
-
-    //Swipe höger
-	UISwipeGestureRecognizer  *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handlerightSwipe:)];
-    swipeRight.numberOfTouchesRequired = 1;//give required num of touches here ..
-    swipeRight.delegate = (id)self;
-    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
-    [self.view addGestureRecognizer:swipeRight];
-    
-    self.view.layer.shadowOpacity = 0.75f;
-    self.view.layer.shadowRadius = 10.0f;
-    self.view.layer.shadowColor = [UIColor blackColor].CGColor;
-    
-    if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
-        self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
-    }
-    [self.view addGestureRecognizer:self.slidingViewController.panGesture];
     
 }
 
