@@ -15,5 +15,6 @@
 @property NSString *answer2;
 @property NSString *answer3;
 @property NSString *answer4;
+@property NSString *img;
 
 @end

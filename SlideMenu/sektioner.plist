@@ -17,6 +17,8 @@
 			<string>Vi räknar med att ta med 130 – 150 fantastiska barnevalister!</string>
 			<key>answer4</key>
 			<string>Det är en unik möjlighet att på ett studentikost sätt få roa barn, framtidens karnevalister, och deras familjer. Barnevalen är som en minikarneval i karnevalen med utrymme för väldigt många idéer och påhitt, alla kommer kunna vara med och påverka utformningen så den blir perfekt! En extra bonus är att vi, till skillnad från de övriga nöjena, kommer sluta våra föreställningar tidigare om kvällarna vilket gör att vi kommer få fler timmar över för partaj</string>
+			<key>img</key>
+			<string>barnevalen.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -29,6 +31,8 @@
 			<string>Vi är en väldigt flexibel sektion så det återstå att se efter Uppropet, men troligtvis 150-250 karnevalister.</string>
 			<key>answer4</key>
 			<string>Det finfina med Biljetteriet är att man får möjlighet att jobba under hela karnevalsvåren, vilket gör att man kommer lära känna massvis med sköna karnevalister redan innan karnevalsdagarna. Man får dessutom träffa många glada besökare från när och fjärran som inte vill något annat än att köpa karnevalsbiljetter vilket de såklart gör helt rätt i. Biljetteriet kommer vara en central del av hela karnevalskarusellen som man inte vill missa!</string>
+			<key>img</key>
+			<string>biljetteriet.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -41,6 +45,8 @@
 			<string>Blädderiet är en av de mindre sektionerna i Lundakarnevalen, och vi kommer att vara ca 65 personer. Ett litet men gött gäng helt enkelt!</string>
 			<key>answer4</key>
 			<string>Det bästa med Blädderiet är att du får möjlighet att skapa några av de saker som är mest utmärkande för Lundakarnevalen utåt! En av Blädderiets styrkor är även att vi kommer att vara en mindre sektion som jobbar intensivt under en kort period, vilket kommer att göra att vi kommer att få ett riktigt sammansvetsat gäng som kommer att ha kul tillsammans!</string>
+			<key>img</key>
+			<string>bladderiet.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -53,6 +59,8 @@
 			<string>Vi kommer vara ungefär 90-100 glada karnevalister!</string>
 			<key>answer4</key>
 			<string>Det bästa med Cirkusen kommer att bli den härliga ensemblen! Vi kommer att bli en helt ny grupp människor som i en månad tillsammans ska umgås, jobba och skapa något fantastiskt. Dessutom är det ett väldigt unikt nöje! Hur ofta får man annars chansen att sätta upp en cirkus? Det är bara att låta fantasin flöda!</string>
+			<key>img</key>
+			<string>cirkusen.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -65,6 +73,8 @@
 			<string>Vi kommer vara runt 300 taggade karnevalister.</string>
 			<key>answer4</key>
 			<string>I danssektionen får man den unika möjligheten att få vara delaktig i skapandet av en av Sveriges största, ballaste och roligaste fester, som är något helt annat än en vanlig fest på borgen. Detta får man göra tillsammans med ett hundratal andra lika taggade studenter.</string>
+			<key>img</key>
+			<string>dansen.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -77,6 +87,8 @@
 			<string>Ca 30-35 st!</string>
 			<key>answer4</key>
 			<string>Ekonomisektionen är inte karnevalens största sektion, men väl ett väldigt sammansvetsat team med den största utmaningen, som ger stora möjligheter för karnevalisten att ha jäkligt kul och få stort ansvar. Som del av ekonomisektionen ser man karnevalen med mer överblick och är hela tiden med och skapar en maximerad karnevalsistisk vår!</string>
+			<key>img</key>
+			<string>ekonomi.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -89,6 +101,8 @@
 			<string>Vi kommer vara ungefär 100 glada karnevalister!</string>
 			<key>answer4</key>
 			<string>Det bästa med Fabriken är att man får skapa väldigt mycket kreativa saker, det är bara fantasin som sätter gränser för vad som kan tillverkas i Fabriken. Man får uppleva en riktigt karnevalistisk glädje och ett gött häng på Fabriken. Under karnevalsdagarna kommer det mesta arbetet vara klart vilket betyder att man får hänga på karnevalsområdet och uppleva hela Karnevalen.</string>
+			<key>img</key>
+			<string>fabriken.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -101,6 +115,8 @@
 			<string>Runt 220 glada karnevalister!</string>
 			<key>answer4</key>
 			<string>Vi kommer vara mitt i Lundakarnevalen 2014 där vi skapar förutsättningar för världens bästa karneval genom en härlig blandning av mat och dryck!Vi kommer pyssla med ett brett spektra inom mat och dryck, från en vällagad pytt-i-panna till hög gastronomisk nivå och logistik för många ton mat!</string>
+			<key>img</key>
+			<string>festmasteriet.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -113,6 +129,8 @@
 			<string>vi kommer vara ca. 100 karnevalister och kanske 160 med statister.</string>
 			<key>answer4</key>
 			<string>Man får vara med och göra en långfilm tillsammans med andra peppade människor. Få av oss har erfarenhet av filminspelning vilket gör det ännu häftigare att vi tillsammans skapar en filminspelning på ett karnevalistiskt vis! Och inte nog med det, vi får börja tidigare än alla andra! Vår Karnevalsvår började i December!</string>
+			<key>img</key>
+			<string>filmen.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -125,6 +143,8 @@
 			<string>Kabarén kommer att bestå av mellan 70-90 snitsiga karnevalister. </string>
 			<key>answer4</key>
 			<string>Att skapa en Kabaré kommer att kräva kreativitet, arbete och väldigt mycket glädje! I Kabarén kommer det att vara högt i tak och finnas möjlighet att ta ut de karnevalistiska svängarna. Vi kommer att arbeta tillsammans veckorna innan karnevalen och bli en riktigt härlig, sammansvetsad ensemble. Här kommer man att verkligen lära känna och arbeta med nya människor, eftersom vi är en relativt liten sektion med en rolig uppgift. När sedan karnevalsdagarna stundar i maj, kommer man som Kabaré-ist att uppleva resultatet: en fantastisk föreställning, skratt och härligt häng under trädkronorna i Lundagård!</string>
+			<key>img</key>
+			<string>kabaren.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -137,6 +157,8 @@
 			<string>Vi kommer vara ungefär 30 härliga karnevalister!</string>
 			<key>answer4</key>
 			<string>Det bästa med Klipperiet är att det är en helt ny sektion – det finns ett enormt utrymme för genomförande av fantastiska idéer och kreativt arbete med rörlig bild. En förhoppning är att vi skall arbeta med variation och i olika format, såväl längre filmer som gifs. Vi kommer i vårt dokumentations- och marknadsföringsarbete också ha nära kontakt med de andra sektionerna, och det är gött. Samt äran att få bevara Futuralkarnevalen för framtiden, såklart!</string>
+			<key>img</key>
+			<string>klipperiet.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -149,6 +171,8 @@
 			<string>Vi kommer vara ungefär 100 glada karnevalister!</string>
 			<key>answer4</key>
 			<string>Det bästa med kommunikationssektionen är att det finns så många olika saker att göra! Det är också en sektion som kommer ha mycket kontakt med många andra karnevalister vilket såklart är kul. Vi kommer vara väldigt kreativa, men också allra bäst på listor. En fantastisk kombination!</string>
+			<key>img</key>
+			<string>kommunikation.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -161,6 +185,8 @@
 			<string>Förhoppningen är att det ska bli ett härligt gäng på cirka 170 karnevalister!</string>
 			<key>answer4</key>
 			<string>Det bästa är att arbetet kommer att vara varierande så att man inte tröttnar på sin arbetsuppgift. Tillsammans kommer vi att skapa en krog där allt från maten vi serverar till dekorationer i lokalen är inspirerade av vårt tema. Framförallt så kommer vi skapa en krog där stämningen alltid är på topp!</string>
+			<key>img</key>
+			<string>krog.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -173,6 +199,8 @@
 			<string>Vi kommer att vara ungefär 250 karnevalister.</string>
 			<key>answer4</key>
 			<string>Vi kommer att skapa ett helt nytt krogområde uppe på g:a kirurgen. Det kommer därför bli en helhetsupplevelse utöver det vanliga med allt som hör en karneval till. Det kommer bli allmänna galenskaper, underbara tokigheter och magiska dagar kvällar och nätter. Häng med och skapa något helt nytt på karnevalen och var med om att i framtiden gå till historien!</string>
+			<key>img</key>
+			<string>krog.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -185,6 +213,8 @@
 			<string>Vi kommer att vara 150-170 karnevalister.</string>
 			<key>answer4</key>
 			<string>Vi kommer att satsa på att ha den mest ambitiösa och ljusslingespäckade inredningen i karnevalskrogarnas historia. Dessutom befinner vi oss också mitt i smeten – vid fontänen och Stora scenen – vilket ju inte kan bli annat än bra!</string>
+			<key>img</key>
+			<string>krog.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -197,6 +227,8 @@
 			<string>Det är svårt att i dagsläget säga hur sektionen kommer bli då vi fortfarande dealar lite mellan krogarna, 200-300 personer är väl någon form av kvalificerad gissning. Alldeles, alldeles lagom blir det i alla fall!</string>
 			<key>answer4</key>
 			<string>Det är mycket som är både bra och speciellt med oss! Vi kommer hålla till med en annan krog uppe G:a Kirurgen, i norra delen av karnevalsområdet. Vi kommer tillsammans med krog Kågell helt bossa över området vilket betyder att vi kommer kunna hitta på riktigt mycket spännande hyss däruppe! Hur krogarna slutgiltigt kommer se ut är ännu inte klart men säkert är att min souschef Hugo och jag kommer satsa stenhårt på en upplevelse utöver mat och dryck. Upptåg, musik, spektakel, scener, fester  - alla möjliga äventyr kommer kunna upplevas uppe på Kirurgen i maj! Så har du ett genuint intresse av allt som har med mat, dryck och/eller events att göra look no further. Förutom att ni kommer lära känna min fantastiska ledningsgrupp, Hugo och mig lovar jag er mycket galej och vänner för livet. Vi kommer tillsammans skapa framtidens häftigaste, gladaste och futuralaste sektion!</string>
+			<key>img</key>
+			<string>krog.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -209,6 +241,8 @@
 			<string>Vi kommer att vara närmare 200 karnevalister i sektionen!</string>
 			<key>answer4</key>
 			<string>I vår sektion kommer man få vara med och testa på massor av roliga uppgifter, att driva krog är sjukt kul! Att få skapa glädje för våra gäster samtidigt som vi själva har kul kommer bli en riktig upplevelse!</string>
+			<key>img</key>
+			<string>krog.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -221,6 +255,8 @@
 			<string>Vi kommer vara omkring 100 karnevalister</string>
 			<key>answer4</key>
 			<string>Det bästa med musiksektionen är att vår insatts underhåller tusentals människor åt gången men även att det är en härlig utmaning att få allt att fungera samtidigt som vi upplever alla spelningar på omvänd första parkett (bakom scen).</string>
+			<key>img</key>
+			<string>musiken.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -233,6 +269,8 @@
 			<string>Nöjessektionen är den minsta sektionen i karnevalen och vi satsar på att vara ungefär tre personer. Tyvärr kan man inte söka till vår sektion på uppropet, men man får gärna komma och prata med oss vid disken där man anmäler sig till inprovningar av olika slag!</string>
 			<key>answer4</key>
 			<string>Det bästa med nöjessektionen är att vi får jobba med så många olika sektioner och träffa och hjälpa så många människor! En annan bra grej är att hela sektionen får plats i ett och samma badkar!</string>
+			<key>img</key>
+			<string>nojen.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -245,6 +283,8 @@
 			<string>ca 100</string>
 			<key>answer4</key>
 			<string>Att man från ingenting bygger upp hela det magiska karnevalsområdet med allt vad det innebär under ett par intensiva veckor och att man får komma i kontakt med så många av de andra sektionerna i sitt arbete.</string>
+			<key>img</key>
+			<string>omrade</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -257,6 +297,8 @@
 			<string>Vi kommer att vara ungefär 70 pratglada karnevalister.</string>
 			<key>answer4</key>
 			<string>Det absolut bästa är det som hela sektionen vilar på – du får sända radio. Det är extremt roligt! Dessutom får du sända radio som också syns, både av folk som tittar in på oss från karnevalsområdet och av folk som sitter hemma framför datorn. Och – som tidigare nämnt – kan du hitta på andra saker utöver det. Du kommer också att få lära dig en massa saker om radiosändande och teknik under vårens gång!</string>
+			<key>img</key>
+			<string>radio.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -269,6 +311,8 @@
 			<string>Vi kommer vara ungefär 85 karnevalister totalt.</string>
 			<key>answer4</key>
 			<string>Det bästa med Revyn kommer att vara sammanhållningen, speciellt under repveckorna. Vi kommer arbeta väldigt nära och intensivt under denna period. Alla i sektionen kommer att ha en tydlig arbetsroll och alla kommer arbeta för samma mål. När sedan produkten är färdig kommer vi alla kunna njuta av denna och vara stolta tillsammans!</string>
+			<key>img</key>
+			<string>revyn.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -281,6 +325,8 @@
 			<string>Cirka 200 personer kommer vi att vara totalt!</string>
 			<key>answer4</key>
 			<string>Dels är det en blandning av spetskompetenser inom olika områden som blandas med ett stort gäng mindre erfarna, men mist lika glada karnevalister, och dels är det extra viktigt att vi har det roligt medan vi löser våra uppgifter då det är ett ansvarsfullt uppdrag som karnevalens alla besökare och medverkare verkligen är beroende av fungerar.</string>
+			<key>img</key>
+			<string>sakerhet.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -293,6 +339,8 @@
 			<string>Vi kommer vara runtomkring 300 personer.</string>
 			<key>answer4</key>
 			<string>Det bästa med vår sektion är att det är den bästa blandningen av kreativitet och seriöst. Det kommer att finnas många olika typ av saker att göra men vi kommer alla att sträva mot en gemensam slutprodukt. Hos oss ska det vara fokus på att ha kul och få en gemenskap med gruppen, men också att ens uppgifter är meningsfulla och värdeskapande samtidigt som roliga.</string>
+			<key>img</key>
+			<string>shoppen.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -305,6 +353,8 @@
 			<string>Kanske mellan 70 och 90.</string>
 			<key>answer4</key>
 			<string>Ja, var ska man börja…? Om du innehar de båda egenskaperna: a) tycker att vara med och skapa en scenföreställning verkar helball samt b) vill anamma den karnevalistiska andan och pröva att göra något nytt och riktigt fräscht, så hade det varit falsk marknadsföring att inte rekommendera Showen. Det är ett nöje som skiljer sig mycket från övriga nöjeslivet i studentvärlden, till sin form och till sin karaktär. En speciell och stor del av själva föreställningen är konceptet krogshow, dvs att publiken blir serverade fantastisk mat under tiden. Det gör t.ex. att sexmästeriet i Showen är oerhört viktigt. En annan profil på föreställningen är att den kommer att hålla en hög musikalisk nivå, och musiken kommer att spela en stor roll. Generellt kan man säga att det finns ingen bättre känsla än att tillsammans skapa och utforska något nytt – och det är precis det vi får chansen att göra i Showen. Följ med in i vår framtid vettja!</string>
+			<key>img</key>
+			<string>show.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -317,6 +367,8 @@
 			<string>I varje Smånöje kommer det att vara runt 50 personer.</string>
 			<key>answer4</key>
 			<string>Det lilla formatet ger massor av nya idéer och möjligheter att röra sig utanför den vanliga boxen vad gäller en föreställning med mycket interaktion och publikkontakt. Den lilla ensemblen i kombination med den intensiva repetitionsperioden ger också en fantastisk sammanhållning som du kommer minnas för livet!</string>
+			<key>img</key>
+			<string>smanojen.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -329,6 +381,8 @@
 			<string>Totalt kommer vi att bli mellan 180 till 200 glada karnevalister i sektionen.</string>
 			<key>answer4</key>
 			<string>Som karnevalist i Snaxeriet är du med och skriver karnevalshistoria när Lundakarnevalen för fösta gången gör en fullfjädrad snackssattning! Under våren kommer vi tillsammans stöta på många nya utmaningar som som kommer att behöva bra idéer, kreativitet och humor för att ta sig an. Sedan skadar det ju inte att säga att den huvudsakliga födan för en snaxerist under karnevalsvåren kommer att vara popcorn, sockervadd och karnevöl.</string>
+			<key>img</key>
+			<string>snaxeriet.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -341,6 +395,8 @@
 			<string>Ca 75.</string>
 			<key>answer4</key>
 			<string>Att vi får skapa ett spex tillsammans! Att få arbeta ihop mot samma mål och sedan känna den gemensamma glädjen när vi får se slutresultatet är en enastående upplevelse. Det är även fantastiskt att få visa upp vårt arbete inför karnevalsbesökarna. Dessutom har vi den speciella förmånen att vara det nöje som flest besökare kommer att ha möjlighet att se.</string>
+			<key>img</key>
+			<string>spexet.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -353,6 +409,8 @@
 			<string>Med alla som jobbar med själva tåget till alla på vagnarna, mellanekipage och orkestrarna så blir vi ett härligt häng på cirka 1000 karnevalister. </string>
 			<key>answer4</key>
 			<string>Att vi får tillsammans gå ut på gatorna och visa varför Lundakarnevalen är det roligaste man kan var med och se på!</string>
+			<key>img</key>
+			<string>tag.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -365,6 +423,8 @@
 			<string>Vi kommer att vara någonstans mellan 450-700 härliga karnevalister.</string>
 			<key>answer4</key>
 			<string>Att du får chansen att jobba med din kreativitet i varierande uppgifter för att skapa roliga, spännande och överraskande upplevelser för karnevalsbesökarna. Tältnöjessektionen är dessutom en av karnevalens största sektioner vilket gör att du får chansen att lära känna massor av nya härliga människor. Det är också en klassisk och traditionell sektion där du verkligen kan få möjlighet att vara med och sätta prägel på Futuralkarnevalen 2014!</string>
+			<key>img</key>
+			<string>nojen.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -377,6 +437,8 @@
 			<string>Vi siktar på att vara ungefär 150 sköna tombolister.</string>
 			<key>answer4</key>
 			<string>Hos oss kan man verkligen få utlopp för sin kreativitet och utforma en idé från grunden. Variationen är också något speciellt då man kommer att få ägna sig åt blandade uppgifter samtidigt som man lär känna nya sköna människor av alla dess sorter!</string>
+			<key>img</key>
+			<string>tombolan.png</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -389,6 +451,8 @@
 			<string>Vi kommer att bli runt hundra stycken vierister, därav ungefär sjuttio stycken tillsätts innan uppropet!</string>
 			<key>answer4</key>
 			<string>Vieriet är den gladaste platsen på jorden! Till skillnad från de flesta andra sektioner arbetar vieriet kontinuerligt under våren och kan med enorm stolthet avnjuta crescendot av gemenskap och vi-känsla den 16-18 maj, som vi alla då tillsammans har byggt upp. Sedan är det ju inte heller varje dag man har möjlighet att få vara med och skapa en fest för 3000 personer, slussa tusentals karnevalister till Lomma eller ordna Sveriges största fracksittning.</string>
+			<key>img</key>
+			<string>vieriet.png</string>
 		</dict>
 	</array>
 </dict>

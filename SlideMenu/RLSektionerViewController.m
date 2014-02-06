@@ -51,6 +51,7 @@
         sektion.answer2 = [obj objectForKey:@"answer2"];
         sektion.answer3 = [obj objectForKey:@"answer3"];
         sektion.answer4 = [obj objectForKey:@"answer4"];
+        sektion.img = [obj objectForKey:@"img"];
 
         [self.sektioner addObject:sektion];
     }

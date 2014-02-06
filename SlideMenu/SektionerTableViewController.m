@@ -93,12 +93,13 @@
         label.textAlignment = NSTextAlignmentCenter;
         [label setBackgroundColor:[UIColor clearColor]];
         
-        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10,100,300,134)];
+        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10,80,300,160)];
+        [imageView setBackgroundColor: [UIColor clearColor]];
         imageView.contentMode = UIViewContentModeScaleAspectFit;
         [cell.contentView addSubview:imageView];
         
         imageView.layer.masksToBounds = YES;
-        imageView.image = [UIImage imageNamed:@"happy_robot.png"];
+        imageView.image = [UIImage imageNamed:self.sektion.img];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
         
@@ -132,6 +133,7 @@
         textLabel.textColor = [UIColor colorWithRed:255 green:255 blue:255 alpha:0.8];
         [textLabel setFont:[UIFont systemFontOfSize:14]];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
         [textLabel setBackgroundColor:[UIColor clearColor]];
         return cell;
         
@@ -141,7 +143,7 @@
 - (CGFloat)heightForTextLabel: (NSString *)text {
     NSInteger length = [text length];
     NSInteger padding = 20;
-    return length / 40 * 14 + padding;
+    return length / 40 * 19 + padding;
 }
 
 //- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -151,7 +153,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
-        return 250;
+        return 270;
     }
     
     NSString *theText = [self.answers objectAtIndex:indexPath.row-1];
@@ -166,7 +168,7 @@
     
     NSInteger length = [theText length];
     NSInteger padding = 60;
-    return length / 40 * 14 + padding + 60;
+    return length / 40 * 19 + padding + 60;
 }
 
 

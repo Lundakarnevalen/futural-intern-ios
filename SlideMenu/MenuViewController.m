@@ -118,6 +118,8 @@
             self.slidingViewController.topViewController.view.frame = frame;
             [self.slidingViewController resetTopView];
         }];
+    } else {
+        
     }
     
 }
