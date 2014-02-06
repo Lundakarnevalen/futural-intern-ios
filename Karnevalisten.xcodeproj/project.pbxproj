@@ -58,7 +58,6 @@
 		27D71D8B16A349D500021245 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8916A349D500021245 /* UIImage+ImageWithUIView.m */; };
 		27D71D8E16A349F000021245 /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8D16A349F000021245 /* InitViewController.m */; };
 		27D71D9116A34A0200021245 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D9016A34A0200021245 /* MenuViewController.m */; };
-		27D71D9716A34A2C00021245 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D9616A34A2C00021245 /* SecondViewController.m */; };
 		77572799189005AF00A0CA89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77572798189005AF00A0CA89 /* Images.xcassets */; };
 		77B3AB3E189A79830059A6ED /* sektioner.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77B3AB3D189A79830059A6ED /* sektioner.plist */; };
 		77B3AB45189A79C80059A6ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77B3AB44189A79C80059A6ED /* InfoPlist.strings */; };
@@ -133,8 +132,6 @@
 		27D71D8F16A34A0200021245 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		27D71D9016A34A0200021245 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		27D71D9216A34A2200021245 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		27D71D9516A34A2C00021245 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		27D71D9616A34A2C00021245 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		77572798189005AF00A0CA89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SlideMenu/Images.xcassets; sourceTree = "<group>"; };
 		77B3AB3D189A79830059A6ED /* sektioner.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sektioner.plist; path = SlideMenu/sektioner.plist; sourceTree = "<group>"; };
 		77B3AB44189A79C80059A6ED /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
@@ -204,8 +201,6 @@
 				27D71D9016A34A0200021245 /* MenuViewController.m */,
 				27D71D9216A34A2200021245 /* MainViewController.h */,
 				1A362BE2189B1ACA002EE320 /* MainViewController.m */,
-				27D71D9516A34A2C00021245 /* SecondViewController.h */,
-				27D71D9616A34A2C00021245 /* SecondViewController.m */,
 			);
 			name = MenuControllers;
 			path = SlideMenu;
@@ -416,7 +411,6 @@
 				77B3AB4B189A7A440059A6ED /* RLSektioner.m in Sources */,
 				27D71D8E16A349F000021245 /* InitViewController.m in Sources */,
 				27D71D9116A34A0200021245 /* MenuViewController.m in Sources */,
-				27D71D9716A34A2C00021245 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
