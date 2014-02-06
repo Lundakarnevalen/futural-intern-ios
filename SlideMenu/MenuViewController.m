@@ -84,7 +84,7 @@
     }
     
     if (indexPath.row == 0) {
-        
+        [cell setUserInteractionEnabled:NO];
     } else {
         cell.textLabel.text = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row-1]];
         [cell.textLabel setFont:[UIFont systemFontOfSize:20]];
@@ -100,13 +100,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
     if (!(indexPath.row == 0)) {
         NSString *identifier = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row-1]];
         
@@ -118,10 +111,7 @@
             self.slidingViewController.topViewController.view.frame = frame;
             [self.slidingViewController resetTopView];
         }];
-    } else {
-        
     }
-    
 }
 
 @end
