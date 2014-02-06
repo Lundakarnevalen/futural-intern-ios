@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewControllerMeddelanden : UIViewController
+@interface ViewControllerMeddelanden : UIViewController <UIWebViewDelegate>
 
 {
     IBOutlet UIWebView *myWebView;

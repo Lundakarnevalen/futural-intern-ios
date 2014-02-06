@@ -64,7 +64,7 @@
 		27D71D9716A34A2C00021245 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D9616A34A2C00021245 /* SecondViewController.m */; };
 		77572799189005AF00A0CA89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77572798189005AF00A0CA89 /* Images.xcassets */; };
 		7757279D189019A900A0CA89 /* happy_robot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7757279C189019A900A0CA89 /* happy_robot.png */; };
-		77B3AB3A18995C2D0059A6ED /* ViewControllerWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3AB3918995C2D0059A6ED /* ViewControllerWebView.m */; };
+		77B3AB3A18995C2D0059A6ED /* ViewControllerRegistrering.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3AB3918995C2D0059A6ED /* ViewControllerRegistrering.m */; };
 		77B3AB3E189A79830059A6ED /* sektioner.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77B3AB3D189A79830059A6ED /* sektioner.plist */; };
 		77B3AB45189A79C80059A6ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77B3AB44189A79C80059A6ED /* InfoPlist.strings */; };
 		77B3AB48189A7A220059A6ED /* RLSektionerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3AB47189A7A220059A6ED /* RLSektionerViewController.m */; };
@@ -432,7 +432,7 @@
 				1A362BE1189B151F002EE320 /* ViewControllerMeddelanden.m in Sources */,
 				27D71D8B16A349D500021245 /* UIImage+ImageWithUIView.m in Sources */,
 				77B3AB48189A7A220059A6ED /* RLSektionerViewController.m in Sources */,
-				77B3AB3A18995C2D0059A6ED /* ViewControllerWebView.m in Sources */,
+				77B3AB3A18995C2D0059A6ED /* ViewControllerRegistrering.m in Sources */,
 				77B3AB4B189A7A440059A6ED /* RLSektioner.m in Sources */,
 				27D71D8E16A349F000021245 /* InitViewController.m in Sources */,
 				27D71D9116A34A0200021245 /* MenuViewController.m in Sources */,
