@@ -37,7 +37,7 @@
 		27D71D9716A34A2C00021245 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D9616A34A2C00021245 /* SecondViewController.m */; };
 		77572799189005AF00A0CA89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77572798189005AF00A0CA89 /* Images.xcassets */; };
 		7757279D189019A900A0CA89 /* happy_robot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7757279C189019A900A0CA89 /* happy_robot.png */; };
-		77B3AB3A18995C2D0059A6ED /* ViewControllerWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3AB3918995C2D0059A6ED /* ViewControllerWebView.m */; };
+		77B3AB3A18995C2D0059A6ED /* ViewControllerRegistrering.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3AB3918995C2D0059A6ED /* ViewControllerRegistrering.m */; };
 		77B3AB3E189A79830059A6ED /* sektioner.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77B3AB3D189A79830059A6ED /* sektioner.plist */; };
 		77B3AB45189A79C80059A6ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77B3AB44189A79C80059A6ED /* InfoPlist.strings */; };
 		77B3AB48189A7A220059A6ED /* RLSektionerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3AB47189A7A220059A6ED /* RLSektionerViewController.m */; };
@@ -90,8 +90,8 @@
 		27D71D9616A34A2C00021245 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		77572798189005AF00A0CA89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7757279C189019A900A0CA89 /* happy_robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy_robot.png; sourceTree = "<group>"; };
-		77B3AB3818995C2D0059A6ED /* ViewControllerWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerWebView.h; sourceTree = "<group>"; };
-		77B3AB3918995C2D0059A6ED /* ViewControllerWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerWebView.m; sourceTree = "<group>"; };
+		77B3AB3818995C2D0059A6ED /* ViewControllerRegistrering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRegistrering.h; sourceTree = "<group>"; };
+		77B3AB3918995C2D0059A6ED /* ViewControllerRegistrering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRegistrering.m; sourceTree = "<group>"; };
 		77B3AB3D189A79830059A6ED /* sektioner.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sektioner.plist; sourceTree = "<group>"; };
 		77B3AB44189A79C80059A6ED /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		77B3AB46189A7A1C0059A6ED /* RLSektionerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLSektionerViewController.h; sourceTree = "<group>"; };
@@ -148,8 +148,8 @@
 		27D71D6816A349AD00021245 /* SlideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				77B3AB3818995C2D0059A6ED /* ViewControllerWebView.h */,
-				77B3AB3918995C2D0059A6ED /* ViewControllerWebView.m */,
+				77B3AB3818995C2D0059A6ED /* ViewControllerRegistrering.h */,
+				77B3AB3918995C2D0059A6ED /* ViewControllerRegistrering.m */,
 				27D71D7116A349AD00021245 /* AppDelegate.h */,
 				27D71D7216A349AD00021245 /* AppDelegate.m */,
 				27D71D7A16A349AD00021245 /* MainStoryboard.storyboard */,
@@ -313,7 +313,7 @@
 				1A362BE1189B151F002EE320 /* ViewControllerMeddelanden.m in Sources */,
 				27D71D8B16A349D500021245 /* UIImage+ImageWithUIView.m in Sources */,
 				77B3AB48189A7A220059A6ED /* RLSektionerViewController.m in Sources */,
-				77B3AB3A18995C2D0059A6ED /* ViewControllerWebView.m in Sources */,
+				77B3AB3A18995C2D0059A6ED /* ViewControllerRegistrering.m in Sources */,
 				77B3AB4B189A7A440059A6ED /* RLSektioner.m in Sources */,
 				27D71D8E16A349F000021245 /* InitViewController.m in Sources */,
 				27D71D9116A34A0200021245 /* MenuViewController.m in Sources */,

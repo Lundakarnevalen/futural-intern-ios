@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="1057" y="685"/>
         </scene>
-        <!--View Controller Web View - Registrering-->
+        <!--View Controller Registrering - Registrering-->
         <scene sceneID="uCz-3V-6KP">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="8JJ-2e-rdq" customClass="ViewControllerWebView" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="8JJ-2e-rdq" customClass="ViewControllerRegistrering" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2s9-p5-kJj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
