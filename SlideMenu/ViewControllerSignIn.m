@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 Indee Box LLC. All rights reserved.
 //
 
-#import "ViewControllerRegistrering.h"
+#import "ViewControllerSignIn.h"
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
 
-@interface ViewControllerRegistrering ()
+@interface ViewControllerSignIn ()
 
 @property UIActivityIndicatorView *spinner;
 
 @end
 
-@implementation ViewControllerRegistrering
+@implementation ViewControllerSignIn
 
 - (IBAction)revealMenu:(id)sender
 {
@@ -44,7 +44,7 @@
     [self.spinner setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.2]];
     [self.view addSubview:self.spinner];
     
-    NSURL *webURL = [NSURL URLWithString:@"http://www.karnevalist.se/karnevalister/step1"];
+    NSURL *webURL = [NSURL URLWithString:@"http://www.karnevalist.se/users/sign_in"];
     NSURLRequest *myrequest = [NSURLRequest requestWithURL:webURL];
     [myWebView loadRequest:myrequest];
     myWebView.delegate = self;

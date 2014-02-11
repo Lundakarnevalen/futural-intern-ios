@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="1057" y="685"/>
         </scene>
-        <!--View Controller Registrering - Registrering-->
+        <!--View Controller Sign In - Logga in-->
         <scene sceneID="uCz-3V-6KP">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="8JJ-2e-rdq" customClass="ViewControllerRegistrering" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="8JJ-2e-rdq" customClass="ViewControllerSignIn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2s9-p5-kJj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -100,7 +100,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Registrering" id="42O-Kc-xDg">
+                    <navigationItem key="navigationItem" title="Logga in" id="42O-Kc-xDg">
                         <barButtonItem key="leftBarButtonItem" image="menuButton.png" id="osK-Rn-hQ5">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -160,7 +160,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" cyan="0.0" magenta="0.75" yellow="0.75" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Registera mig!">
+                                <state key="normal" title="Logga in">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -175,7 +175,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vad trevligt att du vill bli karnevalist! Klicka på knappen nedan och följ anvisningarna." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wmD-SL-IuG">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Välkommen karnevalist och till den appen som finns till bara för din skull! Framför dig väntar en riktigt j***a vår!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wmD-SL-IuG">
                                 <rect key="frame" x="20" y="405" width="280" height="69"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" cyan="0.0" magenta="0.45000000000000001" yellow="0.32000000000000001" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -345,7 +345,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Bzs-6K-VhN">
             <objects>
-                <navigationController storyboardIdentifier="Registrering" automaticallyAdjustsScrollViewInsets="NO" id="YkJ-cb-UlX" customClass="NavigationController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Logga in" automaticallyAdjustsScrollViewInsets="NO" id="YkJ-cb-UlX" customClass="NavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aLG-rz-JCc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

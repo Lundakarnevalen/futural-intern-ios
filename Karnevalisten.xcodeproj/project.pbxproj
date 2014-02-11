@@ -46,7 +46,7 @@
 		1A8D7B21189B0BE0002070D6 /* ViewControllerCloudVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D7B20189B0BE0002070D6 /* ViewControllerCloudVideo.m */; };
 		1AD1A821189C8AFF0086DF0F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A63BB04189BE25000F43465 /* Settings.bundle */; };
 		1AD1A823189C92F50086DF0F /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD1A822189C92F50086DF0F /* blank.png */; };
-		1ADB6D2E18A3EBA70012CC06 /* ViewControllerRegistrering.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADB6D2D18A3EBA70012CC06 /* ViewControllerRegistrering.m */; };
+		1ADB6D2E18A3EBA70012CC06 /* ViewControllerSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADB6D2D18A3EBA70012CC06 /* ViewControllerSignIn.m */; };
 		27D71D6316A349AD00021245 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6216A349AD00021245 /* UIKit.framework */; };
 		27D71D6516A349AD00021245 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6416A349AD00021245 /* Foundation.framework */; };
 		27D71D6716A349AD00021245 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6616A349AD00021245 /* CoreGraphics.framework */; };
@@ -110,8 +110,8 @@
 		1A8D7B1F189B0BE0002070D6 /* ViewControllerCloudVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerCloudVideo.h; path = SlideMenu/ViewControllerCloudVideo.h; sourceTree = "<group>"; };
 		1A8D7B20189B0BE0002070D6 /* ViewControllerCloudVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerCloudVideo.m; path = SlideMenu/ViewControllerCloudVideo.m; sourceTree = "<group>"; };
 		1AD1A822189C92F50086DF0F /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
-		1ADB6D2C18A3EBA70012CC06 /* ViewControllerRegistrering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerRegistrering.h; path = SlideMenu/ViewControllerRegistrering.h; sourceTree = "<group>"; };
-		1ADB6D2D18A3EBA70012CC06 /* ViewControllerRegistrering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerRegistrering.m; path = SlideMenu/ViewControllerRegistrering.m; sourceTree = "<group>"; };
+		1ADB6D2C18A3EBA70012CC06 /* ViewControllerSignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerSignIn.h; path = SlideMenu/ViewControllerSignIn.h; sourceTree = "<group>"; };
+		1ADB6D2D18A3EBA70012CC06 /* ViewControllerSignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerSignIn.m; path = SlideMenu/ViewControllerSignIn.m; sourceTree = "<group>"; };
 		27D71D5E16A349AD00021245 /* Karnevalisten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karnevalisten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D71D6216A349AD00021245 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		27D71D6416A349AD00021245 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -232,8 +232,8 @@
 				1A8D7B20189B0BE0002070D6 /* ViewControllerCloudVideo.m */,
 				1A362BDF189B151F002EE320 /* ViewControllerMeddelanden.h */,
 				1A362BE0189B151F002EE320 /* ViewControllerMeddelanden.m */,
-				1ADB6D2C18A3EBA70012CC06 /* ViewControllerRegistrering.h */,
-				1ADB6D2D18A3EBA70012CC06 /* ViewControllerRegistrering.m */,
+				1ADB6D2C18A3EBA70012CC06 /* ViewControllerSignIn.h */,
+				1ADB6D2D18A3EBA70012CC06 /* ViewControllerSignIn.m */,
 			);
 			sourceTree = "<group>";
 		};
@@ -407,7 +407,7 @@
 				1A362BE1189B151F002EE320 /* ViewControllerMeddelanden.m in Sources */,
 				27D71D8B16A349D500021245 /* UIImage+ImageWithUIView.m in Sources */,
 				77B3AB48189A7A220059A6ED /* RLSektionerViewController.m in Sources */,
-				1ADB6D2E18A3EBA70012CC06 /* ViewControllerRegistrering.m in Sources */,
+				1ADB6D2E18A3EBA70012CC06 /* ViewControllerSignIn.m in Sources */,
 				77B3AB4B189A7A440059A6ED /* RLSektioner.m in Sources */,
 				27D71D8E16A349F000021245 /* InitViewController.m in Sources */,
 				27D71D9116A34A0200021245 /* MenuViewController.m in Sources */,
@@ -492,8 +492,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideMenu/Karnevalisten-Prefix.pch";
 				INFOPLIST_FILE = "SlideMenu/Karnevalisten-Info.plist";
@@ -509,8 +509,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lundakarnevalen (YSKSAFCAGC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lundakarnevalen (YSKSAFCAGC)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideMenu/Karnevalisten-Prefix.pch";
 				INFOPLIST_FILE = "SlideMenu/Karnevalisten-Info.plist";
