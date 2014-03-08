@@ -40,7 +40,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.menu = [NSArray arrayWithObjects:@"Start", @"Sektioner",@"Logga in",@"Meddelanden", nil];
+    self.menu = [NSArray arrayWithObjects:@"Start", @"Sektioner",@"Logga in",@"Meddelanden", @"#karnevelj", nil];
     
     [self.slidingViewController setAnchorRightRevealAmount:200.0f];
     self.slidingViewController.underLeftWidthLayout = ECFullWidth;
