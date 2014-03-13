@@ -10,9 +10,4 @@
 
 @interface MainViewController : UIViewController
 
-{
-    
-    IBOutlet UIWebView *myurl;
-}
-
 @end

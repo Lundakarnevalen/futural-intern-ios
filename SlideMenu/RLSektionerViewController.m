@@ -38,7 +38,7 @@
     
     NSString *plistPath;
 
-    plistPath = plistPath = [[NSBundle mainBundle] pathForResource:@"sektioner" ofType:@"plist"];
+    plistPath = [[NSBundle mainBundle] pathForResource:@"sektioner" ofType:@"plist"];
     
     NSDictionary *temp = [NSDictionary dictionaryWithContentsOfFile:plistPath];
     NSArray *tempSektioner = [temp objectForKey:@"sektioner"];
@@ -109,8 +109,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    //RLSektioner *sektion = [self.sektioner objectAtIndex:indexPath.row];
-    NSLog(@"%d", indexPath.row);
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

@@ -55,7 +55,7 @@
             break;
             
         default:
-            retVal = [self.media.caption.text length] / 30 * 14 + 70;
+            retVal = [self.media.caption.text length] / 30 * 17 + 70;
             break;
     }
     return retVal;

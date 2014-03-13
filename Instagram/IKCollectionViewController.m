@@ -60,15 +60,18 @@
 
 - (void)loadMediaAnimated:(BOOL)animated
 {
-    NSString *lundakarnevalen = @"karnevelj";;
-    [[InstagramEngine sharedEngine] getMediaWithTagName:lundakarnevalen withSuccess:^(NSArray *feed) {
-        [mediaArray removeAllObjects];
-        [mediaArray addObjectsFromArray:feed];
-        (animated)?[self refreshCells]:[self reloadData];
-        isPopularFeed = NO;
-    } failure:^(NSError *error) {
-        NSLog(@"Load Popular Media Failed");
-    }];
+    NSArray *tags = @[@"karnevelj", @"karneveljen"];
+    [mediaArray removeAllObjects];
+    for (NSString *tag in tags) {
+        [[InstagramEngine sharedEngine] getMediaWithTagName:tag withSuccess:^(NSArray *feed) {
+            [mediaArray addObjectsFromArray:feed];
+            (animated)?[self refreshCells]:[self reloadData];
+            isPopularFeed = NO;
+        } failure:^(NSError *error) {
+            NSLog(@"Load Popular Media Failed");
+        }];
+    }
+    
 }
 
 

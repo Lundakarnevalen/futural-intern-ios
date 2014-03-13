@@ -122,7 +122,6 @@
         
         NSString *ans = [NSString stringWithFormat:@"%@", [self.answers objectAtIndex:indexPath.row-1]];
         UILabel *textLabel = [[[UILabel alloc] initWithFrame:CGRectMake(20, 80, 280, [self heightForTextLabel:ans])] init];
-        NSLog(@"Height label at %d: %d, cell %d", indexPath.row, (NSInteger)[self heightForTextLabel:ans], (NSInteger)[self heightForTextLabel:ans]+60);
         
         // Do some stuff
         
