@@ -33,7 +33,7 @@
        
     if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
         [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"Nav_bar.png"] forBarMetrics:UIBarMetricsDefault];
-    }
+    } 
 }
 
 @end
