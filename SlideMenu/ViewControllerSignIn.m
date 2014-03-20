@@ -48,7 +48,6 @@
     NSURLRequest *myrequest = [NSURLRequest requestWithURL:webURL];
     [myWebView loadRequest:myrequest];
     myWebView.delegate = self;
-    
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
@@ -66,13 +65,5 @@
     [self.spinner stopAnimating];
     [self.spinner removeFromSuperview];
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 
 @end

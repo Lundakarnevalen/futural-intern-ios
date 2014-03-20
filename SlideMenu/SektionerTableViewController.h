@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RLSektioner.h"
+#import "Sektioner.h"
 
 @interface SektionerTableViewController : UITableViewController
 
-@property (nonatomic) RLSektioner *sektion;
+@property (nonatomic) Sektioner *sektion;
 
 @end

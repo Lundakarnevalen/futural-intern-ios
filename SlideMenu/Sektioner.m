@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Richard Luong. All rights reserved.
 //
 
-#import "RLSektioner.h"
+#import "Sektioner.h"
 
-@implementation RLSektioner
+@implementation Sektioner
 
 @end

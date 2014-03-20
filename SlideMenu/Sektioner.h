@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RLSektioner : NSObject
+@interface Sektioner : NSObject
 
 @property NSString *name;
 @property NSString *answer1;

@@ -9,7 +9,11 @@
 #import "NavigationController.h"
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
+#import "Colors.h"
 
+@interface NavigationController ()
+
+@end
 
 @implementation NavigationController
 
@@ -30,10 +34,12 @@
     [super viewDidLoad];
     
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-       
+    
     if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
         [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"Nav_bar.png"] forBarMetrics:UIBarMetricsDefault];
-    } 
+    } else {
+        [self.navigationBar setTintColor:[Colors redColorWithAlpha:1]];
+    }
 }
 
 @end
