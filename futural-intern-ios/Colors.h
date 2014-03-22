@@ -17,5 +17,7 @@
 +(UIColor *)lightBlueColorWithAlpha:(CGFloat)alpha;
 +(UIColor *)bieghColorWithAlpha:(CGFloat)alpha;
 
++(UIColor *)randomColorWithAlpha:(CGFloat)alpha;
+
 @end
 

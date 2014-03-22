@@ -40,12 +40,14 @@
 		1AA15BA818CBA666007A74C8 /* InstagramPaginationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA15B9D18CBA666007A74C8 /* InstagramPaginationInfo.m */; };
 		1AA15BA918CBA666007A74C8 /* InstagramTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA15B9F18CBA666007A74C8 /* InstagramTag.m */; };
 		1AA15BAA18CBA666007A74C8 /* InstagramUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA15BA118CBA666007A74C8 /* InstagramUser.m */; };
-		1ACF836318D8E07400A5052F /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF836218D8E07400A5052F /* MapViewController.m */; };
+		1AB448F918DB9D8E0060C0D0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB448F818DB9D8E0060C0D0 /* MapViewController.m */; };
 		1ACF836418D8E3D000A5052F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA15B5B18CB995F007A74C8 /* MapKit.framework */; };
 		1AD1A821189C8AFF0086DF0F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A63BB04189BE25000F43465 /* Settings.bundle */; };
 		1AD1A823189C92F50086DF0F /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD1A822189C92F50086DF0F /* blank.png */; };
 		1ADB6D2E18A3EBA70012CC06 /* ViewControllerSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADB6D2D18A3EBA70012CC06 /* ViewControllerSignIn.m */; };
 		1AEE316018D9A5D8007A9934 /* Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE315F18D9A5D8007A9934 /* Colors.m */; };
+		1AFB426918DC678900747DAA /* MapCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB426818DC678900747DAA /* MapCity.m */; };
+		1AFB427518DD9E2600747DAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB427418DD9E2600747DAA /* Images.xcassets */; };
 		27D71D6316A349AD00021245 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6216A349AD00021245 /* UIKit.framework */; };
 		27D71D6516A349AD00021245 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6416A349AD00021245 /* Foundation.framework */; };
 		27D71D6716A349AD00021245 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6616A349AD00021245 /* CoreGraphics.framework */; };
@@ -57,7 +59,6 @@
 		27D71D8B16A349D500021245 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8916A349D500021245 /* UIImage+ImageWithUIView.m */; };
 		27D71D8E16A349F000021245 /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8D16A349F000021245 /* InitViewController.m */; };
 		27D71D9116A34A0200021245 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D9016A34A0200021245 /* MenuViewController.m */; };
-		77572799189005AF00A0CA89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77572798189005AF00A0CA89 /* Images.xcassets */; };
 		77B3AB3E189A79830059A6ED /* sektioner.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77B3AB3D189A79830059A6ED /* sektioner.plist */; };
 		77B3AB45189A79C80059A6ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77B3AB44189A79C80059A6ED /* InfoPlist.strings */; };
 		77B3AB48189A7A220059A6ED /* RLSektionerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3AB47189A7A220059A6ED /* RLSektionerViewController.m */; };
@@ -129,13 +130,16 @@
 		1AA15B9F18CBA666007A74C8 /* InstagramTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramTag.m; sourceTree = "<group>"; };
 		1AA15BA018CBA666007A74C8 /* InstagramUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramUser.h; sourceTree = "<group>"; };
 		1AA15BA118CBA666007A74C8 /* InstagramUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramUser.m; sourceTree = "<group>"; };
-		1ACF836118D8E07400A5052F /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = "futural-intern-ios/MapViewController.h"; sourceTree = "<group>"; };
-		1ACF836218D8E07400A5052F /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = "futural-intern-ios/MapViewController.m"; sourceTree = "<group>"; };
+		1AB448F718DB9D8E0060C0D0 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		1AB448F818DB9D8E0060C0D0 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		1AD1A822189C92F50086DF0F /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
 		1ADB6D2C18A3EBA70012CC06 /* ViewControllerSignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerSignIn.h; path = SlideMenu/ViewControllerSignIn.h; sourceTree = "<group>"; };
 		1ADB6D2D18A3EBA70012CC06 /* ViewControllerSignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerSignIn.m; path = SlideMenu/ViewControllerSignIn.m; sourceTree = "<group>"; };
 		1AEE315E18D9A5D8007A9934 /* Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Colors.h; path = "futural-intern-ios/Colors.h"; sourceTree = "<group>"; };
 		1AEE315F18D9A5D8007A9934 /* Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Colors.m; path = "futural-intern-ios/Colors.m"; sourceTree = "<group>"; };
+		1AFB426718DC678900747DAA /* MapCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapCity.h; sourceTree = "<group>"; };
+		1AFB426818DC678900747DAA /* MapCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapCity.m; sourceTree = "<group>"; };
+		1AFB427418DD9E2600747DAA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		27D71D5E16A349AD00021245 /* Karnevalisten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karnevalisten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D71D6216A349AD00021245 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		27D71D6416A349AD00021245 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -156,7 +160,6 @@
 		27D71D8F16A34A0200021245 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		27D71D9016A34A0200021245 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		27D71D9216A34A2200021245 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		77572798189005AF00A0CA89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SlideMenu/Images.xcassets; sourceTree = "<group>"; };
 		77B3AB3D189A79830059A6ED /* sektioner.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sektioner.plist; path = SlideMenu/sektioner.plist; sourceTree = "<group>"; };
 		77B3AB44189A79C80059A6ED /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		77B3AB46189A7A1C0059A6ED /* RLSektionerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RLSektionerViewController.h; path = SlideMenu/RLSektionerViewController.h; sourceTree = "<group>"; };
@@ -194,6 +197,8 @@
 				77B3AB4A189A7A440059A6ED /* Sektioner.m */,
 				1AEE315E18D9A5D8007A9934 /* Colors.h */,
 				1AEE315F18D9A5D8007A9934 /* Colors.m */,
+				1AFB426718DC678900747DAA /* MapCity.h */,
+				1AFB426818DC678900747DAA /* MapCity.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -322,8 +327,8 @@
 				1A362BE0189B151F002EE320 /* ViewControllerMeddelanden.m */,
 				1ADB6D2C18A3EBA70012CC06 /* ViewControllerSignIn.h */,
 				1ADB6D2D18A3EBA70012CC06 /* ViewControllerSignIn.m */,
-				1ACF836118D8E07400A5052F /* MapViewController.h */,
-				1ACF836218D8E07400A5052F /* MapViewController.m */,
+				1AB448F718DB9D8E0060C0D0 /* MapViewController.h */,
+				1AB448F818DB9D8E0060C0D0 /* MapViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -331,8 +336,8 @@
 		27D71D5316A349AD00021245 = {
 			isa = PBXGroup;
 			children = (
+				1AFB427418DD9E2600747DAA /* Images.xcassets */,
 				1A16269918D1AEAC00434BFF /* AFNetworking */,
-				77572798189005AF00A0CA89 /* Images.xcassets */,
 				27D71D7A16A349AD00021245 /* MainStoryboard.storyboard */,
 				1A16269718D1ACE100434BFF /* Models */,
 				77B3AB3D189A79830059A6ED /* sektioner.plist */,
@@ -462,8 +467,8 @@
 				1AD1A823189C92F50086DF0F /* blank.png in Resources */,
 				1AA15BA318CBA666007A74C8 /* InstagramKit.plist in Resources */,
 				27D71D6D16A349AD00021245 /* InfoPlist.strings in Resources */,
+				1AFB427518DD9E2600747DAA /* Images.xcassets in Resources */,
 				77B3AB3E189A79830059A6ED /* sektioner.plist in Resources */,
-				77572799189005AF00A0CA89 /* Images.xcassets in Resources */,
 				1A8D7B0C189AF346002070D6 /* menuButton@2x.png in Resources */,
 				77B3AB45189A79C80059A6ED /* InfoPlist.strings in Resources */,
 				1A8D7B1A189B0829002070D6 /* Raket.png in Resources */,
@@ -481,7 +486,6 @@
 			files = (
 				1AA15BA718CBA666007A74C8 /* InstagramModel.m in Sources */,
 				1AA15B8318CBA60A007A74C8 /* AFHTTPRequestOperation.m in Sources */,
-				1ACF836318D8E07400A5052F /* MapViewController.m in Sources */,
 				1A8D7B21189B0BE0002070D6 /* ViewControllerCloudVideo.m in Sources */,
 				27D71D6F16A349AD00021245 /* main.m in Sources */,
 				27D71D7316A349AD00021245 /* AppDelegate.m in Sources */,
@@ -505,6 +509,7 @@
 				1AEE316018D9A5D8007A9934 /* Colors.m in Sources */,
 				1AA15BA818CBA666007A74C8 /* InstagramPaginationInfo.m in Sources */,
 				1AA15BA518CBA666007A74C8 /* InstagramComment.m in Sources */,
+				1AFB426918DC678900747DAA /* MapCity.m in Sources */,
 				1AA15B8418CBA60A007A74C8 /* AFHTTPRequestOperationManager.m in Sources */,
 				1ADB6D2E18A3EBA70012CC06 /* ViewControllerSignIn.m in Sources */,
 				1AA15B6C18CBA5D0007A74C8 /* IKMediaCell.m in Sources */,
@@ -515,6 +520,7 @@
 				1AA15BA418CBA666007A74C8 /* IKUserInPhoto.m in Sources */,
 				1AA15BA918CBA666007A74C8 /* InstagramTag.m in Sources */,
 				27D71D8E16A349F000021245 /* InitViewController.m in Sources */,
+				1AB448F918DB9D8E0060C0D0 /* MapViewController.m in Sources */,
 				27D71D9116A34A0200021245 /* MenuViewController.m in Sources */,
 				1AA15B6B18CBA5D0007A74C8 /* IKCollectionViewController.m in Sources */,
 			);

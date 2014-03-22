@@ -52,6 +52,26 @@
                            alpha:alpha];
 }
 
++(UIColor *)randomColorWithAlpha:(CGFloat)alpha {
+    int index = arc4random() % 6;
+    switch (index) {
+        case 0:
+            return [self redColorWithAlpha:alpha];
+        case 1:
+            return [self blueColorWithAlpha:alpha];
+        case 2:
+            return [self yellowColorWithAlpha:alpha];
+        case 3:
+            return [self darkBlueColorWithAlpha:alpha];
+        case 4:
+            return [self lightBlueColorWithAlpha:alpha];
+        case 5:
+            return [self bieghColorWithAlpha:alpha];
+        default:
+            return nil;
+    }
+}
+
 @end
 
 
