@@ -18,52 +18,151 @@
 
 @implementation ViewControllerSignIn
 
-- (IBAction)revealMenu:(id)sender
-{
+- (IBAction)revealMenu:(id)sender {
+    
     [self.slidingViewController anchorTopViewTo:ECRight];
+    
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
+    
     [super viewDidLoad];
     
-    //spinner
-    self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    self.spinner.center = self.view.center;
-    self.spinner.frame = CGRectMake(self.spinner.frame.origin.x-10, self.spinner.frame.origin.y-10, self.spinner.frame.size.width+20, self.spinner.frame.size.height+20);
-    [self.spinner.layer setCornerRadius:3.0f];
-    [self.spinner setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.2]];
-    [self.view addSubview:self.spinner];
+    //delegate textfields
+    self.emailField.delegate = self;
+    self.passwordField.delegate = self;
     
-    NSURL *webURL = [NSURL URLWithString:@"http://www.karnevalist.se/users/sign_in"];
-    NSURLRequest *myrequest = [NSURLRequest requestWithURL:webURL];
-    [myWebView loadRequest:myrequest];
-    myWebView.delegate = self;
-}
-
-- (void)webViewDidStartLoad:(UIWebView *)webView {
-    UIApplication *application = [UIApplication sharedApplication];
-    application.networkActivityIndicatorVisible = YES;
-    [self.spinner startAnimating];
+    //padding the textfields.
+    self.emailField.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 30)];
+    self.emailField.leftViewMode = UITextFieldViewModeAlways;
+    
+    self.passwordField.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 30)];
+    self.passwordField.leftViewMode = UITextFieldViewModeAlways;
     
 }
+- (IBAction)signInButtonTapped:(id)sender {
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
-    UIApplication *application = [UIApplication sharedApplication];
-    application.networkActivityIndicatorVisible = NO;
+    [self signIn];
+
+}
+
+- (void)signIn {
     
-    self.spinner.hidden = YES;
-    [self.spinner stopAnimating];
-    [self.spinner removeFromSuperview];
+    self.signinButton.hidden = YES;
+    self.errorMessageLabel.hidden = YES;
+    [self.activityIndicator startAnimating];
+    [self.api authenticateUser:[self.emailField text] withPassword:[self.passwordField text]];
+    
+}
+
+- (FuturalAPI *)api { //lazy instantiation
+    
+    if(!_api) {
+        
+        _api = [[FuturalAPI alloc] initFuturalAPIWithDownloadDelegate:self];
+        
+    }
+    
+    return _api;
+    
+}
+
+#pragma mark DELEGATES
+
+#pragma mark -NSURLConnection
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    
+    [self.activityIndicator stopAnimating];
+    self.signinButton.hidden = NO;
+    
+    NSString *stringIdentifier = [[self.api class] stringIdentifierFromUrlConnection:connection]; //class method.
+    id parsedData = [[self.api class] parseJSONData:data];
+    
+    if(parsedData) { //api returned a json-object
+        
+        parsedData = (NSDictionary *)parsedData;
+        NSLog(@"%@", parsedData); //debug
+        
+        if([stringIdentifier isEqualToString:@"sign_in"]) { //sign in.
+            
+            NSLog(@"%@", parsedData[@"success"]);
+            
+            if(parsedData[@"success"] != nil) {
+                
+                NSString *requestedToken = parsedData[@"token"];
+                NSDictionary *karnevalist = parsedData[@"karnevalist"];
+                
+                [self.api.karnevalist setToken:requestedToken];
+                [self.api.karnevalist setInformationFromDictionary:karnevalist];
+                
+                [self performSegueWithIdentifier:@"signedIn" sender:self];
+                
+            } else {
+                
+                NSDictionary *errors = parsedData[@"errors"];
+                
+                for(NSString *error in errors) { //ful-fix, inte säker på hur jag får ut första.
+                    
+                    [self.errorMessageLabel setText:error];
+                    break;
+                    
+                }
+                
+                self.errorMessageLabel.hidden = NO;
+                
+            }
+            
+        }
+        
+        if([stringIdentifier isEqualToString:@"sign_out"]) {
+            
+            if([parsedData[@"success"] isEqualToString:@"true"]) {
+                
+                //to be continued.
+                
+            }
+            
+        }
+        
+    }
+    
+}
+
+- (IBAction)passwordResetAction:(id)sender {
+    
+    [self.api resetPassword];
+    
+}
+
+- (IBAction)signoutAction:(id)sender {
+    
+    [self.api signOut];
+    
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response { //debug
+    
+    NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+    NSLog(@"%@", [httpResponse allHeaderFields]);
+    
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error { //error
+    
+    NSLog(@"Fudge:\n %@", error);
+    
+}
+
+#pragma mark -UITextField
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [self signIn];
+    [textField resignFirstResponder];
+    
+    return YES;
+    
 }
 
 @end

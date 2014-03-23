@@ -78,6 +78,7 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
     //configure the request
     [request setHTTPMethod:@"POST"];
     [request setValue:[NSString stringWithFormat:@"%d", data.length] forHTTPHeaderField:@"Content-length"];
+    [request setTimeoutInterval:30]; //or it will fail, a lot.
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setHTTPBody:data];
@@ -90,6 +91,8 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
 - (void)resetPassword {
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:@"api/users/password" withFormatAppended:NO]];
+    
+    NSLog(@"password reset with token: %@", [self.karnevalist token]);
     
     [request setHTTPMethod:@"POST"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
@@ -104,10 +107,14 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
     
     NSString *appendUrl = [NSString stringWithFormat:@"api/users/sign_out?token=%@", [self.karnevalist token]];
     
+    NSLog(@"sign out with token: %@", [self.karnevalist token]);
+    
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:appendUrl withFormatAppended:NO]];
     
     [request setHTTPMethod:@"DELETE"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    
+    [self.karnevalist.identification destroy]; //remove the token from db and memory.
     
     self.connection = [[NSURLConnection alloc] initWithRequest:request delegate:self.connectionDelegate startImmediately:YES];
     
