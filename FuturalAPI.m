@@ -44,7 +44,10 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
 
 - (void)fetchNotifications {
     
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[self urlWithAppendedPath:@"notifications" withFormatAppended:YES]];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:@"notifications" withFormatAppended:YES]];
+    
+    [request setTimeoutInterval:15];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     
     /*Calls the delegate and delivers the request*/
     self.connection = [[NSURLConnection alloc] initWithRequest:request delegate:self.connectionDelegate startImmediately:YES];
@@ -78,7 +81,7 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
     //configure the request
     [request setHTTPMethod:@"POST"];
     [request setValue:[NSString stringWithFormat:@"%d", data.length] forHTTPHeaderField:@"Content-length"];
-    [request setTimeoutInterval:30]; //or it will fail, a lot.
+    [request setTimeoutInterval:15]; //or it will fail, a lot.
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setHTTPBody:data];
@@ -95,6 +98,7 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
     NSLog(@"password reset with token: %@", [self.karnevalist token]);
     
     [request setHTTPMethod:@"POST"];
+    [request setTimeoutInterval:15];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     
@@ -112,9 +116,10 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:appendUrl withFormatAppended:NO]];
     
     [request setHTTPMethod:@"DELETE"];
+    [request setTimeoutInterval:15];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     
-    [self.karnevalist.identification destroy]; //remove the token from db and memory.
+    [self.karnevalist destroyData]; //remove the token from db and memory.
     
     self.connection = [[NSURLConnection alloc] initWithRequest:request delegate:self.connectionDelegate startImmediately:YES];
     
@@ -163,7 +168,8 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
 + (NSDictionary *)parseJSONData:(NSData *)jsonData {
     
     NSError *error = nil;
-    id parsedData = [NSJSONSerialization JSONObjectWithData:jsonData options:nil error:&error];
+    
+    id parsedData = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
     
     if(!error) {
     

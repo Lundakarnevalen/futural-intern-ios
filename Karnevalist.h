@@ -20,13 +20,16 @@
 @property (nonatomic) NSString *firstname;
 @property (nonatomic) NSString *lastname;
 @property (nonatomic) NSString *email;
-
+@property (nonatomic) NSString *phone;
 @property (nonatomic) NSString *sektion;
-
 @property (nonatomic) NSURL *imageUrl;
 
 - (NSString *)token;
 - (void)setToken:(NSString *)token;
-- (void)setInformationFromDictionary:(NSDictionary *)dictionary;
+- (void)setInformationFromDictionary:(NSDictionary *)dictionary andSave:(BOOL)save;
+
+- (void)destroyData;
+
+- (NSString *)description;
 
 @end

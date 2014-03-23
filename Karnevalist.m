@@ -11,9 +11,81 @@
 
 @implementation Karnevalist
 
-- (void)setInformationFromDictionary:(NSDictionary *)dictionary {
+- (Karnevalist *)init {
     
-    NSLog(@"dictionary with karnevalist data: \n%@", dictionary);
+    self = [super init];
+    
+    if(self) {
+        
+        if([self readData]) {
+            
+            //read stored data.
+            [self setInformationFromDictionary:[self readData] andSave:NO];
+            
+        }
+        
+    }
+    
+    return self;
+    
+}
+
+- (void)setInformationFromDictionary:(NSDictionary *)dictionary andSave:(BOOL)save {
+    
+    self.identifier = dictionary[@"id"];
+    self.firstname = dictionary[@"fornamn"];
+    self.lastname = dictionary[@"efternamn"];
+    self.email = dictionary[@"email"];
+    self.phone = dictionary[@"telnr"];
+    self.sektion = dictionary[@"tilldelad_sektion"];
+    //self.imageUrl = [NSURL URLWithString:dictionary[@"foto"][@"url"]]; //to be continued.
+    
+    if(save) {
+        
+        [self saveData];
+        
+    }
+    
+}
+
+- (void)saveData {
+    
+    NSDictionary *dataToSave = @{
+                                 @"id": [NSNumber numberWithInt:self.identifier],
+                                 @"fornamn": self.firstname,
+                                 @"efternamn": self.lastname,
+                                 @"email": self.email,
+                                 @"telnr": self.phone,
+                                 @"tilldelad_sektion": self.sektion
+                                 };
+    
+    [[NSUserDefaults standardUserDefaults] setValue:dataToSave forKey:@"karnevalist"];
+    
+}
+
+- (void)destroyData {
+    
+    [self.identification destroy];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:[[self class] userIdentifier]]; //remove data from nsuserdefaults.
+    
+    self.firstname = nil;
+    self.lastname = nil;
+    self.sektion = nil;
+    self.email = nil;
+    self.phone = nil;
+    self.identifier = nil;
+    
+}
+
+- (NSDictionary *)readData {
+    
+    return [[NSUserDefaults standardUserDefaults] valueForKey:[[self class] userIdentifier]];
+    
+}
+
+- (NSString *)description { //debug.
+    
+    return [NSString stringWithFormat:@"Hej, mitt namn är %@ %@ och jag är med i sektion %@", self.firstname, self.lastname, self.sektion];
     
 }
 
@@ -29,6 +101,8 @@
     
 }
 
+#pragma mark -LazyInstantiation
+
 - (Identification *)identification {
     
     if(!_identification) {
@@ -38,6 +112,14 @@
     }
     
     return _identification;
+    
+}
+
+#pragma mark -ClassMethods
+
++ (NSString *)userIdentifier {
+    
+    return @"karnevalist";
     
 }
 

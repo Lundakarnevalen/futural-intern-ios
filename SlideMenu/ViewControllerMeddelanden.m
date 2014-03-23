@@ -21,6 +21,7 @@
 
 @property (nonatomic) FuturalAPI *api;
 @property (nonatomic) NSMutableArray *messages;
+@property (nonatomic) NSMutableData *dataQueue;
 
 @end
 
@@ -63,6 +64,18 @@
     
 }
 
+- (NSMutableData *)dataQueue {
+    
+    if(!_dataQueue) {
+        
+        _dataQueue = [[NSMutableData alloc] init];
+        
+    }
+    
+    return _dataQueue;
+    
+}
+
 - (FuturalAPI *)api {
     
     if(!_api) {
@@ -80,9 +93,16 @@
 #pragma mark -NSURLConnection
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     
+    [self.dataQueue appendData:data];
+    
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    
     [self.activitySpinner stopAnimating];
     
-    id parsedData = [[self.api class] parseJSONData:data];
+    id parsedData = [[self.api class] parseJSONData:self.dataQueue];
+    self.dataQueue = nil;
     
     if(parsedData) {
         
@@ -102,12 +122,6 @@
         }
         
     }
-    
-}
-
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error { //error
-    
-    [self.activitySpinner stopAnimating];
     
 }
 

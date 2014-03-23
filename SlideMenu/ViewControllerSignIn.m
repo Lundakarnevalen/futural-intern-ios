@@ -14,6 +14,8 @@
 
 @property UIActivityIndicatorView *spinner;
 
+@property (nonatomic) NSMutableData *dataQueue; //used when recieving data from the API.
+
 @end
 
 @implementation ViewControllerSignIn
@@ -39,6 +41,8 @@
     self.passwordField.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 30)];
     self.passwordField.leftViewMode = UITextFieldViewModeAlways;
     
+    [self.nameLabel setText:self.api.karnevalist.firstname];
+    
 }
 - (IBAction)signInButtonTapped:(id)sender {
 
@@ -55,7 +59,9 @@
     
 }
 
-- (FuturalAPI *)api { //lazy instantiation
+#pragma mark LAZYINSTANTIATIONS
+
+- (FuturalAPI *)api {
     
     if(!_api) {
         
@@ -67,34 +73,53 @@
     
 }
 
+- (NSMutableData *)dataQueue {
+    
+    if(!_dataQueue) {
+        
+        _dataQueue = [[NSMutableData alloc] init];
+        
+    }
+    
+    return _dataQueue;
+    
+}
+
 #pragma mark DELEGATES
 
 #pragma mark -NSURLConnection
 
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data { //collects the data.
+    
+    [self.dataQueue appendData:data];
+    
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection { //the request is finished and all the data is stored inside of self.dataQueue
     
     [self.activityIndicator stopAnimating];
     self.signinButton.hidden = NO;
     
     NSString *stringIdentifier = [[self.api class] stringIdentifierFromUrlConnection:connection]; //class method.
-    id parsedData = [[self.api class] parseJSONData:data];
+    
+    id parsedData = [[self.api class] parseJSONData:self.dataQueue];
+    self.dataQueue = nil; //remove the used data.
     
     if(parsedData) { //api returned a json-object
         
         parsedData = (NSDictionary *)parsedData;
-        NSLog(@"%@", parsedData); //debug
         
         if([stringIdentifier isEqualToString:@"sign_in"]) { //sign in.
             
             NSLog(@"%@", parsedData[@"success"]);
             
-            if(parsedData[@"success"] != nil) {
+            if([parsedData[@"success"] isEqualToNumber:@1]) {
                 
                 NSString *requestedToken = parsedData[@"token"];
                 NSDictionary *karnevalist = parsedData[@"karnevalist"];
                 
                 [self.api.karnevalist setToken:requestedToken];
-                [self.api.karnevalist setInformationFromDictionary:karnevalist];
+                [self.api.karnevalist setInformationFromDictionary:karnevalist andSave:YES];
                 
                 [self performSegueWithIdentifier:@"signedIn" sender:self];
                 
@@ -102,7 +127,7 @@
                 
                 NSDictionary *errors = parsedData[@"errors"];
                 
-                for(NSString *error in errors) { //ful-fix, inte säker på hur jag får ut första.
+                for(NSString *error in errors) { //ful-fix, inte säker på hur jag får ut första i ett dictionary.
                     
                     [self.errorMessageLabel setText:error];
                     break;
