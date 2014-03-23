@@ -59,6 +59,9 @@
 		27D71D8B16A349D500021245 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8916A349D500021245 /* UIImage+ImageWithUIView.m */; };
 		27D71D8E16A349F000021245 /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8D16A349F000021245 /* InitViewController.m */; };
 		27D71D9116A34A0200021245 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D9016A34A0200021245 /* MenuViewController.m */; };
+		577E5C9918DF12C2005E5FE6 /* FuturalAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 577E5C9418DF12C2005E5FE6 /* FuturalAPI.m */; };
+		577E5C9A18DF12C2005E5FE6 /* Identification.m in Sources */ = {isa = PBXBuildFile; fileRef = 577E5C9618DF12C2005E5FE6 /* Identification.m */; };
+		577E5C9B18DF12C2005E5FE6 /* Karnevalist.m in Sources */ = {isa = PBXBuildFile; fileRef = 577E5C9818DF12C2005E5FE6 /* Karnevalist.m */; };
 		77B3AB3E189A79830059A6ED /* sektioner.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77B3AB3D189A79830059A6ED /* sektioner.plist */; };
 		77B3AB45189A79C80059A6ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77B3AB44189A79C80059A6ED /* InfoPlist.strings */; };
 		77B3AB48189A7A220059A6ED /* RLSektionerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3AB47189A7A220059A6ED /* RLSektionerViewController.m */; };
@@ -160,6 +163,12 @@
 		27D71D8F16A34A0200021245 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		27D71D9016A34A0200021245 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		27D71D9216A34A2200021245 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		577E5C9318DF12C2005E5FE6 /* FuturalAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuturalAPI.h; sourceTree = "<group>"; };
+		577E5C9418DF12C2005E5FE6 /* FuturalAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuturalAPI.m; sourceTree = "<group>"; };
+		577E5C9518DF12C2005E5FE6 /* Identification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Identification.h; sourceTree = "<group>"; };
+		577E5C9618DF12C2005E5FE6 /* Identification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Identification.m; sourceTree = "<group>"; };
+		577E5C9718DF12C2005E5FE6 /* Karnevalist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Karnevalist.h; sourceTree = "<group>"; };
+		577E5C9818DF12C2005E5FE6 /* Karnevalist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Karnevalist.m; sourceTree = "<group>"; };
 		77B3AB3D189A79830059A6ED /* sektioner.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sektioner.plist; path = SlideMenu/sektioner.plist; sourceTree = "<group>"; };
 		77B3AB44189A79C80059A6ED /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		77B3AB46189A7A1C0059A6ED /* RLSektionerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RLSektionerViewController.h; path = SlideMenu/RLSektionerViewController.h; sourceTree = "<group>"; };
@@ -193,6 +202,12 @@
 		1A16269718D1ACE100434BFF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				577E5C9318DF12C2005E5FE6 /* FuturalAPI.h */,
+				577E5C9418DF12C2005E5FE6 /* FuturalAPI.m */,
+				577E5C9518DF12C2005E5FE6 /* Identification.h */,
+				577E5C9618DF12C2005E5FE6 /* Identification.m */,
+				577E5C9718DF12C2005E5FE6 /* Karnevalist.h */,
+				577E5C9818DF12C2005E5FE6 /* Karnevalist.m */,
 				77B3AB49189A7A3F0059A6ED /* Sektioner.h */,
 				77B3AB4A189A7A440059A6ED /* Sektioner.m */,
 				1AEE315E18D9A5D8007A9934 /* Colors.h */,
@@ -484,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				577E5C9B18DF12C2005E5FE6 /* Karnevalist.m in Sources */,
 				1AA15BA718CBA666007A74C8 /* InstagramModel.m in Sources */,
 				1AA15B8318CBA60A007A74C8 /* AFHTTPRequestOperation.m in Sources */,
 				1A8D7B21189B0BE0002070D6 /* ViewControllerCloudVideo.m in Sources */,
@@ -504,12 +520,14 @@
 				1AA15B8818CBA60A007A74C8 /* AFURLConnectionOperation.m in Sources */,
 				1AA15BA618CBA666007A74C8 /* InstagramMedia.m in Sources */,
 				27D71D8B16A349D500021245 /* UIImage+ImageWithUIView.m in Sources */,
+				577E5C9918DF12C2005E5FE6 /* FuturalAPI.m in Sources */,
 				1AA15B8918CBA60A007A74C8 /* AFURLRequestSerialization.m in Sources */,
 				77B3AB48189A7A220059A6ED /* RLSektionerViewController.m in Sources */,
 				1AEE316018D9A5D8007A9934 /* Colors.m in Sources */,
 				1AA15BA818CBA666007A74C8 /* InstagramPaginationInfo.m in Sources */,
 				1AA15BA518CBA666007A74C8 /* InstagramComment.m in Sources */,
 				1AFB426918DC678900747DAA /* MapCity.m in Sources */,
+				577E5C9A18DF12C2005E5FE6 /* Identification.m in Sources */,
 				1AA15B8418CBA60A007A74C8 /* AFHTTPRequestOperationManager.m in Sources */,
 				1ADB6D2E18A3EBA70012CC06 /* ViewControllerSignIn.m in Sources */,
 				1AA15B6C18CBA5D0007A74C8 /* IKMediaCell.m in Sources */,
