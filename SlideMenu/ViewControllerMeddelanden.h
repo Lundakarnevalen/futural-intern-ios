@@ -8,12 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewControllerMeddelanden : UIViewController <UIWebViewDelegate>
+@interface ViewControllerMeddelanden : UIViewController <NSURLConnectionDataDelegate, UITableViewDelegate, UITableViewDataSource>
 
-{
-    IBOutlet UIWebView *myWebView;
-}
-
-@property (nonatomic, retain) UIImageView *loadingImageView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activitySpinner;
+@property (weak, nonatomic) IBOutlet UITableView *messagesTable;
 
 @end
