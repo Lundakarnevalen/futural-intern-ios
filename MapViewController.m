@@ -125,7 +125,7 @@
 -(void)drawCircle:(CGPoint)point radius:(CGFloat)radius {
     UIView *circle = [[UIView alloc] init];
     circle.frame = CGRectMake(point.x - radius, point.y - radius, radius*2, radius*2);
-    circle.backgroundColor = [Colors randomColorWithAlpha:0.75];
+    circle.backgroundColor = [Colors redColorWithAlpha:0.45];
     circle.layer.cornerRadius = circle.bounds.size.height /2;
     
     UITapGestureRecognizer *singleFingerTap =
@@ -147,7 +147,7 @@
     
     for (int i = 0; i < [self.cityCircles count]; i++) {
         if (i != index) {
-            [[self.cityCircles objectAtIndex:i] setBackgroundColor:[Colors randomColorWithAlpha:0.75]];
+            [[self.cityCircles objectAtIndex:i] setBackgroundColor:[Colors redColorWithAlpha:0.45]];
         }
     }
     

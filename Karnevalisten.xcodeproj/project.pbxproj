@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1E12B318DF556B0014235F /* MapListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E12B218DF556B0014235F /* MapListTableViewController.m */; };
 		1A362BE1189B151F002EE320 /* ViewControllerMeddelanden.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE0189B151F002EE320 /* ViewControllerMeddelanden.m */; };
 		1A362BE3189B1ACA002EE320 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE2189B1ACA002EE320 /* MainViewController.m */; };
 		1A362BE6189B1F35002EE320 /* SektionerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE5189B1F35002EE320 /* SektionerTableViewController.m */; };
@@ -73,6 +74,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A1E12B118DF556B0014235F /* MapListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapListTableViewController.h; path = ViewControllers/MapListTableViewController.h; sourceTree = "<group>"; };
+		1A1E12B218DF556B0014235F /* MapListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapListTableViewController.m; path = ViewControllers/MapListTableViewController.m; sourceTree = "<group>"; };
 		1A362BDF189B151F002EE320 /* ViewControllerMeddelanden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerMeddelanden.h; path = SlideMenu/ViewControllerMeddelanden.h; sourceTree = "<group>"; };
 		1A362BE0189B151F002EE320 /* ViewControllerMeddelanden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerMeddelanden.m; path = SlideMenu/ViewControllerMeddelanden.m; sourceTree = "<group>"; };
 		1A362BE2189B1ACA002EE320 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -354,6 +357,8 @@
 				1AB448F818DB9D8E0060C0D0 /* MapViewController.m */,
 				57186D8C18DF17B200E78450 /* ReadMessageViewController.h */,
 				57186D8D18DF17B200E78450 /* ReadMessageViewController.m */,
+				1A1E12B118DF556B0014235F /* MapListTableViewController.h */,
+				1A1E12B218DF556B0014235F /* MapListTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -521,6 +526,7 @@
 				1AA15B8518CBA60A007A74C8 /* AFHTTPSessionManager.m in Sources */,
 				57186D8B18DF153500E78450 /* Message.m in Sources */,
 				1AA15B8C18CBA60A007A74C8 /* UIImageView+AFNetworking.m in Sources */,
+				1A1E12B318DF556B0014235F /* MapListTableViewController.m in Sources */,
 				1A362BE6189B1F35002EE320 /* SektionerTableViewController.m in Sources */,
 				77F72713189AEF0400886E2F /* navigationController.m in Sources */,
 				1AA15B8B18CBA60A007A74C8 /* AFURLSessionManager.m in Sources */,

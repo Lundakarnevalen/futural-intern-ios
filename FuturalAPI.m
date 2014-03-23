@@ -77,7 +77,7 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
     
     //configure the request
     [request setHTTPMethod:@"POST"];
-    [request setValue:[NSString stringWithFormat:@"%d", data.length] forHTTPHeaderField:@"Content-length"];
+    [request setValue:[NSString stringWithFormat:@"%d", (int) data.length] forHTTPHeaderField:@"Content-length"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setHTTPBody:data];
