@@ -62,6 +62,7 @@
 		27D71D9116A34A0200021245 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D9016A34A0200021245 /* MenuViewController.m */; };
 		57186D8B18DF153500E78450 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 57186D8A18DF153500E78450 /* Message.m */; };
 		57186D8E18DF17B200E78450 /* ReadMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57186D8D18DF17B200E78450 /* ReadMessageViewController.m */; };
+		5758CDCF18DF89F900446EA3 /* Lundakarneval.m in Sources */ = {isa = PBXBuildFile; fileRef = 5758CDCE18DF89F900446EA3 /* Lundakarneval.m */; };
 		577E5C9918DF12C2005E5FE6 /* FuturalAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 577E5C9418DF12C2005E5FE6 /* FuturalAPI.m */; };
 		577E5C9A18DF12C2005E5FE6 /* Identification.m in Sources */ = {isa = PBXBuildFile; fileRef = 577E5C9618DF12C2005E5FE6 /* Identification.m */; };
 		577E5C9B18DF12C2005E5FE6 /* Karnevalist.m in Sources */ = {isa = PBXBuildFile; fileRef = 577E5C9818DF12C2005E5FE6 /* Karnevalist.m */; };
@@ -172,6 +173,8 @@
 		57186D8A18DF153500E78450 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		57186D8C18DF17B200E78450 /* ReadMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReadMessageViewController.h; path = ViewControllers/ReadMessageViewController.h; sourceTree = "<group>"; };
 		57186D8D18DF17B200E78450 /* ReadMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReadMessageViewController.m; path = ViewControllers/ReadMessageViewController.m; sourceTree = "<group>"; };
+		5758CDCD18DF89F900446EA3 /* Lundakarneval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lundakarneval.h; sourceTree = "<group>"; };
+		5758CDCE18DF89F900446EA3 /* Lundakarneval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lundakarneval.m; sourceTree = "<group>"; };
 		577E5C9318DF12C2005E5FE6 /* FuturalAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuturalAPI.h; sourceTree = "<group>"; };
 		577E5C9418DF12C2005E5FE6 /* FuturalAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuturalAPI.m; sourceTree = "<group>"; };
 		577E5C9518DF12C2005E5FE6 /* Identification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Identification.h; sourceTree = "<group>"; };
@@ -211,6 +214,8 @@
 		1A16269718D1ACE100434BFF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5758CDCD18DF89F900446EA3 /* Lundakarneval.h */,
+				5758CDCE18DF89F900446EA3 /* Lundakarneval.m */,
 				57186D8918DF153500E78450 /* Message.h */,
 				57186D8A18DF153500E78450 /* Message.m */,
 				577E5C9318DF12C2005E5FE6 /* FuturalAPI.h */,
@@ -558,6 +563,7 @@
 				27D71D8E16A349F000021245 /* InitViewController.m in Sources */,
 				1AB448F918DB9D8E0060C0D0 /* MapViewController.m in Sources */,
 				27D71D9116A34A0200021245 /* MenuViewController.m in Sources */,
+				5758CDCF18DF89F900446EA3 /* Lundakarneval.m in Sources */,
 				1AA15B6B18CBA5D0007A74C8 /* IKCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

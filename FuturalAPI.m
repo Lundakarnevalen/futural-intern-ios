@@ -8,6 +8,8 @@
 
 #import "FuturalAPI.h"
 
+#import "Lundakarneval.h"
+
 @interface FuturalAPI() {
     
     NSString * responseFormat; //the string to append when requesting API-data.
@@ -26,6 +28,8 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
     self = [super init];
     
     if(self) {
+        
+        NSLog(@"lundakarneval: %@\n", [Lundakarneval timeLeftUntil:@"lundakarnevalen"]);
         
         responseFormat = @"json";
         self.connectionDelegate = desiredConnectionDelegate;
