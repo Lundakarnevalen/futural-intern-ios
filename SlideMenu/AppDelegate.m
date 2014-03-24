@@ -60,7 +60,7 @@
     
 #warning ändra detta innan uppladdning!
     // Only report to location manager if the user has traveled 1000 meters
-    self.locationManager.distanceFilter = 10.0f;
+    self.locationManager.distanceFilter = 1000.0f;
     self.locationManager.delegate = self;
     self.locationManager.activityType = CLActivityTypeFitness;
     
