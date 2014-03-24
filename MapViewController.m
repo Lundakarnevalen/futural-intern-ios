@@ -21,7 +21,6 @@
 @property (strong, nonatomic) NSArray *cities;
 @property (strong, nonatomic) NSMutableArray *cityCircles;
 
-@property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation *startLocation;
 @property (weak, nonatomic) IBOutlet UILabel *latitudeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *longitutdeLabel;
@@ -62,7 +61,6 @@
     _cities = @[city1, city2, city3];
     
     [self loadCities];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getLocation) name:UIApplicationWillEnterForegroundNotification object:nil];
     
 }
 
@@ -76,15 +74,6 @@
     if ([CLLocationManager locationServicesEnabled]) {
         if (CLLocationManager.authorizationStatus == kCLAuthorizationStatusAuthorized) {
             self.statusLabel.hidden = YES;
-            if (!self.locationManager) self.locationManager = [[CLLocationManager alloc] init];
-            
-            self.locationManager.delegate = self;
-            self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
-            self.locationManager.distanceFilter = 100.0;
-            
-            [self.locationManager startUpdatingLocation];
-            
-            [NSTimer scheduledTimerWithTimeInterval:100.0 target:self selector:@selector(startLocationService) userInfo:nil repeats:YES];
         } else {
             self.statusLabel.hidden = NO;
             self.statusLabel.text = @"Not authorized.";
@@ -95,17 +84,12 @@
     }
 }
 
--(void)startLocationService {
-    [self.locationManager startUpdatingLocation];
-}
-
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     CLLocation *location = [locations lastObject];
     NSLog(@"New location Lat: %f Long: %f", location.coordinate.latitude, location.coordinate.longitude);
     self.latitudeLabel.text = [NSString stringWithFormat:@"Lat: %f", location.coordinate.latitude];
     self.longitutdeLabel.text = [NSString stringWithFormat:@"Long: %f", location.coordinate.longitude];
-    [self.locationManager stopUpdatingLocation];
 }
 
 -(void)loadCities {

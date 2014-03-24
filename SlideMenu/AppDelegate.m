@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "MenuViewController.h"
+
+@interface AppDelegate () 
+
+@end
 
 @implementation AppDelegate
 
@@ -27,14 +32,16 @@
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    NSLog(@"Went to Background");
+    // Only monitor significant changes
+    if ([self.api isSignedIn]) {
+        [self.locationManager startMonitoringSignificantLocationChanges];
+    }
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -44,12 +51,53 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    // Start location services
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    
+    // Only report to location manager if the user has traveled 1000 meters
+    self.locationManager.distanceFilter = 10.0f;
+    self.locationManager.delegate = self;
+    self.locationManager.activityType = CLActivityTypeFitness;
+    
+    [self.locationManager stopMonitoringSignificantLocationChanges];
+    if ([self.api isSignedIn]) {
+        [self.locationManager startUpdatingLocation];
+    }
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - location methods
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    
+    // Check if running in background or not
+    BOOL isInBackground = NO;
+    if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground) {
+        isInBackground = YES;
+    }
+    CLLocation *location = [locations lastObject];
+    NSLog(@"Location Manager isInBackground: %hhd", isInBackground);
+    
+    if (isInBackground) {
+        
+        // If we're running in the background, run sendBackgroundLocationToServer
+        NSLog(@"Sending to location lat: %f long: %f", location.coordinate.latitude, location.coordinate.longitude);
+        //[self.locationManager sendBackgroundLocationToServer:[locations lastObject]];
+    } else {
+        // If we're not in the background wait till the GPS is accurate to send it to the server
+        if ([[locations lastObject] horizontalAccuracy] < 100.0f) {
+            NSLog(@"Sending to location lat: %f long: %f", location.coordinate.latitude, location.coordinate.longitude);
+            //[self.locationManager sendDataToServer:[locations lastObject]];
+        }
+    }
+    
 }
 
 @end
