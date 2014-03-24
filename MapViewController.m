@@ -16,14 +16,11 @@
 
 #import <CoreLocation/CoreLocation.h>
 
-@interface MapViewController () <CLLocationManagerDelegate>
+@interface MapViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *numberOfKarnevalistLabel;
 @property (strong, nonatomic) NSArray *cities;
 @property (strong, nonatomic) NSMutableArray *cityCircles;
 
-@property (strong, nonatomic) CLLocation *startLocation;
-@property (weak, nonatomic) IBOutlet UILabel *latitudeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *longitutdeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *cityNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 
@@ -73,7 +70,9 @@
 -(void)getLocation {
     if ([CLLocationManager locationServicesEnabled]) {
         if (CLLocationManager.authorizationStatus == kCLAuthorizationStatusAuthorized) {
-            self.statusLabel.hidden = YES;
+            //self.statusLabel.hidden = YES;
+            self.statusLabel.hidden = NO;
+            self.statusLabel.text = [[NSUserDefaults standardUserDefaults] stringForKey:@"locTimestamp"];
         } else {
             self.statusLabel.hidden = NO;
             self.statusLabel.text = @"Not authorized.";
@@ -82,14 +81,6 @@
         self.statusLabel.hidden = NO;
         self.statusLabel.text = @"Location services are not enabled.";
     }
-}
-
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-{
-    CLLocation *location = [locations lastObject];
-    NSLog(@"New location Lat: %f Long: %f", location.coordinate.latitude, location.coordinate.longitude);
-    self.latitudeLabel.text = [NSString stringWithFormat:@"Lat: %f", location.coordinate.latitude];
-    self.longitutdeLabel.text = [NSString stringWithFormat:@"Long: %f", location.coordinate.longitude];
 }
 
 -(void)loadCities {

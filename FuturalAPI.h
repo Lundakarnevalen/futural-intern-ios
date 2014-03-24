@@ -10,6 +10,7 @@
 #import "Karnevalist.h"
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface FuturalAPI : NSObject
 
@@ -28,6 +29,7 @@
 - (void)authenticateUser:(NSString *)userIdentification withPassword:(NSString *)password;
 - (void)signOut;
 - (void)resetPassword;
+- (void)updateLocation:(CLLocation *)location;
 
 + (NSDictionary *)parseJSONData:(NSData *)jsonData;
 + (NSString *)stringIdentifierFromUrlConnection:(NSURLConnection *)connection;

@@ -16,5 +16,6 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
 @property (nonatomic) FuturalAPI *api;
+@property (nonatomic) UIBackgroundTaskIdentifier bgTask;
 
 @end

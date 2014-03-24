@@ -55,18 +55,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lat: 0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vhB-Pv-E2B">
-                                <rect key="frame" x="20" y="75" width="139" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long: 0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dc8-dm-rPJ">
-                                <rect key="frame" x="160" y="75" width="140" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -86,8 +74,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cityNameLabel" destination="WlA-T1-344" id="frX-We-dEy"/>
-                        <outlet property="latitudeLabel" destination="vhB-Pv-E2B" id="Rc8-Ss-hJZ"/>
-                        <outlet property="longitutdeLabel" destination="dc8-dm-rPJ" id="grZ-X9-HVA"/>
                         <outlet property="numberOfKarnevalistLabel" destination="7AP-dG-LvZ" id="GHw-W4-nS2"/>
                         <outlet property="statusLabel" destination="69E-rC-aPr" id="SMk-Er-jvb"/>
                     </connections>
@@ -818,6 +804,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="SBx-YK-Cyu"/>
         <segue reference="oPB-qX-Bcj"/>
     </inferredMetricsTieBreakers>
 </document>

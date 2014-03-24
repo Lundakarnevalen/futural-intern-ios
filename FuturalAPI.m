@@ -10,6 +10,7 @@
 
 #import "Lundakarneval.h"
 
+
 @interface FuturalAPI() {
     
     NSString * responseFormat; //the string to append when requesting API-data.
@@ -39,9 +40,7 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
 }
 
 - (BOOL)isSignedIn {
-    
     return [self.karnevalist token] != nil;
-    
 }
 
 - (void)fetchNotifications {
@@ -102,6 +101,39 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
     [request setTimeoutInterval:15];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    
+    //launch that mf.
+    self.connection = [[NSURLConnection alloc] initWithRequest:request delegate:self.connectionDelegate startImmediately:YES];
+    
+}
+
+- (void)updateLocation:(CLLocation *)location {
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:@"api/users/map" withFormatAppended:NO]];
+    
+    //parameter template
+    NSString *json = @"{"
+                        "\"location\": {"
+
+                            "\"latitude\": \"%@\","
+                            "\"longtude\": \"%@\""
+
+                        "}"
+                    "}";
+    
+    
+    //insert email and password into parameter template.
+    json = [NSString stringWithFormat:json, location.coordinate.latitude, location.coordinate.longitude];
+    
+    //data sent to the API.
+    NSData *data = [json dataUsingEncoding:NSUTF8StringEncoding];
+    
+    //configure the request
+    [request setHTTPMethod:@"POST"];
+    [request setValue:[NSString stringWithFormat:@"%d", (int) data.length] forHTTPHeaderField:@"Content-length"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPBody:data];
     
     //launch that mf.
     self.connection = [[NSURLConnection alloc] initWithRequest:request delegate:self.connectionDelegate startImmediately:YES];

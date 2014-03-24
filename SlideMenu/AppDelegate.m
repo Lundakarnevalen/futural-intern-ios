@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MenuViewController.h"
+#import "Identification.h"
 
 @interface AppDelegate () 
 
@@ -39,9 +40,10 @@
 {
     NSLog(@"Went to Background");
     // Only monitor significant changes
-    if ([self.api isSignedIn]) {
-        [self.locationManager startMonitoringSignificantLocationChanges];
-    }
+    
+    [self.locationManager stopUpdatingLocation];
+    [self.locationManager startMonitoringSignificantLocationChanges];
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -51,20 +53,19 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+    NSLog(@"Did become active.");
     // Start location services
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     
+#warning ändra detta innan uppladdning!
     // Only report to location manager if the user has traveled 1000 meters
     self.locationManager.distanceFilter = 10.0f;
     self.locationManager.delegate = self;
     self.locationManager.activityType = CLActivityTypeFitness;
     
     [self.locationManager stopMonitoringSignificantLocationChanges];
-    if ([self.api isSignedIn]) {
-        [self.locationManager startUpdatingLocation];
-    }
-    
+    [self.locationManager startUpdatingLocation];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -86,18 +87,50 @@
     NSLog(@"Location Manager isInBackground: %hhd", isInBackground);
     
     if (isInBackground) {
-        
         // If we're running in the background, run sendBackgroundLocationToServer
-        NSLog(@"Sending to location lat: %f long: %f", location.coordinate.latitude, location.coordinate.longitude);
-        //[self.locationManager sendBackgroundLocationToServer:[locations lastObject]];
+        NSLog(@"Fetched new location lat: %f long: %f", location.coordinate.latitude, location.coordinate.longitude);
+        NSLog(@"isSignedIn: %d", [self isSignedIn]);
+        if ([self isSignedIn] == YES) {
+            NSLog(@"Nu vill jag sända till serven.");
+            [self updateLocation:location isInBackground:isInBackground];
+        }
     } else {
         // If we're not in the background wait till the GPS is accurate to send it to the server
         if ([[locations lastObject] horizontalAccuracy] < 100.0f) {
-            NSLog(@"Sending to location lat: %f long: %f", location.coordinate.latitude, location.coordinate.longitude);
-            //[self.locationManager sendDataToServer:[locations lastObject]];
+            NSLog(@"Fetched new location lat: %f long: %f", location.coordinate.latitude, location.coordinate.longitude);
+            NSLog(@"isSignedIn: %d", [self isSignedIn]);
+            if ([self isSignedIn] == YES) {
+                NSLog(@"Nu vill jag sända till serven.");
+                [self updateLocation:location isInBackground:isInBackground];
+            }
         }
     }
+}
+
+-(bool)isSignedIn {
     
+    return ([[NSUserDefaults standardUserDefaults] stringForKey:[Identification.class tokenIdentifier]] != nil);
+}
+
+-(void)updateLocation:(CLLocation *)location isInBackground:(bool)isInBackground {
+    if (isInBackground) {
+        self.bgTask = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+            [[UIApplication sharedApplication] endBackgroundTask:self.bgTask];
+        }];
+    }
+    
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithDouble:location.coordinate.latitude] forKey:@"latitude"];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithDouble:location.coordinate.longitude] forKey:@"longitude"];
+    [[NSUserDefaults standardUserDefaults] setObject:location.timestamp forKey:@"locTimestamp"];
+    [self.api updateLocation:location];
+    
+    if (isInBackground) {
+        if (self.bgTask != UIBackgroundTaskInvalid)
+        {
+            [[UIApplication sharedApplication] endBackgroundTask:self.bgTask];
+            self.bgTask = UIBackgroundTaskInvalid;
+        }
+    }
 }
 
 @end

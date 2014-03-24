@@ -477,6 +477,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.iOS = {
+								enabled = 0;
+							};
 						};
 					};
 				};
