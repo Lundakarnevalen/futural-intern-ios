@@ -8,10 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewControllerSignIn : UIViewController <UIWebViewDelegate>
+#import "FuturalAPI.h"
 
-{
-    IBOutlet UIWebView *myWebView;
-}
+@interface ViewControllerSignIn : UIViewController <NSURLConnectionDataDelegate, UITextFieldDelegate>
+
+@property (nonatomic) FuturalAPI *api;
+
+@property (weak, nonatomic) IBOutlet UITextField *emailField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UIButton *signinButton;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (weak, nonatomic) IBOutlet UILabel *errorMessageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *burgerButton;
 
 @end

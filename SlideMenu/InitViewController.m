@@ -8,41 +8,48 @@
 
 #import "InitViewController.h"
 
+#import "FuturalAPI.h"
+
 @interface InitViewController ()
+
+@property (nonatomic) FuturalAPI *api;
 
 @end
 
 @implementation InitViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
+    
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
     
-    self.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Start"];
+    NSString *storyboardIdentifier = ([self.api isSignedIn] == YES) ? @"Start" : @"Logga in";
     
-    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)])
+    self.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:storyboardIdentifier];
+    
+    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
+        
         [self setNeedsStatusBarAppearanceUpdate];
+        
+    }
+    
 }
 
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
+- (FuturalAPI *)api {
+    
+    if(!_api) {
+        
+        _api = [[FuturalAPI alloc] init]; //no need to delegate.
+        
+    }
+    
+    return _api;
+    
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    
     return UIStatusBarStyleLightContent;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 @end
