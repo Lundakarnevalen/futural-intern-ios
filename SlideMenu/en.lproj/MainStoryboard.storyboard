@@ -17,7 +17,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="544" y="-725"/>
+            <point key="canvasLocation" x="968" y="-1253"/>
         </scene>
         <!--Map View Controller - Karta-->
         <scene sceneID="tei-JU-hXm">
@@ -130,7 +130,6 @@
         <!--View Controller Cloud Video - Moln-->
         <scene sceneID="VfK-rL-55W">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g4a-Aw-lXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="MSW-0L-6op" customClass="ViewControllerCloudVideo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5H9-Iu-w1h">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -149,6 +148,7 @@
                         <outlet property="myWebView" destination="gb7-XK-1Jc" id="WXo-3p-tH2"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g4a-Aw-lXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1608" y="-1136"/>
         </scene>
@@ -195,7 +195,7 @@
         <!--View Controller Sign In - Logga in-->
         <scene sceneID="uCz-3V-6KP">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="8JJ-2e-rdq" customClass="ViewControllerSignIn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Signin" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8JJ-2e-rdq" customClass="ViewControllerSignIn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2s9-p5-kJj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -283,6 +283,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="KlM-bA-cPK" id="KbK-WI-Ey3"/>
+                        <outlet property="burgerButton" destination="oNx-fQ-FSr" id="8Pi-iJ-qON"/>
                         <outlet property="emailField" destination="a8e-oH-C2V" id="i9g-NS-eAl"/>
                         <outlet property="errorMessageLabel" destination="Xeq-hM-87i" id="xoC-j7-wKc"/>
                         <outlet property="nameLabel" destination="I6P-7u-HjL" id="D4k-7g-7mZ"/>
@@ -344,7 +345,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8JJ-2e-rdq" kind="push" id="oPB-qX-Bcj"/>
+                                    <segue destination="8JJ-2e-rdq" kind="push" identifier="button.signin" id="oPB-qX-Bcj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hejsan!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5TK-ad-y4h">
@@ -386,7 +387,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEF-b4-RQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2593" y="-1060"/>
+            <point key="canvasLocation" x="2329" y="-969"/>
         </scene>
         <!--Sektioner View Controller - Sektioner-->
         <scene sceneID="eHG-ne-gNw">
@@ -464,7 +465,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8l-H6-SWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="659" y="12"/>
+            <point key="canvasLocation" x="1608" y="-419"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dbY-aY-ihu">
@@ -614,6 +615,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Logga in" automaticallyAdjustsScrollViewInsets="NO" id="YkJ-cb-UlX" customClass="NavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="EIr-rF-mqC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aLG-rz-JCc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -625,7 +627,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTB-Gu-EJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1964" y="32"/>
+            <point key="canvasLocation" x="1875" y="359"/>
         </scene>
         <!--Collection View Controller - #karnevelj-->
         <scene sceneID="WZZ-m1-69l">
@@ -798,6 +800,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="SBx-YK-Cyu"/>
-        <segue reference="oPB-qX-Bcj"/>
+        <segue reference="2mt-lj-BJB"/>
     </inferredMetricsTieBreakers>
 </document>

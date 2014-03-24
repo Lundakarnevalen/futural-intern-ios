@@ -30,6 +30,8 @@
     
     [super viewDidLoad];
     
+    [self refreshBurgerButton];
+    
     //delegate textfields
     self.emailField.delegate = self;
     self.passwordField.delegate = self;
@@ -44,6 +46,13 @@
     [self.nameLabel setText:self.api.karnevalist.firstname];
     
 }
+
+- (void)refreshBurgerButton {
+    
+    self.burgerButton.enabled = [self.api isSignedIn];
+    
+}
+
 - (IBAction)signInButtonTapped:(id)sender {
 
     [self signIn];
@@ -141,6 +150,8 @@
         }
         
         if([stringIdentifier isEqualToString:@"sign_out"]) {
+            
+            [self refreshBurgerButton];
             
             if([parsedData[@"success"] isEqualToString:@"true"]) {
                 
