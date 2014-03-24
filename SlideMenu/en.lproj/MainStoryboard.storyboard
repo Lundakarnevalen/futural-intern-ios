@@ -170,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4a-Aw-lXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1460" y="12"/>
+            <point key="canvasLocation" x="1753" y="-33"/>
         </scene>
         <!--Sektioner Table View Controller-->
         <scene sceneID="S4U-XZ-CDf">
@@ -335,7 +335,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEF-b4-RQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="12"/>
+            <point key="canvasLocation" x="1244" y="-138"/>
         </scene>
         <!--Sektioner View Controller - Sektioner-->
         <scene sceneID="eHG-ne-gNw">
@@ -460,7 +460,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kommunikation" id="sSN-J1-6Pt">
-                                                    <rect key="frame" x="16" y="16" width="48" height="48"/>
+                                                    <rect key="frame" x="20" y="16" width="48" height="48"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zTv-3o-q5o">
