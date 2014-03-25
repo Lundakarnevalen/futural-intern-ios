@@ -3,12 +3,11 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "Nav_bar.png"
+      "filename" : "Övriga Box.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "Nav_bar@2x.png"
+      "scale" : "2x"
     }
   ],
   "info" : {

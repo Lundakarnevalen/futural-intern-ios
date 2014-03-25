@@ -36,7 +36,7 @@
     
     self.tableView.scrollsToTop = NO; //if set to YES (default) the subviews won't respond to the statusbar-tap.
     
-    self.menu = [NSArray arrayWithObjects:@"Start", @"Sektioner", @"Logga in", @"Meddelanden", @"#karnevelj", @"Karta", nil];
+    self.menu = [NSArray arrayWithObjects: /*@"Start", @"Sektioner", @"Logga in", @"Meddelanden", @"#karnevelj", @"Karta", */ @"Login", nil];
     
     [self.slidingViewController setAnchorRightRevealAmount:200.0f];
     self.slidingViewController.underLeftWidthLayout = ECFullWidth;
@@ -93,7 +93,8 @@
     if (!(indexPath.row == 0)) {
         NSString *identifier = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row-1]];
         
-        UIViewController *newTopViewController = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:identifier bundle:nil];
+        UIViewController *newTopViewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
         
         [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
             CGRect frame = self.slidingViewController.topViewController.view.frame;
