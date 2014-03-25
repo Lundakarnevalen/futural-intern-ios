@@ -115,8 +115,8 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
     NSString *json = @"{"
                         "\"location\": {"
 
-                            "\"latitude\": \"%@\","
-                            "\"longtude\": \"%@\""
+                            "\"latitude\": \"%.f\","
+                            "\"longtude\": \"%.f\""
 
                         "}"
                     "}";
