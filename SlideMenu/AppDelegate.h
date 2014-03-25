@@ -10,12 +10,15 @@
 #import <CoreLocation/CoreLocation.h>
 #import "FuturalAPI.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate, NSURLConnectionDataDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
 @property (nonatomic) FuturalAPI *api;
+@property (nonatomic) NSMutableData *dataQueue;
+
 @property (nonatomic) UIBackgroundTaskIdentifier bgTask;
+
 
 @end

@@ -10,7 +10,7 @@
 #import "MenuViewController.h"
 #import "Identification.h"
 
-@interface AppDelegate () 
+@interface AppDelegate ()
 
 @end
 
@@ -59,6 +59,7 @@
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     
 #warning ändra detta innan uppladdning!
+    
     // Only report to location manager if the user has traveled 1000 meters
     self.locationManager.distanceFilter = 1000.0f;
     self.locationManager.delegate = self;
@@ -132,5 +133,29 @@
         }
     }
 }
+
+-(FuturalAPI *)api {
+    if (!_api) _api = [[FuturalAPI alloc] initFuturalAPIWithDownloadDelegate:self];
+    return _api;
+}
+
+#pragma mark -NSURLConnection
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    
+    [self.dataQueue appendData:data];
+    
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response { //debug
+    
+    NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+    NSLog(@"%@", [httpResponse allHeaderFields]);
+    
+}
+
 
 @end
