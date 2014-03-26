@@ -147,7 +147,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Kqe-QA-w9V">
             <objects>
-                <navigationController storyboardIdentifier="Logga in" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fda-SV-FbH" customClass="NavigationController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Logga in" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fda-SV-FbH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9hF-Qt-Hca">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
