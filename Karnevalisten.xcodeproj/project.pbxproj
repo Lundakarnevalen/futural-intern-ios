@@ -51,9 +51,11 @@
 		1AA15BA918CBA666007A74C8 /* InstagramTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA15B9F18CBA666007A74C8 /* InstagramTag.m */; };
 		1AA15BAA18CBA666007A74C8 /* InstagramUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA15BA118CBA666007A74C8 /* InstagramUser.m */; };
 		1AB448F918DB9D8E0060C0D0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB448F818DB9D8E0060C0D0 /* MapViewController.m */; };
-		1ACF836418D8E3D000A5052F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA15B5B18CB995F007A74C8 /* MapKit.framework */; };
 		1AD1A821189C8AFF0086DF0F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A63BB04189BE25000F43465 /* Settings.bundle */; };
 		1AD1A823189C92F50086DF0F /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD1A822189C92F50086DF0F /* blank.png */; };
+		1AD4EFE818E352BB00F03471 /* LyricString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4EFE718E352BB00F03471 /* LyricString.m */; };
+		1AD4EFED18E358BA00F03471 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD4EFEC18E358BA00F03471 /* AVFoundation.framework */; };
+		1AD4EFEF18E359D000F03471 /* karnevalsmelodin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AD4EFEE18E359D000F03471 /* karnevalsmelodin.mp3 */; };
 		1ADB6D2E18A3EBA70012CC06 /* ViewControllerSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADB6D2D18A3EBA70012CC06 /* ViewControllerSignIn.m */; };
 		1AEE316018D9A5D8007A9934 /* Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE315F18D9A5D8007A9934 /* Colors.m */; };
 		1AFB426918DC678900747DAA /* MapCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB426818DC678900747DAA /* MapCity.m */; };
@@ -160,6 +162,10 @@
 		1AB448F718DB9D8E0060C0D0 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		1AB448F818DB9D8E0060C0D0 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		1AD1A822189C92F50086DF0F /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
+		1AD4EFE618E352BB00F03471 /* LyricString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricString.h; sourceTree = "<group>"; };
+		1AD4EFE718E352BB00F03471 /* LyricString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricString.m; sourceTree = "<group>"; };
+		1AD4EFEC18E358BA00F03471 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1AD4EFEE18E359D000F03471 /* karnevalsmelodin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = karnevalsmelodin.mp3; sourceTree = "<group>"; };
 		1ADB6D2C18A3EBA70012CC06 /* ViewControllerSignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerSignIn.h; path = SlideMenu/ViewControllerSignIn.h; sourceTree = "<group>"; };
 		1ADB6D2D18A3EBA70012CC06 /* ViewControllerSignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerSignIn.m; path = SlideMenu/ViewControllerSignIn.m; sourceTree = "<group>"; };
 		1AEE315E18D9A5D8007A9934 /* Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Colors.h; path = "futural-intern-ios/Colors.h"; sourceTree = "<group>"; };
@@ -214,7 +220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ACF836418D8E3D000A5052F /* MapKit.framework in Frameworks */,
+				1AD4EFED18E358BA00F03471 /* AVFoundation.framework in Frameworks */,
 				1AA15B6018CB9A05007A74C8 /* Security.framework in Frameworks */,
 				1AA15B5E18CB99CE007A74C8 /* CoreLocation.framework in Frameworks */,
 				1AA15B5A18CB9951007A74C8 /* SystemConfiguration.framework in Frameworks */,
@@ -231,6 +237,8 @@
 		1A16269718D1ACE100434BFF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1AD4EFE618E352BB00F03471 /* LyricString.h */,
+				1AD4EFE718E352BB00F03471 /* LyricString.m */,
 				5758CDCD18DF89F900446EA3 /* Lundakarneval.h */,
 				5758CDCE18DF89F900446EA3 /* Lundakarneval.m */,
 				57186D8918DF153500E78450 /* Message.h */,
@@ -417,6 +425,7 @@
 		27D71D5316A349AD00021245 = {
 			isa = PBXGroup;
 			children = (
+				1AD4EFEC18E358BA00F03471 /* AVFoundation.framework */,
 				1A9D6AFC18E210C0003D0A78 /* Storyboards */,
 				1AFB427418DD9E2600747DAA /* Images.xcassets */,
 				1A16269918D1AEAC00434BFF /* AFNetworking */,
@@ -457,6 +466,7 @@
 		27D71D6916A349AD00021245 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1AD4EFEE18E359D000F03471 /* karnevalsmelodin.mp3 */,
 				1A9D6AF618E20FA7003D0A78 /* Fonts */,
 				27D71D6116A349AD00021245 /* Frameworks */,
 				27D71D5F16A349AD00021245 /* Products */,
@@ -558,6 +568,7 @@
 				1AD1A823189C92F50086DF0F /* blank.png in Resources */,
 				1AA15BA318CBA666007A74C8 /* InstagramKit.plist in Resources */,
 				1A9D6B1C18E255E6003D0A78 /* Menu.storyboard in Resources */,
+				1AD4EFEF18E359D000F03471 /* karnevalsmelodin.mp3 in Resources */,
 				1A9D6B1818E2550A003D0A78 /* Main.storyboard in Resources */,
 				1AFB427518DD9E2600747DAA /* Images.xcassets in Resources */,
 				77B3AB3E189A79830059A6ED /* sektioner.plist in Resources */,
@@ -604,6 +615,7 @@
 				1AA15B8918CBA60A007A74C8 /* AFURLRequestSerialization.m in Sources */,
 				77B3AB48189A7A220059A6ED /* RLSektionerViewController.m in Sources */,
 				1AEE316018D9A5D8007A9934 /* Colors.m in Sources */,
+				1AD4EFE818E352BB00F03471 /* LyricString.m in Sources */,
 				1AA15BA818CBA666007A74C8 /* InstagramPaginationInfo.m in Sources */,
 				1AA15BA518CBA666007A74C8 /* InstagramComment.m in Sources */,
 				1AFB426918DC678900747DAA /* MapCity.m in Sources */,
@@ -658,7 +670,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: se.lundakarnevalen.karnevalisten";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -686,7 +698,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: se.lundakarnevalen.karnevalisten";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -704,14 +716,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Richard Luong (R6TUY926E5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideMenu/Karnevalisten-Prefix.pch";
 				INFOPLIST_FILE = "SlideMenu/Karnevalisten-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = Karnevalisten;
-				PROVISIONING_PROFILE = "EE746C24-7F77-40B0-BFD9-1C5EEDD8BDFD";
+				PROVISIONING_PROFILE = "F4BDC230-4F0D-42ED-995B-A790B6A0866F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -721,14 +733,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Richard Luong (R6TUY926E5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideMenu/Karnevalisten-Prefix.pch";
 				INFOPLIST_FILE = "SlideMenu/Karnevalisten-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = Karnevalisten;
-				PROVISIONING_PROFILE = "EE746C24-7F77-40B0-BFD9-1C5EEDD8BDFD";
+				PROVISIONING_PROFILE = "F4BDC230-4F0D-42ED-995B-A790B6A0866F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

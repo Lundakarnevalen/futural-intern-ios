@@ -46,9 +46,7 @@
 }
 
 - (IBAction)signInButtonTapped:(id)sender {
-
     [self signIn];
-
 }
 
 - (void)signIn {
@@ -165,8 +163,7 @@
 }
 
 - (IBAction)passwordResetAction:(id)sender {
-    
-    [self.api resetPassword];
+    [self.api resetPassword:[self.forgotEmailField text]];
     
 }
 

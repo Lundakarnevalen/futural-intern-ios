@@ -187,7 +187,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Inkorg" id="EQ4-K1-1nx">
-                        <barButtonItem key="leftBarButtonItem" image="MenuButton" id="lJp-JK-doD"/>
+                        <barButtonItem key="leftBarButtonItem" image="MenuButton" id="lJp-JK-doD">
+                            <connections>
+                                <action selector="revealMenu:" destination="J5T-gY-Yn8" id="rAz-Fs-UAv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVp-1y-JR0" userLabel="First Responder" sceneMemberID="firstResponder"/>

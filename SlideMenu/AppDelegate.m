@@ -28,7 +28,23 @@
         [buttonItem setBackgroundImage:[UIImage imageNamed:@"blank.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     }
     
+    NSLog(@"Registering for push notifications...");
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    
     return YES;
+}
+
+- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    NSString *str = [NSString stringWithFormat:@"%@",deviceToken];
+    str = [str stringByReplacingOccurrencesOfString:@" " withString:@""];
+    str = [str substringWithRange:NSMakeRange(1, [str length]-2)];
+    NSLog(@"%@", str);
+    [self.api sendAppleToken:str];
+}
+
+- (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err {
+    NSString *str = [NSString stringWithFormat: @"Error: %@", err];
+    NSLog(@"%@",str);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

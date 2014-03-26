@@ -751,7 +751,7 @@
         <image name="Moln" width="363" height="182"/>
         <image name="Raket.png" width="787" height="438"/>
         <image name="kommunikation" width="337" height="337"/>
-        <image name="map" width="1080" height="1669"/>
+        <image name="map" width="363" height="182"/>
         <image name="menuButton.png" width="34" height="24"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

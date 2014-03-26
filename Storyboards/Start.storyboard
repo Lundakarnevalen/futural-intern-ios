@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qco-q7-Ny8">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qco-q7-Ny8">
                                 <rect key="frame" x="0.0" y="64" width="320" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -49,9 +49,55 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="15:24:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blI-cc-yam" customClass="UILabel_CustomFont">
+                                        <rect key="frame" x="0.0" y="55" width="320" height="89"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <color key="textColor" red="0.92156862750000001" green="0.83137254900000002" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                        <size key="shadowOffset" width="0.0" height="3"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2A-si-7UR" customClass="UILabel_CustomFont">
+                                        <rect key="frame" x="20" y="86" width="280" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.83137254900000002" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVS-2t-jEx" customClass="UILabel_CustomFont">
+                                        <rect key="frame" x="20" y="53" width="280" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.83137254900000002" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="0.70000000000000007" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKg-3X-qAF" customClass="UILabel_CustomFont">
+                                        <rect key="frame" x="20" y="121" width="280" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.83137254900000002" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="0.70000000000000007" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.75686274509999996" green="0.82745098039999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="blI-cc-yam" secondAttribute="centerY" constant="0.5" id="CkQ-X0-fTi"/>
                                     <constraint firstAttribute="width" constant="320" id="PYd-jK-SYE"/>
                                 </constraints>
                             </view>
@@ -73,7 +119,14 @@
                                                 <state key="normal" image="PlayerButton">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="playButtonPressed:" destination="rOY-Cg-tUS" eventType="touchUpInside" id="YAs-AK-P8T"/>
+                                                </connections>
                                             </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PlayerPin" translatesAutoresizingMaskIntoConstraints="NO" id="FMD-Cs-Cfa">
+                                                <rect key="frame" x="92" y="17" width="9" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                     </view>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KARNEVALSMELODIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrE-PN-sgr" customClass="UILabel_CustomFont">
@@ -233,6 +286,17 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="playerPin" destination="FMD-Cs-Cfa" id="Pz0-ZC-aok"/>
+                        <outlet property="rowForLyricLabel" destination="B2A-si-7UR" id="fEJ-i9-6sB"/>
+                        <outlet property="rowMinus1LyricLabel" destination="wVS-2t-jEx" id="Y5y-BQ-2Op"/>
+                        <outlet property="rowPlus1LyricLabel" destination="RKg-3X-qAF" id="fPA-jy-rOi"/>
+                        <outlet property="timeTilForkarnevalLabel" destination="6Oe-Se-yJY" id="UBX-zG-thm"/>
+                        <outlet property="timeTilKarnebalenLabel" destination="Bmu-pW-TvW" id="neJ-wN-Ff3"/>
+                        <outlet property="timeTilKarneklubben" destination="2Gc-cN-5xo" id="gCj-5m-FOy"/>
+                        <outlet property="timeTilKarnelanet" destination="86K-rf-1c1" id="7jy-tU-Xfk"/>
+                        <outlet property="timeTilLundakarnevalenLabel" destination="blI-cc-yam" id="Cda-SO-Iuk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wvn-VK-7CX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -261,6 +325,7 @@
         <image name="MenuButton" width="25" height="15"/>
         <image name="Moln" width="363" height="182"/>
         <image name="PlayerButton" width="98" height="98"/>
+        <image name="PlayerPin" width="11" height="56"/>
         <image name="Song" width="741" height="61"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

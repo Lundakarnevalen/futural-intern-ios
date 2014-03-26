@@ -91,20 +91,64 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
     
 }
 
-- (void)resetPassword {
+- (void)resetPassword:(NSString *)email {
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:@"api/users/password" withFormatAppended:NO]];
     
-    NSLog(@"password reset with token: %@", [self.karnevalist token]);
+    //NSLog(@"password reset with token: %@", [self.karnevalist token]);
+    
+    //parameter template
+    NSString *json = @"{"
+        "\"user\": {"
+            "\"email\": \"%@\""
+        "}"
+    "}";
+    
+    //insert email and password into parameter template.
+    json = [NSString stringWithFormat:json, email];
+    
+    //data sent to the API.
+    NSData *data = [json dataUsingEncoding:NSUTF8StringEncoding];
     
     [request setHTTPMethod:@"POST"];
     [request setTimeoutInterval:15];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPBody:data];
     
     //launch that mf.
     self.connection = [[NSURLConnection alloc] initWithRequest:request delegate:self.connectionDelegate startImmediately:YES];
     
+}
+
+-(void)sendAppleToken:(NSString *)token {
+    NSString *appendPath = [NSString stringWithFormat:@"/karnevalister/21.json"];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:appendPath withFormatAppended:NO]];
+    
+    //parameter template
+    NSString *json = @"{"
+        "\"token\": \"%@\","
+        "\"karnevalist\": {"
+            "\"ios_token\": \"%@\""
+        "}"
+    "}";
+    
+    //insert email and password into parameter template.
+    json = [NSString stringWithFormat:json, [self.karnevalist token], token];
+    
+    //data sent to the API.
+    NSData *data = [json dataUsingEncoding:NSUTF8StringEncoding];
+    
+    //configure the request
+    [request setHTTPMethod:@"PUT"];
+    [request setValue:[NSString stringWithFormat:@"%d", (int) data.length] forHTTPHeaderField:@"Content-length"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPBody:data];
+    
+    //launch that mf.
+    self.connection = [[NSURLConnection alloc] initWithRequest:request delegate:self.connectionDelegate startImmediately:YES];
 }
 
 - (void)updateLocation:(CLLocation *)location {
@@ -113,14 +157,15 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
     
     //parameter template
     NSString *json = @"{"
-                        "\"location\": {"
-
-                            "\"latitude\": \"%.f\","
-                            "\"longtude\": \"%.f\""
-
+                        "\"cluster\": {"
+                            "\"lat\": \"%.f\","
+                            "\"lng\": \"%.f\""
                         "}"
                     "}";
     
+    //första gången POST, return cluster_id, status 200
+    
+    //nästa gång PUT, id till api/clusters/<cluster_id>, return cluster_id
     
     //insert email and password into parameter template.
     json = [NSString stringWithFormat:json, location.coordinate.latitude, location.coordinate.longitude];

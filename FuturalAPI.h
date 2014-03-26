@@ -28,8 +28,9 @@
 - (void)fetchNotifications;
 - (void)authenticateUser:(NSString *)userIdentification withPassword:(NSString *)password;
 - (void)signOut;
-- (void)resetPassword;
+- (void)resetPassword:(NSString *)email;
 - (void)updateLocation:(CLLocation *)location;
+- (void)sendAppleToken:(NSString *)token;
 
 + (NSDictionary *)parseJSONData:(NSData *)jsonData;
 + (NSString *)stringIdentifierFromUrlConnection:(NSURLConnection *)connection;

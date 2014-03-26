@@ -360,6 +360,9 @@
                         <color key="backgroundColor" red="0.75686274509999996" green="0.82745098039999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="SKAPA LÖSENORD" id="xy7-aE-5ih"/>
+                    <connections>
+                        <outlet property="forgotEmailField" destination="vjY-1H-CFU" id="fv2-uJ-ZF5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFw-Hn-wD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

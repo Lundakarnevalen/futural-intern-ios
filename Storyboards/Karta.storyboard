@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller - KARTA-->
+        <!--Map View Controller - KARTA-->
         <scene sceneID="htK-2E-Ioh">
             <objects>
-                <viewController id="Xkq-mx-qq4" sceneMemberID="viewController">
+                <viewController id="Xkq-mx-qq4" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HyR-1B-wQF"/>
                         <viewControllerLayoutGuide type="bottom" id="05s-Im-MvN"/>
@@ -99,7 +99,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="KARTA" id="Cfu-QV-UYU">
-                        <barButtonItem key="leftBarButtonItem" image="MenuButton" id="zrd-pv-5bY"/>
+                        <barButtonItem key="leftBarButtonItem" image="MenuButton" id="zrd-pv-5bY">
+                            <connections>
+                                <action selector="revealMenu:" destination="Xkq-mx-qq4" id="3nA-wa-Q3T"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUY-tw-y3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
