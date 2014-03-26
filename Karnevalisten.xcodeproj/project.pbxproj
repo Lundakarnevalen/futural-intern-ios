@@ -12,13 +12,17 @@
 		1A362BE3189B1ACA002EE320 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE2189B1ACA002EE320 /* MainViewController.m */; };
 		1A362BE6189B1F35002EE320 /* SektionerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE5189B1F35002EE320 /* SektionerTableViewController.m */; };
 		1A8D7B21189B0BE0002070D6 /* ViewControllerCloudVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D7B20189B0BE0002070D6 /* ViewControllerCloudVideo.m */; };
-		1A9D6AF318E20EA9003D0A78 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6AF218E20EA9003D0A78 /* Login.storyboard */; };
+		1A9D6AF318E20EA9003D0A78 /* Logga in.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6AF218E20EA9003D0A78 /* Logga in.storyboard */; };
 		1A9D6AF718E21005003D0A78 /* Robot!Head.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6AF418E20FA2003D0A78 /* Robot!Head.ttf */; };
 		1A9D6AF818E21005003D0A78 /* Futura-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6AF518E20FA2003D0A78 /* Futura-Bold.ttf */; };
 		1A9D6AFB18E2105A003D0A78 /* UILabel+CustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D6AFA18E2105A003D0A78 /* UILabel+CustomFont.m */; };
 		1A9D6B0318E21C41003D0A78 /* UIButton+CustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D6B0218E21C41003D0A78 /* UIButton+CustomFont.m */; };
 		1A9D6B0918E22768003D0A78 /* UITextField+CustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D6B0818E22768003D0A78 /* UITextField+CustomFont.m */; };
-		1A9D6B0D18E22866003D0A78 /* Startsida.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6B0C18E22866003D0A78 /* Startsida.storyboard */; };
+		1A9D6B0D18E22866003D0A78 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6B0C18E22866003D0A78 /* Start.storyboard */; };
+		1A9D6B1218E23ED8003D0A78 /* Inkorg.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6B1118E23ED8003D0A78 /* Inkorg.storyboard */; };
+		1A9D6B1618E244BD003D0A78 /* Karta.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6B1518E244BD003D0A78 /* Karta.storyboard */; };
+		1A9D6B1818E2550A003D0A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6B1718E2550A003D0A78 /* Main.storyboard */; };
+		1A9D6B1C18E255E6003D0A78 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6B1B18E255E6003D0A78 /* Menu.storyboard */; };
 		1AA15B5818CB994C007A74C8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA15B5718CB994C007A74C8 /* MobileCoreServices.framework */; };
 		1AA15B5A18CB9951007A74C8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA15B5918CB9951007A74C8 /* SystemConfiguration.framework */; };
 		1AA15B5E18CB99CE007A74C8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA15B5D18CB99CE007A74C8 /* CoreLocation.framework */; };
@@ -87,7 +91,7 @@
 		1A63BB04189BE25000F43465 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1A8D7B1F189B0BE0002070D6 /* ViewControllerCloudVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerCloudVideo.h; path = SlideMenu/ViewControllerCloudVideo.h; sourceTree = "<group>"; };
 		1A8D7B20189B0BE0002070D6 /* ViewControllerCloudVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerCloudVideo.m; path = SlideMenu/ViewControllerCloudVideo.m; sourceTree = "<group>"; };
-		1A9D6AF218E20EA9003D0A78 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
+		1A9D6AF218E20EA9003D0A78 /* Logga in.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Logga in.storyboard"; path = "Storyboards/Logga in.storyboard"; sourceTree = "<group>"; };
 		1A9D6AF418E20FA2003D0A78 /* Robot!Head.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Robot!Head.ttf"; sourceTree = "<group>"; };
 		1A9D6AF518E20FA2003D0A78 /* Futura-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura-Bold.ttf"; sourceTree = "<group>"; };
 		1A9D6AF918E2105A003D0A78 /* UILabel+CustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+CustomFont.h"; path = "Models/UILabel+CustomFont.h"; sourceTree = "<group>"; };
@@ -96,7 +100,11 @@
 		1A9D6B0218E21C41003D0A78 /* UIButton+CustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+CustomFont.m"; path = "Models/UIButton+CustomFont.m"; sourceTree = "<group>"; };
 		1A9D6B0718E22768003D0A78 /* UITextField+CustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+CustomFont.h"; path = "Models/UITextField+CustomFont.h"; sourceTree = "<group>"; };
 		1A9D6B0818E22768003D0A78 /* UITextField+CustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+CustomFont.m"; path = "Models/UITextField+CustomFont.m"; sourceTree = "<group>"; };
-		1A9D6B0C18E22866003D0A78 /* Startsida.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Startsida.storyboard; path = Storyboards/Startsida.storyboard; sourceTree = "<group>"; };
+		1A9D6B0C18E22866003D0A78 /* Start.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Start.storyboard; path = Storyboards/Start.storyboard; sourceTree = "<group>"; };
+		1A9D6B1118E23ED8003D0A78 /* Inkorg.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Inkorg.storyboard; path = Storyboards/Inkorg.storyboard; sourceTree = "<group>"; };
+		1A9D6B1518E244BD003D0A78 /* Karta.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Karta.storyboard; path = Storyboards/Karta.storyboard; sourceTree = "<group>"; };
+		1A9D6B1718E2550A003D0A78 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		1A9D6B1B18E255E6003D0A78 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Menu.storyboard; path = Storyboards/Menu.storyboard; sourceTree = "<group>"; };
 		1AA15B5718CB994C007A74C8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1AA15B5918CB9951007A74C8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1AA15B5B18CB995F007A74C8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -300,9 +308,13 @@
 		1A9D6AFC18E210C0003D0A78 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				1A9D6AF218E20EA9003D0A78 /* Login.storyboard */,
+				1A9D6AF218E20EA9003D0A78 /* Logga in.storyboard */,
 				27D71D7A16A349AD00021245 /* MainStoryboard.storyboard */,
-				1A9D6B0C18E22866003D0A78 /* Startsida.storyboard */,
+				1A9D6B0C18E22866003D0A78 /* Start.storyboard */,
+				1A9D6B1118E23ED8003D0A78 /* Inkorg.storyboard */,
+				1A9D6B1518E244BD003D0A78 /* Karta.storyboard */,
+				1A9D6B1718E2550A003D0A78 /* Main.storyboard */,
+				1A9D6B1B18E255E6003D0A78 /* Menu.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -540,14 +552,18 @@
 			files = (
 				1A9D6AF718E21005003D0A78 /* Robot!Head.ttf in Resources */,
 				1A9D6AF818E21005003D0A78 /* Futura-Bold.ttf in Resources */,
-				1A9D6B0D18E22866003D0A78 /* Startsida.storyboard in Resources */,
+				1A9D6B1618E244BD003D0A78 /* Karta.storyboard in Resources */,
+				1A9D6B0D18E22866003D0A78 /* Start.storyboard in Resources */,
 				1AD1A821189C8AFF0086DF0F /* Settings.bundle in Resources */,
 				1AD1A823189C92F50086DF0F /* blank.png in Resources */,
 				1AA15BA318CBA666007A74C8 /* InstagramKit.plist in Resources */,
+				1A9D6B1C18E255E6003D0A78 /* Menu.storyboard in Resources */,
+				1A9D6B1818E2550A003D0A78 /* Main.storyboard in Resources */,
 				1AFB427518DD9E2600747DAA /* Images.xcassets in Resources */,
 				77B3AB3E189A79830059A6ED /* sektioner.plist in Resources */,
+				1A9D6B1218E23ED8003D0A78 /* Inkorg.storyboard in Resources */,
 				27D71D7C16A349AD00021245 /* MainStoryboard.storyboard in Resources */,
-				1A9D6AF318E20EA9003D0A78 /* Login.storyboard in Resources */,
+				1A9D6AF318E20EA9003D0A78 /* Logga in.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,13 +1,15 @@
 //
-//  MenuViewController.m
-//  SlideMenu
+//  MenuTableViewController.m
+//  Karnevalisten
 //
-//  Created by Kyle Begeman on 1/13/13.
-//  Copyright (c) 2013 Indee Box LLC. All rights reserved.
+//  Created by Richard Luong on 2014-03-25.
+//  Copyright (c) 2014 Lundakarnevalen. All rights reserved.
 //
 
 #import "MenuViewController.h"
 #import "ECSlidingViewController.h"
+
+#define TAG_MENULABEL 1006
 
 @interface MenuViewController ()
 
@@ -16,9 +18,6 @@
 @end
 
 @implementation MenuViewController
-
-@synthesize menu;
-
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -31,78 +30,67 @@
 
 - (void)viewDidLoad
 {
-
     [super viewDidLoad];
     
     self.tableView.scrollsToTop = NO; //if set to YES (default) the subviews won't respond to the statusbar-tap.
-    
-    self.menu = [NSArray arrayWithObjects: /*@"Start", @"Sektioner", @"Logga in", @"Meddelanden", @"#karnevelj", @"Karta", */ @"Login", nil];
+    self.menu = [NSArray arrayWithObjects: @"Start", @"Inkorg", @"Logga in", @"Karta" , nil];
     
     [self.slidingViewController setAnchorRightRevealAmount:200.0f];
     self.slidingViewController.underLeftWidthLayout = ECFullWidth;
     
-    CGFloat nRed=43.0/255.0;
-    CGFloat nBlue=40.0/255.0;
-    CGFloat nGreen=42.0/255.0;
-    
-    self.tableView.backgroundColor = [[UIColor alloc]initWithRed:nRed green:nGreen blue:nBlue alpha:1];
-    
+}
+
+-(NSArray *)menu {
+    if (!_menu) _menu = [[NSArray alloc] init];
+    return _menu;
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    //return [self.menu count];
-    return [self.menu count]+1;
+    return [self.menu count];
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *cellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
-    }
-    
-    if (indexPath.row == 0) {
-        [cell setUserInteractionEnabled:NO];
-    } else {
-        cell.textLabel.text = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row-1]];
-        [cell.textLabel setFont:[UIFont systemFontOfSize:20]];
-        cell.textLabel.textColor = [UIColor whiteColor];
-    }
-    
-    [cell setBackgroundColor:[UIColor clearColor]];
+    UILabel *menuLabel = (UILabel *)[cell viewWithTag:TAG_MENULABEL];
+    menuLabel.text = [[self.menu objectAtIndex:indexPath.row] uppercaseString];
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 70.0;
 }
 
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (!(indexPath.row == 0)) {
-        NSString *identifier = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row-1]];
-        
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:identifier bundle:nil];
-        UIViewController *newTopViewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
-        
-        [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
-            CGRect frame = self.slidingViewController.topViewController.view.frame;
-            self.slidingViewController.topViewController = newTopViewController;
-            self.slidingViewController.topViewController.view.frame = frame;
-            [self.slidingViewController resetTopView];
-        }];
-    }
+    
+    NSString *identifier = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row]];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:identifier bundle:nil];
+    UIViewController *newTopViewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
+    
+    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
+        CGRect frame = self.slidingViewController.topViewController.view.frame;
+        self.slidingViewController.topViewController = newTopViewController;
+        self.slidingViewController.topViewController.view.frame = frame;
+        [self.slidingViewController resetTopView];
+    }];
+    
 }
+
 
 @end

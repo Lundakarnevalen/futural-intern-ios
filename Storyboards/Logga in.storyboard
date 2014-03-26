@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller - LOGGA IN-->
+        <!--View Controller Sign In - LOGGA IN-->
         <scene sceneID="x3N-2M-djL">
             <objects>
-                <viewController id="kwK-Fe-Eb3" sceneMemberID="viewController">
+                <viewController id="kwK-Fe-Eb3" customClass="ViewControllerSignIn" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7eS-vV-vh8"/>
                         <viewControllerLayoutGuide type="bottom" id="bGX-PA-jkV"/>
@@ -134,6 +134,11 @@
                         <color key="backgroundColor" red="0.75686274509999996" green="0.82745098039999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="LOGGA IN" id="WXy-7k-fuk"/>
+                    <connections>
+                        <outlet property="emailField" destination="bME-6u-sds" id="MA4-Ss-5aD"/>
+                        <outlet property="passwordField" destination="tE3-6S-NIg" id="DEe-Zp-kLn"/>
+                        <outlet property="signinButton" destination="MVq-Vf-UNU" id="MI8-F3-SjL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1R-ZB-tfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,7 +147,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Kqe-QA-w9V">
             <objects>
-                <navigationController storyboardIdentifier="Login" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fda-SV-FbH" customClass="NavigationController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Logga in" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fda-SV-FbH" customClass="NavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9hF-Qt-Hca">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

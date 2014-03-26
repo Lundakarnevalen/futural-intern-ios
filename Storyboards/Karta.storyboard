@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3Hc-Ak-vgp">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - KARTA-->
+        <scene sceneID="htK-2E-Ioh">
+            <objects>
+                <viewController id="Xkq-mx-qq4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HyR-1B-wQF"/>
+                        <viewControllerLayoutGuide type="bottom" id="05s-Im-MvN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t3h-9Z-ItB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Waves" translatesAutoresizingMaskIntoConstraints="NO" id="T34-c6-9N5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Skane" translatesAutoresizingMaskIntoConstraints="NO" id="pmY-Fd-siU">
+                                <rect key="frame" x="20" y="142" width="280" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="EVy-M8-xva"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAR ÄR KARNEVALISTERNA JUST NU?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="269" translatesAutoresizingMaskIntoConstraints="NO" id="CPw-Bm-9Yt" customClass="UILabel_CustomFont">
+                                <rect key="frame" x="26" y="84" width="269" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lRl-Io-wQW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJY-dx-XJw">
+                                <rect key="frame" x="80" y="468" width="160" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2562" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWM-ZC-4qz" customClass="UILabel_CustomFont">
+                                        <rect key="frame" x="20" y="8" width="120" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KARNEVALISTER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQj-pC-Fp2" customClass="UILabel_CustomFont">
+                                        <rect key="frame" x="0.0" y="37" width="160" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="WWM-ZC-4qz" firstAttribute="leading" secondItem="TJY-dx-XJw" secondAttribute="leading" constant="20" symbolic="YES" id="0yR-Qg-nFU"/>
+                                    <constraint firstAttribute="bottom" secondItem="QQj-pC-Fp2" secondAttribute="bottom" id="E4e-3J-Xlg"/>
+                                    <constraint firstItem="WWM-ZC-4qz" firstAttribute="top" secondItem="TJY-dx-XJw" secondAttribute="top" constant="8" id="FcT-xH-Hrb"/>
+                                    <constraint firstAttribute="bottom" secondItem="WWM-ZC-4qz" secondAttribute="bottom" constant="20" symbolic="YES" id="NYf-GS-dv1"/>
+                                    <constraint firstAttribute="trailing" secondItem="WWM-ZC-4qz" secondAttribute="trailing" constant="20" symbolic="YES" id="VmF-pF-U8c"/>
+                                    <constraint firstItem="QQj-pC-Fp2" firstAttribute="top" secondItem="TJY-dx-XJw" secondAttribute="top" constant="37" id="aKQ-Lh-ddh"/>
+                                    <constraint firstItem="QQj-pC-Fp2" firstAttribute="leading" secondItem="TJY-dx-XJw" secondAttribute="leading" id="cjB-qG-1W2"/>
+                                    <constraint firstItem="WWM-ZC-4qz" firstAttribute="centerX" secondItem="QQj-pC-Fp2" secondAttribute="centerX" id="xeT-tp-2hf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75686274509999996" green="0.82745098039999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="T34-c6-9N5" secondAttribute="bottom" id="0JA-qT-05g"/>
+                            <constraint firstItem="TJY-dx-XJw" firstAttribute="centerX" secondItem="pmY-Fd-siU" secondAttribute="centerX" id="0wU-wk-cZZ"/>
+                            <constraint firstItem="pmY-Fd-siU" firstAttribute="leading" secondItem="t3h-9Z-ItB" secondAttribute="leading" constant="20" symbolic="YES" id="6dP-dF-ReZ"/>
+                            <constraint firstItem="T34-c6-9N5" firstAttribute="leading" secondItem="t3h-9Z-ItB" secondAttribute="leading" id="Ee6-t7-XGa"/>
+                            <constraint firstItem="CPw-Bm-9Yt" firstAttribute="centerX" secondItem="pmY-Fd-siU" secondAttribute="centerX" id="HnO-dv-iKg"/>
+                            <constraint firstItem="TJY-dx-XJw" firstAttribute="centerX" secondItem="T34-c6-9N5" secondAttribute="centerX" id="R9F-Yk-Ptt"/>
+                            <constraint firstAttribute="bottom" secondItem="TJY-dx-XJw" secondAttribute="bottom" constant="20" symbolic="YES" id="Res-Yl-nlq"/>
+                            <constraint firstItem="T34-c6-9N5" firstAttribute="top" secondItem="t3h-9Z-ItB" secondAttribute="top" id="TMB-6H-MyR"/>
+                            <constraint firstAttribute="trailing" secondItem="pmY-Fd-siU" secondAttribute="trailing" constant="20" symbolic="YES" id="Uzl-Io-0dG"/>
+                            <constraint firstItem="pmY-Fd-siU" firstAttribute="top" secondItem="CPw-Bm-9Yt" secondAttribute="bottom" constant="8" symbolic="YES" id="Y10-NP-1tf"/>
+                            <constraint firstItem="CPw-Bm-9Yt" firstAttribute="top" secondItem="HyR-1B-wQF" secondAttribute="bottom" constant="20" id="kQV-qR-M1t"/>
+                            <constraint firstItem="TJY-dx-XJw" firstAttribute="leading" secondItem="t3h-9Z-ItB" secondAttribute="leading" constant="80" id="n6i-im-bUq"/>
+                            <constraint firstItem="TJY-dx-XJw" firstAttribute="top" secondItem="pmY-Fd-siU" secondAttribute="bottom" constant="26" id="oak-Xe-vmw"/>
+                            <constraint firstItem="CPw-Bm-9Yt" firstAttribute="leading" secondItem="t3h-9Z-ItB" secondAttribute="leading" constant="26" id="x0j-ET-guL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="KARTA" id="Cfu-QV-UYU">
+                        <barButtonItem key="leftBarButtonItem" image="MenuButton" id="zrd-pv-5bY"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUY-tw-y3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650" y="48"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cYo-CK-jfd">
+            <objects>
+                <navigationController storyboardIdentifier="Karta" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Hc-Ak-vgp" customClass="NavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jNB-mw-Kbs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xkq-mx-qq4" kind="relationship" relationship="rootViewController" id="Fmb-3o-zSt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VbC-kl-Lan" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="48"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MenuButton" width="25" height="15"/>
+        <image name="Skane" width="1007" height="1011"/>
+        <image name="Waves" width="1080" height="1669"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

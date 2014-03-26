@@ -8,29 +8,19 @@
 
 #import "ViewControllerSignIn.h"
 #import "ECSlidingViewController.h"
-#import "MenuViewController.h"
 
 @interface ViewControllerSignIn ()
 
 @property UIActivityIndicatorView *spinner;
-
 @property (nonatomic) NSMutableData *dataQueue; //used when recieving data from the API.
 
 @end
 
 @implementation ViewControllerSignIn
 
-- (IBAction)revealMenu:(id)sender {
-    
-    [self.slidingViewController anchorTopViewTo:ECRight];
-    
-}
-
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
-    [self refreshBurgerButton];
     
     //delegate textfields
     self.emailField.delegate = self;
@@ -44,12 +34,6 @@
     self.passwordField.leftViewMode = UITextFieldViewModeAlways;
     
     [self.nameLabel setText:self.api.karnevalist.firstname];
-    
-}
-
-- (void)refreshBurgerButton {
-    
-    self.burgerButton.enabled = [self.api isSignedIn];
     
 }
 
@@ -130,7 +114,7 @@
                 [self.api.karnevalist setToken:requestedToken];
                 [self.api.karnevalist setInformationFromDictionary:karnevalist andSave:YES];
                 
-                [self performSegueWithIdentifier:@"signedIn" sender:self];
+#warning perform segue
                 
             } else {
                 
@@ -150,8 +134,6 @@
         }
         
         if([stringIdentifier isEqualToString:@"sign_out"]) {
-            
-            [self refreshBurgerButton];
             
             if([parsedData[@"success"] isEqualToString:@"true"]) {
                 

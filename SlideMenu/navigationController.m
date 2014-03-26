@@ -22,7 +22,9 @@
     [super viewWillAppear:animated];
     
     if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
-        self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.slidingViewController.underLeftViewController  = [storyboard instantiateViewControllerWithIdentifier:@"Menu"];
     }
     
     [self.view addGestureRecognizer:self.slidingViewController.panGesture];
@@ -33,12 +35,17 @@
 {
     [super viewDidLoad];
     
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
+                                                           [UIFont fontWithName:@"Futura-Bold" size:17.0], NSFontAttributeName, nil]];
+    
+    self.navigationBar.topItem.title = [self.navigationBar.topItem.title uppercaseString];
     
     if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
-        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"Nav_bar.png"] forBarMetrics:UIBarMetricsDefault];
+        [[UINavigationBar appearance] setBarTintColor:[Colors darkBlueColorWithAlpha:1]];
+        self.navigationBar.translucent = NO;
     } else {
-        [self.navigationBar setTintColor:[Colors redColorWithAlpha:1]];
+        [self.navigationBar setTintColor:[Colors darkBlueColorWithAlpha:1]];
     }
 }
 
