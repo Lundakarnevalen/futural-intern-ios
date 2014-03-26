@@ -7,6 +7,7 @@
 //
 
 #import "ReadMessageViewController.h"
+#import "ECSlidingViewController.h"
 
 @implementation ReadMessageViewController
 
@@ -22,6 +23,11 @@
     [self.dateLabel setText:[self.currentMessage dateAsHumanReadableString]];
     [self.informationField setText:self.currentMessage.message];
     
+}
+
+- (IBAction)revealMenu:(id)sender
+{
+    [self.slidingViewController anchorTopViewTo:ECRight];
 }
 
 @end

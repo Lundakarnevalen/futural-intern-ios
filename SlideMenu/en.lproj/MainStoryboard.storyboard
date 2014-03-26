@@ -184,10 +184,10 @@
             </objects>
             <point key="canvasLocation" x="1057" y="685"/>
         </scene>
-        <!--View Controller Sign In - Logga in-->
+        <!--View Controller - Logga in-->
         <scene sceneID="uCz-3V-6KP">
             <objects>
-                <viewController storyboardIdentifier="Signin" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8JJ-2e-rdq" customClass="ViewControllerSignIn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Signin" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8JJ-2e-rdq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2s9-p5-kJj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -216,9 +216,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="signInButtonTapped:" destination="8JJ-2e-rdq" eventType="touchUpInside" id="lnY-Tw-GZr"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lab-y2-cos">
                                 <rect key="frame" x="20" y="438" width="280" height="52"/>
@@ -754,7 +751,7 @@
         <image name="Moln" width="363" height="182"/>
         <image name="Raket.png" width="787" height="438"/>
         <image name="kommunikation" width="337" height="337"/>
-        <image name="map" width="1080" height="1920"/>
+        <image name="map" width="1080" height="1669"/>
         <image name="menuButton.png" width="34" height="24"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

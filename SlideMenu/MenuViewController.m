@@ -61,7 +61,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    NSString *cellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    
+    if (!cell) {
+        
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        
+    }
     
     UILabel *menuLabel = (UILabel *)[cell viewWithTag:TAG_MENULABEL];
     menuLabel.text = [[self.menu objectAtIndex:indexPath.row] uppercaseString];
@@ -81,7 +88,7 @@
     NSString *identifier = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row]];
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:identifier bundle:nil];
-    UIViewController *newTopViewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
+    UIViewController *newTopViewController = [storyboard instantiateInitialViewController];
     
     [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
         CGRect frame = self.slidingViewController.topViewController.view.frame;

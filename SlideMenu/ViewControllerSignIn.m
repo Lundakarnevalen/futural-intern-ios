@@ -8,6 +8,7 @@
 
 #import "ViewControllerSignIn.h"
 #import "ECSlidingViewController.h"
+#import "Colors.h"
 
 @interface ViewControllerSignIn ()
 
@@ -21,6 +22,13 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
+    UINavigationBar *navbar = self.navigationController.navigationBar;
+    
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIFont fontWithName:@"Futura-Bold" size:17.0], NSFontAttributeName, nil]];
+    
+    navbar.topItem.title = [navbar.topItem.title uppercaseString];
     
     //delegate textfields
     self.emailField.delegate = self;
@@ -45,9 +53,9 @@
 
 - (void)signIn {
     
-    self.signinButton.hidden = YES;
+    //self.signinButton.hidden = YES;
     self.errorMessageLabel.hidden = YES;
-    [self.activityIndicator startAnimating];
+    //[self.activityIndicator startAnimating];
     [self.api authenticateUser:[self.emailField text] withPassword:[self.passwordField text]];
     
 }
@@ -114,6 +122,14 @@
                 [self.api.karnevalist setToken:requestedToken];
                 [self.api.karnevalist setInformationFromDictionary:karnevalist andSave:YES];
                 
+                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Start" bundle:nil];
+                UIViewController *newTopViewController = [storyboard instantiateInitialViewController];
+                
+                CGRect frame = self.slidingViewController.topViewController.view.frame;
+                self.slidingViewController.topViewController = newTopViewController;
+                self.slidingViewController.topViewController.view.frame = frame;
+                [self.slidingViewController resetTopView];                
+                
 #warning perform segue
                 
             } else {
@@ -122,7 +138,8 @@
                 
                 for(NSString *error in errors) { //ful-fix, inte säker på hur jag får ut första i ett dictionary.
                     
-                    [self.errorMessageLabel setText:error];
+                    NSLog(@"%@", error);
+                    [self.errorMessageLabel setText:@"Fel lösenord."];
                     break;
                     
                 }

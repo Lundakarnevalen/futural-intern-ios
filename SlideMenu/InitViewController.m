@@ -25,7 +25,7 @@
     NSString *storyboardIdentifier = ([self.api isSignedIn] == YES) ? @"Start" : @"Logga in";
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardIdentifier bundle:nil];
-    self.topViewController = [storyboard instantiateViewControllerWithIdentifier:storyboardIdentifier];
+    self.topViewController = [storyboard instantiateInitialViewController];
     
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
         [self setNeedsStatusBarAppearanceUpdate];
