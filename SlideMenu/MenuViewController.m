@@ -26,7 +26,7 @@
     [super viewDidLoad];
     
     self.tableView.scrollsToTop = NO; //if set to YES (default) the subviews won't respond to the statusbar-tap.
-    self.menu = [NSArray arrayWithObjects: @"Start", @"Inkorg", @"Karta" , nil];
+    self.menu = [NSArray arrayWithObjects: @"Start", @"Inkorg", @"Karta" ,@"Sångbok", nil];
     
     /*cache the first view as well*/
     [self cacheStoryboard:self.storyboard withIdentifier:[self.menu firstObject]];
