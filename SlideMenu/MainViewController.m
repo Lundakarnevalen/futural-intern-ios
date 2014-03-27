@@ -39,6 +39,9 @@
 @implementation MainViewController
 
 -(void)viewDidLoad {
+    
+    NSLog(@"%@ did load", [self class]);
+    
     [self updateTimerLabels];
     
 }
@@ -48,28 +51,41 @@
 #pragma mark timer for labels
 
 -(void)updateTimerLabels {
-    NSLog(@"%@", [Lundakarneval timeLeftUntil:@"lundakarnevalen"]);
+    
+    NSLog(@"\nTid kvar: %@", [Lundakarneval timeLeftUntil:@"lundakarnevalen"]);
     self.timeTilLundakarnevalenLabel.text = [Lundakarneval timeLeftUntil:@"lundakarnevalen"];
-    self.timeTilKarneklubben.text = [Lundakarneval timeLeftUntil:@"karneklubben"];
-    self.timeTilKarnelanet.text = [Lundakarneval timeLeftUntil:@"ugglarp"];
+    self.timeTilKarneklubben.text = [Lundakarneval timeLeftUntil:@"karneklubb"];
+    self.timeTilKarnelanet.text = [Lundakarneval timeLeftUntil:@"karnelan"];
     self.timeTilKarnebalenLabel.text = [Lundakarneval timeLeftUntil:@"karnebal"];
-    self.timeTilForkarnevalLabel.text = [Lundakarneval timeLeftUntil:@"tidningsdagen"];
+    self.timeTilForkarnevalLabel.text = [Lundakarneval timeLeftUntil:@"förkarneval"];
 
-    [NSTimer scheduledTimerWithTimeInterval:30.0
+    self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:30.0
                                      target:self
                                    selector:@selector(updateTimerLabels)
                                    userInfo:nil
                                     repeats:YES];
     
-    [NSTimer scheduledTimerWithTimeInterval:.01 target:self selector:@selector(updateCurrentTime) userInfo:self.player repeats:YES];
+    self.musicTimer = [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(updateCurrentTime) userInfo:self.player repeats:YES];
+    
+}
+
+- (void)stopCountdownTimer {
+    
+    if(self.countdownTimer) {
+        
+        [self.countdownTimer invalidate];
+        self.countdownTimer = nil;
+        
+    }
     
 }
 
 #pragma mark - Sliding view
 
-- (IBAction)revealMenu:(id)sender
-{
+- (IBAction)revealMenu:(id)sender {
+    
     [self.slidingViewController anchorTopViewTo:ECRight];
+    
 }
 
 #pragma mark - Song
@@ -78,7 +94,7 @@
     //self.durationLabel.text = [NSString stringWithFormat:@"%f", self.player.currentTime];
     
     CGRect myFrame = self.playerPin.frame;
-    NSLog(@"%f", self.player.currentTime * (190.0 / 214.0));
+    //NSLog(@"%f", self.player.currentTime * (190.0 / 214.0));
     myFrame.origin.x = 92.0 + self.player.currentTime * (190.0 / 214.0);
     self.playerPin.frame = myFrame;
     
@@ -90,20 +106,44 @@
     }
 }
 
-- (IBAction)playButtonPressed:(id)sender {
-    if ([self.player isPlaying]) {
-        self.timeTilLundakarnevalenLabel.hidden = NO;
-        self.rowForLyricLabel.hidden = YES;
-        self.rowMinus1LyricLabel.hidden = YES;
-        self.rowPlus1LyricLabel.hidden = YES;
-        [self.player pause];
-    } else {
-        self.timeTilLundakarnevalenLabel.hidden = YES;
-        self.rowForLyricLabel.hidden = NO;
-        self.rowMinus1LyricLabel.hidden = NO;
-        self.rowPlus1LyricLabel.hidden = NO;
-        [self.player play];
+- (void)stopMusicTimer { //stop the timer if necessary
+    
+    if(self.musicTimer) {
+        
+        //reset the player pin and stop the music maybe?
+        
+        [self.musicTimer invalidate];
+        self.musicTimer = nil;
+        
     }
+    
+}
+
+- (IBAction)playButtonPressed:(id)sender {
+    
+    [self togglePlayPause];
+
+}
+
+- (void)togglePlayPause {
+    
+    BOOL isPlaying = [self.player isPlaying];
+    
+    self.timeTilLundakarnevalenLabel.hidden = !isPlaying;
+    self.rowForLyricLabel.hidden = isPlaying;
+    self.rowMinus1LyricLabel.hidden = isPlaying;
+    self.rowPlus1LyricLabel.hidden = isPlaying;
+    
+    if(isPlaying) {
+        
+        [self.player pause];
+        
+    } else {
+        
+        [self.player play];
+        
+    }
+    
 }
 
 -(AVAudioPlayer *)player {

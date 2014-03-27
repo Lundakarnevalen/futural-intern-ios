@@ -15,6 +15,8 @@
 
 @property (strong, nonatomic) NSArray *menu;
 
+@property (nonatomic) NSMutableDictionary *viewCache; //private, kind of.
+
 @end
 
 @implementation MenuViewController
@@ -43,6 +45,18 @@
 -(NSArray *)menu {
     if (!_menu) _menu = [[NSArray alloc] init];
     return _menu;
+}
+
+- (NSMutableDictionary *)viewCache {
+    
+    if(!_viewCache) {
+        
+        _viewCache = [[NSMutableDictionary alloc] init];
+        
+    }
+    
+    return _viewCache;
+    
 }
 
 #pragma mark - Table view data source
@@ -86,9 +100,24 @@
 {
     
     NSString *identifier = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row]];
+    NSString *viewControllerIdentifier = [NSString stringWithFormat:@"vc_%@", identifier]; //to keep track of it in the dictionary.
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:identifier bundle:nil];
-    UIViewController *newTopViewController = [storyboard instantiateInitialViewController];
+    UIStoryboard *storyboard = self.viewCache[identifier]; //nil if not instantiated.
+    UIViewController *newTopViewController = self.viewCache[viewControllerIdentifier]; //-----||------
+    
+    if(!storyboard) {
+    
+        storyboard = [UIStoryboard storyboardWithName:identifier bundle:nil]; //store the storyboard in the dictionary.
+        [self cacheStoryboard:storyboard withIdentifier:identifier];
+        
+    }
+    
+    if(!newTopViewController) {
+        
+        newTopViewController = [storyboard instantiateInitialViewController]; //-----||-----
+        [self cacheViewController:newTopViewController withIdentifier:viewControllerIdentifier];
+        
+    }
     
     [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
         CGRect frame = self.slidingViewController.topViewController.view.frame;
@@ -99,5 +128,25 @@
     
 }
 
+#pragma mark - Cache
+
+- (void)cacheStoryboard:(UIStoryboard *)storyboard withIdentifier:(NSString *)identifier {
+    
+    self.viewCache[identifier] = storyboard;
+    
+}
+
+- (void)cacheViewController:(UIViewController *)viewController withIdentifier:(NSString *)identifier {
+    
+    self.viewCache[identifier] = viewController;
+    
+}
+
+- (void)destroyCache { //in case of memory warnings.
+    
+    [self.viewCache removeAllObjects];
+    self.viewCache = nil;
+    
+}
 
 @end
