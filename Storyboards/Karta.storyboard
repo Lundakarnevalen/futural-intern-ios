@@ -24,9 +24,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Skane" translatesAutoresizingMaskIntoConstraints="NO" id="pmY-Fd-siU">
                                 <rect key="frame" x="20" y="142" width="280" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="EVy-M8-xva"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZdP-eK-NY0" appends="YES" id="O5z-g4-ngI"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAR ÄR KARNEVALISTERNA JUST NU?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="269" translatesAutoresizingMaskIntoConstraints="NO" id="CPw-Bm-9Yt" customClass="UILabel_CustomFont">
                                 <rect key="frame" x="26" y="84" width="269" height="50"/>
@@ -105,8 +109,16 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="kartaImageView" destination="pmY-Fd-siU" id="xTd-UQ-LVg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUY-tw-y3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZdP-eK-NY0">
+                    <connections>
+                        <action selector="imageTapped:" destination="Xkq-mx-qq4" id="jCZ-Lb-ZjL"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="650" y="48"/>
         </scene>

@@ -11,6 +11,7 @@
 		1A362BE1189B151F002EE320 /* ViewControllerMeddelanden.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE0189B151F002EE320 /* ViewControllerMeddelanden.m */; };
 		1A362BE3189B1ACA002EE320 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE2189B1ACA002EE320 /* MainViewController.m */; };
 		1A362BE6189B1F35002EE320 /* SektionerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A362BE5189B1F35002EE320 /* SektionerTableViewController.m */; };
+		1A68028C18E497B500228BF2 /* Cluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A68028B18E497B500228BF2 /* Cluster.m */; };
 		1A8D7B21189B0BE0002070D6 /* ViewControllerCloudVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D7B20189B0BE0002070D6 /* ViewControllerCloudVideo.m */; };
 		1A9D6AF318E20EA9003D0A78 /* Logga in.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6AF218E20EA9003D0A78 /* Logga in.storyboard */; };
 		1A9D6AF718E21005003D0A78 /* Robot!Head.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6AF418E20FA2003D0A78 /* Robot!Head.ttf */; };
@@ -91,6 +92,8 @@
 		1A362BE4189B1F35002EE320 /* SektionerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SektionerTableViewController.h; path = SlideMenu/SektionerTableViewController.h; sourceTree = "<group>"; };
 		1A362BE5189B1F35002EE320 /* SektionerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SektionerTableViewController.m; path = SlideMenu/SektionerTableViewController.m; sourceTree = "<group>"; };
 		1A63BB04189BE25000F43465 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		1A68028A18E497B500228BF2 /* Cluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cluster.h; path = Models/Cluster.h; sourceTree = "<group>"; };
+		1A68028B18E497B500228BF2 /* Cluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cluster.m; path = Models/Cluster.m; sourceTree = "<group>"; };
 		1A8D7B1F189B0BE0002070D6 /* ViewControllerCloudVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerCloudVideo.h; path = SlideMenu/ViewControllerCloudVideo.h; sourceTree = "<group>"; };
 		1A8D7B20189B0BE0002070D6 /* ViewControllerCloudVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerCloudVideo.m; path = SlideMenu/ViewControllerCloudVideo.m; sourceTree = "<group>"; };
 		1A9D6AF218E20EA9003D0A78 /* Logga in.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Logga in.storyboard"; path = "Storyboards/Logga in.storyboard"; sourceTree = "<group>"; };
@@ -261,6 +264,8 @@
 				1A9D6B0218E21C41003D0A78 /* UIButton+CustomFont.m */,
 				1A9D6B0718E22768003D0A78 /* UITextField+CustomFont.h */,
 				1A9D6B0818E22768003D0A78 /* UITextField+CustomFont.m */,
+				1A68028A18E497B500228BF2 /* Cluster.h */,
+				1A68028B18E497B500228BF2 /* Cluster.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -592,6 +597,7 @@
 				1A8D7B21189B0BE0002070D6 /* ViewControllerCloudVideo.m in Sources */,
 				27D71D6F16A349AD00021245 /* main.m in Sources */,
 				27D71D7316A349AD00021245 /* AppDelegate.m in Sources */,
+				1A68028C18E497B500228BF2 /* Cluster.m in Sources */,
 				1AA15BA218CBA666007A74C8 /* InstagramEngine.m in Sources */,
 				1A362BE3189B1ACA002EE320 /* MainViewController.m in Sources */,
 				1AA15B8518CBA60A007A74C8 /* AFHTTPSessionManager.m in Sources */,
