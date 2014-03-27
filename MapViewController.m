@@ -52,7 +52,7 @@
     
     [self initClusters];
     
-    [self loadClusters];
+    //[self loadClusters];
     
    // {"sucess":true,"clusters":"[{\"id\":1,\"lat\":55.7104,\"lng\":13.2083,\"quantity\":40},{\"id\":11,\"lat\":56.2568,\"lng\":12.5988,\"quantity\":50},{\"id\":21,\"lat\":55.6051,\"lng\":13.0027,\"quantity\":10},{\"id\":31,\"lat\":55.5505,\"lng\":12.997,\"quantity\":10}]"}
 //    
@@ -74,7 +74,7 @@
 //    
 //    [self loadCities];
     
-    [self.api fetchLocations];
+    //[self.api fetchLocations];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -85,13 +85,14 @@
 #pragma mark - cluster
 
 -(void)initClusters {
-    Cluster *c1 = [[Cluster alloc] initWithLat:55.7104 lng:13.2083 quantity:40 identification:1];
-    Cluster *c2 = [[Cluster alloc] initWithLat:56.2568 lng:12.5988 quantity:50 identification:11];
-    Cluster *c3 = [[Cluster alloc] initWithLat:55.6051 lng:13.0027 quantity:10 identification:21];
-    Cluster *c4 = [[Cluster alloc] initWithLat:55.5505 lng:12.997 quantity:10 identification:31];
-    self.clusters = @[c1, c2, c3, c4];
+//    Cluster *c1 = [[Cluster alloc] initWithLat:55.7104 lng:13.2083 quantity:40 identification:1];
+//    Cluster *c2 = [[Cluster alloc] initWithLat:56.2568 lng:12.5988 quantity:50 identification:11];
+//    Cluster *c3 = [[Cluster alloc] initWithLat:55.6051 lng:13.0027 quantity:10 identification:21];
+//    Cluster *c4 = [[Cluster alloc] initWithLat:55.5505 lng:12.997 quantity:10 identification:31];
+//    self.clusters = @[c1, c2, c3, c4];
 }
 
+/*
 -(void)loadClusters {
     for (Cluster *cluster in self.clusters) {
         CGFloat radius = cluster.quantity / 20;
@@ -126,7 +127,7 @@
 - (IBAction)imageTapped:(UITapGestureRecognizer *)sender {
     NSLog(@"x: %f y: %f", [sender locationInView:sender.view].x, [sender locationInView:sender.view].y);
 }
-
+*/
 //-(void)getLocation {
 //    if ([CLLocationManager locationServicesEnabled]) {
 //        if (CLLocationManager.authorizationStatus == kCLAuthorizationStatusAuthorized) {
