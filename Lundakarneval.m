@@ -65,7 +65,7 @@
                                                  toDate:toDate
                                                 options:0];
     
-    NSString *timeLeft = [NSString stringWithFormat:@"%d:%d:%d", [difference day], [difference hour], [difference minute]];
+    NSString *timeLeft = [NSString stringWithFormat:@"%02d:%02d:%02d", [difference day], [difference hour], [difference minute]];
 
     return timeLeft;
     
