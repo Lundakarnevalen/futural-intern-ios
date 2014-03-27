@@ -40,19 +40,15 @@
 
 -(void)viewDidLoad {
     
-    NSLog(@"%@ did load", [self class]);
-    
     [self updateTimerLabels];
     
 }
-
-
 
 #pragma mark timer for labels
 
 -(void)updateTimerLabels {
     
-    NSLog(@"\nTid kvar: %@", [Lundakarneval timeLeftUntil:@"lundakarnevalen"]);
+    //NSLog(@"\nTid kvar: %@", [Lundakarneval timeLeftUntil:@"lundakarnevalen"]);
     self.timeTilLundakarnevalenLabel.text = [Lundakarneval timeLeftUntil:@"lundakarnevalen"];
     self.timeTilKarneklubben.text = [Lundakarneval timeLeftUntil:@"karneklubb"];
     self.timeTilKarnelanet.text = [Lundakarneval timeLeftUntil:@"karnelan"];

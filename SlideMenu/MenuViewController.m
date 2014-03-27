@@ -21,21 +21,16 @@
 
 @implementation MenuViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     self.tableView.scrollsToTop = NO; //if set to YES (default) the subviews won't respond to the statusbar-tap.
     self.menu = [NSArray arrayWithObjects: @"Start", @"Inkorg", @"Karta" , nil];
+    
+    /*cache the first view as well*/
+    [self cacheStoryboard:self.storyboard withIdentifier:[self.menu firstObject]];
+    [self cacheViewController:self.slidingViewController.topViewController withIdentifier:[NSString stringWithFormat:@"vc_%@", [self.menu firstObject]]];
     
     [self.slidingViewController setAnchorRightRevealAmount:200.0f];
     self.slidingViewController.underLeftWidthLayout = ECFullWidth;
@@ -96,8 +91,7 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSString *identifier = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row]];
     NSString *viewControllerIdentifier = [NSString stringWithFormat:@"vc_%@", identifier]; //to keep track of it in the dictionary.
