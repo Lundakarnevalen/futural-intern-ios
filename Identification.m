@@ -18,6 +18,8 @@
 
 @implementation Identification
 
+@synthesize token = _token; //because I implemented the getter and setter myself.
+
 - (Identification *)initAndCheckForExistingToken {
     
     self = [super init];
@@ -51,10 +53,27 @@
     
 }
 
-- (void)setToken:(NSString *)token {
+- (void)setToken:(NSString *)token { //setter
     
     _token = token;
     [[NSUserDefaults standardUserDefaults] setObject:token forKey:[self.class tokenIdentifier]];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+}
+
+- (NSString *)token { //getter
+    
+    if(!_token) { //important, or the token won't sync across every API-instantiation (doesn't work at login first-time otherwise). (sucks).
+        
+        if([self databaseToken]) { //if the database stores a token, GET IT.
+            
+            _token = [self databaseToken];
+            
+        }
+        
+    }
+    
+    return _token;
     
 }
 

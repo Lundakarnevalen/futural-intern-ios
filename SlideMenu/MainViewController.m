@@ -42,6 +42,14 @@
     
     [self updateTimerLabels];
     
+    self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:30.0
+                                                           target:self
+                                                         selector:@selector(updateTimerLabels)
+                                                         userInfo:nil
+                                                          repeats:YES];
+    
+    self.musicTimer = [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(updateCurrentTime) userInfo:self.player repeats:YES];
+    
 }
 
 #pragma mark timer for labels
@@ -54,14 +62,6 @@
     self.timeTilKarnelanet.text = [Lundakarneval timeLeftUntil:@"karnelan"];
     self.timeTilKarnebalenLabel.text = [Lundakarneval timeLeftUntil:@"karnebal"];
     self.timeTilForkarnevalLabel.text = [Lundakarneval timeLeftUntil:@"förkarneval"];
-
-    self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:30.0
-                                     target:self
-                                   selector:@selector(updateTimerLabels)
-                                   userInfo:nil
-                                    repeats:YES];
-    
-    self.musicTimer = [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(updateCurrentTime) userInfo:self.player repeats:YES];
     
 }
 

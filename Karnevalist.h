@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 
 #import "Identification.h"
+#import "Cluster.h"
 
 @interface Karnevalist : NSObject
 
-@property (nonatomic) Identification *identification;
+@property (nonatomic) Identification *identification; //contains user-token.
+@property (nonatomic) Cluster *cluster; //contains location-data.
 
 @property (nonatomic) NSInteger identifier;
 @property (nonatomic) NSDate *birthday;

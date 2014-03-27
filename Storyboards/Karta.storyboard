@@ -42,12 +42,12 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJY-dx-XJw">
-                                <rect key="frame" x="80" y="468" width="160" height="80"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TJY-dx-XJw">
+                                <rect key="frame" x="80" y="468" width="160" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2562" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWM-ZC-4qz" customClass="UILabel_CustomFont">
-                                        <rect key="frame" x="20" y="8" width="120" height="52"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2562" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWM-ZC-4qz" customClass="UILabel_CustomFont">
+                                        <rect key="frame" x="20" y="8" width="120" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -56,8 +56,8 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KARNEVALISTER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQj-pC-Fp2" customClass="UILabel_CustomFont">
-                                        <rect key="frame" x="0.0" y="37" width="160" height="43"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="KARNEVALISTER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQj-pC-Fp2" customClass="UILabel_CustomFont">
+                                        <rect key="frame" x="0.0" y="37" width="160" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -94,7 +94,7 @@
                             <constraint firstItem="pmY-Fd-siU" firstAttribute="top" secondItem="CPw-Bm-9Yt" secondAttribute="bottom" constant="8" symbolic="YES" id="Y10-NP-1tf"/>
                             <constraint firstItem="CPw-Bm-9Yt" firstAttribute="top" secondItem="HyR-1B-wQF" secondAttribute="bottom" constant="20" id="kQV-qR-M1t"/>
                             <constraint firstItem="TJY-dx-XJw" firstAttribute="leading" secondItem="t3h-9Z-ItB" secondAttribute="leading" constant="80" id="n6i-im-bUq"/>
-                            <constraint firstItem="TJY-dx-XJw" firstAttribute="top" secondItem="pmY-Fd-siU" secondAttribute="bottom" constant="26" id="oak-Xe-vmw"/>
+                            <constraint firstItem="TJY-dx-XJw" firstAttribute="top" relation="lessThanOrEqual" secondItem="pmY-Fd-siU" secondAttribute="bottom" priority="500" constant="26" id="oak-Xe-vmw"/>
                             <constraint firstItem="CPw-Bm-9Yt" firstAttribute="leading" secondItem="t3h-9Z-ItB" secondAttribute="leading" constant="26" id="x0j-ET-guL"/>
                         </constraints>
                     </view>
