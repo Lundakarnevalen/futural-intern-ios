@@ -115,6 +115,18 @@
     
 }
 
+- (Cluster *)cluster {
+    
+    if(!_cluster) {
+        
+        _cluster = [[Cluster alloc] initWithStoredIdentifier];
+        
+    }
+    
+    return _cluster;
+    
+}
+
 #pragma mark -ClassMethods
 
 + (NSString *)userIdentifier {

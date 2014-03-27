@@ -71,6 +71,7 @@
 		27D71D8B16A349D500021245 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8916A349D500021245 /* UIImage+ImageWithUIView.m */; };
 		27D71D8E16A349F000021245 /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8D16A349F000021245 /* InitViewController.m */; };
 		27D71D9116A34A0200021245 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D9016A34A0200021245 /* MenuViewController.m */; };
+		570F0CD418E472920063A1BD /* Cluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F0CD318E472920063A1BD /* Cluster.m */; };
 		57186D8B18DF153500E78450 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 57186D8A18DF153500E78450 /* Message.m */; };
 		57186D8E18DF17B200E78450 /* ReadMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57186D8D18DF17B200E78450 /* ReadMessageViewController.m */; };
 		5758CDCF18DF89F900446EA3 /* Lundakarneval.m in Sources */ = {isa = PBXBuildFile; fileRef = 5758CDCE18DF89F900446EA3 /* Lundakarneval.m */; };
@@ -196,6 +197,8 @@
 		27D71D8F16A34A0200021245 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		27D71D9016A34A0200021245 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		27D71D9216A34A2200021245 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = SlideMenu/MainViewController.h; sourceTree = "<group>"; };
+		570F0CD218E472920063A1BD /* Cluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cluster.h; path = Models/Cluster.h; sourceTree = "<group>"; };
+		570F0CD318E472920063A1BD /* Cluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cluster.m; path = Models/Cluster.m; sourceTree = "<group>"; };
 		57186D8918DF153500E78450 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		57186D8A18DF153500E78450 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		57186D8C18DF17B200E78450 /* ReadMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReadMessageViewController.h; path = ViewControllers/ReadMessageViewController.h; sourceTree = "<group>"; };

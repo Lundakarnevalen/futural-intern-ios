@@ -8,8 +8,6 @@
 
 #import "FuturalAPI.h"
 
-#import "Lundakarneval.h"
-
 
 @interface FuturalAPI() {
     
@@ -30,6 +28,8 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
     
     if(self) {
         
+        NSLog(@"futuralAPI instantiated at %@", [self class]);
+        
         responseFormat = @"json";
         self.connectionDelegate = desiredConnectionDelegate;
         
@@ -40,12 +40,28 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
 }
 
 - (BOOL)isSignedIn {
+    
     return [self.karnevalist token] != nil;
+    
 }
 
 - (void)fetchNotifications {
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:@"notifications" withFormatAppended:YES]];
+    
+    [request setTimeoutInterval:15];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    
+    /*Calls the delegate and delivers the request*/
+    self.connection = [[NSURLConnection alloc] initWithRequest:request delegate:self.connectionDelegate startImmediately:YES];
+    
+}
+
+- (void)fetchMapCoordinates {
+    
+    NSString *appendUrl = [NSString stringWithFormat:@"api/clusters?token=%@", [self.karnevalist token]];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:appendUrl withFormatAppended:NO]];
     
     [request setTimeoutInterval:15];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
@@ -151,30 +167,59 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
     self.connection = [[NSURLConnection alloc] initWithRequest:request delegate:self.connectionDelegate startImmediately:YES];
 }
 
+- (BOOL)hasCreatedCluster { //to see if we need to update or create the cluster.
+    
+    return [self.karnevalist.cluster isAvailable];
+    
+}
+
+- (NSString *)clusterIdentifier {
+    
+    return self.karnevalist.cluster.identifier;
+    
+}
+
 - (void)updateLocation:(CLLocation *)location {
     
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:@"api/users/map" withFormatAppended:NO]];
+    //data retrieved at run-time.
+    NSString *appendURL;
+    NSString *method;
     
-    //parameter template
+    if([self hasCreatedCluster]) { //if cluster-data is available
+        
+        //update cluster
+        appendURL = [NSString stringWithFormat:@"api/clusters/%@", [self clusterIdentifier]];
+        method = @"PUT";
+        
+    } else {
+        
+        //create cluster
+        appendURL = [NSString stringWithFormat:@"api/clusters/"];
+        method = @"POST";
+        
+    }
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:appendURL withFormatAppended:NO]];
+    
+    //lat, long and token sent.
     NSString *json = @"{"
                         "\"cluster\": {"
-                            "\"lat\": \"%.f\","
-                            "\"lng\": \"%.f\""
-                        "}"
+                            "\"lat\": \"%f\","
+                            "\"lng\": \"%f\""
+                        "},"
+                        "\"token\":\"%@\""
                     "}";
     
-    //första gången POST, return cluster_id, status 200
+    //insert lat, long and token
+    json = [NSString stringWithFormat:json, location.coordinate.latitude, location.coordinate.longitude, [self.karnevalist token]];
     
-    //nästa gång PUT, id till api/clusters/<cluster_id>, return cluster_id
-    
-    //insert email and password into parameter template.
-    json = [NSString stringWithFormat:json, location.coordinate.latitude, location.coordinate.longitude];
+    NSLog(@"Preparing to send coordinates with %@-method and the url %@ and of course json: \n%@", method, [[request URL] absoluteString], json);
     
     //data sent to the API.
     NSData *data = [json dataUsingEncoding:NSUTF8StringEncoding];
     
     //configure the request
-    [request setHTTPMethod:@"POST"];
+    [request setHTTPMethod:method]; //dynamically handled
     [request setValue:[NSString stringWithFormat:@"%d", (int) data.length] forHTTPHeaderField:@"Content-length"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
@@ -245,21 +290,37 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
 
 + (NSDictionary *)parseJSONData:(NSData *)jsonData {
     
-    NSError *error = nil;
+    if(jsonData) {
     
-    id parsedData = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
-    
-    if(!error) {
-    
-        if([parsedData isKindOfClass:[NSDictionary class]]) { //hopefully a dictionary, otherwise kill it with fire.
+        NSError *error = nil;
+        
+        id parsedData = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
+        
+        if(!error) {
             
-            return parsedData;
+            if([parsedData isKindOfClass:[NSDictionary class]]) { //hopefully a dictionary, otherwise kill it with fire.
+                
+                return parsedData;
+                
+            }
             
         }
         
     }
     
     return nil;
+    
+}
+
++ (NSString *)methodFromURLConnection:(NSURLConnection *)connection {
+    
+    if(!connection) {
+        
+        return nil; //die.
+        
+    }
+    
+    return [[connection currentRequest] HTTPMethod]; //put, post, delete, get etc.
     
 }
 
@@ -273,37 +334,27 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
     
     NSString *identifier = [[[connection currentRequest] URL] absoluteString];
     
-    //From now on I understand the suckiness of Objective-C not supporting switch blocks with strings...
+    /*key = part of url,
+    value = identifier to return*/
+    NSDictionary *urlStrings = @{
+                                 
+                                 @"sign_out":@"sign_out",
+                                 @"sign_in":@"sign_in",
+                                 @"users/password":@"reset_password",
+                                 @"notifications":@"notifications",
+                                 @"clusters":@"maps"
+                                 
+                                 };
     
-    //is it a sign_out request?
-    if([identifier rangeOfString:@"sign_out"].location != NSNotFound) {
+    for(NSString *key in urlStrings) {
         
-        return @"sign_out";
+        if([identifier rangeOfString:key].location != NSNotFound) {
+            
+            return urlStrings[key];
+            
+        }
         
     }
-    
-    //is it a sign_in request?
-    if([identifier rangeOfString:@"sign_in"].location != NSNotFound) {
-        
-        return @"sign_in";
-        
-    }
-    
-    //a password reset maybe?
-    if([identifier rangeOfString:@"users/password"].location != NSNotFound) {
-        
-        return @"reset_password";
-        
-    }
-    
-    //notifications maybeee?
-    if([identifier rangeOfString:@"notifications"].location != NSNotFound) {
-        
-        return @"notifications";
-        
-    }
-    
-#warning lägg till identifier när vi vet!
     
     return nil;
     

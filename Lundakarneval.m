@@ -31,13 +31,19 @@
 
 + (NSDictionary *)eventIdentifiers {
     
+#warning Se till så att datumen stämmer och lägg till efterhand.
+    
     return @{
              
              @"ugglarp":@"2014-03-22 19:00",
              @"karnebal":@"2014-04-03 18:00",
              @"karneklubb":@"2014-03-28 18:00",
              @"tidningsdagen":@"2014-04-12 12:00",
-             @"lundakarnevalen":@"2014-05-13 16:25"
+             @"lundakarnevalen":@"2014-05-16 00:00",
+             @"karnelan":@"2014-04-16 18:00",
+             @"karnevöl_systemet":@"2014-04-01 09:00",
+             @"frukost_picknick":@"2014-04-30 09:00",
+             @"förkarneval":@"2014-05-11 19:00"
              
              };
     
@@ -45,29 +51,39 @@
 
 + (NSString *)daysBetweenDate:(NSDate*)fromDateTime andDate:(NSDate*)toDateTime {
     
-    NSDate *fromDate;
-    NSDate *toDate;
+    if(fromDateTime && toDateTime) {
     
-    NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSDate *fromDate;
+        NSDate *toDate;
+        
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        
+        [calendar rangeOfUnit:(NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit)
+                    startDate:&fromDate
+                     interval:NULL
+                      forDate:fromDateTime];
+        
+        [calendar rangeOfUnit:(NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit)
+                    startDate:&toDate
+                     interval:NULL
+                      forDate:toDateTime];
+        
+        NSDateComponents *difference = [calendar components:(NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit)
+                                                   fromDate:fromDate
+                                                     toDate:toDate
+                                                    options:0];
+        
+        NSInteger daysLeft = ([difference day] < 0) ? 0 : [difference day];
+        NSInteger hoursLeft = ([difference hour] < 0) ? 0 : [difference hour];
+        NSInteger minutesLeft = ([difference minute] < 0) ? 0 : [difference minute];
+        
+        NSString *timeLeft = [NSString stringWithFormat:@"%02d:%02d:%02d", daysLeft, hoursLeft, minutesLeft];
+        
+        return timeLeft;
+        
+    }
     
-    [calendar rangeOfUnit:(NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit)
-                startDate:&fromDate
-                 interval:NULL
-                  forDate:fromDateTime];
-    
-    [calendar rangeOfUnit:(NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit)
-                startDate:&toDate
-                 interval:NULL
-                  forDate:toDateTime];
-    
-    NSDateComponents *difference = [calendar components:(NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit)
-                                               fromDate:fromDate
-                                                 toDate:toDate
-                                                options:0];
-    
-    NSString *timeLeft = [NSString stringWithFormat:@"%d:%d:%d", [difference day], [difference hour], [difference minute]];
-
-    return timeLeft;
+    return nil;
     
 }
 

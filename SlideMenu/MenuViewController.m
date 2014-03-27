@@ -15,18 +15,11 @@
 
 @property (strong, nonatomic) NSArray *menu;
 
+@property (nonatomic) NSMutableDictionary *viewCache; //private, kind of.
+
 @end
 
 @implementation MenuViewController
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -34,6 +27,10 @@
     
     self.tableView.scrollsToTop = NO; //if set to YES (default) the subviews won't respond to the statusbar-tap.
     self.menu = [NSArray arrayWithObjects: @"Start", @"Inkorg", @"Karta" , nil];
+    
+    /*cache the first view as well*/
+    [self cacheStoryboard:self.storyboard withIdentifier:[self.menu firstObject]];
+    [self cacheViewController:self.slidingViewController.topViewController withIdentifier:[NSString stringWithFormat:@"vc_%@", [self.menu firstObject]]];
     
     [self.slidingViewController setAnchorRightRevealAmount:200.0f];
     self.slidingViewController.underLeftWidthLayout = ECFullWidth;
@@ -43,6 +40,18 @@
 -(NSArray *)menu {
     if (!_menu) _menu = [[NSArray alloc] init];
     return _menu;
+}
+
+- (NSMutableDictionary *)viewCache {
+    
+    if(!_viewCache) {
+        
+        _viewCache = [[NSMutableDictionary alloc] init];
+        
+    }
+    
+    return _viewCache;
+    
 }
 
 #pragma mark - Table view data source
@@ -82,13 +91,27 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSString *identifier = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row]];
+    NSString *viewControllerIdentifier = [NSString stringWithFormat:@"vc_%@", identifier]; //to keep track of it in the dictionary.
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:identifier bundle:nil];
-    UIViewController *newTopViewController = [storyboard instantiateInitialViewController];
+    UIStoryboard *storyboard = self.viewCache[identifier]; //nil if not instantiated.
+    UIViewController *newTopViewController = self.viewCache[viewControllerIdentifier]; //-----||------
+    
+    if(!storyboard) {
+    
+        storyboard = [UIStoryboard storyboardWithName:identifier bundle:nil]; //store the storyboard in the dictionary.
+        [self cacheStoryboard:storyboard withIdentifier:identifier];
+        
+    }
+    
+    if(!newTopViewController) {
+        
+        newTopViewController = [storyboard instantiateInitialViewController]; //-----||-----
+        [self cacheViewController:newTopViewController withIdentifier:viewControllerIdentifier];
+        
+    }
     
     [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
         CGRect frame = self.slidingViewController.topViewController.view.frame;
@@ -99,5 +122,25 @@
     
 }
 
+#pragma mark - Cache
+
+- (void)cacheStoryboard:(UIStoryboard *)storyboard withIdentifier:(NSString *)identifier {
+    
+    self.viewCache[identifier] = storyboard;
+    
+}
+
+- (void)cacheViewController:(UIViewController *)viewController withIdentifier:(NSString *)identifier {
+    
+    self.viewCache[identifier] = viewController;
+    
+}
+
+- (void)destroyCache { //in case of memory warnings.
+    
+    [self.viewCache removeAllObjects];
+    self.viewCache = nil;
+    
+}
 
 @end

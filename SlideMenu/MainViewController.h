@@ -10,4 +10,10 @@
 
 @interface MainViewController : UIViewController
 
+@property (nonatomic) NSTimer *musicTimer;
+@property (nonatomic) NSTimer *countdownTimer;
+
+- (void)stopMusicTimer;
+- (void)stopCountdownTimer;
+
 @end

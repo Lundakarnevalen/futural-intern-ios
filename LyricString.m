@@ -12,11 +12,13 @@
 
 - (id)initWithString:(NSString *)str time:(double)time {
     
-    self = [[LyricString alloc] init];
+    self = [super init];
     
     if (self) {
+        
         self.str = str;
         self.time = time;
+        
     }
     
     return self;
