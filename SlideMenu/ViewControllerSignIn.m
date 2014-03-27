@@ -23,12 +23,10 @@
     
     [super viewDidLoad];
     
-    UINavigationBar *navbar = self.navigationController.navigationBar;
+    self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIFont fontWithName:@"Futura-Bold" size:17.0], NSFontAttributeName,[UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName, nil];
     
-    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
-                                                           [UIFont fontWithName:@"Futura-Bold" size:17.0], NSFontAttributeName, nil]];
-    
-    navbar.topItem.title = [navbar.topItem.title uppercaseString];
+    self.navigationController.navigationBar.topItem.title = [self.navigationController.navigationBar.topItem.title uppercaseString];
     
     //delegate textfields
     self.emailField.delegate = self;
