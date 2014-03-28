@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
+#import "AppDelegate.h"
 
 #import <AVFoundation/AVFoundation.h>
 #import "LyricString.h"
@@ -17,6 +18,9 @@
 
 @interface MainViewController ()
 
+@property (strong, nonatomic) IBOutletCollection(UIView) NSArray *lyricStringCollection;
+
+@property (weak, nonatomic) IBOutlet UILabel *karnevalenLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeTilLundakarnevalenLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeTilKarneklubben;
 @property (weak, nonatomic) IBOutlet UILabel *timeTilKarnelanet;
@@ -40,9 +44,14 @@
 
 -(void)viewDidLoad {
     
+    [(AppDelegate *)[[UIApplication sharedApplication] delegate] registerForPushNotifications];
+    
+    self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                                                   [UIFont fontWithName:@"Robot!Head" size:26.0], NSFontAttributeName,[UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName, nil];
+    
     [self updateTimerLabels];
     
-    self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:30.0
+    self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                            target:self
                                                          selector:@selector(updateTimerLabels)
                                                          userInfo:nil
@@ -126,9 +135,10 @@
     BOOL isPlaying = [self.player isPlaying];
     
     self.timeTilLundakarnevalenLabel.hidden = !isPlaying;
-    self.rowForLyricLabel.hidden = isPlaying;
-    self.rowMinus1LyricLabel.hidden = isPlaying;
-    self.rowPlus1LyricLabel.hidden = isPlaying;
+    self.karnevalenLabel.hidden = !isPlaying;
+    for(UIView *row in self.lyricStringCollection) {
+        row.hidden = isPlaying;
+    }
     
     if(isPlaying) {
         

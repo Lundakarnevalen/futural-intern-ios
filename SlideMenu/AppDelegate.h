@@ -20,5 +20,8 @@
 
 @property (nonatomic) UIBackgroundTaskIdentifier bgTask;
 
+-(void)startLocationManager;
+-(void)registerForPushNotifications;
+
 
 @end

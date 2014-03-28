@@ -10,6 +10,8 @@
 #import "ECSlidingViewController.h"
 #import "Colors.h"
 
+#import "AppDelegate.h"
+
 @interface ViewControllerSignIn ()
 
 @property UIActivityIndicatorView *spinner;
@@ -120,6 +122,8 @@
                 
                 UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Start" bundle:nil];
                 UIViewController *newTopViewController = [storyboard instantiateInitialViewController];
+                
+                [(AppDelegate *)[[UIApplication sharedApplication] delegate] startLocationManager];
                 
                 CGRect frame = self.slidingViewController.topViewController.view.frame;
                 self.slidingViewController.topViewController = newTopViewController;

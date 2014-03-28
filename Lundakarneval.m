@@ -58,17 +58,17 @@
         
         NSCalendar *calendar = [NSCalendar currentCalendar];
         
-        [calendar rangeOfUnit:(NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit)
+        [calendar rangeOfUnit:(NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit)
                     startDate:&fromDate
                      interval:NULL
                       forDate:fromDateTime];
         
-        [calendar rangeOfUnit:(NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit)
+        [calendar rangeOfUnit:(NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit)
                     startDate:&toDate
                      interval:NULL
                       forDate:toDateTime];
         
-        NSDateComponents *difference = [calendar components:(NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit)
+        NSDateComponents *difference = [calendar components:(NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit)
                                                    fromDate:fromDate
                                                      toDate:toDate
                                                     options:0];
@@ -76,8 +76,9 @@
         NSInteger daysLeft = ([difference day] < 0) ? 0 : [difference day];
         NSInteger hoursLeft = ([difference hour] < 0) ? 0 : [difference hour];
         NSInteger minutesLeft = ([difference minute] < 0) ? 0 : [difference minute];
+        NSInteger secondsleft = ([difference second] < 0) ? 0 : [difference second];
         
-        NSString *timeLeft = [NSString stringWithFormat:@"%02d:%02d:%02d", daysLeft, hoursLeft, minutesLeft];
+        NSString *timeLeft = [NSString stringWithFormat:@"%02d:%02d:%02d:%02d", daysLeft, hoursLeft, minutesLeft, secondsleft];
         
         return timeLeft;
         

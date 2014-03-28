@@ -32,7 +32,7 @@
 
 - (void)setInformationFromDictionary:(NSDictionary *)dictionary andSave:(BOOL)save {
     
-    self.identifier = dictionary[@"id"];
+    self.identifier = [dictionary[@"id"] integerValue];
     self.firstname = dictionary[@"fornamn"];
     self.lastname = dictionary[@"efternamn"];
     self.email = dictionary[@"email"];
@@ -85,7 +85,7 @@
 
 - (NSString *)description { //debug.
     
-    return [NSString stringWithFormat:@"Hej, mitt namn är %@ %@ och jag är med i sektion %@", self.firstname, self.lastname, self.sektion];
+    return [NSString stringWithFormat:@"Hej, mitt namn är %@ %@ och jag är med i sektion %@. Jag har identifier %d", self.firstname, self.lastname, self.sektion, self.identifier];
     
 }
 

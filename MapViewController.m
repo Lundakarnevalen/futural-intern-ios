@@ -9,6 +9,7 @@
 #import "MapViewController.h"
 #import "Colors.h"
 #import "Cluster.h"
+#import "AppDelegate.h"
 
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
@@ -49,6 +50,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [(AppDelegate *)[[UIApplication sharedApplication] delegate] startLocationManager];
     
     [self initClusters];
     

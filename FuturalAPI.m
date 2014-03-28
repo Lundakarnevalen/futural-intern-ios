@@ -138,7 +138,7 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
 }
 
 -(void)sendAppleToken:(NSString *)token {
-    NSString *appendPath = [NSString stringWithFormat:@"/karnevalister/21.json"];
+    NSString *appendPath = [NSString stringWithFormat:@"api/karnevalister/%d", [self.karnevalist identifier]];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:appendPath withFormatAppended:NO]];
     
@@ -149,6 +149,7 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
             "\"ios_token\": \"%@\""
         "}"
     "}";
+    
     
     //insert email and password into parameter template.
     json = [NSString stringWithFormat:json, [self.karnevalist token], token];

@@ -32,10 +32,12 @@
         
     }
     
+    return YES;
+}
+
+-(void)registerForPushNotifications {
     NSLog(@"Registering for push notifications...");
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
-    
-    return YES;
 }
 
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
@@ -60,7 +62,7 @@
     NSLog(@"Went to Background");
     // Only monitor significant changes
     
-    [self.locationManager stopUpdatingLocation];
+    [self.locationManager stopMonitoringSignificantLocationChanges];
     [self.locationManager startMonitoringSignificantLocationChanges];
     
 }
@@ -69,18 +71,14 @@
     
     NSLog(@"Did become active.");
     // Start location services
-    self.locationManager = [[CLLocationManager alloc] init];
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    
-    #warning ändra detta innan uppladdning!
-    
-    // Only report to location manager if the user has traveled 1000 meters
-    self.locationManager.distanceFilter = 1000.0f;
-    self.locationManager.delegate = self;
-    self.locationManager.activityType = CLActivityTypeFitness;
-    
-    [self.locationManager stopMonitoringSignificantLocationChanges];
-    [self.locationManager startUpdatingLocation];
+    if (!self.locationManager) self.locationManager = [[CLLocationManager alloc] init];
+}
+
+-(void)startLocationManager {
+    if ([CLLocationManager locationServicesEnabled]) {
+        [self.locationManager stopMonitoringSignificantLocationChanges];
+        [self.locationManager startMonitoringSignificantLocationChanges];
+    }
 }
 
 #pragma mark - location methods
@@ -99,34 +97,10 @@
     CLLocation *location = [locations lastObject];
     NSLog(@"Location Manager isInBackground: %hhd", isInBackground);
     
-    if (isInBackground) {
-        // If we're running in the background, run sendBackgroundLocationToServer
-        NSLog(@"Fetched new location lat: %f long: %f", location.coordinate.latitude, location.coordinate.longitude);
-        NSLog(@"isSignedIn: %d", [self isSignedIn]);
+    if ([self isSignedIn]) {
         
-        if ([self isSignedIn]) {
-            
-            NSLog(@"Nu vill jag sända till serven.");
-            [self updateLocation:location isInBackground:isInBackground];
-            
-        }
-        
-    } else {
-        
-        // If we're not in the background wait till the GPS is accurate to send it to the server
-        if ([[locations lastObject] horizontalAccuracy] < 100.0f) {
-            
-            NSLog(@"Fetched new location lat: %f long: %f", location.coordinate.latitude, location.coordinate.longitude);
-            NSLog(@"isSignedIn: %d", [self isSignedIn]);
-            
-            if ([self isSignedIn] == YES) {
-                
-                NSLog(@"Nu vill jag sända till serven.");
-                [self updateLocation:location isInBackground:isInBackground];
-                
-            }
-            
-        }
+        NSLog(@"Nu vill jag sända till serven.");
+        [self updateLocation:location isInBackground:isInBackground];
         
     }
     
