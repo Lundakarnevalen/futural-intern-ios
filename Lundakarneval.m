@@ -35,15 +35,16 @@
     
     return @{
              
-             @"ugglarp":@"2014-03-22 19:00",
-             @"karnebal":@"2014-04-03 18:00",
-             @"karneklubb":@"2014-03-28 18:00",
-             @"tidningsdagen":@"2014-04-12 12:00",
-             @"lundakarnevalen":@"2014-05-16 00:00",
-             @"karnelan":@"2014-04-16 18:00",
-             @"karnevöl_systemet":@"2014-04-01 09:00",
-             @"frukost_picknick":@"2014-04-30 09:00",
-             @"förkarneval":@"2014-05-11 19:00"
+             //@"ugglarp":@"2014-03-22 19:00",
+             //@"karnebal":@"2014-04-03 18:00",
+             //@"karneklubb":@"2014-03-28 18:00",
+             @"tidningsdagen":@"2014-04-12 12:00", //
+             @"lundakarnevalen":@"2014-05-16 00:00", //
+             @"karnelan":@"2014-04-16 18:00", //
+             @"karnevöl_systemet":@"2014-05-01 09:00", //
+             //@"frukost_picknick":@"2014-05-15 09:00",
+             @"förkarneval":@"2014-05-11 19:00", //
+             //@"efterkarneval":@"2014-09-20 00:00"
              
              };
     

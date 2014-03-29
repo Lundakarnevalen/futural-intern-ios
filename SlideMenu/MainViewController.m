@@ -21,11 +21,13 @@
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *lyricStringCollection;
 
 @property (weak, nonatomic) IBOutlet UILabel *karnevalenLabel;
-@property (weak, nonatomic) IBOutlet UILabel *timeTilLundakarnevalenLabel;
-@property (weak, nonatomic) IBOutlet UILabel *timeTilKarneklubben;
-@property (weak, nonatomic) IBOutlet UILabel *timeTilKarnelanet;
-@property (weak, nonatomic) IBOutlet UILabel *timeTilForkarnevalLabel;
-@property (weak, nonatomic) IBOutlet UILabel *timeTilKarnebalenLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabelMain;
+//@property (weak, nonatomic) IBOutlet UILabel *timeTilKarneklubben;
+//@property (weak, nonatomic) IBOutlet UILabel *timeTilKarnelanet;
+//@property (weak, nonatomic) IBOutlet UILabel *timeTilForkarnevalLabel;
+//@property (weak, nonatomic) IBOutlet UILabel *timeTilKarnebalenLabel;
+
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *timeLabels;
 
 @property (strong,nonatomic) AVAudioPlayer *player;
 
@@ -66,11 +68,27 @@
 -(void)updateTimerLabels {
     
     //NSLog(@"\nTid kvar: %@", [Lundakarneval timeLeftUntil:@"lundakarnevalen"]);
-    self.timeTilLundakarnevalenLabel.text = [Lundakarneval timeLeftUntil:@"lundakarnevalen"];
-    self.timeTilKarneklubben.text = [Lundakarneval timeLeftUntil:@"karneklubb"];
-    self.timeTilKarnelanet.text = [Lundakarneval timeLeftUntil:@"karnelan"];
-    self.timeTilKarnebalenLabel.text = [Lundakarneval timeLeftUntil:@"karnebal"];
-    self.timeTilForkarnevalLabel.text = [Lundakarneval timeLeftUntil:@"förkarneval"];
+    self.timeLabelMain.text = [Lundakarneval timeLeftUntil:@"lundakarnevalen"];
+    
+    for (int i = 0; i < [self.timeLabels count]; i++) {
+        UILabel *temp = [self.timeLabels objectAtIndex:i];
+        switch (i) {
+            case 0:
+                temp.text = [Lundakarneval timeLeftUntil:@"tidningsdagen"];
+                break;
+            case 1:
+                temp.text = [Lundakarneval timeLeftUntil:@"karnelan"];
+                break;
+            case 2:
+                temp.text = [Lundakarneval timeLeftUntil:@"karnevöl_systemet"];
+                break;
+            case 3:
+                temp.text = [Lundakarneval timeLeftUntil:@"förkarneval"];
+                break;
+            default:
+                break;
+        }
+    }
     
 }
 
@@ -134,7 +152,7 @@
     
     BOOL isPlaying = [self.player isPlaying];
     
-    self.timeTilLundakarnevalenLabel.hidden = !isPlaying;
+    self.timeLabelMain.hidden = !isPlaying;
     self.karnevalenLabel.hidden = !isPlaying;
     for(UIView *row in self.lyricStringCollection) {
         row.hidden = isPlaying;

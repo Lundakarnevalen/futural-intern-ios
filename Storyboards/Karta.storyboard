@@ -108,6 +108,11 @@
                                 <action selector="revealMenu:" destination="Xkq-mx-qq4" id="3nA-wa-Q3T"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="MenuButton" id="z6j-aW-L0T">
+                            <connections>
+                                <segue destination="a85-bo-q02" kind="push" id="3w9-xr-ALs"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="kartaImageView" destination="pmY-Fd-siU" id="xTd-UQ-LVg"/>
@@ -121,6 +126,35 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="650" y="48"/>
+        </scene>
+        <!--View Controller - INFORMATION-->
+        <scene sceneID="BcE-Lw-TdH">
+            <objects>
+                <viewController id="a85-bo-q02" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DBh-2L-ayL"/>
+                        <viewControllerLayoutGuide type="bottom" id="XoF-Rc-ONi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RW5-3i-IWQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Waves" translatesAutoresizingMaskIntoConstraints="NO" id="Tfe-UI-O3r">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MbO-2M-QEu">
+                                <rect key="frame" x="0.0" y="63" width="320" height="505"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75686274509999996" green="0.82745098039999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="INFORMATION" id="zO2-go-mq6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PNn-Z6-fJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109" y="52"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cYo-CK-jfd">

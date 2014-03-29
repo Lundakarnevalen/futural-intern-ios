@@ -249,8 +249,8 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KARNELANET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKc-l0-Vhd" customClass="UILabel_CustomFont">
-                                                <rect key="frame" x="0.0" y="1" width="130" height="31"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KARNEVÖL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKc-l0-Vhd" customClass="UILabel_CustomFont">
+                                                <rect key="frame" x="0.0" y="7" width="130" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.36470588240000001" green="0.3803921569" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -276,10 +276,10 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KARNEBALEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRk-U1-GhM" customClass="UILabel_CustomFont">
-                                                <rect key="frame" x="0.0" y="1" width="130" height="31"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FÖRKARNEVAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRk-U1-GhM" customClass="UILabel_CustomFont">
+                                                <rect key="frame" x="0.0" y="6" width="130" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.36470588240000001" green="0.3803921569" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -303,10 +303,10 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FÖRKARNEVAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOn-lf-4Dz" customClass="UILabel_CustomFont">
-                                                <rect key="frame" x="0.0" y="1" width="130" height="31"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KARNELANET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOn-lf-4Dz" customClass="UILabel_CustomFont">
+                                                <rect key="frame" x="0.0" y="5" width="130" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.36470588240000001" green="0.3803921569" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -330,10 +330,10 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KARNEKLUBBEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vb2-dZ-Icg" customClass="UILabel_CustomFont">
-                                                <rect key="frame" x="-3" y="1" width="137" height="31"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIDNINGSDAGEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vb2-dZ-Icg" customClass="UILabel_CustomFont">
+                                                <rect key="frame" x="-3" y="5" width="137" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <color key="textColor" red="0.36470588240000001" green="0.3803921569" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -377,14 +377,14 @@
                         <outlet property="rowForLyricLabel" destination="B2A-si-7UR" id="fEJ-i9-6sB"/>
                         <outlet property="rowMinus1LyricLabel" destination="wVS-2t-jEx" id="Y5y-BQ-2Op"/>
                         <outlet property="rowPlus1LyricLabel" destination="RKg-3X-qAF" id="fPA-jy-rOi"/>
-                        <outlet property="timeTilForkarnevalLabel" destination="6Oe-Se-yJY" id="UBX-zG-thm"/>
-                        <outlet property="timeTilKarnebalenLabel" destination="Bmu-pW-TvW" id="neJ-wN-Ff3"/>
-                        <outlet property="timeTilKarneklubben" destination="2Gc-cN-5xo" id="gCj-5m-FOy"/>
-                        <outlet property="timeTilKarnelanet" destination="86K-rf-1c1" id="7jy-tU-Xfk"/>
-                        <outlet property="timeTilLundakarnevalenLabel" destination="blI-cc-yam" id="Cda-SO-Iuk"/>
+                        <outlet property="timeLabelMain" destination="blI-cc-yam" id="Yxv-wv-i3H"/>
                         <outletCollection property="lyricStringCollection" destination="wgh-1k-SiS" id="XeI-7v-tXw"/>
                         <outletCollection property="lyricStringCollection" destination="Dkh-Np-IsH" id="GGl-AJ-7Vg"/>
                         <outletCollection property="lyricStringCollection" destination="mev-e3-Tmn" id="DuK-KT-ILO"/>
+                        <outletCollection property="timeLabels" destination="2Gc-cN-5xo" id="m0g-qk-UTp"/>
+                        <outletCollection property="timeLabels" destination="6Oe-Se-yJY" id="3bV-JD-bWS"/>
+                        <outletCollection property="timeLabels" destination="86K-rf-1c1" id="Aw1-8G-vw7"/>
+                        <outletCollection property="timeLabels" destination="Bmu-pW-TvW" id="g9g-TT-wZW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wvn-VK-7CX" userLabel="First Responder" sceneMemberID="firstResponder"/>
