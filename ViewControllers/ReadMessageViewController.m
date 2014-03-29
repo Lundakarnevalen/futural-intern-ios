@@ -8,6 +8,7 @@
 
 #import "ReadMessageViewController.h"
 #import "ECSlidingViewController.h"
+#import "Sektioner.h"
 
 @implementation ReadMessageViewController
 
@@ -19,6 +20,9 @@
     self.title = self.currentMessage.title;
     [self.header setText:self.currentMessage.title];
     
+    Sektioner *sektion = [[Sektioner sektioner] objectAtIndex:self.currentMessage.recipientId];
+    self.sektionLabel.text = sektion.name;
+    self.sektionImageView.image = [UIImage imageNamed:sektion.img];
     
     [self.dateLabel setText:[self.currentMessage dateAsHumanReadableString]];
     [self.informationField setText:self.currentMessage.message];

@@ -16,14 +16,15 @@
     
     if(self) {
         
-        NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'SSSZ"]; //change if necessary due to api update (ISO-8601).
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd mm:ss"]; //change if necessary due to api update (ISO-8601).
         
         //the strings are set from the backend, change if the api is updated.
         id title = container[@"title"];
         id message = container[@"message"];
         id postedAt = container[@"created_at"];
         id updatedAt = container[@"updated_at"];
+        id recipientId = [NSNumber numberWithInteger:[container[@"recipient_id"] integerValue]];
         
         if(title && message && postedAt) {
             
@@ -31,6 +32,7 @@
             self.message = message;
             self.postedAt = [dateFormatter dateFromString:postedAt];
             self.updatedAt = [dateFormatter dateFromString:updatedAt];
+            self.recipientId = [recipientId integerValue];
             
         }
         
@@ -43,8 +45,8 @@
 - (NSString *)dateAsHumanReadableString {
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
-    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+    [dateFormatter setDateStyle:NSDateFormatterShortStyle];
     NSLocale *locale = [NSLocale currentLocale];
     [dateFormatter setLocale:locale];
     

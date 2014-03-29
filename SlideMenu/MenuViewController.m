@@ -8,12 +8,15 @@
 
 #import "MenuViewController.h"
 #import "ECSlidingViewController.h"
+#import "Sektioner.h"
 
 #define TAG_MENULABEL 1006
 
 @interface MenuViewController ()
 
 @property (strong, nonatomic) NSArray *menu;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
 
 @property (nonatomic) NSMutableDictionary *viewCache; //private, kind of.
 
@@ -34,6 +37,12 @@
     
     [self.slidingViewController setAnchorRightRevealAmount:200.0f];
     self.slidingViewController.underLeftWidthLayout = ECFullWidth;
+    
+    NSDictionary *karnevalist = [[NSUserDefaults standardUserDefaults] valueForKey:@"karnevalist"];
+    self.nameLabel.text = [[karnevalist[@"fornamn"] stringByAppendingString:[@" " stringByAppendingString:karnevalist[@"efternamn"]]] uppercaseString];
+    
+    Sektioner *sektion = [[Sektioner sektioner] objectAtIndex:[karnevalist[@"tilldelad_sektion"] integerValue]];
+    self.profileImageView.image = [UIImage imageNamed:sektion.img];
     
 }
 

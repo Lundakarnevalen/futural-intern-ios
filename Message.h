@@ -14,6 +14,7 @@
 @property (nonatomic) NSString *message;
 @property (nonatomic) NSDate *updatedAt;
 @property (nonatomic) NSDate *postedAt;
+@property (nonatomic) NSInteger recipientId;
 
 - (Message *)initWithDictionary:(NSDictionary *)container; //designated initializer
 - (NSString *)dateAsHumanReadableString;

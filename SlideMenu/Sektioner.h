@@ -17,4 +17,7 @@
 @property NSString *answer4;
 @property NSString *img;
 
+
++(NSArray *)sektioner;
+
 @end

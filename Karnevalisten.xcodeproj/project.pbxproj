@@ -22,7 +22,6 @@
 		1A9D6B1218E23ED8003D0A78 /* Inkorg.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6B1118E23ED8003D0A78 /* Inkorg.storyboard */; };
 		1A9D6B1618E244BD003D0A78 /* Karta.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6B1518E244BD003D0A78 /* Karta.storyboard */; };
 		1A9D6B1818E2550A003D0A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6B1718E2550A003D0A78 /* Main.storyboard */; };
-		1A9D6B1C18E255E6003D0A78 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6B1B18E255E6003D0A78 /* Menu.storyboard */; };
 		1AA15B5818CB994C007A74C8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA15B5718CB994C007A74C8 /* MobileCoreServices.framework */; };
 		1AA15B5A18CB9951007A74C8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA15B5918CB9951007A74C8 /* SystemConfiguration.framework */; };
 		1AA15B5E18CB99CE007A74C8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA15B5D18CB99CE007A74C8 /* CoreLocation.framework */; };
@@ -107,7 +106,6 @@
 		1A9D6B1118E23ED8003D0A78 /* Inkorg.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Inkorg.storyboard; path = Storyboards/Inkorg.storyboard; sourceTree = "<group>"; };
 		1A9D6B1518E244BD003D0A78 /* Karta.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Karta.storyboard; path = Storyboards/Karta.storyboard; sourceTree = "<group>"; };
 		1A9D6B1718E2550A003D0A78 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
-		1A9D6B1B18E255E6003D0A78 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Menu.storyboard; path = Storyboards/Menu.storyboard; sourceTree = "<group>"; };
 		1AA15B5718CB994C007A74C8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1AA15B5918CB9951007A74C8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1AA15B5B18CB995F007A74C8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -327,7 +325,6 @@
 				1A9D6B1118E23ED8003D0A78 /* Inkorg.storyboard */,
 				1A9D6B1518E244BD003D0A78 /* Karta.storyboard */,
 				1A9D6B1718E2550A003D0A78 /* Main.storyboard */,
-				1A9D6B1B18E255E6003D0A78 /* Menu.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -572,7 +569,6 @@
 				1AD1A821189C8AFF0086DF0F /* Settings.bundle in Resources */,
 				1AD1A823189C92F50086DF0F /* blank.png in Resources */,
 				1AA15BA318CBA666007A74C8 /* InstagramKit.plist in Resources */,
-				1A9D6B1C18E255E6003D0A78 /* Menu.storyboard in Resources */,
 				1AD4EFEF18E359D000F03471 /* karnevalsmelodin.mp3 in Resources */,
 				1A9D6B1818E2550A003D0A78 /* Main.storyboard in Resources */,
 				1AFB427518DD9E2600747DAA /* Images.xcassets in Resources */,

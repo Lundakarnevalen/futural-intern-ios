@@ -47,7 +47,9 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
 
 - (void)fetchNotifications {
     
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:@"notifications" withFormatAppended:YES]];
+    NSString *appendUrl = [NSString stringWithFormat:@"api/notifications?token=%@", [self.karnevalist token]];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:appendUrl withFormatAppended:NO]];
     
     [request setTimeoutInterval:15];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
@@ -283,7 +285,10 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
         
     }
     
-    return [self.url URLByAppendingPathComponent:path];
+    NSString *newURLString = [[self.url absoluteString] stringByAppendingPathComponent:path];
+    NSURL *url = [NSURL URLWithString:newURLString];
+    
+    return url;
     
 }
 
@@ -295,7 +300,7 @@ NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
     
         NSError *error = nil;
         
-        id parsedData = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
+        id parsedData = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
         
         if(!error) {
             

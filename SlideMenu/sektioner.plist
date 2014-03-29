@@ -8,6 +8,20 @@
 	<array>
 		<dict>
 			<key>name</key>
+			<string>Alla</string>
+			<key>answer1</key>
+			<string></string>
+			<key>answer2</key>
+			<string></string>
+			<key>answer3</key>
+			<string></string>
+			<key>answer4</key>
+			<string></string>
+			<key>img</key>
+			<string>barnevalen.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Barnevalen</string>
 			<key>answer1</key>
 			<string>Barnevalen är den delen av karnevalen som riktar sig till barn i alla åldrar! Det är det största av de stora nöjena och har, i skillnad från de flesta andra, ett helt område! Förutom en föreställning kommer det även finnas små tält och bodar där barnen får delta i aktiviteter och hyss! Man ska ha riktigt kul när man går runt på barnevalsområdet oavsett hur gammal man är och det bygger givetvis på en härlig glädje och gemenskap mellan de som är engagerade!</string>

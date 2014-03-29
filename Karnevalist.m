@@ -51,7 +51,7 @@
 - (void)saveData {
     
     NSDictionary *dataToSave = @{
-                                 @"id": [NSNumber numberWithInt:self.identifier],
+                                 @"id": [NSNumber numberWithInteger:self.identifier],
                                  @"fornamn": self.firstname,
                                  @"efternamn": self.lastname,
                                  @"email": self.email,

@@ -37,7 +37,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileImage" id="z4Z-pk-hWl">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vinvisor Box" id="z4Z-pk-hWl">
                                             <rect key="frame" x="50" y="20" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
@@ -101,6 +101,10 @@
                             <outlet property="delegate" destination="Qg3-et-Skk" id="32Q-pc-TP5"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="nameLabel" destination="14t-Ws-Oka" id="eAa-44-7xh"/>
+                        <outlet property="profileImageView" destination="z4Z-pk-hWl" id="c7A-Gg-YuA"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DcT-xA-UwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,7 +112,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ProfileImage" width="200" height="200"/>
+        <image name="Vinvisor Box" width="443" height="304"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

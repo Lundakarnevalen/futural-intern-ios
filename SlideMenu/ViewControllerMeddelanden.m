@@ -13,9 +13,14 @@
 
 #import "FuturalAPI.h"
 #import "Message.h"
+#import "Sektioner.h"
 
 #define TAG_HEADER 1
+#define TAG_SEKTION 3
 #define TAG_SUBHEADER 2
+#define TAG_DATE 4
+#define TAG_IMAGE 5
+
 
 @interface ViewControllerMeddelanden ()
 
@@ -110,7 +115,13 @@
         
         if(parsedData[@"notifications"]) { //check if it's the push messages that is being requested.
             
-            for(NSDictionary *notification in parsedData[@"notifications"]) {
+            NSString *jsonString = parsedData[@"notifications"];
+            NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+            NSError *jsonError = nil;
+            
+            NSArray *messages = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&jsonError];
+            
+            for(NSDictionary *notification in messages) {
                 
                 Message *message = [[Message alloc] initWithDictionary:notification];
                 [self.messages addObject:message];
@@ -149,6 +160,8 @@
     
 }
 
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     Message *message = [self.messages objectAtIndex:indexPath.row]; //the push message we want to show.
@@ -162,14 +175,26 @@
         
     }
     
-    UILabel * headerLabel = (UILabel *)[[cell contentView] viewWithTag:TAG_HEADER];
-    UILabel * subheaderLabel = (UILabel *)[[cell contentView] viewWithTag:TAG_SUBHEADER];
+    UILabel *headerLabel = (UILabel *)[[cell contentView] viewWithTag:TAG_HEADER];
+    UILabel *sektionerLabel = (UILabel *)[[cell contentView] viewWithTag:TAG_SEKTION];
+    UILabel *subheaderLabel = (UILabel *)[[cell contentView] viewWithTag:TAG_SUBHEADER];
+    UILabel *dateLabel = (UILabel *)[[cell contentView] viewWithTag:TAG_DATE];
     
-    [headerLabel setText:message.title];
-    [subheaderLabel setText:[message dateAsHumanReadableString]];
+    UIImageView *imageView = (UIImageView *)[[cell contentView] viewWithTag:TAG_IMAGE];
+    
+    headerLabel.text = [message.title uppercaseString];
+    Sektioner *sektion = [[Sektioner sektioner] objectAtIndex:message.recipientId];
+    sektionerLabel.text = [sektion.name uppercaseString];
+    subheaderLabel.text = message.message;
+    dateLabel.text = [message dateAsHumanReadableString];
+    imageView.image = [UIImage imageNamed:sektion.img];
     
     return cell;
     
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 120.0;
 }
 
 #pragma mark -Segue
@@ -186,6 +211,5 @@
         
     }
 }
-
 
 @end
