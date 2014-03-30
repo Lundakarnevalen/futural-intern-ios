@@ -80,9 +80,10 @@
 		77B3AB48189A7A220059A6ED /* RLSektionerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3AB47189A7A220059A6ED /* RLSektionerViewController.m */; };
 		77B3AB4B189A7A440059A6ED /* Sektioner.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3AB4A189A7A440059A6ED /* Sektioner.m */; };
 		77F72713189AEF0400886E2F /* navigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F72712189AEF0400886E2F /* navigationController.m */; };
-		CA3304C018E48B2200F0AF28 /* Sångbok.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3304BF18E48B2200F0AF28 /* Sångbok.storyboard */; };
-		CA3304C918E4925400F0AF28 /* SongbokTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3304C818E4925400F0AF28 /* SongbokTableViewController.m */; };
-		FDC7EA0918E70A530067403E /* sånger.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDC7EA0818E70A530067403E /* sånger.plist */; };
+		FDC7EA0918E70A530067403E /* songs.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDC7EA0818E70A530067403E /* songs.plist */; };
+		FDC7EA0E18E868030067403E /* Sångbok.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC7EA0D18E868030067403E /* Sångbok.storyboard */; };
+		FDC7EA1418E881A80067403E /* SongbookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC7EA1318E881A80067403E /* SongbookTableViewController.m */; };
+		FDC7EA1718E886EC0067403E /* Songs.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC7EA1618E886EC0067403E /* Songs.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -216,10 +217,12 @@
 		77B3AB4A189A7A440059A6ED /* Sektioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sektioner.m; path = SlideMenu/Sektioner.m; sourceTree = "<group>"; };
 		77F72711189AEF0400886E2F /* navigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navigationController.h; sourceTree = "<group>"; };
 		77F72712189AEF0400886E2F /* navigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = navigationController.m; sourceTree = "<group>"; };
-		CA3304BF18E48B2200F0AF28 /* Sångbok.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Sångbok.storyboard"; sourceTree = "<group>"; };
-		CA3304C718E4925400F0AF28 /* SongbokTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongbokTableViewController.h; sourceTree = "<group>"; };
-		CA3304C818E4925400F0AF28 /* SongbokTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongbokTableViewController.m; sourceTree = "<group>"; };
-		FDC7EA0818E70A530067403E /* sånger.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "sånger.plist"; sourceTree = "<group>"; };
+		FDC7EA0818E70A530067403E /* songs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = songs.plist; sourceTree = "<group>"; };
+		FDC7EA0D18E868030067403E /* Sångbok.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Sångbok.storyboard"; sourceTree = "<group>"; };
+		FDC7EA1218E881A80067403E /* SongbookTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SongbookTableViewController.h; path = ViewControllers/SongbookTableViewController.h; sourceTree = "<group>"; };
+		FDC7EA1318E881A80067403E /* SongbookTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SongbookTableViewController.m; path = ViewControllers/SongbookTableViewController.m; sourceTree = "<group>"; };
+		FDC7EA1518E886EC0067403E /* Songs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Songs.h; path = Models/Songs.h; sourceTree = "<group>"; };
+		FDC7EA1618E886EC0067403E /* Songs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Songs.m; path = Models/Songs.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +271,8 @@
 				1A9D6B0218E21C41003D0A78 /* UIButton+CustomFont.m */,
 				1A9D6B0718E22768003D0A78 /* UITextField+CustomFont.h */,
 				1A9D6B0818E22768003D0A78 /* UITextField+CustomFont.m */,
+				FDC7EA1518E886EC0067403E /* Songs.h */,
+				FDC7EA1618E886EC0067403E /* Songs.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -330,7 +335,7 @@
 				1A9D6B1518E244BD003D0A78 /* Karta.storyboard */,
 				1A9D6B1718E2550A003D0A78 /* Main.storyboard */,
 				1A9D6B1B18E255E6003D0A78 /* Menu.storyboard */,
-				CA3304BF18E48B2200F0AF28 /* Sångbok.storyboard */,
+				FDC7EA0D18E868030067403E /* Sångbok.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -406,8 +411,6 @@
 		1ACF836018D8D86D00A5052F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CA3304C718E4925400F0AF28 /* SongbokTableViewController.h */,
-				CA3304C818E4925400F0AF28 /* SongbokTableViewController.m */,
 				27D71D9216A34A2200021245 /* MainViewController.h */,
 				1A362BE2189B1ACA002EE320 /* MainViewController.m */,
 				27D71D8516A349D500021245 /* ECSlidingViewController */,
@@ -428,6 +431,8 @@
 				57186D8D18DF17B200E78450 /* ReadMessageViewController.m */,
 				1A1E12B118DF556B0014235F /* MapListTableViewController.h */,
 				1A1E12B218DF556B0014235F /* MapListTableViewController.m */,
+				FDC7EA1218E881A80067403E /* SongbookTableViewController.h */,
+				FDC7EA1318E881A80067403E /* SongbookTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -441,7 +446,7 @@
 				1A16269918D1AEAC00434BFF /* AFNetworking */,
 				1A16269718D1ACE100434BFF /* Models */,
 				77B3AB3D189A79830059A6ED /* sektioner.plist */,
-				FDC7EA0818E70A530067403E /* sånger.plist */,
+				FDC7EA0818E70A530067403E /* songs.plist */,
 				1A63BB04189BE25000F43465 /* Settings.bundle */,
 				27D71D6916A349AD00021245 /* Supporting Files */,
 				1ACF836018D8D86D00A5052F /* ViewControllers */,
@@ -571,9 +576,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC7EA0918E70A530067403E /* sånger.plist in Resources */,
+				FDC7EA0918E70A530067403E /* songs.plist in Resources */,
 				1A9D6AF718E21005003D0A78 /* Robot!Head.ttf in Resources */,
 				1A9D6AF818E21005003D0A78 /* Futura-Bold.ttf in Resources */,
+				FDC7EA0E18E868030067403E /* Sångbok.storyboard in Resources */,
 				1A9D6B1618E244BD003D0A78 /* Karta.storyboard in Resources */,
 				1A9D6B0D18E22866003D0A78 /* Start.storyboard in Resources */,
 				1AD1A821189C8AFF0086DF0F /* Settings.bundle in Resources */,
@@ -584,7 +590,6 @@
 				1A9D6B1818E2550A003D0A78 /* Main.storyboard in Resources */,
 				1AFB427518DD9E2600747DAA /* Images.xcassets in Resources */,
 				77B3AB3E189A79830059A6ED /* sektioner.plist in Resources */,
-				CA3304C018E48B2200F0AF28 /* Sångbok.storyboard in Resources */,
 				1A9D6B1218E23ED8003D0A78 /* Inkorg.storyboard in Resources */,
 				27D71D7C16A349AD00021245 /* MainStoryboard.storyboard in Resources */,
 				1A9D6AF318E20EA9003D0A78 /* Logga in.storyboard in Resources */,
@@ -599,6 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				577E5C9B18DF12C2005E5FE6 /* Karnevalist.m in Sources */,
+				FDC7EA1418E881A80067403E /* SongbookTableViewController.m in Sources */,
 				1AA15BA718CBA666007A74C8 /* InstagramModel.m in Sources */,
 				57186D8E18DF17B200E78450 /* ReadMessageViewController.m in Sources */,
 				1AA15B8318CBA60A007A74C8 /* AFHTTPRequestOperation.m in Sources */,
@@ -641,12 +647,12 @@
 				1AA15B6A18CBA5D0007A74C8 /* IKCell.m in Sources */,
 				77B3AB4B189A7A440059A6ED /* Sektioner.m in Sources */,
 				1AA15BA418CBA666007A74C8 /* IKUserInPhoto.m in Sources */,
+				FDC7EA1718E886EC0067403E /* Songs.m in Sources */,
 				1AA15BA918CBA666007A74C8 /* InstagramTag.m in Sources */,
 				27D71D8E16A349F000021245 /* InitViewController.m in Sources */,
 				1AB448F918DB9D8E0060C0D0 /* MapViewController.m in Sources */,
 				27D71D9116A34A0200021245 /* MenuViewController.m in Sources */,
 				5758CDCF18DF89F900446EA3 /* Lundakarneval.m in Sources */,
-				CA3304C918E4925400F0AF28 /* SongbokTableViewController.m in Sources */,
 				1AA15B6B18CBA5D0007A74C8 /* IKCollectionViewController.m in Sources */,
 				1A9D6B0318E21C41003D0A78 /* UIButton+CustomFont.m in Sources */,
 			);

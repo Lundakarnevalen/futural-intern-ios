@@ -1,20 +1,26 @@
 //
-//  SongbokTableViewController.m
+//  SongbookTableViewController.m
 //  Karnevalisten
 //
-//  Created by Samuel Wiqvist on 2014-03-27.
+//  Created by Lisa Ellerstedt on 2014-03-30.
 //  Copyright (c) 2014 Lundakarnevalen. All rights reserved.
 //
 
-#import "SongbokTableViewController.h"
+#import "SongbookTableViewController.h"
+#import "Songs.h"
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
 
-@interface SongbokTableViewController ()
+#define TAG_HEADER 0
+//#define TAG_SUBHEADER 1
+
+@interface SongbookTableViewController ()
+
+@property (nonatomic) NSMutableArray *songs;
 
 @end
 
-@implementation SongbokTableViewController
+@implementation SongbookTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -28,21 +34,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //UINib *nib = [UINib nibWithNibName:@"Songs" bundle:nil];
-    //[[self tableView] registerNib:nib forCellReuseIdentifier:@"CustomCell"];
     
-//    UINavigationBar *navbar = self.navigationController.navigationBar;
-//    
-//    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
-//                                                           [UIFont fontWithName:@"Futura-Bold" size:17.0], NSFontAttributeName, nil]];
-//    
-//    navbar.topItem.title = [navbar.topItem.title uppercaseString];
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"songs" ofType:@"plist"];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    NSDictionary *temp = [NSDictionary dictionaryWithContentsOfFile:plistPath];
+    NSArray *tempSongs = [temp objectForKey:@"songs"];
+    self.songs = [[NSMutableArray alloc] init];
+    for (id obj in tempSongs) {
+        Songs *song = [[Songs alloc] init];
+        song.name = [obj objectForKey:@"name"];
+        song.melodi = [obj objectForKey:@"melodi"];
+        song.text = [obj objectForKey:@"text"];
+        song.isWinner = [obj objectForKey:@"isWinner"];
+        song.win = [obj objectForKey:@"win"];
+        song.img = [obj objectForKey:@"img"];
+        
+        [self.songs addObject:song];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,7 +65,7 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -67,16 +75,29 @@
     return 0;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    Songs *song = [self.songs objectAtIndex:indexPath.row]; //the push message we want to show.
     
-    // Configure the cell...
+    NSString *cellIdentifier = @"songCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    if (!cell) {
+        
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        
+    }
+    
+    UILabel * headerLabel = (UILabel *)[[cell contentView] viewWithTag:TAG_HEADER];
+    //UILabel * subheaderLabel = (UILabel *)[[cell contentView] viewWithTag:TAG_SUBHEADER];
+    
+    [headerLabel setText:song.name];
+    //[subheaderLabel setText:[song dateAsHumanReadableString]];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -127,8 +148,9 @@
 }
 */
 
-
-- (IBAction)revealMenu:(id)sender {
+- (IBAction)revealMenu:(id)sender
+{
     [self.slidingViewController anchorTopViewTo:ECRight];
 }
+
 @end
