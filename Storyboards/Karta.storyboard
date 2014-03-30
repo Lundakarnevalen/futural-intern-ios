@@ -246,7 +246,9 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRb-aB-IqB">
                                         <rect key="frame" x="20" y="72" width="246" height="428"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">Har du bara ett par sekunder på dig att sälja in Karnevalstidningen? Här finns en elevator pitch till din undsättning (övertyga någon på tiden det tar att åka upp i en hiss). Lundakarnevalens tidning är en bit av Lundakarnevalen i din hand! Årets karnevalstidning kommer från framtiden, därav namnet Framtidningen. Tidningen är fullproppad med allt från roliga artiklar, knasiga annonser och skämt, till snygga och fula bilder, dikter och horoskop. Framtidningen är skapad i sann karnevalsanda och är därför det perfekta minnet att ta med hem från Lundakarnevalen 2014! Oavsett om du är gammal eller ung, lundabo eller uppsalabo så kommer det att finnas någonting för dig!</mutableString>
+                                        <string key="text">Har du bara ett par sekunder på dig att sälja in Karnevalstidningen? Här finns en elevator pitch till din undsättning (övertyga någon på tiden det tar att åka upp i en hiss). 
+Lundakarnevalens tidning är en bit av Lundakarnevalen i din hand! Årets karnevalstidning kommer från framtiden, därav namnet Framtidningen. Tidningen är fullproppad med allt från roliga artiklar, knasiga annonser och skämt, till snygga och fula bilder, dikter och horoskop. Framtidningen är skapad i sann karnevalsanda och är därför det perfekta minnet att ta med hem från Lundakarnevalen 2014! Oavsett om du är gammal eller ung, lundabo eller uppsalabo så kommer det att finnas någonting för dig!
+</string>
                                         <color key="textColor" red="0.36470588240000001" green="0.3803921569" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -372,7 +374,19 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dQ-kq-20r">
                                         <rect key="frame" x="20" y="90" width="246" height="750"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">Lundakarnevalens kärna är i Lundagård i Lund, där finns karnevalsområdet. På karnevalsområdet finns en mängd olika upplevelser. Följande saker kan upplevas:•	Sju stora nöjen (föreställningar) på 45 minuter (Barneval, Cirkus, Film, Kabaré, Revy, Show och Spex)•	Tre stycken smånöjen i tält vars föreställningar varar i max en halvtimme •	Över 20 tältnöjen som innehåller en kort och karnevalistisk upplevelse •	Tombolabodar som erbjuder lotto och spel •	Mat- och dryckestält där man kan sitta ner •	ÅRETS NYHET är ett nytt mat – och dryckesområde precis norr om Lundagård.•	Artister och uppträdanden på Stora Scenen •	Dansen – Sveriges största nattklubb – på kvällarna i AF-Borgen.•	…och mycket mycket merUtanför karnevalsområdet går som sagt karnevalståget. Det går genom Lunds centrum lördag och söndag 17-18 maj. Tåget avgår kl. 13.00.  Lundakarnevalen är alltså en stor och speciell händelse som går av stapeln blott vart fjärde år. Den första karnevalen firades 1849. Bland tidigare kända karnevalister kan nämnas Lena Ek, Johan Wester och Hasse Alfredsson. </mutableString>
+                                        <string key="text">Lundakarnevalens kärna är i Lundagård i Lund, där finns karnevalsområdet. På karnevalsområdet finns en mängd olika upplevelser. Följande saker kan upplevas:
+•	Sju stora nöjen (föreställningar) på 45 minuter (Barneval, Cirkus, Film, Kabaré, Revy, Show och Spex)
+•	Tre stycken smånöjen i tält vars föreställningar varar i max en halvtimme 
+•	Över 20 tältnöjen som innehåller en kort och karnevalistisk upplevelse 
+•	Tombolabodar som erbjuder lotto och spel 
+•	Mat- och dryckestält där man kan sitta ner 
+•	ÅRETS NYHET är ett nytt mat – och dryckesområde precis norr om Lundagård.
+•	Artister och uppträdanden på Stora Scenen 
+•	Dansen – Sveriges största nattklubb – på kvällarna i AF-Borgen.
+•	…och mycket mycket mer
+Utanför karnevalsområdet går som sagt karnevalståget. Det går genom Lunds centrum lördag och söndag 17-18 maj. Tåget avgår kl. 13.00.  
+Lundakarnevalen är alltså en stor och speciell händelse som går av stapeln blott vart fjärde år. Den första karnevalen firades 1849. Bland tidigare kända karnevalister kan nämnas Lena Ek, Johan Wester och Hasse Alfredsson. 
+</string>
                                         <color key="textColor" red="0.36470588240000001" green="0.3803921569" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

@@ -143,7 +143,7 @@
 }
 
 - (IBAction)playButtonPressed:(id)sender {
-    
+
     [self togglePlayPause];
 
 }
@@ -151,7 +151,7 @@
 - (void)togglePlayPause {
     
     BOOL isPlaying = [self.player isPlaying];
-    self.playPauseButton.imageView.image = [UIImage imageNamed:@"PauseButton"];
+    
     
     self.timeLabelMain.hidden = !isPlaying;
     self.karnevalenLabel.hidden = !isPlaying;
@@ -160,11 +160,10 @@
     }
     
     if(isPlaying) {
-        
         [self.player pause];
-        
+        [self.playPauseButton setImage:[UIImage imageNamed:@"PlayerButton"] forState:UIControlStateNormal];
     } else {
-        
+        [self.playPauseButton setImage:[UIImage imageNamed:@"PauseButton"] forState:UIControlStateNormal];
         [self.player play];
         
     }

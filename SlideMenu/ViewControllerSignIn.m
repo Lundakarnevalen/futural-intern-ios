@@ -14,8 +14,11 @@
 
 @interface ViewControllerSignIn ()
 
-@property UIActivityIndicatorView *spinner;
+@property (weak, nonatomic) IBOutlet UIView *afterResetPasswordView;
 @property (nonatomic) NSMutableData *dataQueue; //used when recieving data from the API.
+@property (nonatomic) UITextField *currentResponder;
+@property (weak, nonatomic) IBOutlet UILabel *resetPasswordErrorLabel;
+@property (weak, nonatomic) IBOutlet UIView *resetPasswordErrorLabelShadow;
 
 @end
 
@@ -45,9 +48,7 @@
     
 }
 
-- (IBAction)signInButtonTapped:(id)sender {
-    [self signIn];
-}
+
 
 - (void)signIn {
     
@@ -96,7 +97,9 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection { //the request is finished and all the data is stored inside of self.dataQueue
     
-    [self.activityIndicator stopAnimating];
+    UIApplication* app = [UIApplication sharedApplication];
+    app.networkActivityIndicatorVisible = NO;
+    
     self.signinButton.hidden = NO;
     
     NSString *stringIdentifier = [[self.api class] stringIdentifierFromUrlConnection:connection]; //class method.
@@ -139,13 +142,37 @@
                 for(NSString *error in errors) { //ful-fix, inte säker på hur jag får ut första i ett dictionary.
                     
                     NSLog(@"%@", error);
-                    [self.errorMessageLabel setText:@"Fel lösenord."];
+                    [self.errorMessageLabel setText:@"Fel email/lösenord."];
                     break;
                     
                 }
                 
                 self.errorMessageLabel.hidden = NO;
                 
+            }
+            
+        }
+        
+        if([stringIdentifier isEqualToString:@"reset_password"]) {
+            
+            NSLog(@"%@", parsedData[@"success"]);
+            
+            if([parsedData[@"success"] isEqualToNumber:@1]) {
+                NSLog(@"Tjoho!");
+                self.afterResetPasswordView.hidden = NO;
+            } else {
+                NSLog(@"%@", parsedData[@"errors"]);
+                for(NSString *error in parsedData[@"errors"]) { //ful-fix, inte säker på hur jag får ut första i ett dictionary.
+                    
+                    NSLog(@"%@", error);
+                    //[self.errorMessageLabel setText:@"Fel email/lösenord."];
+                    break;
+                    
+                }
+                self.resetPasswordErrorLabel.text = @"Din email kunde inte hittas.";
+                self.resetPasswordErrorLabelShadow.hidden = NO;
+                self.resetPasswordErrorLabel.hidden = NO;
+            
             }
             
         }
@@ -164,16 +191,7 @@
     
 }
 
-- (IBAction)passwordResetAction:(id)sender {
-    [self.api resetPassword:[self.forgotEmailField text]];
-    
-}
-
-- (IBAction)signoutAction:(id)sender {
-    
-    [self.api signOut];
-    
-}
+#pragma mark - Futural API
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response { //debug
     
@@ -188,13 +206,62 @@
     
 }
 
+
+#pragma mark - buttons
+- (IBAction)okayIUnderstandButton:(UIButton *)sender {
+    [UIView animateWithDuration:0.3f delay:0.1f options:0
+                     animations:^{sender.superview.superview.alpha = 0.0;}
+                     completion:nil];
+}
+
+- (IBAction)signInButtonTapped:(id)sender {
+    self.signinButton.hidden = YES;
+    UIApplication* app = [UIApplication sharedApplication];
+    app.networkActivityIndicatorVisible = YES;
+    [self resignOnTap:sender];
+    [self signIn];
+}
+
+- (IBAction)passwordResetAction:(id)sender {
+    UIApplication* app = [UIApplication sharedApplication];
+    app.networkActivityIndicatorVisible = YES;
+    [self resignOnTap:sender];
+    [self.api resetPassword:[self.forgotEmailField text]];
+    self.resetPasswordErrorLabelShadow.hidden = YES;
+    self.resetPasswordErrorLabel.hidden = YES;
+}
+
+- (IBAction)view2Pressed:(id)sender {
+    [self resignOnTap:sender];
+}
+
+-(IBAction)goBack:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)signoutAction:(id)sender {
+    
+    [self.api signOut];
+    
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    self.currentResponder = textField;
+}
+
+//Implement resignOnTap:
+
+- (void)resignOnTap:(id)iSender {
+    [self.currentResponder resignFirstResponder];
+}
+
 #pragma mark -UITextField
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
-    [self signIn];
+    //[self signIn];
     [textField resignFirstResponder];
-    
     return YES;
     
 }
