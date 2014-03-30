@@ -18,25 +18,21 @@
 
 @interface MainViewController ()
 
-@property (strong, nonatomic) IBOutletCollection(UIView) NSArray *lyricStringCollection;
-
 @property (weak, nonatomic) IBOutlet UILabel *karnevalenLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabelMain;
-//@property (weak, nonatomic) IBOutlet UILabel *timeTilKarneklubben;
-//@property (weak, nonatomic) IBOutlet UILabel *timeTilKarnelanet;
-//@property (weak, nonatomic) IBOutlet UILabel *timeTilForkarnevalLabel;
-//@property (weak, nonatomic) IBOutlet UILabel *timeTilKarnebalenLabel;
-
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *checkmarks;
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *timeLabels;
 
 @property (strong,nonatomic) AVAudioPlayer *player;
 
 @property (strong, nonatomic) NSArray *lyric;
+@property (strong, nonatomic) IBOutletCollection(UIView) NSArray *lyricStringCollection;
 
 @property (weak, nonatomic) IBOutlet UILabel *rowForLyricLabel;
 @property (weak, nonatomic) IBOutlet UILabel *rowMinus1LyricLabel;
 @property (weak, nonatomic) IBOutlet UILabel *rowPlus1LyricLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *playerPin;
+@property (weak, nonatomic) IBOutlet UIButton *playPauseButton;
 
 @property (nonatomic) NSUInteger rowCount;
 
@@ -88,6 +84,10 @@
             default:
                 break;
         }
+        if ([temp.text isEqual:@"00:00:00:00"]) {
+            UIImageView *imageview = [self.checkmarks objectAtIndex:i];
+            imageview.hidden = NO;
+        }
     }
     
 }
@@ -118,7 +118,7 @@
     
     CGRect myFrame = self.playerPin.frame;
     //NSLog(@"%f", self.player.currentTime * (190.0 / 214.0));
-    myFrame.origin.x = 92.0 + self.player.currentTime * (190.0 / 214.0);
+    myFrame.origin.x = 92.0 + self.player.currentTime * (180.0 / 214.0);
     self.playerPin.frame = myFrame;
     
     if (self.rowCount < [self.lyric count]) {
@@ -151,6 +151,7 @@
 - (void)togglePlayPause {
     
     BOOL isPlaying = [self.player isPlaying];
+    self.playPauseButton.imageView.image = [UIImage imageNamed:@"PauseButton"];
     
     self.timeLabelMain.hidden = !isPlaying;
     self.karnevalenLabel.hidden = !isPlaying;

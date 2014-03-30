@@ -259,6 +259,11 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="rmR-w4-5Xu">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
@@ -286,6 +291,11 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="4ZE-Tn-0P2">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
@@ -313,6 +323,11 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="cWZ-Eg-1S8">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
@@ -340,6 +355,11 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="hxf-Fa-hz7">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
@@ -373,6 +393,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="karnevalenLabel" destination="fBX-qI-K97" id="yfr-nw-9LT"/>
+                        <outlet property="playPauseButton" destination="3Mk-MB-aPx" id="SQ5-m1-ajT"/>
                         <outlet property="playerPin" destination="FMD-Cs-Cfa" id="Pz0-ZC-aok"/>
                         <outlet property="rowForLyricLabel" destination="B2A-si-7UR" id="fEJ-i9-6sB"/>
                         <outlet property="rowMinus1LyricLabel" destination="wVS-2t-jEx" id="Y5y-BQ-2Op"/>
@@ -385,6 +406,10 @@
                         <outletCollection property="timeLabels" destination="6Oe-Se-yJY" id="3bV-JD-bWS"/>
                         <outletCollection property="timeLabels" destination="86K-rf-1c1" id="Aw1-8G-vw7"/>
                         <outletCollection property="timeLabels" destination="Bmu-pW-TvW" id="g9g-TT-wZW"/>
+                        <outletCollection property="checkmarks" destination="hxf-Fa-hz7" id="iu4-dN-A86"/>
+                        <outletCollection property="checkmarks" destination="cWZ-Eg-1S8" id="mlL-cU-nUY"/>
+                        <outletCollection property="checkmarks" destination="rmR-w4-5Xu" id="bGU-Td-Nr4"/>
+                        <outletCollection property="checkmarks" destination="4ZE-Tn-0P2" id="pQk-db-fxe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wvn-VK-7CX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -411,6 +436,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Checkmark" width="224" height="183"/>
         <image name="MenuButton" width="25" height="15"/>
         <image name="Moln" width="363" height="182"/>
         <image name="PlayerButton" width="98" height="98"/>

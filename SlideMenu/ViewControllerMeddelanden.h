@@ -10,7 +10,6 @@
 
 @interface ViewControllerMeddelanden : UITableViewController <NSURLConnectionDataDelegate>
 
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activitySpinner;
 @property (weak, nonatomic) IBOutlet UITableView *messagesTable;
 
 @end

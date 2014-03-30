@@ -91,6 +91,11 @@
                                 <action selector="revealMenu:" destination="J5T-gY-Yn8" id="rAz-Fs-UAv"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="VRj-Bb-8it">
+                            <connections>
+                                <action selector="refreshMessages:" destination="J5T-gY-Yn8" id="Kcj-lf-Jgl"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="messagesTable" destination="apq-VQ-S3E" id="1u0-xm-ffo"/>

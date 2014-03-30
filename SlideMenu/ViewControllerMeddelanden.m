@@ -11,6 +11,8 @@
 #import "MenuViewController.h"
 #import "ReadMessageViewController.h"
 
+#import "Colors.h"
+
 #import "FuturalAPI.h"
 #import "Message.h"
 #import "Sektioner.h"
@@ -35,9 +37,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIApplication* app = [UIApplication sharedApplication];
+    app.networkActivityIndicatorVisible = YES;
 
-    [self.activitySpinner startAnimating];
     [self.api fetchNotifications]; //grab the push messages.
+    
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc]
+                                        init];
+    [refreshControl addTarget:self action:@selector(refreshMessages:) forControlEvents:UIControlEventValueChanged];
+    refreshControl.tintColor = [Colors darkBlueColorWithAlpha:1];
+    self.refreshControl = refreshControl;
     
 }
 
@@ -45,16 +55,22 @@
     
     [self.messages removeAllObjects];
     
-    [self.activitySpinner startAnimating];
+    UIApplication* app = [UIApplication sharedApplication];
+    app.networkActivityIndicatorVisible = YES;
+    
     [self.api fetchNotifications];
     
 }
+
+#pragma mark - SlidingView
 
 - (IBAction)revealMenu:(id)sender {
     
     [self.slidingViewController anchorTopViewTo:ECRight];
     
 }
+
+#pragma mark - Lazy instanciation
 
 //lazy instantiation
 - (NSMutableArray *)messages {
@@ -104,7 +120,8 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     
-    [self.activitySpinner stopAnimating];
+    UIApplication* app = [UIApplication sharedApplication];
+    app.networkActivityIndicatorVisible = NO;
     
     id parsedData = [[self.api class] parseJSONData:self.dataQueue];
     self.dataQueue = nil;
@@ -129,7 +146,7 @@
             }
             
             [self.messagesTable reloadData];
-            
+            [self.refreshControl endRefreshing];
         }
         
     }
@@ -137,8 +154,6 @@
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response { //debug
-    
-    [self.activitySpinner stopAnimating];
     
     NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
     NSLog(@"%@", [httpResponse allHeaderFields]);
