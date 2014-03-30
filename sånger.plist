@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>Elise</string>
+	<key>sånger</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Karnevalsmelodin</string>
+			<key>isWinner</key>
+			<false/>
+			<key>text</key>
+			<string>Jag kan inte sitta stillJag får inte någon roNu är längtan över, sätter allt på pausDet är nåt som är på gångHar aldrig känt så här förut Glömmer allt som var, det e karnevalMed hjärtslagen i takt till basen lyfter händerna mot taken ingen sömn på flera nätter aldrig känt mig mera vakenBRYGGADet e nu i vår det händerDet e vart fjärde årKom möt upp med alla vänner Kom och skrik i LundagårdLjuset bländar, hjärtat bultar Nu är det fest i Lund Exploderar på en sekund REFRFutu-futu-ral-karneval Futu-futu-futu -ral-karneval -futu-futu-futuEtt universum fyllt av allt hundra fester på en dagNu blir gammalt nyttoch generalen har fått bröstKarnevölen fyller glasenvem vet nåt om morgondagen Alla dansar Borgen skakar Aldrig känt mig mera vaken(BRYGGA) (REFR)Vi är våren när det händer Vi är vart fjärde årVi är allesammans vänner skriker ut i LundagårdVi ska övertyga världen att fira maj i Lund Exploderar på en sekund||: REFR :||</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Nyktronauten</string>
+			<key>isWinner</key>
+			<true/>
+			<key>melodi</key>
+			<string>Melodi: I Apladalen i värnamo</string>
+			<key>text</key>
+			<string>Att dricka vin när man bor på månen, ja det gör bara den största fånen!Ty är man packad i outer space, kan man få spyan i eget face!</string>
+			<key>img</key>
+			<string>alkofri.png</string>
+			<key>win</key>
+			<string>vinnare.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Min kompis Rasmus</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: I Apladalen i Värnamo</string>
+			<key>text</key>
+			<string>Min kompis Rasmus det är en stursk en, han dricker mjölk för att släcka törsten.Har aldrig smakat en droppe sprit, på detta gör han en stor profit.Han bjuder ofta till stora fester, Där gäller medhavt för alla gäster.Hans liv är flott och extravagant, Finansieras av våran pant!</string>
+			<key>img</key>
+			<string>alkofri.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Vatten</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Flickorna i Småland</string>
+			<key>text</key>
+			<string>Å en,Å tvåÅ en två...Det är vatten ifrån Bolmen, det är vatten ifrån kran, det är vatten ifrån Ramlösa och ifrån Evian.Det är vatten från buteljer och från Lommas hamnkvarter, och från Lundagårdsfontänen så jag kastar upp med er!</string>
+			<key>img</key>
+			<string>alkofri.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Avlyssning av godo</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Skånska slott och herresäten</string>
+			<key>text</key>
+			<string>En gång ville Merkel ha punsch mitt i natten, då la hon mobilen i ett glas med vatten.Vattnet blev punsch och nu undrar du hur? Inte så svårt med (B)arrak i sin lur!</string>
+			<key>img</key>
+			<string>punsch.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Kommunal profilering</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Stad i ljus</string>
+			<key>text</key>
+			<string>Jag drömde om en framtidDär vattenverket bytt profilOch levererar dryckenSom bättre passar en student med klass och stil ||: Rinner ner, ur min kallvattenkranPunschen gul, närhelst jag vill på dan’ :||</string>
+			<key>img</key>
+			<string>punsch.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>När isarna smälter</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Oh when the saints </string>
+			<key>text</key>
+			<string>Koldioxid, kärnvapenkrig, framtiden bådar bara skit. Isarna smälter tempen stiger, Så vi får dricka punschen varm! (På en strand!)</string>
+			<key>img</key>
+			<string>punsch.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Punschline</string>
+			<key>isWinner</key>
+			<true/>
+			<key>melodi</key>
+			<string>Melodi: Piluttavisan (Madicken)</string>
+			<key>text</key>
+			<string>En punchline, en punchline är viktig för en dryckessång, en punchline, en punchline som sjunges gång på gångDen skapar poängen i slutet av en visas text, och detta är enkelt, på intet sett komplextpunsch, punsch, punsch, punsch, punsch, punsch, punsch, punsch,punsch, punsch, punsch, punsch, punsch, punsch, punsch, punsch, punsch, punschEn punchline, en punchline är knorren på vår sång!</string>
+			<key>img</key>
+			<string>punsch.png</string>
+			<key>win</key>
+			<string>vinnare.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Anti-snapsvise-snapsvisan</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Hej tomtegubbar</string>
+			<key>text</key>
+			<string>Vem tog nu ton med kling i glaset? Jag orkar snart inte mera.Sång stoppar upp kalaset, jag hinner ej konversera!Jag har en dröm att blott en gång, få kunna supa förutan sång.Tänk om det bara fanns ett bra sätt, att all musik censurera!</string>
+			<key>img</key>
+			<string>snaps.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Bakåtsträvande framtidsteknik</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Cotton Eye Joe</string>
+			<key>text</key>
+			<string>Snåle Kent har tatt patent på en pryl som är potentDen är blank och den är fin Det är Kents lilla tidsmaskinNär på fest han tömt sin snaps Reser han direkt tillbaks......en och en halv minut och sen dricker han den om igen</string>
+			<key>img</key>
+			<string>snaps.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Dagen efter</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: När vi gräver guld i USA</string>
+			<key>text</key>
+			<string>Jag vet det innan det har skett: Var gång jag dricker går det snettJag kan mig ej besinnaJag förolämpar, stjäl och slåss Hånglar upp gifta män förståsOch en och annan kvinna”Vi orkar inte med dig mer, hejdå” Jag har ju druckit nog för två.För alla supar jag borde avstått, för skålar som jag fått Och när det blitt för vått,vill jag be om ursäkt här och nu.För alla misstag jag ligger bakom, cyklar som jag snott Jag önskar det ogjortMen så kommer spriten fram igen.Och jag ragglar hem i gryningen!</string>
+			<key>img</key>
+			<string>snaps.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Energidryck</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: När månen vandrar sin tysta ban</string>
+			<key>text</key>
+			<string>Forskarna säger att det är tjafs, men jag vet mer än de flesta.Hur energi skapas i ett nafs, ja, det är lätt, låt oss testa.När gommen krockar med kalla nubben då blir man piggare här på stubbenEn snabb lektioni kall fusion</string>
+			<key>img</key>
+			<string>snaps.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Fallstudie</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Obladi Oblada</string>
+			<key>text</key>
+			<string>Bakåt faller vi när snapsen tagit slutNeråt faller man när man fått slagFramåt fall om slaget kommer bakifrånNär man ligger känner man sig som ett fånLite fram Lite snett Lite bakåtFall i fel tid: aldrig ballTiden fram Tiden snett Tiden bakåtHellre framtid än framfall</string>
+			<key>img</key>
+			<string>snaps.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>In real life</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Huvud, axlar, knä och tå</string>
+			<key>text</key>
+			<string>Facebook, twitter, instagram, tryck på like Facebook, twitter, instagram, tryck på like Världen har ju blivit virtuell(men) snapsen tar vi IRL, skål och svälj!</string>
+			<key>img</key>
+			<string>snaps.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Kosta vad det kostar vill!</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: I Apladalen i Värnamo</string>
+			<key>text</key>
+			<string>Glas av olika sorterÖl, punsch, snaps och porterDet är kutym att man häller rätt dryck I ett glas utav rätt sortMen jag tar vasen som står bordet Och blommorna kastar jag bortI den har jag spritenVarför ska den va liten... nubben?</string>
+			<key>img</key>
+			<string>snaps.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Långtidsnjutning</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: I Apladalen i Värnamo</string>
+			<key>text</key>
+			<string>Jag har en kompis, han heter Krister Han blandar snapsen med vanligt klister Den då i magen sen stannar kvarSå han kan njuta i flera dar!</string>
+			<key>img</key>
+			<string>snaps.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Kalsongtricket</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Kalle på spången</string>
+			<key>text</key>
+			<string>Om man vill bli fullast på snabbaste sätt, Ta tam-i tam-i tam-i tampongen.Sen doppa i vinet, och stoppa den rätt,i kal-i kal-i kal-i kal-i kalsongen.</string>
+			<key>img</key>
+			<string>snaps.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>YOLO!</string>
+			<key>isWinner</key>
+			<true/>
+			<key>melodi</key>
+			<string>Melodi: Morsgrisar är vi allihopa</string>
+			<key>text</key>
+			<string>Jag blandar vin och öl och cola, snaps och brännvin, gorgonzola Yoghurt och gin och skumma grejer, men som man säger: YOLO!YOLO och YOLO, YOLO och YOLO!</string>
+			<key>img</key>
+			<string>snaps.png</string>
+			<key>win</key>
+			<string>vinnare.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Gammelmormor saknar täckning</string>
+			<key>isWinner</key>
+			<true/>
+			<key>melodi</key>
+			<string>Melodi: Fritiof och Carmencita (Samborombon)</string>
+			<key>text</key>
+			<string>Min gammelmormor har ett hus förutan data Där kan man inte surfa, där så får man prataOm veckans väder och om stickade kläderOch om rean i Höör. Det är så trist så att jag dörMen då så händer något som jag väntat på: Gammelmormor öppnar sherryn!Då drar hon glatt historienNär hon var ung och dejta tjugotusen män Som stod uppställda på rad och gjorde allt hon bad dem omoch sen sket hon alltid i att ringaSen visar hon sin lindy hopOch då så får hon alltid samma gamla proppAmbulansen kommer och hon lallar: Livet är en fest! Hoppas att hon aldrig får täckning!</string>
+			<key>img</key>
+			<string>vin.png</string>
+			<key>win</key>
+			<string>vinnare.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Lillördag</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Visa vid vindens ängar </string>
+			<key>text</key>
+			<string>Det hälldes vin över bord och sängar Och det är sås på min tyllgardinJag tror fåtöljen har brutit benen Från köket doftar det av urinVi skulle sjunga don’t stop believin Ukulelen hämtar aldrig sigVi fira onsdag med korridoren Men kära mor oroa dig ejFör trots att jag har fått slut på pengar Och trots en spricka tvärs min displayOch trots allt vin över bord och sängar Är Lund är det roligaste som hänt mig</string>
+			<key>img</key>
+			<string>vin.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>This is the wine</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: This is the way</string>
+			<key>text</key>
+			<string>ThisThis is the wineThis is the wine we’ll whine aboutWhen I wake up tomorrow (wakin’ up, wakin’ up) This is the wine we’ll whine about</string>
+			<key>img</key>
+			<string>vin.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>2014</string>
+			<key>isWinner</key>
+			<true/>
+			<key>melodi</key>
+			<string>Melodi: Also Sprach Zarathustra (Temat från 2001: A Space Odyssey)</string>
+			<key>text</key>
+			<string>||:Kar-ne-völHURRA!om-bom-bom-bom-bom-bom-bom-bom-bom- bom-bom-bom-bom :||</string>
+			<key>img</key>
+			<string>öl.png</string>
+			<key>win</key>
+			<string>vinnare.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Inga kalla pilsner</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Vår på saltkråkan (nu är våren kommen)</string>
+			<key>text</key>
+			<string>I en snar framtid när vi har förstört vår miljöHur ska vi svalka oss när det inte kommer nån snö?Inga kalla pilsner Inga kalla pilsnertur att ljummen karnevöl är JÄTTEGOTT!</string>
+			<key>img</key>
+			<string>öl.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Du är min öl</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Du är min man </string>
+			<key>text</key>
+			<string>Du är min öl!</string>
+			<key>img</key>
+			<string>öl.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Mammas goda råd</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: En kulen natt</string>
+			<key>text</key>
+			<string>När jag fyllt arton år, fick jag av mamma,en massa goda råd och tips, som jag anamma.Det bästa råd-eli-rådet va’, När kära morsan min hon sa“När flaskan din gått i sin, sin, sin Så ät gul snö – det kan va’ öl!”</string>
+			<key>img</key>
+			<string>öl.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Utbildning utan framtid eller “Konsten att strula till ett liv”</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Nu har vi ljus här i vårt hus </string>
+			<key>text</key>
+			<string>Svenskt Näringsliv på offensiv skrev: “Inget CSN för tidsfördriv!”Tanken nog god, men jag förstod inte ett ordVad är till exempel “genomströmning”? Är det drickans väg till blåsans tömning?Får jag svaren ifall jag tar en öl till i anställningsbaren?</string>
+			<key>img</key>
+			<string>öl.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>När åren gått</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Auld Lang syne</string>
+			<key>text</key>
+			<string>När åren gått och tiden flytt Ifrån oss i denna salNär vi minns våran tid i Lund Ja, då minns vi karneval!Jag vet det låter deppigt men Låt oss glömma alla kvalFör skålen efter denna sång Den är ännu futural!</string>
+			<key>img</key>
+			<string>not.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Varning för fest</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Diggiloo, Diggiley Diggiloo, Diggiley</string>
+			<key>text</key>
+			<string>Alla tittar på mignär jag går här i min varselväst Men jag vill ju bara varnahela välden för fest!</string>
+			<key>img</key>
+			<string>not.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Preventiva visan</string>
+			<key>isWinner</key>
+			<false/>
+			<key>melodi</key>
+			<string>Melodi: Blåsippan ute i backarna står</string>
+			<key>text</key>
+			<string>När åren gått och tiden flytt Ifrån oss i denna salNär vi minns våran tid i Lund Ja, då minns vi karneval!Jag vet det låter deppigt men Låt oss glömma alla kvalFör skålen efter denna sång Den är ännu futural!</string>
+			<key>img</key>
+			<string>not.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tempus futurum</string>
+			<key>isWinner</key>
+			<true/>
+			<key>melodi</key>
+			<string>Melodi: Temperaturen är hög uti kroppen</string>
+			<key>text</key>
+			<string>Tempus futurum är det som ska hända Presens är något som händer just nuPerfekt är något som redan har varit Här i vårt presens vi sjunger just nu:Tempus futurum Presens och perfektTempus futurum Presens perfektTempus futurum drack dricka druckit Det kan va’ roligt att kröka ett verb!Melodi: Temperaturen är hög uti kroppen </string>
+			<key>img</key>
+			<string>not.png</string>
+			<key>win</key>
+			<string>vinnare.png</string>
+		</dict>
+	</array>
+</dict>
+</plist>
