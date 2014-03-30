@@ -165,7 +165,7 @@
     } else {
         [self.playPauseButton setImage:[UIImage imageNamed:@"PauseButton"] forState:UIControlStateNormal];
         [self.player play];
-        
+        self.rowCount = 0;
     }
     
 }
