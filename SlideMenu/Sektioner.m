@@ -14,24 +14,35 @@
 
 @implementation Sektioner
 
-+(NSArray *)sektioner {
+-(Sektioner *)initWithDictionary:(NSDictionary *)dict {
+    self = [super init];
     
-    NSMutableArray *sektioner = [[NSMutableArray alloc] init];
+    if (self) {
+        self.name = [dict objectForKey:@"name"];
+        self.answer1 = [dict objectForKey:@"answer1"];
+        self.answer2 = [dict objectForKey:@"answer2"];
+        self.answer3 = [dict objectForKey:@"answer3"];
+        self.answer4 = [dict objectForKey:@"answer4"];
+        self.img = [dict objectForKey:@"img"];
+    }
+    
+    return self;
+}
+
++(NSDictionary *)sektioner {
+    
+    NSMutableDictionary *sektioner = [[NSMutableDictionary alloc] init];
+    
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"sektioner" ofType:@"plist"];
     
-    NSDictionary *temp = [NSDictionary dictionaryWithContentsOfFile:plistPath];
-    NSArray *tempSektioner = [temp objectForKey:@"sektioner"];
+    NSDictionary *dictionaryFromPlist = [NSDictionary dictionaryWithContentsOfFile:plistPath][@"sektioner"];
     
-    for (id obj in tempSektioner) {
-        Sektioner *sektion = [[Sektioner alloc] init];
-        sektion.name = [obj objectForKey:@"name"];
-        sektion.answer1 = [obj objectForKey:@"answer1"];
-        sektion.answer2 = [obj objectForKey:@"answer2"];
-        sektion.answer3 = [obj objectForKey:@"answer3"];
-        sektion.answer4 = [obj objectForKey:@"answer4"];
-        sektion.img = [obj objectForKey:@"img"];
-        
-        [sektioner addObject:sektion];
+    NSEnumerator *enumerator = [dictionaryFromPlist keyEnumerator];
+    id key;
+    while ((key = [enumerator nextObject])) {
+        NSDictionary *tmp = [dictionaryFromPlist objectForKey:key];
+        Sektioner *sektion = [[Sektioner alloc] initWithDictionary:tmp];
+        [sektioner setObject:sektion forKey:key];
     }
     
     return [sektioner copy];

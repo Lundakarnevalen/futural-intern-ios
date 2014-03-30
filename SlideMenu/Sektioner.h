@@ -17,7 +17,7 @@
 @property NSString *answer4;
 @property NSString *img;
 
-
-+(NSArray *)sektioner;
+-(Sektioner *)initWithDictionary:(NSDictionary *)dict;
++(NSDictionary *)sektioner;
 
 @end

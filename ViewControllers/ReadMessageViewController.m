@@ -20,7 +20,7 @@
     self.title = self.currentMessage.title;
     [self.header setText:self.currentMessage.title];
     
-    Sektioner *sektion = [[Sektioner sektioner] objectAtIndex:self.currentMessage.recipientId];
+    Sektioner *sektion = [[Sektioner sektioner] objectForKey:[NSString stringWithFormat:@"%d", (int) self.currentMessage.recipientId]];
     self.sektionLabel.text = sektion.name;
     self.sektionImageView.image = [UIImage imageNamed:sektion.img];
     

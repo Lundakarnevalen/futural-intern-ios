@@ -5,7 +5,8 @@
 	<key>title</key>
 	<string>Richard</string>
 	<key>sektioner</key>
-	<array>
+	<dict>
+		<key>0</key>
 		<dict>
 			<key>name</key>
 			<string>Alla</string>
@@ -20,6 +21,7 @@
 			<key>img</key>
 			<string>barnevalen.png</string>
 		</dict>
+		<key>1</key>
 		<dict>
 			<key>name</key>
 			<string>Barnevalen</string>
@@ -34,6 +36,7 @@
 			<key>img</key>
 			<string>barnevalen.png</string>
 		</dict>
+		<key>2</key>
 		<dict>
 			<key>name</key>
 			<string>Biljetteriet</string>
@@ -48,6 +51,7 @@
 			<key>img</key>
 			<string>biljetteriet.png</string>
 		</dict>
+		<key>3</key>
 		<dict>
 			<key>name</key>
 			<string>Blädderiet</string>
@@ -62,6 +66,7 @@
 			<key>img</key>
 			<string>bladderiet.png</string>
 		</dict>
+		<key>4</key>
 		<dict>
 			<key>name</key>
 			<string>Cirkusen</string>
@@ -76,6 +81,7 @@
 			<key>img</key>
 			<string>cirkusen.png</string>
 		</dict>
+		<key>5</key>
 		<dict>
 			<key>name</key>
 			<string>Dansen</string>
@@ -90,6 +96,7 @@
 			<key>img</key>
 			<string>dansen.png</string>
 		</dict>
+		<key>6</key>
 		<dict>
 			<key>name</key>
 			<string>Ekonomi</string>
@@ -104,6 +111,7 @@
 			<key>img</key>
 			<string>ekonomi.png</string>
 		</dict>
+		<key>7</key>
 		<dict>
 			<key>name</key>
 			<string>Fabriken</string>
@@ -118,6 +126,7 @@
 			<key>img</key>
 			<string>fabriken.png</string>
 		</dict>
+		<key>8</key>
 		<dict>
 			<key>name</key>
 			<string>Festmästeriet</string>
@@ -132,6 +141,7 @@
 			<key>img</key>
 			<string>festmasteriet.png</string>
 		</dict>
+		<key>9</key>
 		<dict>
 			<key>name</key>
 			<string>Filmen</string>
@@ -146,6 +156,7 @@
 			<key>img</key>
 			<string>filmen.png</string>
 		</dict>
+		<key>10</key>
 		<dict>
 			<key>name</key>
 			<string>Kabarén</string>
@@ -160,6 +171,7 @@
 			<key>img</key>
 			<string>kabaren.png</string>
 		</dict>
+		<key>11</key>
 		<dict>
 			<key>name</key>
 			<string>Klipperiet</string>
@@ -174,6 +186,7 @@
 			<key>img</key>
 			<string>klipperiet.png</string>
 		</dict>
+		<key>12</key>
 		<dict>
 			<key>name</key>
 			<string>Kommunikation</string>
@@ -188,6 +201,7 @@
 			<key>img</key>
 			<string>kommunikation.png</string>
 		</dict>
+		<key>13</key>
 		<dict>
 			<key>name</key>
 			<string>Krog Fine dine</string>
@@ -202,6 +216,7 @@
 			<key>img</key>
 			<string>krog.png</string>
 		</dict>
+		<key>14</key>
 		<dict>
 			<key>name</key>
 			<string>Krog l[a]unchingpad</string>
@@ -216,6 +231,7 @@
 			<key>img</key>
 			<string>krog.png</string>
 		</dict>
+		<key>15</key>
 		<dict>
 			<key>name</key>
 			<string>Krog Molnet</string>
@@ -230,6 +246,7 @@
 			<key>img</key>
 			<string>krog.png</string>
 		</dict>
+		<key>16</key>
 		<dict>
 			<key>name</key>
 			<string>Krog Nangilima</string>
@@ -244,6 +261,7 @@
 			<key>img</key>
 			<string>krog.png</string>
 		</dict>
+		<key>17</key>
 		<dict>
 			<key>name</key>
 			<string>Krog Undervatten</string>
@@ -258,6 +276,7 @@
 			<key>img</key>
 			<string>krog.png</string>
 		</dict>
+		<key>18</key>
 		<dict>
 			<key>name</key>
 			<string>Musik</string>
@@ -272,6 +291,7 @@
 			<key>img</key>
 			<string>musiken.png</string>
 		</dict>
+		<key>19</key>
 		<dict>
 			<key>name</key>
 			<string>Nöjen</string>
@@ -286,6 +306,7 @@
 			<key>img</key>
 			<string>nojen.png</string>
 		</dict>
+		<key>20</key>
 		<dict>
 			<key>name</key>
 			<string>Område</string>
@@ -300,6 +321,7 @@
 			<key>img</key>
 			<string>omrade</string>
 		</dict>
+		<key>21</key>
 		<dict>
 			<key>name</key>
 			<string>Radio</string>
@@ -314,6 +336,7 @@
 			<key>img</key>
 			<string>radio.png</string>
 		</dict>
+		<key>22</key>
 		<dict>
 			<key>name</key>
 			<string>Revy</string>
@@ -328,6 +351,7 @@
 			<key>img</key>
 			<string>revyn.png</string>
 		</dict>
+		<key>23</key>
 		<dict>
 			<key>name</key>
 			<string>Säkerhet</string>
@@ -342,6 +366,7 @@
 			<key>img</key>
 			<string>sakerhet.png</string>
 		</dict>
+		<key>24</key>
 		<dict>
 			<key>name</key>
 			<string>Shoppen</string>
@@ -356,6 +381,7 @@
 			<key>img</key>
 			<string>shoppen.png</string>
 		</dict>
+		<key>25</key>
 		<dict>
 			<key>name</key>
 			<string>Show</string>
@@ -370,6 +396,7 @@
 			<key>img</key>
 			<string>show.png</string>
 		</dict>
+		<key>26</key>
 		<dict>
 			<key>name</key>
 			<string>Smånöjen</string>
@@ -384,6 +411,7 @@
 			<key>img</key>
 			<string>smanojen.png</string>
 		</dict>
+		<key>27</key>
 		<dict>
 			<key>name</key>
 			<string>Snaxeriet</string>
@@ -398,6 +426,7 @@
 			<key>img</key>
 			<string>snaxeriet.png</string>
 		</dict>
+		<key>28</key>
 		<dict>
 			<key>name</key>
 			<string>Spexet</string>
@@ -412,6 +441,7 @@
 			<key>img</key>
 			<string>spexet.png</string>
 		</dict>
+		<key>29</key>
 		<dict>
 			<key>name</key>
 			<string>Tåget</string>
@@ -426,6 +456,7 @@
 			<key>img</key>
 			<string>tag.png</string>
 		</dict>
+		<key>30</key>
 		<dict>
 			<key>name</key>
 			<string>Tältnöje</string>
@@ -440,6 +471,7 @@
 			<key>img</key>
 			<string>nojen.png</string>
 		</dict>
+		<key>31</key>
 		<dict>
 			<key>name</key>
 			<string>Tombolan</string>
@@ -454,6 +486,7 @@
 			<key>img</key>
 			<string>tombolan.png</string>
 		</dict>
+		<key>32</key>
 		<dict>
 			<key>name</key>
 			<string>Vieriet</string>
@@ -468,6 +501,6 @@
 			<key>img</key>
 			<string>vieriet.png</string>
 		</dict>
-	</array>
+	</dict>
 </dict>
 </plist>

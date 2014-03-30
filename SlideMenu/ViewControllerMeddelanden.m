@@ -198,7 +198,7 @@
     UIImageView *imageView = (UIImageView *)[[cell contentView] viewWithTag:TAG_IMAGE];
     
     headerLabel.text = [message.title uppercaseString];
-    Sektioner *sektion = [[Sektioner sektioner] objectAtIndex:message.recipientId];
+    Sektioner *sektion = [[Sektioner sektioner] objectForKey:[NSString stringWithFormat:@"%d", (int) message.recipientId]];
     sektionerLabel.text = [sektion.name uppercaseString];
     subheaderLabel.text = message.message;
     dateLabel.text = [message dateAsHumanReadableString];

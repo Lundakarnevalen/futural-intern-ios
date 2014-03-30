@@ -17,14 +17,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7AP-dG-LvZ">
-                                <rect key="frame" x="20" y="507" width="280" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.75686274509999996" green="0.82745098039999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="69E-rC-aPr">
                                 <rect key="frame" x="20" y="75" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -60,7 +52,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cityNameLabel" destination="WlA-T1-344" id="frX-We-dEy"/>
-                        <outlet property="numberOfKarnevalistLabel" destination="7AP-dG-LvZ" id="GHw-W4-nS2"/>
                         <outlet property="statusLabel" destination="69E-rC-aPr" id="SMk-Er-jvb"/>
                     </connections>
                 </viewController>
@@ -607,7 +598,7 @@
     <resources>
         <image name="Moln" width="363" height="182"/>
         <image name="Raket.png" width="787" height="438"/>
-        <image name="map" width="1080" height="1669"/>
+        <image name="map" width="443" height="304"/>
         <image name="menuButton.png" width="34" height="24"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

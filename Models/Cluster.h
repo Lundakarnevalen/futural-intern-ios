@@ -13,9 +13,12 @@
 
 @property (nonatomic) CLLocation *position;
 @property (nonatomic) NSString *identifier;
+@property (nonatomic) NSInteger *quantity;
+
 
 - (Cluster *)initWithIdentifier:(NSString *)identifier andPositionOf:(CLLocation *)location;
 - (Cluster *)initWithStoredIdentifier; //fetches the cluster-id from NSUserDefaults
+- (Cluster *)initWithDictionary:(NSDictionary *)cluster;
 
 - (void)destoryIdentifier;
 - (BOOL)isAvailable;

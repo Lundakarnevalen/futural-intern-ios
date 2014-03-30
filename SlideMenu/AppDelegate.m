@@ -57,13 +57,31 @@
     
 }
 
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    
+    NSString *title = [userInfo[@"aps"] objectForKey:@"alert"];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
+                                                        message:@"Du har fått ett nytt meddelande"  delegate:self
+                                              cancelButtonTitle:@"Avbryt"
+                                              otherButtonTitles:@"Öppna", nil];
+    [alertView show];
+    
+}
+
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     
     NSLog(@"Went to Background");
     // Only monitor significant changes
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy'-'MM'-'dd' 'HH':'mm"];
     
-    [self.locationManager stopMonitoringSignificantLocationChanges];
-    [self.locationManager startMonitoringSignificantLocationChanges];
+    NSDate *today = [NSDate date];
+    NSDate *tidningsdagen = [formatter dateFromString:@"2014-04-12 23:59"];
+    
+    if ([today compare:tidningsdagen] == NSOrderedAscending) {
+        [self.locationManager stopMonitoringSignificantLocationChanges];
+        [self.locationManager startMonitoringSignificantLocationChanges];
+    }
     
 }
 
@@ -71,13 +89,29 @@
     
     NSLog(@"Did become active.");
     // Start location services
-    if (!self.locationManager) self.locationManager = [[CLLocationManager alloc] init];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy'-'MM'-'dd' 'HH':'mm"];
+    
+    NSDate *today = [NSDate date];
+    NSDate *tidningsdagen = [formatter dateFromString:@"2014-04-12 23:59"];
+    
+    if ([today compare:tidningsdagen] == NSOrderedAscending) {
+        if (!self.locationManager) self.locationManager = [[CLLocationManager alloc] init];
+    }
 }
 
 -(void)startLocationManager {
-    if ([CLLocationManager locationServicesEnabled]) {
-        [self.locationManager stopMonitoringSignificantLocationChanges];
-        [self.locationManager startMonitoringSignificantLocationChanges];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy'-'MM'-'dd' 'HH':'mm"];
+    
+    NSDate *today = [NSDate date];
+    NSDate *tidningsdagen = [formatter dateFromString:@"2014-04-12 23:59"];
+    
+    if ([today compare:tidningsdagen] == NSOrderedAscending) {
+        if ([CLLocationManager locationServicesEnabled]) {
+            [self.locationManager stopMonitoringSignificantLocationChanges];
+            [self.locationManager startMonitoringSignificantLocationChanges];
+        }
     }
 }
 

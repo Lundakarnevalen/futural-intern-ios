@@ -32,7 +32,7 @@
     plistPath = [[NSBundle mainBundle] pathForResource:@"sektioner" ofType:@"plist"];
     
     NSDictionary *temp = [NSDictionary dictionaryWithContentsOfFile:plistPath];
-    NSArray *tempSektioner = [temp objectForKey:@"sektioner"];
+    NSDictionary *tempSektioner = [temp objectForKey:@"sektioner"];
     self.sektioner = [[NSMutableArray alloc] init];
     
     for (id obj in tempSektioner) {

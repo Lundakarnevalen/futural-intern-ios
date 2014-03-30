@@ -29,7 +29,18 @@
     [super viewDidLoad];
     
     self.tableView.scrollsToTop = NO; //if set to YES (default) the subviews won't respond to the statusbar-tap.
-    self.menu = [NSArray arrayWithObjects: @"Start", @"Inkorg", @"Karta" , @"Logga in", nil];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy'-'MM'-'dd' 'HH':'mm"];
+    
+    NSDate *today = [NSDate date];
+    NSDate *tidningsdagen = [formatter dateFromString:@"2014-04-12 23:59"];
+    
+    if ([today compare:tidningsdagen] == NSOrderedDescending) {
+        self.menu = [NSArray arrayWithObjects: @"Start", @"Inkorg", nil];
+    } else {
+        self.menu = [NSArray arrayWithObjects: @"Start", @"Inkorg", @"Karta", nil];
+    }
     
     /*cache the first view as well*/
     [self cacheStoryboard:self.storyboard withIdentifier:[self.menu firstObject]];
@@ -41,7 +52,7 @@
     NSDictionary *karnevalist = [[NSUserDefaults standardUserDefaults] valueForKey:@"karnevalist"];
     self.nameLabel.text = [[karnevalist[@"fornamn"] stringByAppendingString:[@" " stringByAppendingString:karnevalist[@"efternamn"]]] uppercaseString];
     
-    Sektioner *sektion = [[Sektioner sektioner] objectAtIndex:[karnevalist[@"tilldelad_sektion"] integerValue]];
+    Sektioner *sektion = [[Sektioner sektioner] objectForKey:[NSString stringWithFormat:@"%d", [karnevalist[@"tilldelad_sektion"] integerValue]]];
     self.profileImageView.image = [UIImage imageNamed:sektion.img];
     
 }

@@ -41,6 +41,18 @@
     
 }
 
+-(Cluster *)initWithDictionary:(NSDictionary *)cluster {
+    self = [super init];
+    
+    if (self) {
+        self.identifier = cluster[@"id"];
+        CLLocation *location = [[CLLocation alloc] initWithLatitude:[cluster[@"lat"] floatValue] longitude:[cluster[@"lng"] floatValue]];
+        self.position = location;
+        self.quantity = [cluster[@"quantity"] integerValue];
+    }
+    
+    return self;
+}
 - (void)setStoredIdentifier {
     
     NSString *storedIdentifier = [self getStoredIdentifier];

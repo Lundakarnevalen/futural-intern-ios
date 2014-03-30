@@ -18,10 +18,12 @@
 #import "FuturalAPI.h"
 
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
+#import "MapPin.h"
 
 @interface MapViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *numberOfKarnevalistLabel;
-@property (strong, nonatomic) NSArray *clusters;
+@property (strong, nonatomic) NSMutableArray *clusters;
 @property (strong, nonatomic) NSMutableArray *cityCircles;
 
 @property (weak, nonatomic) IBOutlet UILabel *cityNameLabel;
@@ -30,6 +32,7 @@
 
 @property (nonatomic) FuturalAPI *api;
 @property (nonatomic) NSMutableData *dataQueue;
+@property (weak, nonatomic) IBOutlet MKMapView *MapView;
 
 @end
 
@@ -50,10 +53,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSMutableArray *clusters = [[NSMutableArray alloc] init];
+    self.MapView.region = MKCoordinateRegionMake(
+                                                 CLLocationCoordinate2DMake(55.924332668033337, 13.551104518235233),
+                                                 MKCoordinateSpanMake(1.2522221323685514, 2.0859175922040549));
+    //self.MapView
+    
+    //(latitude = 55.924332668033337, longitude = 13.551104518235233)
+    //(latitudeDelta = 1.2522221323685514, longitudeDelta = 2.0859175922040549)
     
     [(AppDelegate *)[[UIApplication sharedApplication] delegate] startLocationManager];
     
     [self initClusters];
+    [self.api fetchMapCoordinates];
+    
+    UIApplication* app = [UIApplication sharedApplication];
+    app.networkActivityIndicatorVisible = YES;
     
     //[self loadClusters];
     
@@ -78,11 +93,6 @@
 //    [self loadCities];
     
     //[self.api fetchLocations];
-}
-
--(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    
 }
 
 #pragma mark - cluster
@@ -206,6 +216,9 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     
+    UIApplication* app = [UIApplication sharedApplication];
+    app.networkActivityIndicatorVisible = NO;
+    
     //[self.activitySpinner stopAnimating];
     
     id parsedData = [[self.api class] parseJSONData:self.dataQueue];
@@ -215,8 +228,31 @@
         
         parsedData = (NSDictionary *)parsedData;
         
-        //if(parsedData[@"notifications"]) { //check if it's the push messages that is being requested.
+        if(parsedData[@"clusters"]) { //check if it's the push messages that is being requested.
+         
+            int numberOfKarnevalister = 0;
             
+            NSString *jsonString = parsedData[@"clusters"];
+            NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+            NSError *jsonError = nil;
+            
+            NSArray *clusters = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&jsonError];
+            
+            for (NSDictionary *dictionary_cluster in clusters) {
+                Cluster *cluster = [[Cluster alloc] initWithDictionary:dictionary_cluster];
+                [self.clusters addObject:cluster];
+                MKPointAnnotation *pin = [[MKPointAnnotation alloc] init];
+                //MapPin *pin = [[MapPin alloc] initWithTitle:[NSString stringWithFormat:@"%d", (int) cluster.quantity] location:[cluster.position coordinate]];
+                pin.coordinate = [cluster.position coordinate];
+                pin.title = [NSString stringWithFormat:@"Antal karnevalister: %d", (int) cluster.quantity];
+                [self.MapView addAnnotation:pin];
+                numberOfKarnevalister += (int) cluster.quantity;
+            }
+            
+            self.numberOfKarnevalistLabel.text = [NSString stringWithFormat:@"%d", (int) numberOfKarnevalister];
+        }
+        
+        
             //for(NSDictionary *notification in parsedData[@"notifications"]) {
                 
                 //Message *message = [[Message alloc] initWithDictionary:notification];
@@ -228,6 +264,25 @@
             
         //}
         
+    }
+    
+}
+
+-(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+    if ([annotation isKindOfClass:[MapPin class]]) {
+        MapPin *myLocation = (MapPin *)annotation;
+        
+        MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:@"MapPin"];
+        
+        if (annotationView == nil) {
+            annotationView = myLocation.annotationView;
+        } else {
+            annotationView.annotation = annotation;
+        }
+        
+        return annotationView;
+    } else {
+        return nil;
     }
     
 }

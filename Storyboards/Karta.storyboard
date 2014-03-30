@@ -21,21 +21,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAR ÄR KARNEVALISTERNA JUST NU?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="235" translatesAutoresizingMaskIntoConstraints="NO" id="CPw-Bm-9Yt" customClass="UILabel_CustomFont">
-                                <rect key="frame" x="43" y="84" width="235" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="235" id="M9n-tG-nIE"/>
-                                    <constraint firstAttribute="height" constant="44" id="bQ1-bO-sjc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
-                                </userDefinedRuntimeAttributes>
-                            </label>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XiM-sH-Wba">
                                 <rect key="frame" x="0.0" y="127" width="320" height="364"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -52,9 +37,15 @@
                                             <outletCollection property="gestureRecognizers" destination="ZdP-eK-NY0" appends="YES" id="O5z-g4-ngI"/>
                                         </connections>
                                     </imageView>
+                                    <mapView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gA9-PY-2Rv">
+                                        <rect key="frame" x="20" y="31" width="280" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    </mapView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="7i2-F2-7dB"/>
+                                    <constraint firstItem="gA9-PY-2Rv" firstAttribute="centerX" secondItem="pmY-Fd-siU" secondAttribute="centerX" id="Jey-Da-3yF"/>
+                                    <constraint firstItem="gA9-PY-2Rv" firstAttribute="centerY" secondItem="pmY-Fd-siU" secondAttribute="centerY" id="LCv-4N-Feg"/>
                                     <constraint firstAttribute="centerX" secondItem="pmY-Fd-siU" secondAttribute="centerX" id="gRB-Z2-VrF"/>
                                     <constraint firstAttribute="centerY" secondItem="pmY-Fd-siU" secondAttribute="centerY" constant="1.5" id="xM8-w1-Cfk"/>
                                 </constraints>
@@ -73,8 +64,8 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2562" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWM-ZC-4qz" customClass="UILabel_CustomFont">
-                                        <rect key="frame" x="29" y="-3" width="93" height="48"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWM-ZC-4qz" customClass="UILabel_CustomFont">
+                                        <rect key="frame" x="20" y="-3" width="110" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -90,6 +81,21 @@
                                     <constraint firstAttribute="height" constant="58" id="wFp-QZ-EEn"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAR ÄR KARNEVALISTERNA JUST NU?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="235" translatesAutoresizingMaskIntoConstraints="NO" id="CPw-Bm-9Yt" customClass="UILabel_CustomFont">
+                                <rect key="frame" x="43" y="84" width="235" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="M9n-tG-nIE"/>
+                                    <constraint firstAttribute="height" constant="44" id="bQ1-bO-sjc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C7g-3I-Haa">
                                 <rect key="frame" x="43" y="128" width="235" height="3"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -119,14 +125,16 @@
                                 <action selector="revealMenu:" destination="Xkq-mx-qq4" id="3nA-wa-Q3T"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="INFO" id="z6j-aW-L0T">
+                        <barButtonItem key="rightBarButtonItem" image="Information" id="z6j-aW-L0T">
                             <connections>
                                 <segue destination="a85-bo-q02" kind="push" id="3w9-xr-ALs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="MapView" destination="gA9-PY-2Rv" id="w5c-Jp-F3V"/>
                         <outlet property="kartaImageView" destination="pmY-Fd-siU" id="xTd-UQ-LVg"/>
+                        <outlet property="numberOfKarnevalistLabel" destination="WWM-ZC-4qz" id="cFd-WM-NRv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUY-tw-y3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -421,6 +429,7 @@ Lundakarnevalen är alltså en stor och speciell händelse som går av stapeln b
         </scene>
     </scenes>
     <resources>
+        <image name="Information" width="25" height="25"/>
         <image name="MenuButton" width="25" height="15"/>
         <image name="Skane" width="1007" height="1011"/>
         <image name="Waves" width="1080" height="1669"/>
