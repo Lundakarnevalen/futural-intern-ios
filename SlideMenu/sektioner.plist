@@ -6,6 +6,69 @@
 	<string>Richard</string>
 	<key>sektioner</key>
 	<dict>
+		<key>29</key>
+		<dict>
+			<key>name</key>
+			<string>Råd</string>
+			<key>img</key>
+			<string>rad</string>
+		</dict>
+		<key>999</key>
+		<dict>
+			<key>img</key>
+			<string>general</string>
+			<key>name</key>
+			<string>General</string>
+		</dict>
+		<key>499</key>
+		<dict>
+			<key>img</key>
+			<string>nojen.png</string>
+			<key>name</key>
+			<string>Tältnöjen - Centralt</string>
+		</dict>
+		<key>399</key>
+		<dict>
+			<key>img</key>
+			<string>tag.png</string>
+			<key>name</key>
+			<string>Tåget - Centralt</string>
+		</dict>
+		<key>204</key>
+		<dict>
+			<key>img</key>
+			<string>smanojen.png</string>
+			<key>name</key>
+			<string>Smånöjena - FuturalFuneral</string>
+		</dict>
+		<key>203</key>
+		<dict>
+			<key>img</key>
+			<string>smanojen.png</string>
+			<key>name</key>
+			<string>Smånöjena - Sketcetera</string>
+		</dict>
+		<key>199</key>
+		<dict>
+			<key>img</key>
+			<string>festmasteriet.png</string>
+			<key>name</key>
+			<string>Festmästeriet - Centralt</string>
+		</dict>
+		<key>102</key>
+		<dict>
+			<key>img</key>
+			<string>festmasteriet.png</string>
+			<key>name</key>
+			<string>Festmästeriet - Lager</string>
+		</dict>
+		<key>101</key>
+		<dict>
+			<key>img</key>
+			<string>festmasteriet.png</string>
+			<key>name</key>
+			<string>Festmästeriet - VIP</string>
+		</dict>
 		<key>0</key>
 		<dict>
 			<key>name</key>
@@ -111,7 +174,7 @@
 			<key>img</key>
 			<string>ekonomi.png</string>
 		</dict>
-		<key>7</key>
+		<key>8</key>
 		<dict>
 			<key>name</key>
 			<string>Fabriken</string>
@@ -126,10 +189,10 @@
 			<key>img</key>
 			<string>fabriken.png</string>
 		</dict>
-		<key>8</key>
+		<key>100</key>
 		<dict>
 			<key>name</key>
-			<string>Festmästeriet</string>
+			<string>Festmästeriet - Bamba</string>
 			<key>answer1</key>
 			<string>Festmästeriet är en mångfacetterad sektion då vi kommer syssla med flera olika delar men gemensamt är att centralt, både organisatoriskt och fysiskt, ansvara för mat och dryck till hela Lundakarnevalen 2014. Mer specifikt är vår sektion uppdelad på tre olika delar vilka är; Karnevalslagret, Vippen och Bamban. Lagret huserar i källaren på AF-borgen och kommer pyssla med kontakt med leverantörer, beställningar, logistik och lagerhållning av karnevalens 2000000 burkar Karnevöl, 12 ton mat och otaliga mängder förbrukningsmaterial.Vippen är ett mysigt gryt för gamla karnevalsrävar, sponsorer och samarbetspartners. I Festvåningen på AF kommer mat och dryck av hög kvalitét serveras på vita linnedukar med kandelabrar för att visa uppskattning till några av de personerna som gör karnevalen möjlig. Till sin hjälp finns Tegnérs kök och cirka 100 eldsjälar som i dagligt tal kallas karnevalister. Bamban är karnevalisternas eget vattenhål, fas med mat. Som en klassisk skolmatsal i karnevalistisk tappning kommer Källarsalen med tillhörande kök att vara Bambans hemvist där runt 800 portioner per dag ska mätta vakter, poliser och ett gäng sektioners karnevalister.</string>
 			<key>answer2</key>
@@ -141,7 +204,7 @@
 			<key>img</key>
 			<string>festmasteriet.png</string>
 		</dict>
-		<key>9</key>
+		<key>27</key>
 		<dict>
 			<key>name</key>
 			<string>Filmen</string>
@@ -156,7 +219,7 @@
 			<key>img</key>
 			<string>filmen.png</string>
 		</dict>
-		<key>10</key>
+		<key>7</key>
 		<dict>
 			<key>name</key>
 			<string>Kabarén</string>
@@ -171,7 +234,7 @@
 			<key>img</key>
 			<string>kabaren.png</string>
 		</dict>
-		<key>11</key>
+		<key>9</key>
 		<dict>
 			<key>name</key>
 			<string>Klipperiet</string>
@@ -186,7 +249,7 @@
 			<key>img</key>
 			<string>klipperiet.png</string>
 		</dict>
-		<key>12</key>
+		<key>10</key>
 		<dict>
 			<key>name</key>
 			<string>Kommunikation</string>
@@ -201,7 +264,7 @@
 			<key>img</key>
 			<string>kommunikation.png</string>
 		</dict>
-		<key>13</key>
+		<key>11</key>
 		<dict>
 			<key>name</key>
 			<string>Krog Fine dine</string>
@@ -216,7 +279,7 @@
 			<key>img</key>
 			<string>krog.png</string>
 		</dict>
-		<key>14</key>
+		<key>12</key>
 		<dict>
 			<key>name</key>
 			<string>Krog l[a]unchingpad</string>
@@ -231,7 +294,7 @@
 			<key>img</key>
 			<string>krog.png</string>
 		</dict>
-		<key>15</key>
+		<key>13</key>
 		<dict>
 			<key>name</key>
 			<string>Krog Molnet</string>
@@ -246,7 +309,7 @@
 			<key>img</key>
 			<string>krog.png</string>
 		</dict>
-		<key>16</key>
+		<key>14</key>
 		<dict>
 			<key>name</key>
 			<string>Krog Nangilima</string>
@@ -261,7 +324,7 @@
 			<key>img</key>
 			<string>krog.png</string>
 		</dict>
-		<key>17</key>
+		<key>15</key>
 		<dict>
 			<key>name</key>
 			<string>Krog Undervatten</string>
@@ -276,10 +339,10 @@
 			<key>img</key>
 			<string>krog.png</string>
 		</dict>
-		<key>18</key>
+		<key>17</key>
 		<dict>
 			<key>name</key>
-			<string>Musik</string>
+			<string>Musiken</string>
 			<key>answer1</key>
 			<string>Musiksektionen ser till att det alltid strömmar ljuv musik ifrån olika platser på Karnevalsområdet och framförallt ifrån Stora Scenen framför universitetshuset. Vi har hand om alla artister som kommer för att uppträda under dagarna men även scenerna dem uppträder ifrån.</string>
 			<key>answer2</key>
@@ -291,7 +354,7 @@
 			<key>img</key>
 			<string>musiken.png</string>
 		</dict>
-		<key>19</key>
+		<key>28</key>
 		<dict>
 			<key>name</key>
 			<string>Nöjen</string>
@@ -306,10 +369,10 @@
 			<key>img</key>
 			<string>nojen.png</string>
 		</dict>
-		<key>20</key>
+		<key>16</key>
 		<dict>
 			<key>name</key>
-			<string>Område</string>
+			<string>Området</string>
 			<key>answer1</key>
 			<string>Områdets uppgift är att planera och bygga upp karnevalsområdet med tält, entréer,el, vatten, toaletter, internet och allt annat som krävs för att karnevalen ska fungera. Sektionen är även ansvarig för att dekorera området och med utgång från temat få det att andas karneval.</string>
 			<key>answer2</key>
@@ -321,10 +384,10 @@
 			<key>img</key>
 			<string>omrade</string>
 		</dict>
-		<key>21</key>
+		<key>18</key>
 		<dict>
 			<key>name</key>
-			<string>Radio</string>
+			<string>Radion</string>
 			<key>answer1</key>
 			<string>Karnevalsradion kommer att sända live, via FM och webb och videostream, dygnet runt under karnevalsdagarna. Denna maratonsändning kommer att ske från en glasbur på karnevalsområdet och därifrån fyller vi timmarna med prat, musik, intervjuer och allt vad vi vill! Under våren kommer vi även att sända ett program i veckan på Radio AF där vi taggar inför karneval!</string>
 			<key>answer2</key>
@@ -336,10 +399,10 @@
 			<key>img</key>
 			<string>radio.png</string>
 		</dict>
-		<key>22</key>
+		<key>19</key>
 		<dict>
 			<key>name</key>
-			<string>Revy</string>
+			<string>Revyn</string>
 			<key>answer1</key>
 			<string>Vi i Revyn ska sätta upp en humoristiskt, sketch-baserad 45-minuters föreställning som ska visas löpande i Universitetsaulan under karnevalsdagarna. Detta spektakel ska förberedas under cirka fyra veckor.</string>
 			<key>answer2</key>
@@ -351,7 +414,7 @@
 			<key>img</key>
 			<string>revyn.png</string>
 		</dict>
-		<key>23</key>
+		<key>24</key>
 		<dict>
 			<key>name</key>
 			<string>Säkerhet</string>
@@ -366,7 +429,7 @@
 			<key>img</key>
 			<string>sakerhet.png</string>
 		</dict>
-		<key>24</key>
+		<key>20</key>
 		<dict>
 			<key>name</key>
 			<string>Shoppen</string>
@@ -381,10 +444,10 @@
 			<key>img</key>
 			<string>shoppen.png</string>
 		</dict>
-		<key>25</key>
+		<key>21</key>
 		<dict>
 			<key>name</key>
-			<string>Show</string>
+			<string>Showen</string>
 			<key>answer1</key>
 			<string>Vi ska göra världens bästa karnevalsshow! Showen är en av 6 stora nöjesföreställningar i karnevalen, och kommer att spelas i Tegnérs Matsalar. Med charm, god mat och musikalisk finess ska vi bjuda publiken på en föreställning utöver det vanliga – och ha en underbar vår tillsammans på vägen! Oförglömligt för alla!</string>
 			<key>answer2</key>
@@ -396,10 +459,10 @@
 			<key>img</key>
 			<string>show.png</string>
 		</dict>
-		<key>26</key>
+		<key>202</key>
 		<dict>
 			<key>name</key>
-			<string>Smånöjen</string>
+			<string>Smånöjena - Undergången</string>
 			<key>answer1</key>
 			<string>På karnevalsområdet kommer det att finnas tre stycken Smånöjen som ligger under Nöjessektionen. Smånöjenas uppgift är att skapa knasiga, härliga, tankeväckande och underhållande föreställningar på 30 minuter i tält som rymmer en publik på cirka 100 personer.</string>
 			<key>answer2</key>
@@ -411,7 +474,7 @@
 			<key>img</key>
 			<string>smanojen.png</string>
 		</dict>
-		<key>27</key>
+		<key>22</key>
 		<dict>
 			<key>name</key>
 			<string>Snaxeriet</string>
@@ -426,7 +489,7 @@
 			<key>img</key>
 			<string>snaxeriet.png</string>
 		</dict>
-		<key>28</key>
+		<key>23</key>
 		<dict>
 			<key>name</key>
 			<string>Spexet</string>
@@ -441,10 +504,10 @@
 			<key>img</key>
 			<string>spexet.png</string>
 		</dict>
-		<key>29</key>
+		<key>300</key>
 		<dict>
 			<key>name</key>
-			<string>Tåget</string>
+			<string>Tåget - Vagn</string>
 			<key>answer1</key>
 			<string>Kort sagt: Tåget har som huvuduppgift att under två tillfällen sprida glädje och karnevalsanda genom Lunds gator och torg. Lite mindre kort sagt: Tåget kulminerar med två avgångar under lördagen och söndagen under karnevalsdagarna. Turen som går genom centrala Lund består av cirka 1000 karnevalister som bjuder de hundratusentals åskådarna på humoristiska och galna upptåg de har i de olika vagnarna, mellanekipagen och orkestrarna. Men vägen till avfärd består av en vår av planering och fix. Det är främst månaden innan avfärd då tågområdet invigs som verksamheten drar igång när alla samlas för att bygga och sy upp sina ekipage.</string>
 			<key>answer2</key>
@@ -456,10 +519,10 @@
 			<key>img</key>
 			<string>tag.png</string>
 		</dict>
-		<key>30</key>
+		<key>400</key>
 		<dict>
 			<key>name</key>
-			<string>Tältnöje</string>
+			<string>Tältnöjen - Tält</string>
 			<key>answer1</key>
 			<string>Tältnöjessektionen har som uppgift att planera, samordna och genomföra de 20-tal tält av olika typer och storlekar som fyller Karnevalsområdet. I tälten kommer det att finnas små shower, suspekta upplevelser, sång, skratt och slövitsande.</string>
 			<key>answer2</key>
@@ -471,10 +534,10 @@
 			<key>img</key>
 			<string>nojen.png</string>
 		</dict>
-		<key>31</key>
+		<key>25</key>
 		<dict>
 			<key>name</key>
-			<string>Tombolan</string>
+			<string>Tombola</string>
 			<key>answer1</key>
 			<string>Tombolan sprider karnevalsglädje genom de spel och tävlingar som kommer att finnas på området. Vi skapar de mest fantastiska och knäppa spelbodar som Liseberg aldrig sett genom musik, lampor, satir och futurism.</string>
 			<key>answer2</key>
@@ -486,7 +549,7 @@
 			<key>img</key>
 			<string>tombolan.png</string>
 		</dict>
-		<key>32</key>
+		<key>26</key>
 		<dict>
 			<key>name</key>
 			<string>Vieriet</string>

@@ -108,6 +108,7 @@
     NSDate *tidningsdagen = [formatter dateFromString:@"2014-04-12 23:59"];
     
     if ([today compare:tidningsdagen] == NSOrderedAscending) {
+        NSLog(@"Innan tidningsdagen");
         if ([CLLocationManager locationServicesEnabled]) {
             [self.locationManager stopMonitoringSignificantLocationChanges];
             [self.locationManager startMonitoringSignificantLocationChanges];
@@ -157,10 +158,6 @@
         }];
         
     }
-    
-    /*[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithDouble:location.coordinate.latitude] forKey:@"latitude"];
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithDouble:location.coordinate.longitude] forKey:@"longitude"];
-    [[NSUserDefaults standardUserDefaults] setObject:location.timestamp forKey:@"locTimestamp"];*/
     
     [self.api updateLocation:location];
     
