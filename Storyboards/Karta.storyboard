@@ -37,7 +37,7 @@
                                             <outletCollection property="gestureRecognizers" destination="ZdP-eK-NY0" appends="YES" id="O5z-g4-ngI"/>
                                         </connections>
                                     </imageView>
-                                    <mapView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gA9-PY-2Rv">
+                                    <mapView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gA9-PY-2Rv">
                                         <rect key="frame" x="20" y="31" width="280" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     </mapView>
