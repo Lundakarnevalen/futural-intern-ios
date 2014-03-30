@@ -397,29 +397,6 @@
                                     <constraint firstAttribute="height" constant="60" id="hVt-Mf-O7O"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2s-KY-3Vl" customClass="UIButton_CustomFont">
-                                <rect key="frame" x="80" y="162" width="160" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.92156862750000001" green="0.83137254900000002" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="pft-o7-y0s"/>
-                                    <constraint firstAttribute="width" constant="160" id="wHu-95-UYb"/>
-                                </constraints>
-                                <state key="normal" title="SKAPA LÖSENORD">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="passwordResetAction:" destination="g6t-KF-izd" eventType="touchUpInside" id="PWR-5d-eMw"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C06-je-4t9">
-                                <rect key="frame" x="80" y="192" width="160" height="3"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mvZ-AW-j6c">
                                 <rect key="frame" x="20" y="80" width="280" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -449,7 +426,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CwJ-xu-xhq">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CwJ-xu-xhq">
                                 <rect key="frame" x="20" y="150" width="280" height="3"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
@@ -476,6 +453,35 @@
                                     </label>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ouy-Cb-aeK">
                                         <rect key="frame" x="20" y="45" width="280" height="3"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wXd-dm-OaQ">
+                                <rect key="frame" x="60" y="158" width="200" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2s-KY-3Vl" customClass="UIButton_CustomFont">
+                                        <rect key="frame" x="20" y="4" width="160" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.83137254900000002" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="pft-o7-y0s"/>
+                                            <constraint firstAttribute="width" constant="160" id="wHu-95-UYb"/>
+                                        </constraints>
+                                        <state key="normal" title="SKAPA LÖSENORD">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="passwordResetAction:" destination="g6t-KF-izd" eventType="touchUpInside" id="PWR-5d-eMw"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C06-je-4t9">
+                                        <rect key="frame" x="20" y="34" width="160" height="3"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                     </view>
@@ -531,12 +537,13 @@
                         <color key="backgroundColor" red="0.75686274509999996" green="0.82745098039999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="C06-je-4t9" firstAttribute="top" secondItem="B2s-KY-3Vl" secondAttribute="bottom" id="i9A-5o-tMJ"/>
+                            <constraint firstItem="wXd-dm-OaQ" firstAttribute="top" secondItem="CwJ-xu-xhq" secondAttribute="bottom" constant="5" id="AcQ-hX-52V"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SKAPA LÖSENORD" id="xy7-aE-5ih"/>
                     <connections>
                         <outlet property="afterResetPasswordView" destination="VxZ-de-LD7" id="6dL-4e-luu"/>
+                        <outlet property="createPasswordButtonView" destination="wXd-dm-OaQ" id="sO7-1k-siP"/>
                         <outlet property="forgotEmailField" destination="vjY-1H-CFU" id="fv2-uJ-ZF5"/>
                         <outlet property="resetPasswordErrorLabel" destination="lvR-if-w9d" id="aWh-7o-PIT"/>
                         <outlet property="resetPasswordErrorLabelShadow" destination="ouy-Cb-aeK" id="kua-gx-GJJ"/>

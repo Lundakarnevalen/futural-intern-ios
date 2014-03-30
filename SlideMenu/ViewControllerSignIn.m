@@ -19,6 +19,8 @@
 @property (nonatomic) UITextField *currentResponder;
 @property (weak, nonatomic) IBOutlet UILabel *resetPasswordErrorLabel;
 @property (weak, nonatomic) IBOutlet UIView *resetPasswordErrorLabelShadow;
+@property (weak, nonatomic) IBOutlet UIView *createPasswordButtonView;
+
 
 @end
 
@@ -155,6 +157,7 @@
         
         if([stringIdentifier isEqualToString:@"reset_password"]) {
             
+            self.createPasswordButtonView.hidden = NO;
             NSLog(@"%@", parsedData[@"success"]);
             
             if([parsedData[@"success"] isEqualToNumber:@1]) {
@@ -226,6 +229,7 @@
     UIApplication* app = [UIApplication sharedApplication];
     app.networkActivityIndicatorVisible = YES;
     [self resignOnTap:sender];
+    self.createPasswordButtonView.hidden = YES;
     [self.api resetPassword:[self.forgotEmailField text]];
     self.resetPasswordErrorLabelShadow.hidden = YES;
     self.resetPasswordErrorLabel.hidden = YES;

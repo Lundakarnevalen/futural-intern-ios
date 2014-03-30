@@ -1,0 +1,72 @@
+
+/* Class = "IBUINavigationItem"; title = "Sektioner"; ObjectID = "1VO-tf-nFJ"; */
+"1VO-tf-nFJ.title" = "Sektioner";
+
+/* Class = "IBUINavigationItem"; title = "Moln"; ObjectID = "4Fb-sW-FTy"; */
+"4Fb-sW-FTy.title" = "Moln";
+
+/* Class = "IBUILabel"; text = "Hejsan!"; ObjectID = "5TK-ad-y4h"; */
+"5TK-ad-y4h.text" = "Hejsan!";
+
+/* Class = "IBUINavigationItem"; title = "Städer"; ObjectID = "Erd-ds-RfO"; */
+"Erd-ds-RfO.title" = "Städer";
+
+/* Class = "IBUIButton"; normalTitle = "Logga in"; ObjectID = "G6g-cu-qHv"; */
+"G6g-cu-qHv.normalTitle" = "Logga in";
+
+/* Class = "IBUIButton"; normalTitle = "Tryck här om du vill återställa ditt lösenord"; ObjectID = "GXm-dv-HsU"; */
+"GXm-dv-HsU.normalTitle" = "Tryck här om du vill återställa ditt lösenord";
+
+/* Class = "IBUILabel"; text = "Förnamn Efternamn"; ObjectID = "I6P-7u-HjL"; */
+"I6P-7u-HjL.text" = "Förnamn Efternamn";
+
+/* Class = "IBUINavigationItem"; title = "Lundakarnevalen"; ObjectID = "Iny-is-3al"; */
+"Iny-is-3al.title" = "Lundakarnevalen";
+
+/* Class = "IBUILabel"; text = "Lund"; ObjectID = "L9X-4J-xQQ"; */
+"L9X-4J-xQQ.text" = "Lund";
+
+/* Class = "IBUIButton"; normalTitle = "Logga ut"; ObjectID = "Lab-y2-cos"; */
+"Lab-y2-cos.normalTitle" = "Logga ut";
+
+/* Class = "IBUINavigationItem"; title = "Logga in"; ObjectID = "Rwi-qO-THs"; */
+"Rwi-qO-THs.title" = "Logga in";
+
+/* Class = "IBUIButton"; normalTitle = "Logga in"; ObjectID = "Sjz-Ae-RkT"; */
+"Sjz-Ae-RkT.normalTitle" = "Logga in";
+
+/* Class = "IBUILabel"; text = "Error mesages"; ObjectID = "Xeq-hM-87i"; */
+"Xeq-hM-87i.text" = "Error mesages";
+
+/* Class = "IBUITextField"; placeholder = "Email"; ObjectID = "a8e-oH-C2V"; */
+"a8e-oH-C2V.placeholder" = "Email";
+
+/* Class = "IBUITextField"; text = "email@email.com"; ObjectID = "a8e-oH-C2V"; */
+"a8e-oH-C2V.text" = "email@email.com";
+
+/* Class = "IBUILabel"; text = "1000 karnevalister"; ObjectID = "atO-m8-7yH"; */
+"atO-m8-7yH.text" = "1000 karnevalister";
+
+/* Class = "IBUITableViewController"; title = "Media"; ObjectID = "dN3-pP-I0V"; */
+"dN3-pP-I0V.title" = "Media";
+
+/* Class = "IBUINavigationItem"; title = "#karnevelj"; ObjectID = "jJ7-1e-3hA"; */
+"jJ7-1e-3hA.title" = "#karnevelj";
+
+/* Class = "IBUITextField"; placeholder = "Lösenord"; ObjectID = "lyV-Ip-vFY"; */
+"lyV-Ip-vFY.placeholder" = "Lösenord";
+
+/* Class = "IBUITextField"; text = "12345678"; ObjectID = "lyV-Ip-vFY"; */
+"lyV-Ip-vFY.text" = "12345678";
+
+/* Class = "IBUILabel"; text = "L"; ObjectID = "uIe-6c-0Mm"; */
+"uIe-6c-0Mm.text" = "L";
+
+/* Class = "IBUILabel"; text = "Välkommen karnevalist och till den appen som finns till bara för din skull! Framför dig väntar en riktigt j***a vår!"; ObjectID = "wmD-SL-IuG"; */
+"wmD-SL-IuG.text" = "Välkommen karnevalist och till den appen som finns till bara för din skull! Framför dig väntar en riktigt j***a vår!";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "xDd-GA-GOO"; */
+"xDd-GA-GOO.text" = "Title";
+
+/* Class = "IBUINavigationItem"; title = "Karta"; ObjectID = "xOh-qZ-Q0R"; */
+"xOh-qZ-Q0R.title" = "Karta";

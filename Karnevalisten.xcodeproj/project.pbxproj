@@ -66,7 +66,6 @@
 		27D71D6716A349AD00021245 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6616A349AD00021245 /* CoreGraphics.framework */; };
 		27D71D6F16A349AD00021245 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D6E16A349AD00021245 /* main.m */; };
 		27D71D7316A349AD00021245 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D7216A349AD00021245 /* AppDelegate.m */; };
-		27D71D7C16A349AD00021245 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D71D7A16A349AD00021245 /* MainStoryboard.storyboard */; };
 		27D71D8A16A349D500021245 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8716A349D500021245 /* ECSlidingViewController.m */; };
 		27D71D8B16A349D500021245 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8916A349D500021245 /* UIImage+ImageWithUIView.m */; };
 		27D71D8E16A349F000021245 /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D71D8D16A349F000021245 /* InitViewController.m */; };
@@ -181,12 +180,10 @@
 		27D71D6416A349AD00021245 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27D71D6616A349AD00021245 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		27D71D6A16A349AD00021245 /* Karnevalisten-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Karnevalisten-Info.plist"; sourceTree = "<group>"; };
-		27D71D6C16A349AD00021245 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27D71D6E16A349AD00021245 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27D71D7016A349AD00021245 /* Karnevalisten-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Karnevalisten-Prefix.pch"; sourceTree = "<group>"; };
 		27D71D7116A349AD00021245 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27D71D7216A349AD00021245 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		27D71D7B16A349AD00021245 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		27D71D8616A349D500021245 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
 		27D71D8716A349D500021245 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
 		27D71D8816A349D500021245 /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
@@ -327,7 +324,6 @@
 			isa = PBXGroup;
 			children = (
 				1A9D6AF218E20EA9003D0A78 /* Logga in.storyboard */,
-				27D71D7A16A349AD00021245 /* MainStoryboard.storyboard */,
 				1A9D6B0C18E22866003D0A78 /* Start.storyboard */,
 				1A9D6B1118E23ED8003D0A78 /* Inkorg.storyboard */,
 				1A9D6B1518E244BD003D0A78 /* Karta.storyboard */,
@@ -484,7 +480,6 @@
 				1AD1A822189C92F50086DF0F /* blank.png */,
 				77B3AB44189A79C80059A6ED /* InfoPlist.strings */,
 				27D71D6A16A349AD00021245 /* Karnevalisten-Info.plist */,
-				27D71D6B16A349AD00021245 /* InfoPlist.strings */,
 				27D71D6E16A349AD00021245 /* main.m */,
 				27D71D7016A349AD00021245 /* Karnevalisten-Prefix.pch */,
 			);
@@ -553,6 +548,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
+				sv,
 			);
 			mainGroup = 27D71D5316A349AD00021245;
 			productRefGroup = 27D71D5F16A349AD00021245 /* Products */;
@@ -581,7 +578,6 @@
 				1AFB427518DD9E2600747DAA /* Images.xcassets in Resources */,
 				77B3AB3E189A79830059A6ED /* sektioner.plist in Resources */,
 				1A9D6B1218E23ED8003D0A78 /* Inkorg.storyboard in Resources */,
-				27D71D7C16A349AD00021245 /* MainStoryboard.storyboard in Resources */,
 				1A9D6AF318E20EA9003D0A78 /* Logga in.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -649,26 +645,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		27D71D6B16A349AD00021245 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27D71D6C16A349AD00021245 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		27D71D7A16A349AD00021245 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27D71D7B16A349AD00021245 /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			path = SlideMenu;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		27D71D8016A349AD00021245 /* Debug */ = {
