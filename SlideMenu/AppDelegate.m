@@ -96,7 +96,14 @@
     NSDate *tidningsdagen = [formatter dateFromString:@"2014-04-12 23:59"];
     
     if ([today compare:tidningsdagen] == NSOrderedAscending) {
-        if (!self.locationManager) self.locationManager = [[CLLocationManager alloc] init];
+        
+        if (!_locationManager) {
+            
+            _locationManager = [[CLLocationManager alloc] init];
+            _locationManager.delegate = self; //fix
+            
+        }
+        
     }
 }
 
