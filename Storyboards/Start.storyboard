@@ -34,6 +34,9 @@
                                         <state key="normal" image="Moln">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="debugCloudPressed:" destination="rOY-Cg-tUS" eventType="touchUpInside" id="kFr-GE-fPH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X22-vP-Dgx">
                                         <rect key="frame" x="47" y="128" width="85" height="37"/>
@@ -368,6 +371,13 @@
                                     <constraint firstAttribute="height" constant="135" id="W6s-NN-lnl"/>
                                 </constraints>
                             </view>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKJ-Nc-uIz">
+                                <rect key="frame" x="20" y="384" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.36470588240000001" green="0.3803921569" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -378,6 +388,7 @@
                             <constraint firstItem="bHR-S9-oFa" firstAttribute="centerX" secondItem="owp-7s-5Ss" secondAttribute="centerX" id="dRU-QF-JSp"/>
                             <constraint firstItem="qco-q7-Ny8" firstAttribute="top" secondItem="5Is-8b-o69" secondAttribute="bottom" id="hNf-h7-Xa5"/>
                             <constraint firstItem="bHR-S9-oFa" firstAttribute="centerX" secondItem="qco-q7-Ny8" secondAttribute="centerX" id="kCD-Oi-hh2"/>
+                            <constraint firstItem="bHR-S9-oFa" firstAttribute="top" secondItem="DKJ-Nc-uIz" secondAttribute="bottom" constant="8" id="qTC-rg-sBl"/>
                             <constraint firstItem="wjz-md-ZSx" firstAttribute="top" secondItem="bHR-S9-oFa" secondAttribute="bottom" constant="20" id="tls-4B-Cfw"/>
                             <constraint firstItem="bHR-S9-oFa" firstAttribute="top" secondItem="owp-7s-5Ss" secondAttribute="bottom" constant="34" id="v6u-ui-hsp"/>
                             <constraint firstItem="qco-q7-Ny8" firstAttribute="leading" secondItem="60S-jb-jXf" secondAttribute="leading" id="xn4-il-VPJ"/>
@@ -392,6 +403,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="debugLabel" destination="DKJ-Nc-uIz" id="QEV-3s-Xpd"/>
                         <outlet property="karnevalenLabel" destination="fBX-qI-K97" id="yfr-nw-9LT"/>
                         <outlet property="playPauseButton" destination="3Mk-MB-aPx" id="SQ5-m1-ajT"/>
                         <outlet property="playerPin" destination="FMD-Cs-Cfa" id="Pz0-ZC-aok"/>

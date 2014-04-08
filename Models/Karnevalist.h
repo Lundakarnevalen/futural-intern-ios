@@ -24,7 +24,7 @@
 @property (nonatomic) NSString *email;
 @property (nonatomic) NSString *phone;
 @property (nonatomic) NSString *sektion;
-@property (nonatomic) NSURL *imageUrl;
+@property (nonatomic) NSString *imageUrl;
 
 - (NSString *)token;
 - (void)setToken:(NSString *)token;

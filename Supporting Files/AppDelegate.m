@@ -37,7 +37,7 @@
 
 -(void)registerForPushNotifications {
     NSLog(@"Registering for push notifications...");
-    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge)];
 }
 
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
@@ -46,6 +46,7 @@
     str = [str stringByReplacingOccurrencesOfString:@" " withString:@""];
     str = [str substringWithRange:NSMakeRange(1, [str length]-2)];
     NSLog(@"%@", str);
+    [[NSUserDefaults standardUserDefaults] setObject:str forKey:@"ios_token"];
     [self.api sendAppleToken:str];
     
 }

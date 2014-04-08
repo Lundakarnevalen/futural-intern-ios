@@ -38,7 +38,7 @@
     self.email = dictionary[@"email"];
     self.phone = dictionary[@"telnr"];
     self.sektion = dictionary[@"tilldelad_sektion"];
-    //self.imageUrl = [NSURL URLWithString:dictionary[@"foto"][@"url"]]; //to be continued.
+    self.imageUrl = dictionary[@"foto"][@"url"]; //to be continued.
     
     if(save) {
         
@@ -56,7 +56,8 @@
                                  @"efternamn": self.lastname,
                                  @"email": self.email,
                                  @"telnr": self.phone,
-                                 @"tilldelad_sektion": self.sektion
+                                 @"tilldelad_sektion": self.sektion,
+                                 @"imageUrl": self.imageUrl
                                  };
     
     [[NSUserDefaults standardUserDefaults] setValue:dataToSave forKey:@"karnevalist"];

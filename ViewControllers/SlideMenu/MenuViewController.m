@@ -52,8 +52,11 @@
     NSDictionary *karnevalist = [[NSUserDefaults standardUserDefaults] valueForKey:@"karnevalist"];
     self.nameLabel.text = [[karnevalist[@"fornamn"] stringByAppendingString:[@" " stringByAppendingString:karnevalist[@"efternamn"]]] uppercaseString];
     
-    Sektioner *sektion = [[Sektioner sektioner] objectForKey:[NSString stringWithFormat:@"%d", [karnevalist[@"tilldelad_sektion"] integerValue]]];
-    self.profileImageView.image = [UIImage imageNamed:sektion.img];
+    NSURL *profileImageUrl = [NSURL URLWithString:karnevalist[@"imageUrl"]];
+    self.profileImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:profileImageUrl]];
+    
+//    Sektioner *sektion = [[Sektioner sektioner] objectForKey:[NSString stringWithFormat:@"%d", [karnevalist[@"tilldelad_sektion"] integerValue]]];
+//    self.profileImageView.image = [UIImage imageNamed:sektion.img];
     
 }
 

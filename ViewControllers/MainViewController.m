@@ -35,15 +35,34 @@
 @property (weak, nonatomic) IBOutlet UIButton *playPauseButton;
 
 @property (nonatomic) NSUInteger rowCount;
+@property (weak, nonatomic) IBOutlet UILabel *debugLabel;
 
 @end
 
 @implementation MainViewController
 
--(void)viewDidLoad {
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
     [(AppDelegate *)[[UIApplication sharedApplication] delegate] registerForPushNotifications];
-    [(AppDelegate *)[[UIApplication sharedApplication] delegate] startLocationManager];
+    
+    self.debugLabel.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"ios_token"];
+    
+}
+
+- (IBAction)debugCloudPressed:(id)sender {
+    if (self.debugLabel.hidden) {
+        self.debugLabel.hidden = NO;
+    } else {
+        self.debugLabel.hidden = YES;
+    }
+    
+}
+
+-(void)viewDidLoad {
+    
+    
+    //[(AppDelegate *)[[UIApplication sharedApplication] delegate] startLocationManager];
     
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
                                                                    [UIFont fontWithName:@"Robot!Head" size:26.0], NSFontAttributeName,[UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName, nil];
