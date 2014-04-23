@@ -10,13 +10,14 @@
 
 @implementation UIButton_CustomFont
 
--(id)init {
-    self = [super init];
-    if (self) {
-        [self.titleLabel setFont:[UIFont fontWithName:@"FuturaLT-Bold" size:self.titleLabel.font.pointSize]];
-        self.titleLabel.text = [self.titleLabel.text uppercaseString];
-    }
-    return self;
+- (void)drawRect:(CGRect)rect
+{
+    [self.titleLabel setFont:[UIFont fontWithName:@"FuturaLT-Bold" size:self.titleLabel.font.pointSize]];
+    self.titleLabel.text = [self.titleLabel.text uppercaseString];
+    //[self setBackgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:0.2]];
+    [super drawRect:rect];
+    
+    // Drawing code
 }
 
 @end

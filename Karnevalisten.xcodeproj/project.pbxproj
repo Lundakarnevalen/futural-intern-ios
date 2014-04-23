@@ -36,6 +36,7 @@
 		1A8437AA19085583006B56E9 /* strings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A8437A919085583006B56E9 /* strings.plist */; };
 		1A8437AD190858CB006B56E9 /* ShakingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8437AC190858CB006B56E9 /* ShakingView.m */; };
 		1A8437B019085930006B56E9 /* MysticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8437AF19085930006B56E9 /* MysticViewController.m */; };
+		1A8437B1190866E3006B56E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6B1718E2550A003D0A78 /* Main.storyboard */; };
 		1A9CFF8918F346F80002BD34 /* sektioner.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A9CFF8818F346F80002BD34 /* sektioner.plist */; };
 		1A9D6AF318E20EA9003D0A78 /* Logga in.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6AF218E20EA9003D0A78 /* Logga in.storyboard */; };
 		1A9D6AFB18E2105A003D0A78 /* UILabel+CustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D6AFA18E2105A003D0A78 /* UILabel+CustomFont.m */; };
@@ -403,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8437B1190866E3006B56E9 /* Main.storyboard in Resources */,
 				FDC7EA0E18E868030067403E /* Sångbok.storyboard in Resources */,
 				1A9D6B1618E244BD003D0A78 /* Karta.storyboard in Resources */,
 				1A9CFF8918F346F80002BD34 /* sektioner.plist in Resources */,
@@ -470,7 +472,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -500,7 +502,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
