@@ -79,7 +79,7 @@
                                  @"postnr" : self.postnr,
                                  @"gatuadress" : self.gatuadress,
                                  @"postort" : self.postort,
-                                 @"personnr" : self.personnr,
+                                 @"personnummer" : self.personnr,
                                  @"gender" : [NSNumber numberWithInteger:self.gender]
                                  };
     

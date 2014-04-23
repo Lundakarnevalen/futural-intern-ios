@@ -19,10 +19,13 @@
     [self.cardView.layer setCornerRadius:10.0];
     
     NSURL *profileImageUrl = [NSURL URLWithString:self.api.karnevalist.imageUrl];
-    NSLog(@"url: %@", self.api.karnevalist.imageUrl);
     self.karnevalistImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:profileImageUrl]];
     [self.headerLabel setFont:[UIFont fontWithName:@"Robot!Head" size:36]];
-    //[self.activeStamp setHidden:!self.api.karnevalist.active];
+    [self.activeStamp setHidden:!self.api.karnevalist.active];
+    
+    [self.personnrLabel setText:[NSString stringWithFormat:@"Personnr: %@", self.api.karnevalist.personnr]];
+    [self.addressLabel setText:[NSString stringWithFormat:@"Gatuadress: %@", self.api.karnevalist.gatuadress]];
+    [self.postAddressLabel setText:[NSString stringWithFormat:@"Postadress: %@ %@", self.api.karnevalist.postort, self.api.karnevalist.postnr]];
     [self.nameLabel setText:[NSString stringWithFormat:@"%@ %@", self.api.karnevalist.firstname, self.api.karnevalist.lastname]];
     [self.sektionsLabel setText:[NSString stringWithFormat:@"%@", self.api.karnevalist.sektion]];
 

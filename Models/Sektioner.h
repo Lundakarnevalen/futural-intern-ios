@@ -19,5 +19,6 @@
 
 -(Sektioner *)initWithDictionary:(NSDictionary *)dict;
 +(NSDictionary *)sektioner;
++ (NSString *)nameFromIdentifier:(NSInteger)identifier;
 
 @end

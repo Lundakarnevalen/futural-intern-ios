@@ -48,4 +48,14 @@
     return [sektioner copy];
 }
 
++ (NSString *)nameFromIdentifier:(NSInteger)identifier {
+    
+    NSDictionary *names = @{
+                            @10 : @"kommunikation"
+                            };
+    
+    return names[[NSNumber numberWithInteger:identifier]];
+    
+}
+
 @end
