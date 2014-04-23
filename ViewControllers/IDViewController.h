@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *headerLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *activeStamp;
 
+@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeHandler;
 
 @property (weak, nonatomic) IBOutlet UIImageView *karnevalistImage;
 

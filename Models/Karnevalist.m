@@ -61,7 +61,7 @@
 - (BOOL)isStoredDataUpToDate {
     
     NSDictionary *data = [self readData];
-    return (data[@"active"] != nil && data[@"personnr"] != nil); //keep on adding if the karnevalist fields are updated.
+    return (data[@"active"] != nil && data[@"personnummer"] != nil); //keep on adding if the karnevalist fields are updated.
     
 }
 
