@@ -31,7 +31,7 @@
     [super viewDidLoad];
     
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
-                                                           [UIFont fontWithName:@"Futura-Bold" size:17.0], NSFontAttributeName,[UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName, nil];
+                                                           [UIFont fontWithName:@"FuturaLT-Bold" size:17.0], NSFontAttributeName,[UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName, nil];
     
     self.navigationController.navigationBar.topItem.title = [self.navigationController.navigationBar.topItem.title uppercaseString];
     

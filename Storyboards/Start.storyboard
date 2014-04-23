@@ -26,11 +26,14 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yU4-cc-bnL">
-                                                <rect key="frame" x="250" y="110" width="85" height="37"/>
+                                                <rect key="frame" x="250" y="123" width="85" height="37"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                                 <state key="normal" image="Moln">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Nt1-oW-Rni" kind="push" id="lFC-49-wLi"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPg-5k-VMv">
                                                 <rect key="frame" x="-20" y="0.0" width="128" height="66"/>
@@ -43,7 +46,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X22-vP-Dgx">
-                                                <rect key="frame" x="75" y="123" width="85" height="37"/>
+                                                <rect key="frame" x="75" y="105" width="85" height="37"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                                 <state key="normal" image="Moln">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -445,6 +448,89 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wvn-VK-7CX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="445" y="-230"/>
+        </scene>
+        <!--Mystic View Controller - MAGIC KARNEVAL-BALL-->
+        <scene sceneID="FfR-ft-CS5">
+            <objects>
+                <viewController id="Nt1-oW-Rni" customClass="MysticViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g3s-9e-VhS"/>
+                        <viewControllerLayoutGuide type="bottom" id="sMN-YA-lrd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tgm-4U-DJo" customClass="ShakingView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7HH-3n-gqK">
+                                <rect key="frame" x="0.0" y="79" width="320" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ask me a question." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="247" translatesAutoresizingMaskIntoConstraints="NO" id="2MG-g1-fir" customClass="UILabel_CustomFont">
+                                        <rect key="frame" x="37" y="7" width="247" height="126"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Then shake me." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="247" translatesAutoresizingMaskIntoConstraints="NO" id="LNU-Yo-MSw" customClass="UILabel_CustomFont">
+                                        <rect key="frame" x="37" y="125" width="247" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.14999999999999999" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OX3-yl-K5Z">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I would say no." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="lRr-yl-uXY" customClass="UILabel_CustomFont">
+                                        <rect key="frame" x="20" y="20" width="280" height="528"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="lRr-yl-uXY" firstAttribute="leading" secondItem="OX3-yl-K5Z" secondAttribute="leading" constant="20" id="6f3-Aa-WyP"/>
+                                    <constraint firstAttribute="trailing" secondItem="lRr-yl-uXY" secondAttribute="trailing" constant="20" id="gum-aA-Jiu"/>
+                                    <constraint firstAttribute="bottom" secondItem="lRr-yl-uXY" secondAttribute="bottom" constant="20" id="lFJ-2n-2kK"/>
+                                    <constraint firstItem="lRr-yl-uXY" firstAttribute="top" secondItem="OX3-yl-K5Z" secondAttribute="top" constant="20" id="s7q-Wp-BI7"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Pb6-zh-Om7" appends="YES" id="5o4-1X-dvW"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36470588240000001" green="0.3803921569" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OX3-yl-K5Z" secondAttribute="trailing" id="EvS-JR-sKz"/>
+                            <constraint firstItem="sMN-YA-lrd" firstAttribute="top" secondItem="OX3-yl-K5Z" secondAttribute="bottom" id="N3B-X0-dYD"/>
+                            <constraint firstItem="OX3-yl-K5Z" firstAttribute="top" secondItem="g3s-9e-VhS" secondAttribute="bottom" constant="-64" id="kk2-Rm-Yf0"/>
+                            <constraint firstItem="OX3-yl-K5Z" firstAttribute="leading" secondItem="tgm-4U-DJo" secondAttribute="leading" id="uBv-bC-Na7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="MAGIC KARNEVAL-BALL" id="INm-Us-WGi"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="lRr-yl-uXY" id="7dd-9z-0oJ"/>
+                        <outlet property="answersView" destination="OX3-yl-K5Z" id="PfC-27-Swa"/>
+                        <outlet property="questionsView" destination="7HH-3n-gqK" id="lDK-mP-7Wf"/>
+                        <outlet property="shakeView" destination="tgm-4U-DJo" id="lHk-vt-B0R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hru-cf-ETm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Pb6-zh-Om7">
+                    <connections>
+                        <action selector="didTapAnswersView:" destination="Nt1-oW-Rni" id="kjJ-yQ-dDr"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="828" y="-228"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5WE-WQ-aDU">
