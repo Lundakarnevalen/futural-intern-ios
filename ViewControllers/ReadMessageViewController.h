@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *header;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UITextView *informationField;
+@property (weak, nonatomic) IBOutlet UILabel *sektionLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *sektionImageView;
 
 @property (nonatomic, strong) Message *currentMessage;
 

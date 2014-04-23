@@ -17,16 +17,16 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Moln" translatesAutoresizingMaskIntoConstraints="NO" id="gCQ-FC-L2g">
-                                <rect key="frame" x="163" y="9" width="234" height="145"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Moln" translatesAutoresizingMaskIntoConstraints="NO" id="gCQ-FC-L2g">
+                                <rect key="frame" x="163" y="9" width="234" height="146"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="145" id="GWg-qg-GdK"/>
                                     <constraint firstAttribute="width" constant="234" id="SVh-rK-qVf"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Moln" translatesAutoresizingMaskIntoConstraints="NO" id="Xfj-tX-OPp">
-                                <rect key="frame" x="104" y="371" width="211" height="84"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Moln" translatesAutoresizingMaskIntoConstraints="NO" id="Xfj-tX-OPp">
+                                <rect key="frame" x="105" y="370" width="212" height="84"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="9UP-KB-Ern"/>
@@ -46,9 +46,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="myb-2n-dVF">
-                                        <rect key="frame" x="2" y="0.0" width="220" height="192"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W5Q-eT-6tZ">
+                                                <rect key="frame" x="0.0" y="143" width="220" height="3"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                            </view>
                                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cqr-j6-b1l">
                                                 <rect key="frame" x="-10" y="0.0" width="240" height="143"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -122,7 +127,10 @@
                                             </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="W5Q-eT-6tZ" firstAttribute="centerX" secondItem="Cqr-j6-b1l" secondAttribute="centerX" id="0MH-g3-N5P"/>
+                                            <constraint firstItem="W5Q-eT-6tZ" firstAttribute="width" secondItem="Cqr-j6-b1l" secondAttribute="width" id="4xS-uJ-kRf"/>
                                             <constraint firstItem="MVq-Vf-UNU" firstAttribute="top" secondItem="Cqr-j6-b1l" secondAttribute="bottom" id="ADW-Q5-Rjg"/>
+                                            <constraint firstItem="W5Q-eT-6tZ" firstAttribute="top" secondItem="Cqr-j6-b1l" secondAttribute="bottom" id="hTj-np-iDY"/>
                                             <constraint firstAttribute="width" constant="220" id="oBH-fB-RR6"/>
                                         </constraints>
                                     </view>
@@ -132,7 +140,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ST-vZ-1zg">
-                                <rect key="frame" x="79" y="251" width="160" height="60"/>
+                                <rect key="frame" x="79" y="301" width="160" height="60"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VÄLKOMMEN!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJo-yO-dQs" customClass="UILabel_CustomFont">
@@ -163,7 +171,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECh-0z-0K8" customClass="UIButton_CustomFont">
-                                <rect key="frame" x="79" y="311" width="160" height="30"/>
+                                <rect key="frame" x="79" y="361" width="160" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.83137254900000002" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -180,6 +188,16 @@
                                     <segue destination="g6t-KF-izd" kind="push" id="B4n-3k-IVs"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZxB-BZ-qNJ">
+                                <rect key="frame" x="80" y="361" width="160" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hue-kq-quM">
+                                <rect key="frame" x="80" y="391" width="160" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                            </view>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="Cda-CS-QHG" customClass="UILabel_CustomFont">
                                 <rect key="frame" x="50" y="207" width="220" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -191,21 +209,86 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7gx-DM-mC7">
+                                <rect key="frame" x="0.0" y="92" width="320" height="274"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FE6-Vu-fqV">
+                                        <rect key="frame" x="20" y="20" width="280" height="231"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HEJ KARNEVALIST!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhL-84-EhI" customClass="UILabel_CustomFont">
+                                                <rect key="frame" x="20" y="20" width="240" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QRq-hj-4Zg">
+                                                <rect key="frame" x="20" y="49" width="240" height="115"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <string key="text">Den här appen är utvecklad med kärlek för sådana som dig. Den finns till för att du som karnevalist ska känna dig älskad. Logga in och upptäck en helt ny värld! Saknar du lösenord, kan du skapa det nedan.</string>
+                                                <color key="textColor" red="0.36470588240000001" green="0.3803921569" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="if4-Wm-hFo">
+                                                <rect key="frame" x="20" y="211" width="240" height="3"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1L-lU-dzv" customClass="UIButton_CustomFont">
+                                                <rect key="frame" x="20" y="171" width="240" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.92156862750000001" green="0.83137254900000002" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="OKEJ, JAG FATTAR!">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="okayIUnderstandButton:" destination="kwK-Fe-Eb3" eventType="touchUpInside" id="ckR-QK-3O3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EWP-v2-Mov">
+                                        <rect key="frame" x="20" y="251" width="280" height="3"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.75686274509999996" green="0.82745098039999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
+                            <constraint firstAttribute="centerY" secondItem="7gx-DM-mC7" secondAttribute="centerY" constant="23" id="0QN-6f-ofF"/>
                             <constraint firstAttribute="centerX" secondItem="4ST-vZ-1zg" secondAttribute="centerX" constant="1" id="G9z-Z3-qEP"/>
+                            <constraint firstItem="hue-kq-quM" firstAttribute="top" secondItem="ECh-0z-0K8" secondAttribute="bottom" id="NT2-t9-6Ic"/>
                             <constraint firstItem="KBK-Gx-UuO" firstAttribute="top" secondItem="7eS-vV-vh8" secondAttribute="bottom" constant="188" id="PLn-mQ-jkg"/>
                             <constraint firstAttribute="trailing" secondItem="Z2P-2G-cCf" secondAttribute="trailing" constant="50" id="PXh-Kc-iet"/>
                             <constraint firstItem="Z2P-2G-cCf" firstAttribute="leading" secondItem="kAQ-4r-wF7" secondAttribute="leading" constant="50" id="cda-Er-9tp"/>
                             <constraint firstAttribute="centerX" secondItem="ECh-0z-0K8" secondAttribute="centerX" id="kE8-wF-hj0"/>
                             <constraint firstItem="gCQ-FC-L2g" firstAttribute="top" secondItem="7eS-vV-vh8" secondAttribute="bottom" constant="9" id="sCc-fX-wWM"/>
                             <constraint firstItem="bGX-PA-jkV" firstAttribute="top" secondItem="Xfj-tX-OPp" secondAttribute="bottom" constant="49" id="sRk-dw-4dE"/>
+                            <constraint firstItem="ZxB-BZ-qNJ" firstAttribute="top" secondItem="4ST-vZ-1zg" secondAttribute="bottom" id="sYQ-rA-2eO"/>
                             <constraint firstAttribute="centerX" secondItem="Z2P-2G-cCf" secondAttribute="centerX" id="tfV-ds-z2m"/>
+                            <constraint firstAttribute="centerX" secondItem="7gx-DM-mC7" secondAttribute="centerX" id="tov-up-dnR"/>
                             <constraint firstItem="bGX-PA-jkV" firstAttribute="top" secondItem="4ST-vZ-1zg" secondAttribute="bottom" constant="100" id="uBZ-Tb-0e4"/>
                             <constraint firstItem="ECh-0z-0K8" firstAttribute="top" secondItem="4ST-vZ-1zg" secondAttribute="bottom" id="y5T-9a-aFm"/>
                             <constraint firstItem="Z2P-2G-cCf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7eS-vV-vh8" secondAttribute="bottom" constant="10" id="zni-bP-5Ex"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="CWz-NH-ygj" appends="YES" id="GtF-Xg-dv2"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="LOGGA IN" id="WXy-7k-fuk"/>
                     <connections>
@@ -216,6 +299,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1R-ZB-tfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="CWz-NH-ygj">
+                    <connections>
+                        <action selector="view2Pressed:" destination="kwK-Fe-Eb3" id="UAg-CJ-O1c"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="65" y="-1062"/>
         </scene>
@@ -254,16 +342,16 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Moln" translatesAutoresizingMaskIntoConstraints="NO" id="Ob9-4R-d7O">
-                                <rect key="frame" x="163" y="9" width="234" height="145"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Moln" translatesAutoresizingMaskIntoConstraints="NO" id="Ob9-4R-d7O">
+                                <rect key="frame" x="163" y="9" width="234" height="146"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="145" id="2kE-vs-q36"/>
                                     <constraint firstAttribute="width" constant="234" id="8eU-t0-hv1"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Moln" translatesAutoresizingMaskIntoConstraints="NO" id="Sog-Qk-gnt">
-                                <rect key="frame" x="104" y="371" width="211" height="84"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Moln" translatesAutoresizingMaskIntoConstraints="NO" id="Sog-Qk-gnt">
+                                <rect key="frame" x="104" y="371" width="212" height="84"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="211" id="r4X-7F-miE"/>
@@ -309,24 +397,6 @@
                                     <constraint firstAttribute="height" constant="60" id="hVt-Mf-O7O"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2s-KY-3Vl" customClass="UIButton_CustomFont">
-                                <rect key="frame" x="80" y="162" width="160" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.92156862750000001" green="0.83137254900000002" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="pft-o7-y0s"/>
-                                    <constraint firstAttribute="width" constant="160" id="wHu-95-UYb"/>
-                                </constraints>
-                                <state key="normal" title="SKAPA LÖSENORD">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="passwordResetAction:" destination="g6t-KF-izd" eventType="touchUpInside" id="PWR-5d-eMw"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mvZ-AW-j6c">
                                 <rect key="frame" x="20" y="80" width="280" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -356,12 +426,127 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CwJ-xu-xhq">
+                                <rect key="frame" x="20" y="150" width="280" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TXr-eY-l4J">
+                                <rect key="frame" x="80" y="80" width="160" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YcO-ub-qk1">
+                                <rect key="frame" x="0.0" y="195" width="320" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvR-if-w9d" customClass="UILabel_CustomFont">
+                                        <rect key="frame" x="20" y="20" width="280" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ouy-Cb-aeK">
+                                        <rect key="frame" x="20" y="45" width="280" height="3"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wXd-dm-OaQ">
+                                <rect key="frame" x="60" y="158" width="200" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2s-KY-3Vl" customClass="UIButton_CustomFont">
+                                        <rect key="frame" x="20" y="4" width="160" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.83137254900000002" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="pft-o7-y0s"/>
+                                            <constraint firstAttribute="width" constant="160" id="wHu-95-UYb"/>
+                                        </constraints>
+                                        <state key="normal" title="SKAPA LÖSENORD">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="passwordResetAction:" destination="g6t-KF-izd" eventType="touchUpInside" id="PWR-5d-eMw"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C06-je-4t9">
+                                        <rect key="frame" x="20" y="34" width="160" height="3"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VxZ-de-LD7">
+                                <rect key="frame" x="20" y="20" width="280" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HÅLL I DIG!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyE-Kz-Vfd" customClass="UILabel_CustomFont">
+                                        <rect key="frame" x="20" y="20" width="240" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Till din angivna mail är det nu skickat ett lösenord. Följ instruktionerna där, så kommer allt att lösa sig. Nu kör vi!" translatesAutoresizingMaskIntoConstraints="NO" id="S2G-iF-5c4">
+                                        <rect key="frame" x="20" y="49" width="240" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.36470588240000001" green="0.3803921569" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k28-zc-cfC">
+                                        <rect key="frame" x="20" y="179" width="240" height="3"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgv-od-F2T" customClass="UIButton_CustomFont">
+                                        <rect key="frame" x="20" y="139" width="240" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.83137254900000002" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="OKEJ, JAG FATTAR!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Futura-Bold"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="goBack:" destination="g6t-KF-izd" eventType="touchUpInside" id="uEF-xW-1d0"/>
+                                            <action selector="okayIUnderstandButton:" destination="kwK-Fe-Eb3" eventType="touchUpInside" id="bkv-Ez-sM1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.75686274509999996" green="0.82745098039999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="wXd-dm-OaQ" firstAttribute="top" secondItem="CwJ-xu-xhq" secondAttribute="bottom" constant="5" id="AcQ-hX-52V"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SKAPA LÖSENORD" id="xy7-aE-5ih"/>
                     <connections>
+                        <outlet property="afterResetPasswordView" destination="VxZ-de-LD7" id="6dL-4e-luu"/>
+                        <outlet property="createPasswordButtonView" destination="wXd-dm-OaQ" id="sO7-1k-siP"/>
                         <outlet property="forgotEmailField" destination="vjY-1H-CFU" id="fv2-uJ-ZF5"/>
+                        <outlet property="resetPasswordErrorLabel" destination="lvR-if-w9d" id="aWh-7o-PIT"/>
+                        <outlet property="resetPasswordErrorLabelShadow" destination="ouy-Cb-aeK" id="kua-gx-GJJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFw-Hn-wD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
