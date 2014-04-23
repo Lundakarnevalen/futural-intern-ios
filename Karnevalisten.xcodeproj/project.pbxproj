@@ -53,6 +53,8 @@
 		27D71D6716A349AD00021245 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6616A349AD00021245 /* CoreGraphics.framework */; };
 		570F0CD418E472920063A1BD /* Cluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 570F0CD318E472920063A1BD /* Cluster.m */; };
 		57186D8E18DF17B200E78450 /* ReadMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57186D8D18DF17B200E78450 /* ReadMessageViewController.m */; };
+		57839CF7190823DE00B9F189 /* IDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57839CF6190823DE00B9F189 /* IDViewController.m */; };
+		57839CF9190830F400B9F189 /* ID.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57839CF8190830F400B9F189 /* ID.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +130,9 @@
 		570F0CD318E472920063A1BD /* Cluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cluster.m; path = Models/Cluster.m; sourceTree = "<group>"; };
 		57186D8C18DF17B200E78450 /* ReadMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReadMessageViewController.h; path = ViewControllers/ReadMessageViewController.h; sourceTree = "<group>"; };
 		57186D8D18DF17B200E78450 /* ReadMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReadMessageViewController.m; path = ViewControllers/ReadMessageViewController.m; sourceTree = "<group>"; };
+		57839CF5190823DE00B9F189 /* IDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDViewController.h; path = ViewControllers/IDViewController.h; sourceTree = "<group>"; };
+		57839CF6190823DE00B9F189 /* IDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDViewController.m; path = ViewControllers/IDViewController.m; sourceTree = "<group>"; };
+		57839CF8190830F400B9F189 /* ID.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ID.storyboard; path = Storyboards/ID.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +205,7 @@
 				1A9D6B1118E23ED8003D0A78 /* Inkorg.storyboard */,
 				1A9D6B1518E244BD003D0A78 /* Karta.storyboard */,
 				1A9D6B1718E2550A003D0A78 /* Main.storyboard */,
+				57839CF8190830F400B9F189 /* ID.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -233,6 +239,8 @@
 				1AAB5AB518A0652100BFF205 /* MenuControllers */,
 				57186D8C18DF17B200E78450 /* ReadMessageViewController.h */,
 				57186D8D18DF17B200E78450 /* ReadMessageViewController.m */,
+				57839CF5190823DE00B9F189 /* IDViewController.h */,
+				57839CF6190823DE00B9F189 /* IDViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -372,6 +380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57839CF9190830F400B9F189 /* ID.storyboard in Resources */,
 				1A9CFF8718F346D20002BD34 /* Main.storyboard in Resources */,
 				1A1543C018EE179B001B411C /* Karnevalisten-Info.plist in Resources */,
 				1A1543B018EE1693001B411C /* Settings.bundle in Resources */,
@@ -403,6 +412,7 @@
 				570F0CD418E472920063A1BD /* Cluster.m in Sources */,
 				1A15438218EE13F7001B411C /* Karnevalist.m in Sources */,
 				1A15437518EE13EB001B411C /* Sektioner.m in Sources */,
+				57839CF7190823DE00B9F189 /* IDViewController.m in Sources */,
 				1A1543CB18EE184B001B411C /* ECSlidingViewController.m in Sources */,
 				1A15437418EE13EB001B411C /* Message.m in Sources */,
 				1A9D6B0918E22768003D0A78 /* UITextField+CustomFont.m in Sources */,

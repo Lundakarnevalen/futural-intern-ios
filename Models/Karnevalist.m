@@ -9,6 +9,8 @@
 #import "Karnevalist.h"
 #import "FuturalAPI.h"
 
+#import "ViewControllerSignIn.h"
+
 @implementation Karnevalist
 
 - (Karnevalist *)init {
@@ -35,10 +37,18 @@
     self.identifier = [dictionary[@"id"] integerValue];
     self.firstname = dictionary[@"fornamn"];
     self.lastname = dictionary[@"efternamn"];
+    self.gatuadress = dictionary[@"gatuadress"];
+    self.postort = dictionary[@"postort"];
+    self.postnr = dictionary[@"postnr"];
+    self.personnr = dictionary[@"personnummer"];
+    self.gender = [dictionary[@"kon_id"] integerValue];
     self.email = dictionary[@"email"];
     self.phone = dictionary[@"telnr"];
     self.sektion = dictionary[@"tilldelad_sektion"];
     self.imageUrl = dictionary[@"foto"][@"url"]; //to be continued.
+    self.active = dictionary[@"active"];
+    
+    NSLog(@"%@", dictionary);
     
     if(save) {
         
@@ -48,16 +58,29 @@
     
 }
 
+- (BOOL)isStoredDataUpToDate {
+    
+    NSDictionary *data = [self readData];
+    return (data[@"active"] != nil && data[@"personnr"] != nil); //keep on adding if the karnevalist fields are updated.
+    
+}
+
 - (void)saveData {
     
     NSDictionary *dataToSave = @{
                                  @"id": [NSNumber numberWithInteger:self.identifier],
+                                 @"active": [NSNumber numberWithBool:self.active],
                                  @"fornamn": self.firstname,
                                  @"efternamn": self.lastname,
                                  @"email": self.email,
                                  @"telnr": self.phone,
                                  @"tilldelad_sektion": self.sektion,
-                                 @"imageUrl": self.imageUrl
+                                 @"foto": @{ @"url" : self.imageUrl},
+                                 @"postnr" : self.postnr,
+                                 @"gatuadress" : self.gatuadress,
+                                 @"postort" : self.postort,
+                                 @"personnr" : self.personnr,
+                                 @"gender" : [NSNumber numberWithInteger:self.gender]
                                  };
     
     [[NSUserDefaults standardUserDefaults] setValue:dataToSave forKey:@"karnevalist"];
@@ -70,11 +93,17 @@
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:[[self class] userIdentifier]]; //remove data from nsuserdefaults.
     
     self.firstname = nil;
+    self.active = NO;
     self.lastname = nil;
     self.sektion = nil;
     self.email = nil;
     self.phone = nil;
     self.identifier = nil;
+    self.postort = nil;
+    self.postnr = nil;
+    self.gender = 0;
+    self.gatuadress = nil;
+    self.personnr = nil;
     
 }
 
@@ -86,7 +115,7 @@
 
 - (NSString *)description { //debug.
     
-    return [NSString stringWithFormat:@"Hej, mitt namn är %@ %@ och jag är med i sektion %@. Jag har identifier %d", self.firstname, self.lastname, self.sektion, self.identifier];
+    return [NSString stringWithFormat:@"Hej, mitt namn är %@ %@ och jag är med i sektion %@. Jag har identifier %d och är såhär aktiv: %d", self.firstname, self.lastname, self.sektion, self.identifier, self.active];
     
 }
 

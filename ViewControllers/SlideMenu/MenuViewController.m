@@ -10,6 +10,8 @@
 #import "ECSlidingViewController.h"
 #import "Sektioner.h"
 
+#import "FuturalAPI.h"
+
 #define TAG_MENULABEL 1006
 
 @interface MenuViewController ()
@@ -30,17 +32,7 @@
     
     self.tableView.scrollsToTop = NO; //if set to YES (default) the subviews won't respond to the statusbar-tap.
     
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy'-'MM'-'dd' 'HH':'mm"];
-    
-    NSDate *today = [NSDate date];
-    NSDate *tidningsdagen = [formatter dateFromString:@"2014-04-12 23:59"];
-    
-    if ([today compare:tidningsdagen] == NSOrderedDescending) {
-        self.menu = [NSArray arrayWithObjects: @"Start", @"Inkorg", nil];
-    } else {
-        self.menu = [NSArray arrayWithObjects: @"Start", @"Inkorg", @"Karta", nil];
-    }
+    self.menu = [NSArray arrayWithObjects: @"Start", @"Inkorg", @"ID", @"Logga ut", nil];
     
     /*cache the first view as well*/
     [self cacheStoryboard:self.storyboard withIdentifier:[self.menu firstObject]];
@@ -77,6 +69,16 @@
     
 }
 
+- (FuturalAPI *)api {
+    
+    if(!_api) {
+        _api = [[FuturalAPI alloc] initFuturalAPIWithDownloadDelegate:self];
+    }
+    
+    return _api;
+    
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -93,7 +95,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *cellIdentifier = @"Cell";
+ 
+    NSString *labelText = [[self.menu objectAtIndex:indexPath.row] uppercaseString];
+    NSString *cellIdentifier = ([labelText isEqualToString:@"LOGGA UT"]) ? @"signout" : @"Cell";
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     if (!cell) {
@@ -103,7 +108,7 @@
     }
     
     UILabel *menuLabel = (UILabel *)[cell viewWithTag:TAG_MENULABEL];
-    menuLabel.text = [[self.menu objectAtIndex:indexPath.row] uppercaseString];
+    menuLabel.text = labelText;
     
     return cell;
 }
@@ -119,29 +124,43 @@
     NSString *identifier = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row]];
     NSString *viewControllerIdentifier = [NSString stringWithFormat:@"vc_%@", identifier]; //to keep track of it in the dictionary.
     
-    UIStoryboard *storyboard = self.viewCache[identifier]; //nil if not instantiated.
-    UIViewController *newTopViewController = self.viewCache[viewControllerIdentifier]; //-----||------
+    if([identifier isEqualToString:@"Logga ut"]) {
+        
+        NSLog(@"Signed out.");
+        [self.api.karnevalist destroyData];
+        
+    } else {
     
-    if(!storyboard) {
-    
-        storyboard = [UIStoryboard storyboardWithName:identifier bundle:nil]; //store the storyboard in the dictionary.
-        [self cacheStoryboard:storyboard withIdentifier:identifier];
+        UIStoryboard *storyboard = self.viewCache[identifier]; //nil if not instantiated.
+        UIViewController *newTopViewController = self.viewCache[viewControllerIdentifier]; //-----||------
+        
+        if(!storyboard) {
+            
+            NSLog(@"Didn't find storyboard in cache. %@", identifier);
+            storyboard = [UIStoryboard storyboardWithName:identifier bundle:nil]; //store the storyboard in the dictionary.
+            [self cacheStoryboard:storyboard withIdentifier:identifier];
+            
+        }
+        
+        if(!newTopViewController) {
+            
+            NSLog(@"Didn't find viewController in cache. %@", viewControllerIdentifier);
+            newTopViewController = [storyboard instantiateInitialViewController]; //-----||-----
+            [self cacheViewController:newTopViewController withIdentifier:viewControllerIdentifier];
+            
+        }
+        
+        NSLog(@"ViewController: %@", newTopViewController);
+        
+        [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
+            CGRect frame = self.slidingViewController.topViewController.view.frame;
+            NSLog(@"Frame-height: %f", frame.size.height);
+            self.slidingViewController.topViewController = newTopViewController;
+            self.slidingViewController.topViewController.view.frame = frame;
+            [self.slidingViewController resetTopView];
+        }];
         
     }
-    
-    if(!newTopViewController) {
-        
-        newTopViewController = [storyboard instantiateInitialViewController]; //-----||-----
-        [self cacheViewController:newTopViewController withIdentifier:viewControllerIdentifier];
-        
-    }
-    
-    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
-        CGRect frame = self.slidingViewController.topViewController.view.frame;
-        self.slidingViewController.topViewController = newTopViewController;
-        self.slidingViewController.topViewController.view.frame = frame;
-        [self.slidingViewController resetTopView];
-    }];
     
 }
 

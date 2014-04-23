@@ -135,7 +135,7 @@
                 self.slidingViewController.topViewController.view.frame = frame;
                 [self.slidingViewController resetTopView];                
                 
-#warning perform segue
+//#warning perform segue
                 
             } else {
                 
