@@ -81,7 +81,7 @@
     
     if ([today compare:tidningsdagen] == NSOrderedAscending) {
         [self.locationManager stopMonitoringSignificantLocationChanges];
-        [self.locationManager startMonitoringSignificantLocationChanges];
+        //[self.locationManager startMonitoringSignificantLocationChanges];
     }
     
 }
@@ -119,7 +119,7 @@
         NSLog(@"Innan tidningsdagen");
         if ([CLLocationManager locationServicesEnabled]) {
             [self.locationManager stopMonitoringSignificantLocationChanges];
-            [self.locationManager startMonitoringSignificantLocationChanges];
+            //[self.locationManager startMonitoringSignificantLocationChanges];
         }
     }
 }
@@ -137,13 +137,13 @@
         
     }
     
-    CLLocation *location = [locations lastObject];
+    //CLLocation *location = [locations lastObject];
     NSLog(@"Location Manager isInBackground: %hhd", isInBackground);
     
     if ([self isSignedIn]) {
         
         NSLog(@"Nu vill jag sända till serven.");
-        [self updateLocation:location isInBackground:isInBackground];
+        //[self updateLocation:location isInBackground:isInBackground];
         
     }
     

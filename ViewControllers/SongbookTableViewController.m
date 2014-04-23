@@ -7,16 +7,22 @@
 //
 
 #import "SongbookTableViewController.h"
-#import "Songs.h"
+#import "Song.h"
 #import "ECSlidingViewController.h"
-#import "MenuViewController.h"
 
-#define TAG_HEADER 0
-//#define TAG_SUBHEADER 1
+#import "DetailedSongViewController.h"
+
+#define TAG_HEADER 1001
+#define TAG_ISWINNER 1002
+
+#define TAG_PAGENUMBER 2001
+#define TAG_SECTIONLABEL 3001
+#define TAG_SECTIONIMAGE 3002
 
 @interface SongbookTableViewController ()
 
 @property (nonatomic) NSMutableArray *songs;
+@property (nonatomic) NSMutableArray *songsSections;
 
 @end
 
@@ -37,20 +43,22 @@
     
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"songs" ofType:@"plist"];
     
-    NSDictionary *temp = [NSDictionary dictionaryWithContentsOfFile:plistPath];
-    NSArray *tempSongs = [temp objectForKey:@"songs"];
+    NSArray *tempSongs = [[NSDictionary dictionaryWithContentsOfFile:plistPath] objectForKey:@"songs"];
     self.songs = [[NSMutableArray alloc] init];
-    for (id obj in tempSongs) {
-        Songs *song = [[Songs alloc] init];
-        song.name = [obj objectForKey:@"name"];
-        song.melodi = [obj objectForKey:@"melodi"];
-        song.text = [obj objectForKey:@"text"];
-        song.isWinner = [obj objectForKey:@"isWinner"];
-        song.win = [obj objectForKey:@"win"];
-        song.img = [obj objectForKey:@"img"];
+    self.songsSections = [[NSMutableArray alloc] init];
+    int i = -1;
+    for (NSDictionary *dict in tempSongs) {
+        if (![self.songsSections containsObject:dict[@"category"]]) {
+            i++;
+            [self.songs addObject:[[NSMutableArray alloc] init]];
+            [self.songsSections addObject:dict[@"category"]];
+        }
         
-        [self.songs addObject:song];
+        Song *song = [[Song alloc] initWithDictionary:dict];
+        
+        [[self.songs objectAtIndex:i] addObject:song];
     }
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,23 +71,21 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return [self.songsSections count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [[self.songs objectAtIndex:section] count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    Songs *song = [self.songs objectAtIndex:indexPath.row]; //the push message we want to show.
     
+    Song *song = [self songAtIndexPath:indexPath];
     NSString *cellIdentifier = @"songCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
@@ -88,65 +94,52 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
         
     }
-    
     UILabel * headerLabel = (UILabel *)[[cell contentView] viewWithTag:TAG_HEADER];
-    //UILabel * subheaderLabel = (UILabel *)[[cell contentView] viewWithTag:TAG_SUBHEADER];
+    UILabel * pageNumberLabel = (UILabel *)[[cell contentView] viewWithTag:TAG_PAGENUMBER];
+    UIImageView *image = (UIImageView *)[[cell contentView] viewWithTag:TAG_ISWINNER];
+    image.hidden = !song.isWinner;
     
     [headerLabel setText:song.name];
-    //[subheaderLabel setText:[song dateAsHumanReadableString]];
+    [pageNumberLabel setText:[NSString stringWithFormat:@"%@", song.pageNumber]];
     
     return cell;
+    
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"sectionHeader" owner:self options:nil];
+    UIView *nibView = [nibObjects objectAtIndex:0];
+    UILabel * pageNumberLabel = (UILabel *)[nibView viewWithTag:TAG_SECTIONLABEL];
+    NSString *category = [[[self.songs objectAtIndex:section] objectAtIndex:0] category];
+    pageNumberLabel.text = category;
+    UIImageView *image = (UIImageView *)[nibView viewWithTag:TAG_SECTIONIMAGE];
+    image.image = [Song imageForCategoryWithName:category];
+    return nibView;
+}
+
+#pragma mark - table view delegate
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"Selected cell at section: %d row: %d", indexPath.section, indexPath.row);
+}
+    
+
+-(Song *)songAtIndexPath:(NSIndexPath *)indexPath {
+    return [[self.songs objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
 }
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UITableViewCell *)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"toDetailedSongViewSegue"]) {
+        DetailedSongViewController *viewController = (DetailedSongViewController *)segue.destinationViewController;
+        viewController.song = [self songAtIndexPath:[self.tableView indexPathForCell:sender]];
+    }
 }
-*/
+
 
 - (IBAction)revealMenu:(id)sender
 {

@@ -30,7 +30,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Futura-Bold.ttf</string>
+		<string>FuturaLT-Bold.ttf</string>
 		<string>Robot!Head.ttf</string>
 	</array>
 	<key>UIBackgroundModes</key>

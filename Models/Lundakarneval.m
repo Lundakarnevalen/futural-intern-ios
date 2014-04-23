@@ -31,8 +31,6 @@
 
 + (NSDictionary *)eventIdentifiers {
     
-#warning Se till så att datumen stämmer och lägg till efterhand.
-    
     return @{
              
              //@"ugglarp":@"2014-03-22 19:00",
@@ -41,7 +39,7 @@
              @"tidningsdagen":@"2014-04-12 12:00", //
              @"lundakarnevalen":@"2014-05-16 00:00", //
              @"karnelan":@"2014-04-16 18:00", //
-             @"karnevöl_systemet":@"2014-05-01 09:00", //
+             @"karnevöl_systemet":@"2014-05-02 09:00", //
              //@"frukost_picknick":@"2014-05-15 09:00",
              @"förkarneval":@"2014-05-11 19:00", //
              //@"efterkarneval":@"2014-09-20 00:00"

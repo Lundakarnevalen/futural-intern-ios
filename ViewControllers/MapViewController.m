@@ -53,7 +53,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSMutableArray *clusters = [[NSMutableArray alloc] init];
     self.MapView.region = MKCoordinateRegionMake(
                                                  CLLocationCoordinate2DMake(55.924332668033337, 13.551104518235233),
                                                  MKCoordinateSpanMake(1.2522221323685514, 2.0859175922040549));

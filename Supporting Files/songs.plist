@@ -7,10 +7,16 @@
 	<key>songs</key>
 	<array>
 		<dict>
+			<key>category</key>
+			<string>Karnevalsmelodin</string>
+			<key>img</key>
+			<string>not.png</string>
+			<key>page_number</key>
+			<integer>6</integer>
 			<key>name</key>
 			<string>Karnevalsmelodin</string>
 			<key>isWinner</key>
-			<false/>
+			<true/>
 			<key>text</key>
 			<string>Jag kan inte sitta still
 Jag får inte någon ro
@@ -39,6 +45,10 @@ Vi ska övertyga världen att fira maj i Lund Exploderar på en sekund
 ||: REFR :||</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Alkoholfria visor</string>
+			<key>page_number</key>
+			<integer>9</integer>
 			<key>name</key>
 			<string>Nyktronauten</string>
 			<key>isWinner</key>
@@ -50,10 +60,12 @@ Vi ska övertyga världen att fira maj i Lund Exploderar på en sekund
 Ty är man packad i outer space, kan man få spyan i eget face!</string>
 			<key>img</key>
 			<string>alkofri.png</string>
-			<key>win</key>
-			<string>vinnare.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Alkoholfria visor</string>
+			<key>page_number</key>
+			<integer>10</integer>
 			<key>name</key>
 			<string>Min kompis Rasmus</string>
 			<key>isWinner</key>
@@ -69,6 +81,10 @@ Hans liv är flott och extravagant, Finansieras av våran pant!</string>
 			<string>alkofri.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Alkoholfria visor</string>
+			<key>page_number</key>
+			<integer>11</integer>
 			<key>name</key>
 			<string>Vatten</string>
 			<key>isWinner</key>
@@ -85,6 +101,10 @@ Det är vatten från buteljer och från Lommas hamnkvarter, och från Lundag
 			<string>alkofri.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Punschvisor</string>
+			<key>page_number</key>
+			<integer>13</integer>
 			<key>name</key>
 			<string>Avlyssning av godo</string>
 			<key>isWinner</key>
@@ -98,8 +118,12 @@ Vattnet blev punsch och nu undrar du hur? Inte så svårt med (B)arrak i sin l
 			<string>punsch.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Punschvisor</string>
 			<key>name</key>
 			<string>Kommunal profilering</string>
+			<key>page_number</key>
+			<integer>14</integer>
 			<key>isWinner</key>
 			<false/>
 			<key>melodi</key>
@@ -114,6 +138,10 @@ Punschen gul, närhelst jag vill på dan’ :||</string>
 			<string>punsch.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Punschvisor</string>
+			<key>page_number</key>
+			<integer>15</integer>
 			<key>name</key>
 			<string>När isarna smälter</string>
 			<key>isWinner</key>
@@ -126,6 +154,10 @@ Punschen gul, närhelst jag vill på dan’ :||</string>
 			<string>punsch.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Punschvisor</string>
+			<key>page_number</key>
+			<integer>16</integer>
 			<key>name</key>
 			<string>Punschline</string>
 			<key>isWinner</key>
@@ -140,10 +172,12 @@ punsch, punsch, punsch, punsch, punsch, punsch, punsch, punsch, punsch, punsch
 En punchline, en punchline är knorren på vår sång!</string>
 			<key>img</key>
 			<string>punsch.png</string>
-			<key>win</key>
-			<string>vinnare.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Snapsvisor</string>
+			<key>page_number</key>
+			<integer>18</integer>
 			<key>name</key>
 			<string>Anti-snapsvise-snapsvisan</string>
 			<key>isWinner</key>
@@ -159,6 +193,10 @@ Tänk om det bara fanns ett bra sätt, att all musik censurera!</string>
 			<string>snaps.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Snapsvisor</string>
+			<key>page_number</key>
+			<integer>19</integer>
 			<key>name</key>
 			<string>Bakåtsträvande framtidsteknik</string>
 			<key>isWinner</key>
@@ -174,6 +212,10 @@ När på fest han tömt sin snaps Reser han direkt tillbaks...
 			<string>snaps.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Snapsvisor</string>
+			<key>page_number</key>
+			<integer>20</integer>
 			<key>name</key>
 			<string>Dagen efter</string>
 			<key>isWinner</key>
@@ -195,6 +237,10 @@ Och jag ragglar hem i gryningen!</string>
 			<string>snaps.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Snapsvisor</string>
+			<key>page_number</key>
+			<integer>21</integer>
 			<key>name</key>
 			<string>Energidryck</string>
 			<key>isWinner</key>
@@ -211,6 +257,10 @@ i kall fusion</string>
 			<string>snaps.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Snapsvisor</string>
+			<key>page_number</key>
+			<integer>22</integer>
 			<key>name</key>
 			<string>Fallstudie</string>
 			<key>isWinner</key>
@@ -230,6 +280,10 @@ Hellre framtid än framfall</string>
 			<string>snaps.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Snapsvisor</string>
+			<key>page_number</key>
+			<integer>23</integer>
 			<key>name</key>
 			<string>In real life</string>
 			<key>isWinner</key>
@@ -243,6 +297,10 @@ Hellre framtid än framfall</string>
 			<string>snaps.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Snapsvisor</string>
+			<key>page_number</key>
+			<integer>24</integer>
 			<key>name</key>
 			<string>Kosta vad det kostar vill!</string>
 			<key>isWinner</key>
@@ -261,6 +319,10 @@ Varför ska den va liten
 			<string>snaps.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Snapsvisor</string>
+			<key>page_number</key>
+			<integer>25</integer>
 			<key>name</key>
 			<string>Långtidsnjutning</string>
 			<key>isWinner</key>
@@ -274,6 +336,10 @@ Så han kan njuta i flera dar!</string>
 			<string>snaps.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Snapsvisor</string>
+			<key>page_number</key>
+			<integer>26</integer>
 			<key>name</key>
 			<string>Kalsongtricket</string>
 			<key>isWinner</key>
@@ -288,6 +354,10 @@ i kal-i kal-i kal-i kal-i kalsongen.</string>
 			<string>snaps.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Snapsvisor</string>
+			<key>page_number</key>
+			<integer>27</integer>
 			<key>name</key>
 			<string>YOLO!</string>
 			<key>isWinner</key>
@@ -299,10 +369,12 @@ i kal-i kal-i kal-i kal-i kalsongen.</string>
 YOLO och YOLO, YOLO och YOLO!</string>
 			<key>img</key>
 			<string>snaps.png</string>
-			<key>win</key>
-			<string>vinnare.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Vinvisor</string>
+			<key>page_number</key>
+			<integer>29</integer>
 			<key>name</key>
 			<string>Gammelmormor saknar täckning</string>
 			<key>isWinner</key>
@@ -322,10 +394,12 @@ Och då så får hon alltid samma gamla propp
 Ambulansen kommer och hon lallar: Livet är en fest! Hoppas att hon aldrig får täckning!</string>
 			<key>img</key>
 			<string>vin.png</string>
-			<key>win</key>
-			<string>vinnare.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Vinvisor</string>
+			<key>page_number</key>
+			<integer>30</integer>
 			<key>name</key>
 			<string>Lillördag</string>
 			<key>isWinner</key>
@@ -343,6 +417,10 @@ Och trots allt vin över bord och sängar Är Lund är det roligaste som ha�
 			<string>vin.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Vinvisor</string>
+			<key>page_number</key>
+			<integer>31</integer>
 			<key>name</key>
 			<string>This is the wine</string>
 			<key>isWinner</key>
@@ -358,6 +436,10 @@ When I wake up tomorrow (wakin’ up, wakin’ up) This is the wine we’ll whin
 			<string>vin.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Ölvisor</string>
+			<key>page_number</key>
+			<integer>33</integer>
 			<key>name</key>
 			<string>2014</string>
 			<key>isWinner</key>
@@ -370,10 +452,12 @@ HURRA!
 om-bom-bom-bom-bom-bom-bom-bom-bom- bom-bom-bom-bom :||</string>
 			<key>img</key>
 			<string>öl.png</string>
-			<key>win</key>
-			<string>vinnare.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Ölvisor</string>
+			<key>page_number</key>
+			<integer>34</integer>
 			<key>name</key>
 			<string>Inga kalla pilsner</string>
 			<key>isWinner</key>
@@ -389,6 +473,10 @@ tur att ljummen karnevöl är JÄTTEGOTT!</string>
 			<string>öl.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Ölvisor</string>
+			<key>page_number</key>
+			<integer>35</integer>
 			<key>name</key>
 			<string>Du är min öl</string>
 			<key>isWinner</key>
@@ -401,6 +489,10 @@ tur att ljummen karnevöl är JÄTTEGOTT!</string>
 			<string>öl.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Ölvisor</string>
+			<key>page_number</key>
+			<integer>35</integer>
 			<key>name</key>
 			<string>Mammas goda råd</string>
 			<key>isWinner</key>
@@ -416,6 +508,10 @@ Det bästa råd-eli-rådet va’, När kära morsan min hon sa
 			<string>öl.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Ölvisor</string>
+			<key>page_number</key>
+			<integer>37</integer>
 			<key>name</key>
 			<string>Utbildning utan framtid eller “Konsten att strula till ett liv”</string>
 			<key>isWinner</key>
@@ -431,6 +527,10 @@ Får jag svaren ifall jag tar en öl till i anställningsbaren?</string>
 			<string>öl.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Övriga visor</string>
+			<key>page_number</key>
+			<integer>39</integer>
 			<key>name</key>
 			<string>När åren gått</string>
 			<key>isWinner</key>
@@ -446,6 +546,10 @@ För skålen efter denna sång Den är ännu futural!</string>
 			<string>not.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Övriga visor</string>
+			<key>page_number</key>
+			<integer>40</integer>
 			<key>name</key>
 			<string>Varning för fest</string>
 			<key>isWinner</key>
@@ -453,13 +557,15 @@ För skålen efter denna sång Den är ännu futural!</string>
 			<key>melodi</key>
 			<string>Melodi: Diggiloo, Diggiley Diggiloo, Diggiley</string>
 			<key>text</key>
-			<string>Alla tittar på mig
-när jag går här i min varselväst Men jag vill ju bara varna
-hela välden för fest!</string>
+			<string>Diggiloo, DiggileyAlla tittar på mignär jag går här i min varselväst Men jag vill ju bara varnahela välden för fest!</string>
 			<key>img</key>
 			<string>not.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Övriga visor</string>
+			<key>page_number</key>
+			<integer>41</integer>
 			<key>name</key>
 			<string>Preventiva visan</string>
 			<key>isWinner</key>
@@ -475,6 +581,10 @@ För skålen efter denna sång Den är ännu futural!</string>
 			<string>not.png</string>
 		</dict>
 		<dict>
+			<key>category</key>
+			<string>Övriga visor</string>
+			<key>page_number</key>
+			<integer>42</integer>
 			<key>name</key>
 			<string>Tempus futurum</string>
 			<key>isWinner</key>
@@ -490,8 +600,6 @@ Tempus futurum drack dricka druckit Det kan va’ roligt att kröka ett verb!
 Melodi: Temperaturen är hög uti kroppen </string>
 			<key>img</key>
 			<string>not.png</string>
-			<key>win</key>
-			<string>vinnare.png</string>
 		</dict>
 	</array>
 </dict>
