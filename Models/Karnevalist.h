@@ -24,7 +24,7 @@
 @property (nonatomic) BOOL active;
 @property (nonatomic) NSString *email;
 @property (nonatomic) NSString *phone;
-@property (nonatomic) NSString *sektion;
+@property (nonatomic) NSInteger sektion;
 @property (nonatomic) NSString *imageUrl;
 
 @property (nonatomic) NSString *gatuadress;
@@ -37,6 +37,7 @@
 - (BOOL)isStoredDataUpToDate;
 - (void)setToken:(NSString *)token;
 - (void)setInformationFromDictionary:(NSDictionary *)dictionary andSave:(BOOL)save;
+- (UIImage *)profilePicture;
 
 - (void)destroyData;
 

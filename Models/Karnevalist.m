@@ -44,7 +44,7 @@
     self.gender = [dictionary[@"kon_id"] integerValue];
     self.email = dictionary[@"email"];
     self.phone = dictionary[@"telnr"];
-    self.sektion = dictionary[@"tilldelad_sektion"];
+    self.sektion = [dictionary[@"tilldelad_sektion"] integerValue];
     self.imageUrl = dictionary[@"foto"][@"url"]; //to be continued.
     self.active = dictionary[@"active"];
     
@@ -74,7 +74,7 @@
                                  @"efternamn": self.lastname,
                                  @"email": self.email,
                                  @"telnr": self.phone,
-                                 @"tilldelad_sektion": self.sektion,
+                                 @"tilldelad_sektion": [NSNumber numberWithInt:self.sektion],
                                  @"foto": @{ @"url" : self.imageUrl},
                                  @"postnr" : self.postnr,
                                  @"gatuadress" : self.gatuadress,
@@ -95,7 +95,7 @@
     self.firstname = nil;
     self.active = NO;
     self.lastname = nil;
-    self.sektion = nil;
+    self.sektion = 0;
     self.email = nil;
     self.phone = nil;
     self.identifier = nil;
@@ -105,6 +105,37 @@
     self.gatuadress = nil;
     self.personnr = nil;
     
+    NSString *imagePath = [[self applicationDocumentsDirectory].path stringByAppendingPathComponent:@"_profileImage.jpeg"];
+    [[[NSFileManager alloc] init] removeItemAtPath:imagePath error:nil];
+    
+}
+
+- (UIImage *)profilePicture {
+    
+    NSString *imagePath = [[self applicationDocumentsDirectory].path stringByAppendingPathComponent:@"_profileImage.jpeg"];
+    NSData *imageData = [NSData dataWithContentsOfFile:imagePath];
+    
+    if(!imageData) { //download and cache the image.
+    
+        NSFileManager *fileManager = [[NSFileManager alloc] init];
+        NSLog(@"downloading profile image.");
+        imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:self.imageUrl]];
+        
+        if(imageData) { //if there's an image, store it (may crash if not checked).
+            NSLog(@"cached profile image.");
+            [fileManager createFileAtPath:imagePath contents:imageData attributes:nil];
+        }
+        
+    } else {
+        NSLog(@"Found cached profile image.");
+    }
+    
+    return [UIImage imageWithData:imageData];
+    
+}
+
+- (NSURL *)applicationDocumentsDirectory {
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
 - (NSDictionary *)readData {

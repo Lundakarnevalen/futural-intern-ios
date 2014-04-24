@@ -50,11 +50,23 @@
 
 + (NSString *)nameFromIdentifier:(NSInteger)identifier {
     
-    NSDictionary *names = @{
-                            @10 : @"kommunikation"
-                            };
+    NSString *name;
     
-    return names[[NSNumber numberWithInteger:identifier]];
+    NSLog(@"sektion:%d", identifier);
+    
+    switch(identifier) {
+            
+        case 10:
+            name = @"Kommunikation";
+            break;
+            
+        default:
+            name = @"???";
+            break;
+            
+    }
+    
+    return name;
     
 }
 
