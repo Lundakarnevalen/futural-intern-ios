@@ -128,7 +128,7 @@
                 UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Start" bundle:nil];
                 UIViewController *newTopViewController = [storyboard instantiateInitialViewController];
                 
-                [(AppDelegate *)[[UIApplication sharedApplication] delegate] startLocationManager];
+                //[(AppDelegate *)[[UIApplication sharedApplication] delegate] startLocationManager];
                 
                 CGRect frame = self.slidingViewController.topViewController.view.frame;
                 self.slidingViewController.topViewController = newTopViewController;

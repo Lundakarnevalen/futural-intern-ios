@@ -48,8 +48,6 @@
     self.imageUrl = dictionary[@"foto"][@"url"]; //to be continued.
     self.active = dictionary[@"active"];
     
-    NSLog(@"%@", dictionary);
-    
     if(save) {
         
         [self saveData];

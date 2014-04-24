@@ -127,6 +127,15 @@
         NSLog(@"Signed out.");
         [self.api.karnevalist destroyData];
         
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Logga in" bundle:nil];
+        UIViewController *newTopViewController = [storyboard instantiateInitialViewController];
+        
+        CGRect frame = self.slidingViewController.topViewController.view.frame;
+        self.slidingViewController.topViewController = newTopViewController;
+        self.slidingViewController.topViewController.view.frame = frame;
+        [self.slidingViewController resetTopView];
+        
+        
     } else {
     
         UIStoryboard *storyboard = self.viewCache[identifier]; //nil if not instantiated.
