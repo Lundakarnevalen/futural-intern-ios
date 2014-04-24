@@ -23,7 +23,7 @@
     Karnevalist *k = self.api.karnevalist;
     
     self.karnevalistImage.image = [k profilePicture];
-    [self.headerLabel setFont:[UIFont fontWithName:@"Robot!Head" size:36]];
+    [self.headerLabel setFont:[UIFont fontWithName:@"Robot!Head" size:self.headerLabel.font.pointSize]];
     [self.activeStamp setHidden:!k.active];
     
     [self.personnrLabel setText:[NSString stringWithFormat:@"Personnr: %@", k.personnr]];

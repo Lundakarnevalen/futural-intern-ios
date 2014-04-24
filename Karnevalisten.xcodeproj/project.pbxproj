@@ -13,6 +13,7 @@
 		1A1543A918EE14F8001B411C /* ViewControllerSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1543A718EE14F8001B411C /* ViewControllerSignIn.m */; };
 		1A1543C518EE1836001B411C /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1543C218EE1836001B411C /* InitViewController.m */; };
 		1A1543CB18EE184B001B411C /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1543C818EE184B001B411C /* ECSlidingViewController.m */; };
+		1A4A83C71909915600D7C466 /* Robot!Head.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A1543BA18EE16DE001B411C /* Robot!Head.ttf */; };
 		1A84377E19081429006B56E9 /* Identification.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15437918EE13F7001B411C /* Identification.m */; };
 		1A84377F19081440006B56E9 /* Lundakarneval.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15437D18EE13F7001B411C /* Lundakarneval.m */; };
 		1A84378019081457006B56E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1543B618EE16C8001B411C /* main.m */; };
@@ -412,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4A83C71909915600D7C466 /* Robot!Head.ttf in Resources */,
 				1A8437B1190866E3006B56E9 /* Main.storyboard in Resources */,
 				FDC7EA0E18E868030067403E /* Sångbok.storyboard in Resources */,
 				57839CF9190830F400B9F189 /* ID.storyboard in Resources */,
