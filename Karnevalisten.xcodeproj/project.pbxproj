@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A15437418EE13EB001B411C /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15437118EE13EB001B411C /* Message.m */; };
-		1A15437518EE13EB001B411C /* Sektioner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15437318EE13EB001B411C /* Sektioner.m */; };
 		1A15438018EE13F7001B411C /* FuturalAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15437718EE13F7001B411C /* FuturalAPI.m */; };
-		1A15438218EE13F7001B411C /* Karnevalist.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15437B18EE13F7001B411C /* Karnevalist.m */; };
 		1A15438818EE1413001B411C /* karnevalsmelodin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A15438718EE1413001B411C /* karnevalsmelodin.mp3 */; };
 		1A1543A918EE14F8001B411C /* ViewControllerSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1543A718EE14F8001B411C /* ViewControllerSignIn.m */; };
 		1A1543C518EE1836001B411C /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1543C218EE1836001B411C /* InitViewController.m */; };
@@ -24,7 +22,6 @@
 		1A843786190814E5006B56E9 /* Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15436E18EE13D5001B411C /* Colors.m */; };
 		1A843787190814F1006B56E9 /* ViewControllerMeddelanden.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1543A518EE14F8001B411C /* ViewControllerMeddelanden.m */; };
 		1A843788190814F1006B56E9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15439C18EE14C6001B411C /* MainViewController.m */; };
-		1A843789190814F1006B56E9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15439E18EE14C6001B411C /* MapViewController.m */; };
 		1A84378A190814F1006B56E9 /* navigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1543A018EE14C6001B411C /* navigationController.m */; };
 		1A84378B190814F1006B56E9 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1543CA18EE184B001B411C /* UIImage+ImageWithUIView.m */; };
 		1A84378C190814F1006B56E9 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1543C418EE1836001B411C /* MenuViewController.m */; };
@@ -56,6 +53,11 @@
 		27D71D6516A349AD00021245 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6416A349AD00021245 /* Foundation.framework */; };
 		27D71D6716A349AD00021245 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D71D6616A349AD00021245 /* CoreGraphics.framework */; };
 		57186D8E18DF17B200E78450 /* ReadMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57186D8D18DF17B200E78450 /* ReadMessageViewController.m */; };
+		5747AD6A19091F7A00AD1B41 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15439E18EE14C6001B411C /* MapViewController.m */; };
+		5747AD6B19091FAD00AD1B41 /* Karnevalist.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15437B18EE13F7001B411C /* Karnevalist.m */; };
+		5747AD6C19091FC700AD1B41 /* Sektioner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15437318EE13EB001B411C /* Sektioner.m */; };
+		57839CF7190823DE00B9F189 /* IDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57839CF6190823DE00B9F189 /* IDViewController.m */; };
+		57839CF9190830F400B9F189 /* ID.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57839CF8190830F400B9F189 /* ID.storyboard */; };
 		FDC7EA0E18E868030067403E /* Sångbok.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC7EA0D18E868030067403E /* Sångbok.storyboard */; };
 		FDC7EA1418E881A80067403E /* SongbookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC7EA1318E881A80067403E /* SongbookTableViewController.m */; };
 		FDC7EA1718E886EC0067403E /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC7EA1618E886EC0067403E /* Song.m */; };
@@ -142,6 +144,9 @@
 		27D71D6616A349AD00021245 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		57186D8C18DF17B200E78450 /* ReadMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReadMessageViewController.h; path = ViewControllers/ReadMessageViewController.h; sourceTree = "<group>"; };
 		57186D8D18DF17B200E78450 /* ReadMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReadMessageViewController.m; path = ViewControllers/ReadMessageViewController.m; sourceTree = "<group>"; };
+		57839CF5190823DE00B9F189 /* IDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDViewController.h; path = ViewControllers/IDViewController.h; sourceTree = "<group>"; };
+		57839CF6190823DE00B9F189 /* IDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDViewController.m; path = ViewControllers/IDViewController.m; sourceTree = "<group>"; };
+		57839CF8190830F400B9F189 /* ID.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ID.storyboard; path = Storyboards/ID.storyboard; sourceTree = "<group>"; };
 		FDC7EA0D18E868030067403E /* Sångbok.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Sångbok.storyboard"; sourceTree = "<group>"; };
 		FDC7EA1218E881A80067403E /* SongbookTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SongbookTableViewController.h; path = ViewControllers/SongbookTableViewController.h; sourceTree = "<group>"; };
 		FDC7EA1318E881A80067403E /* SongbookTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SongbookTableViewController.m; path = ViewControllers/SongbookTableViewController.m; sourceTree = "<group>"; };
@@ -225,6 +230,7 @@
 				1A9D6B1718E2550A003D0A78 /* Main.storyboard */,
 				FDC7EA0D18E868030067403E /* Sångbok.storyboard */,
 				1A8437A419082532006B56E9 /* sectionHeader.xib */,
+				57839CF8190830F400B9F189 /* ID.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -264,6 +270,8 @@
 				1A8437A719083770006B56E9 /* DetailedSongViewController.m */,
 				1A8437AE19085930006B56E9 /* MysticViewController.h */,
 				1A8437AF19085930006B56E9 /* MysticViewController.m */,
+				57839CF5190823DE00B9F189 /* IDViewController.h */,
+				57839CF6190823DE00B9F189 /* IDViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -406,6 +414,7 @@
 			files = (
 				1A8437B1190866E3006B56E9 /* Main.storyboard in Resources */,
 				FDC7EA0E18E868030067403E /* Sångbok.storyboard in Resources */,
+				57839CF9190830F400B9F189 /* ID.storyboard in Resources */,
 				1A9D6B1618E244BD003D0A78 /* Karta.storyboard in Resources */,
 				1A9CFF8918F346F80002BD34 /* sektioner.plist in Resources */,
 				1A9D6B0D18E22866003D0A78 /* Start.storyboard in Resources */,
@@ -427,20 +436,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5747AD6C19091FC700AD1B41 /* Sektioner.m in Sources */,
+				5747AD6B19091FAD00AD1B41 /* Karnevalist.m in Sources */,
+				5747AD6A19091F7A00AD1B41 /* MapViewController.m in Sources */,
 				1A843787190814F1006B56E9 /* ViewControllerMeddelanden.m in Sources */,
 				1A843788190814F1006B56E9 /* MainViewController.m in Sources */,
-				1A843789190814F1006B56E9 /* MapViewController.m in Sources */,
 				1A84378A190814F1006B56E9 /* navigationController.m in Sources */,
 				1A84378B190814F1006B56E9 /* UIImage+ImageWithUIView.m in Sources */,
 				1A84378C190814F1006B56E9 /* MenuViewController.m in Sources */,
 				1A843786190814E5006B56E9 /* Colors.m in Sources */,
 				1A843785190814E2006B56E9 /* LyricString.m in Sources */,
-				1A15438218EE13F7001B411C /* Karnevalist.m in Sources */,
 				1A84378F19081508006B56E9 /* MapPin.m in Sources */,
 				FDC7EA1418E881A80067403E /* SongbookTableViewController.m in Sources */,
 				1A8437B019085930006B56E9 /* MysticViewController.m in Sources */,
 				57186D8E18DF17B200E78450 /* ReadMessageViewController.m in Sources */,
 				1A1543C518EE1836001B411C /* InitViewController.m in Sources */,
+				57839CF7190823DE00B9F189 /* IDViewController.m in Sources */,
 				1A1543CB18EE184B001B411C /* ECSlidingViewController.m in Sources */,
 				1A15437418EE13EB001B411C /* Message.m in Sources */,
 				1A9D6B0918E22768003D0A78 /* UITextField+CustomFont.m in Sources */,
@@ -451,7 +462,6 @@
 				1A84377E19081429006B56E9 /* Identification.m in Sources */,
 				1A8437A819083770006B56E9 /* DetailedSongViewController.m in Sources */,
 				1A84378019081457006B56E9 /* main.m in Sources */,
-				1A15437518EE13EB001B411C /* Sektioner.m in Sources */,
 				FDC7EA1718E886EC0067403E /* Song.m in Sources */,
 				1A84377F19081440006B56E9 /* Lundakarneval.m in Sources */,
 				1A8437AD190858CB006B56E9 /* ShakingView.m in Sources */,
