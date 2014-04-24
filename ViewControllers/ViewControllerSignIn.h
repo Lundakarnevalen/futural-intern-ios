@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ECSlidingViewController.h"
 #import "FuturalAPI.h"
 
 @interface ViewControllerSignIn : UIViewController <NSURLConnectionDataDelegate, UITextFieldDelegate>

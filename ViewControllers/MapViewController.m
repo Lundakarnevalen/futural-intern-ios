@@ -41,15 +41,6 @@
 
 @implementation MapViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -61,7 +52,7 @@
     //(latitude = 55.924332668033337, longitude = 13.551104518235233)
     //(latitudeDelta = 1.2522221323685514, longitudeDelta = 2.0859175922040549)
     
-    [(AppDelegate *)[[UIApplication sharedApplication] delegate] startLocationManager];
+    //[(AppDelegate *)[[UIApplication sharedApplication] delegate] startLocationManager];
     
     //[self loadClusters];
     
@@ -89,9 +80,9 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated {
-    UIApplication* app = [UIApplication sharedApplication];
+    /*UIApplication* app = [UIApplication sharedApplication];
     app.networkActivityIndicatorVisible = YES;
-    [self.api fetchMapCoordinates];
+    [self.api fetchMapCoordinates];*/
 }
 
 #pragma mark - cluster

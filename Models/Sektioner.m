@@ -48,4 +48,26 @@
     return [sektioner copy];
 }
 
++ (NSString *)nameFromIdentifier:(NSInteger)identifier {
+    
+    NSString *name;
+    
+    NSLog(@"sektion:%d", identifier);
+    
+    switch(identifier) {
+            
+        case 10:
+            name = @"Kommunikation";
+            break;
+            
+        default:
+            name = @"???";
+            break;
+            
+    }
+    
+    return name;
+    
+}
+
 @end

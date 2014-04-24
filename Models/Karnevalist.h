@@ -21,14 +21,23 @@
 
 @property (nonatomic) NSString *firstname;
 @property (nonatomic) NSString *lastname;
+@property (nonatomic) BOOL active;
 @property (nonatomic) NSString *email;
 @property (nonatomic) NSString *phone;
-@property (nonatomic) NSString *sektion;
+@property (nonatomic) NSInteger sektion;
 @property (nonatomic) NSString *imageUrl;
 
+@property (nonatomic) NSString *gatuadress;
+@property (nonatomic) NSString *postort;
+@property (nonatomic) NSString *postnr;
+@property (nonatomic) NSString *personnr;
+@property (nonatomic) NSInteger gender;
+
 - (NSString *)token;
+- (BOOL)isStoredDataUpToDate;
 - (void)setToken:(NSString *)token;
 - (void)setInformationFromDictionary:(NSDictionary *)dictionary andSave:(BOOL)save;
+- (UIImage *)profilePicture;
 
 - (void)destroyData;
 
