@@ -33,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mII-Ci-v9l">
-                                <rect key="frame" x="78" y="20" width="443" height="280"/>
+                                <rect key="frame" x="62" y="20" width="443" height="280"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="i0a-Ad-KZK" userLabel="clouds">
@@ -65,7 +65,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="39" id="jU0-wk-GJK"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -253,7 +253,7 @@ inauteriak</string>
                         <color key="backgroundColor" red="0.29803922772407532" green="0.31764706969261169" blue="0.42352944612503052" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="mII-Ci-v9l" secondAttribute="centerY" id="kPm-64-gzN"/>
-                            <constraint firstAttribute="centerX" secondItem="mII-Ci-v9l" secondAttribute="centerX" constant="-15.5" id="plR-NK-o5n"/>
+                            <constraint firstAttribute="centerX" secondItem="mII-Ci-v9l" secondAttribute="centerX" id="plR-NK-o5n"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
