@@ -146,7 +146,7 @@
 
 - (NSString *)description { //debug.
     
-    return [NSString stringWithFormat:@"Hej, mitt namn är %@ %@ och jag är med i sektion %@. Jag har identifier %d och är såhär aktiv: %d", self.firstname, self.lastname, self.sektion, self.identifier, self.active];
+    return [NSString stringWithFormat:@"Hej, mitt namn är %@ %@ och jag är med i sektion %ld. Jag har identifier %d och är såhär aktiv: %d", self.firstname, self.lastname, (long)self.sektion, self.identifier, self.active];
     
 }
 
