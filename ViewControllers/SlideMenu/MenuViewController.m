@@ -16,7 +16,7 @@
 
 @interface MenuViewController ()
 
-@property (strong, nonatomic) NSArray *menu;
+@property (strong, nonatomic) NSMutableArray *menu;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
 
@@ -31,7 +31,12 @@
     [super viewDidLoad];
     
     self.tableView.scrollsToTop = NO; //if set to YES (default) the subviews won't respond to the statusbar-tap.
-    self.menu = [NSArray arrayWithObjects: @"Start", @"Inkorg", @"Sångbok", @"ID", @"Logga ut",nil];
+    
+    self.menu = [NSMutableArray arrayWithObjects: @"Start", @"Inkorg", @"Sångbok", @"ID", @"Logga ut",nil];
+    
+    if (!([[self.api karnevalist] active])) {
+        [self.menu removeObjectIdenticalTo:@"ID"];
+    }
     
     /*cache the first view as well*/
     [self cacheStoryboard:self.storyboard withIdentifier:[self.menu firstObject]];

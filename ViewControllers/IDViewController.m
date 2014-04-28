@@ -10,6 +10,12 @@
 
 #import "Sektioner.h"
 
+@interface IDViewController()
+
+@property (weak, nonatomic) IBOutlet UIImageView *clouds;
+
+@end
+
 @implementation IDViewController
 
 - (void)viewDidLoad
@@ -32,6 +38,24 @@
     [self.nameLabel setText:[NSString stringWithFormat:@"Namn: %@ %@", k.firstname, k.lastname]];
     [self.sektionsLabel setText:[NSString stringWithFormat:@"Sektion: %@", [Sektioner nameFromIdentifier:k.sektion]]];
 
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self animate];
+}
+
+-(void)animate {
+    
+    [UIView animateWithDuration:10.0
+                          delay:0.1
+                        options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse
+                     animations:^{
+                         CGPoint center = self.clouds.center;
+                         center.x -= 100;
+                         self.clouds.center = center;
+                     }
+                     completion:^(BOOL finished){ }];
 }
 
 - (FuturalAPI *)api {
