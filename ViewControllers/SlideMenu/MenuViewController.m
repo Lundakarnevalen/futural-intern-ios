@@ -55,11 +55,6 @@
     
 }
 
--(NSArray *)menu {
-    if (!_menu) _menu = [[NSArray alloc] init];
-    return _menu;
-}
-
 - (NSMutableDictionary *)viewCache {
     
     if(!_viewCache) {
