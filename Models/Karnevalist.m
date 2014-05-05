@@ -65,6 +65,8 @@
 
 - (void)saveData {
     
+    NSString *url = ([self.imageUrl isEqual:[NSNull null]]) ? @"" : self.imageUrl;
+    
     NSDictionary *dataToSave = @{
                                  @"id": [NSNumber numberWithInteger:self.identifier],
                                  @"active": [NSNumber numberWithBool:self.active],
@@ -73,7 +75,7 @@
                                  @"email": self.email,
                                  @"telnr": self.phone,
                                  @"tilldelad_sektion": [NSNumber numberWithInt:self.sektion],
-                                 @"foto": @{ @"url" : self.imageUrl},
+                                 @"foto": @{ @"url" : url },
                                  @"postnr" : self.postnr,
                                  @"gatuadress" : self.gatuadress,
                                  @"postort" : self.postort,
