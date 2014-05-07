@@ -19,8 +19,8 @@
 @implementation FuturalAPI
 
 //implement news feed in the near feature? http://www.lundakarnevalen.se/category/nyheter/feed/
-NSString *const API_URL = @"http://www.karnevalist.se";
-//NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
+//NSString *const API_URL = @"http://www.karnevalist.se";
+NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
 
 - (FuturalAPI *)initFuturalAPIWithDownloadDelegate:(id<NSURLConnectionDataDelegate>)desiredConnectionDelegate { //designated initializer
     
@@ -71,6 +71,18 @@ NSString *const API_URL = @"http://www.karnevalist.se";
     /*Calls the delegate and delivers the request*/
     self.connection = [[NSURLConnection alloc] initWithRequest:request delegate:self.connectionDelegate startImmediately:YES];
     
+}
+
+- (void)fetchImages {
+    NSString *appendUrl = [NSString stringWithFormat:@"api/photos?token=%@", [self.karnevalist token]];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:appendUrl withFormatAppended:NO]];
+    
+    [request setTimeoutInterval:15];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    
+    /*Calls the delegate and delivers the request*/
+    self.connection = [[NSURLConnection alloc] initWithRequest:request delegate:self.connectionDelegate startImmediately:YES];
 }
 
 - (void)authenticateUser:(NSString *)userIdentification withPassword:(NSString *)password { //should be in karnevalist too.
@@ -348,7 +360,8 @@ NSString *const API_URL = @"http://www.karnevalist.se";
                                  @"sign_in":@"sign_in",
                                  @"users/password":@"reset_password",
                                  @"notifications":@"notifications",
-                                 @"clusters":@"maps"
+                                 @"clusters":@"maps",
+                                 @"photos":@"photos"
                                  
                                  };
     

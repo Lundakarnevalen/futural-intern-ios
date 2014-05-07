@@ -32,7 +32,7 @@
     
     self.tableView.scrollsToTop = NO; //if set to YES (default) the subviews won't respond to the statusbar-tap.
     
-    self.menu = [NSMutableArray arrayWithObjects: @"Start", @"Inkorg", @"Sångbok", @"ID", @"Logga ut",nil];
+    self.menu = [NSMutableArray arrayWithObjects: @"Start", @"Inkorg", @"Sångbok", @"ID", @"Futugram", @"Logga ut",nil];
     
     if (!([[self.api karnevalist] active])) {
         [self.menu removeObjectIdenticalTo:@"ID"];
