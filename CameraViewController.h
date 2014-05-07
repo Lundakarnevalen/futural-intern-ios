@@ -12,6 +12,4 @@
 
 @interface CameraViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UIActionSheetDelegate, NSURLConnectionDataDelegate>
 
--(void)didUploadPicture;
-
 @end

@@ -60,7 +60,7 @@
     AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] init];
     NSData *imageData = UIImageJPEGRepresentation(self.image, 0.5);
     NSDictionary *parameters = @{@"token": [[self.api karnevalist] token], @"photo[caption]": self.captionTextField.text};
-    AFHTTPRequestOperation *op = [manager POST:@"http://karnevalist-stage.herokuapp.com/api/photos" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+    AFHTTPRequestOperation *op = [manager POST:@"http://www.karnevalist.se/api/photos" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         //do not put image inside parameters dictionary as I did, but append it!
         [formData appendPartWithFileData:imageData name:@"photo[image]" fileName:@"photo.jpg" mimeType:@"image/jpeg"];
     } success:^(AFHTTPRequestOperation *operation, id responseObject) {

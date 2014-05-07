@@ -19,8 +19,8 @@
 @implementation FuturalAPI
 
 //implement news feed in the near feature? http://www.lundakarnevalen.se/category/nyheter/feed/
-//NSString *const API_URL = @"http://www.karnevalist.se";
-NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
+NSString *const API_URL = @"http://www.karnevalist.se";
+//NSString *const API_URL = @"http://karnevalist-stage.herokuapp.com";
 
 - (FuturalAPI *)initFuturalAPIWithDownloadDelegate:(id<NSURLConnectionDataDelegate>)desiredConnectionDelegate { //designated initializer
     
