@@ -32,7 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = self.image.name;
+    self.title = [self.image.name uppercaseString];
     self.nameLabel.text = self.image.name;
     self.captionTextView.text = self.image.caption;
     //self.captionTextView.textColor = [UIColor redColor];

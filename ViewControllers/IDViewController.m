@@ -7,6 +7,7 @@
 //
 
 #import "IDViewController.h"
+#import "ECSlidingViewController.h"
 
 #import "Sektioner.h"
 
@@ -66,6 +67,10 @@
     
     return _api;
     
+}
+
+- (IBAction)revealMenu:(id)sender {
+    [self.slidingViewController anchorTopViewTo:ECRight];
 }
 
 @end

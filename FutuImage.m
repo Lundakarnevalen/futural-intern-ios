@@ -15,7 +15,7 @@
     if (self) {
         self.caption = dict[@"caption"];
         self.url = [NSURL URLWithString:dict[@"url"]];
-        self.thumb = dict[@"thumb"];
+        self.thumb = [NSURL URLWithString:dict[@"thumb"]];
         self.name = dict[@"name"];
     }
     return self;

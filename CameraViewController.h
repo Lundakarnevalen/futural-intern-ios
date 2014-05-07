@@ -12,6 +12,6 @@
 
 @interface CameraViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UIActionSheetDelegate, NSURLConnectionDataDelegate>
 
-- (IBAction)takePhoto:(UIButton *)sender;
+-(void)didUploadPicture;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "PrepareForUploadViewController.h"
+#import "CameraViewController.h"
 #import "AFHTTPRequestOperationManager.h"
 
 #import "FuturalAPI.h"
@@ -16,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UITextField *captionTextField;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *saveSpinner;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
 
 @property (strong, nonatomic) FuturalAPI *api;
 
@@ -52,16 +55,18 @@
 }
 
 - (IBAction)saveButtonPressed:(id)sender {
-    
+    [self.saveSpinner startAnimating];
+    self.saveButton.enabled = NO;
     AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] init];
     NSData *imageData = UIImageJPEGRepresentation(self.image, 0.5);
     NSDictionary *parameters = @{@"token": [[self.api karnevalist] token], @"photo[caption]": self.captionTextField.text};
-    AFHTTPRequestOperation *op = [manager POST:@"http://posttestserver.com/post.php?dir=karneval" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+    AFHTTPRequestOperation *op = [manager POST:@"http://karnevalist-stage.herokuapp.com/api/photos" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         //do not put image inside parameters dictionary as I did, but append it!
-        [formData appendPartWithFileData:imageData name:@"photo" fileName:@"photo.jpg" mimeType:@"image/jpeg"];
+        [formData appendPartWithFileData:imageData name:@"photo[image]" fileName:@"photo.jpg" mimeType:@"image/jpeg"];
     } success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"Success: %@ ***** %@", operation.responseString, responseObject);
-        [self dismissViewControllerAnimated:YES completion:nil];
+        [self dismissViewControllerAnimated:YES completion:^(void) { [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:@"didUploadPhoto" object:nil]]; }];
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@ ***** %@", operation.responseString, error);
         [self dismissViewControllerAnimated:YES completion:nil];

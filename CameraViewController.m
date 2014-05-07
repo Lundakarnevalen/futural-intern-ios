@@ -42,25 +42,21 @@
     [self.refresh addTarget:self action:@selector(reloadCollectionView) forControlEvents:UIControlEventValueChanged];
     [self.collectionView addSubview:self.refresh];
     
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"images" ofType:@"plist"];
-    
     self.images = [[NSMutableArray alloc] init];
-    for (NSDictionary *dict in [NSArray arrayWithContentsOfFile:path]) {
-        [self.images addObject:[[FutuImage alloc] initWithDictionary:dict]];
-    }
     
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         
-        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                              message:@"Device has no camera"
+        UIAlertView *noCameraAlertView = [[UIAlertView alloc] initWithTitle:@"Inte funturalt"
+                                                              message:@"Din enhet är inte futural nog för att ta bilder med."
                                                              delegate:nil
                                                     cancelButtonTitle:@"OK"
                                                     otherButtonTitles: nil];
         
-        [myAlertView show];
+        [noCameraAlertView show];
         
     }
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didUploadPicture:) name:@"didUploadPhoto" object:nil];
     
     self.actionSheet = [[UIActionSheet alloc] initWithTitle:nil
                                                              delegate:self
@@ -69,6 +65,22 @@
                                                     otherButtonTitles:@"Ta bild", @"Välj bild", nil];
     
 	// Do any additional setup after loading the view, typically from a nib.
+    [self.api fetchImages];
+}
+
+-(void)didUploadPicture:(NSNotification *)notification {
+    UIAlertView *uploadedPictureAlertView = [[UIAlertView alloc] initWithTitle:@"Din bild väntar på granskning"
+                                                                message:@"Din bild är nu uppladdad och visas så fort den blivit godkänd."
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"OK"
+                                                      otherButtonTitles: nil];
+    
+    [uploadedPictureAlertView show];
+}
+
+
+- (IBAction)reloadButtonPressed:(id)sender {
+    [self reloadCollectionView];
 }
 
 -(void)reloadCollectionView {
@@ -77,12 +89,8 @@
     UIApplication* app = [UIApplication sharedApplication];
     app.networkActivityIndicatorVisible = YES;
     
-    [self.api fetchNotifications];
-    [self.collectionView reloadData];
-}
-
-- (IBAction)takePhoto:(id)sender {
-    [self.actionSheet showInView:self.view];
+    [self.api fetchImages];
+    //[self.collectionView reloadData];
 }
 
 - (IBAction)shootButtonPressed:(id)sender {
@@ -107,11 +115,10 @@
     __weak UIActivityIndicatorView *spinner = (UIActivityIndicatorView *)[cell viewWithTag:TAG_ACTIVITY];
     
     [spinner startAnimating];
-    spinner.tintColor = [UIColor blackColor];
     recipeImageView.hidden = YES;
     //recipeImageView.backgroundColor = [UIColor greenColor];
     
-    NSURL *url = [[self.images objectAtIndex:indexPath.row] url];
+    NSURL *url = [[self.images objectAtIndex:indexPath.row] thumb];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     UIImage *placeholderImage = [UIImage imageNamed:@"placeholder"];
     
@@ -217,14 +224,8 @@
         parsedData = (NSDictionary *)parsedData;
         
         if(parsedData[@"photos"]) { //check if it's the push messages that is being requested.
-            
-            NSString *jsonString = parsedData[@"photos"];
-            NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
-            NSError *jsonError = nil;
-            
-            NSArray *photos = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&jsonError];
-            
-            for (NSDictionary *dictionary_photos in photos) {
+            [self.images removeAllObjects];
+            for (NSDictionary *dictionary_photos in parsedData[@"photos"]) {
                 FutuImage *photos = [[FutuImage alloc] initWithDictionary:dictionary_photos];
                 [self.images addObject:photos];
             }
