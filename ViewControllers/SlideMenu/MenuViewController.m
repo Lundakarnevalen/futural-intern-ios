@@ -53,6 +53,8 @@
 //    Sektioner *sektion = [[Sektioner sektioner] objectForKey:[NSString stringWithFormat:@"%d", [karnevalist[@"tilldelad_sektion"] integerValue]]];
 //    self.profileImageView.image = [UIImage imageNamed:sektion.img];
     
+    [self.tableView setContentOffset:CGPointMake(0, CGFLOAT_MAX)];
+    
 }
 
 - (NSMutableDictionary *)viewCache {
