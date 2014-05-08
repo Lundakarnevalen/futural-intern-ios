@@ -29,13 +29,19 @@
     return self;
 }
 
++ (NSDictionary *)sektionerPlist {
+    
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"sektioner" ofType:@"plist"];
+    
+    return [NSDictionary dictionaryWithContentsOfFile:plistPath][@"sektioner"];
+    
+}
+
 +(NSDictionary *)sektioner {
     
     NSMutableDictionary *sektioner = [[NSMutableDictionary alloc] init];
     
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"sektioner" ofType:@"plist"];
-    
-    NSDictionary *dictionaryFromPlist = [NSDictionary dictionaryWithContentsOfFile:plistPath][@"sektioner"];
+    NSDictionary *dictionaryFromPlist = [self sektionerPlist];
     
     NSEnumerator *enumerator = [dictionaryFromPlist keyEnumerator];
     id key;
@@ -46,6 +52,14 @@
     }
     
     return [sektioner copy];
+}
+
++ (NSString *)nameFromIdentifier:(NSInteger)identifier {
+    
+    NSDictionary *sektioner = [self sektionerPlist];
+
+    return sektioner[[NSString stringWithFormat:@"%d", identifier]][@"name"];
+    
 }
 
 @end

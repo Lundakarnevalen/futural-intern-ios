@@ -73,6 +73,18 @@ NSString *const API_URL = @"http://www.karnevalist.se";
     
 }
 
+- (void)fetchImages {
+    NSString *appendUrl = [NSString stringWithFormat:@"api/photos?token=%@", [self.karnevalist token]];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:appendUrl withFormatAppended:NO]];
+    
+    [request setTimeoutInterval:15];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    
+    /*Calls the delegate and delivers the request*/
+    self.connection = [[NSURLConnection alloc] initWithRequest:request delegate:self.connectionDelegate startImmediately:YES];
+}
+
 - (void)authenticateUser:(NSString *)userIdentification withPassword:(NSString *)password { //should be in karnevalist too.
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self urlWithAppendedPath:@"api/users/sign_in" withFormatAppended:NO]];
@@ -348,7 +360,8 @@ NSString *const API_URL = @"http://www.karnevalist.se";
                                  @"sign_in":@"sign_in",
                                  @"users/password":@"reset_password",
                                  @"notifications":@"notifications",
-                                 @"clusters":@"maps"
+                                 @"clusters":@"maps",
+                                 @"photos":@"photos"
                                  
                                  };
     

@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MenuViewController : UITableViewController
+#import "FuturalAPI.h"
+
+@interface MenuViewController : UITableViewController <NSURLConnectionDataDelegate>
+
+@property (nonatomic) FuturalAPI *api;
 
 - (void)destroyCache;
 

@@ -37,7 +37,7 @@
     
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
                                                            [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
-                                                           [UIFont fontWithName:@"Futura-Bold" size:17.0], NSFontAttributeName, nil]];
+                                                           [UIFont fontWithName:@"FuturaLT-Bold" size:17.0], NSFontAttributeName, nil]];
     
     self.navigationBar.topItem.title = [self.navigationBar.topItem.title uppercaseString];
     

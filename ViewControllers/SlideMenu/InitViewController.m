@@ -22,7 +22,16 @@
     
     [super viewDidLoad];
     
-    NSString *storyboardIdentifier = ([self.api isSignedIn] == YES) ? @"Start" : @"Logga in";
+    BOOL dataIsUpToDate = [self.api.karnevalist isStoredDataUpToDate];
+    
+    NSString *storyboardIdentifier = ([self.api isSignedIn] == YES && dataIsUpToDate == YES) ? @"Start" : @"Logga in";
+    
+    if([self.api isSignedIn] && dataIsUpToDate) { //fulfix för att se om karnevalisten är aktiv eller inte (vilket kräver att du loggar in igen).
+        storyboardIdentifier = @"Start";
+    } else {
+        [self.api.karnevalist destroyData];
+        storyboardIdentifier = @"Logga in";
+    }
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardIdentifier bundle:nil];
     self.topViewController = [storyboard instantiateInitialViewController];

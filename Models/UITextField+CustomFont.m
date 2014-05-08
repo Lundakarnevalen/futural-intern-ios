@@ -19,21 +19,14 @@
     return self;
 }
 
-- (NSString *)fontName {
-    return self.font.fontName;
-}
-
-- (void)setFontName:(NSString *)fontName {
-    self.font = [UIFont fontWithName:fontName size:self.font.pointSize];
-}
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
+    [self setFont:[UIFont fontWithName:@"FuturaLT-Bold" size:self.font.pointSize]];
+    self.text = [self.text uppercaseString];
+    //[self setBackgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:0.2]];
+    [super drawRect:rect];
+    
     // Drawing code
 }
-*/
 
 @end

@@ -26,6 +26,7 @@
 
 - (void)fetchNotifications; //get messages.
 - (void)fetchMapCoordinates; //get coordinates from other karnevalists
+- (void)fetchImages; //get all images for the futugram
 - (void)authenticateUser:(NSString *)userIdentification withPassword:(NSString *)password; //sign in user
 - (void)signOut;
 - (void)resetPassword:(NSString *)email;
